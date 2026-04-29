@@ -25,6 +25,9 @@
 
   <ItemGroup>
     <None Remove="images\a-none-logo.jpg" />
+    <None Remove="images\Hotel.jpg" />
+    <None Remove="images\icon-icons %282%29.png" />
+    <None Remove="images\local-hotel_118960.png" />
   </ItemGroup>
 
   <ItemGroup>
@@ -44,6 +47,11 @@
     <Resource Include="images\a-none-logo.jpg">
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Resource>
+    <Resource Include="images\Hotel.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="images\icon-icons (2).png" />
+    <Resource Include="images\local-hotel_118960.png" />
   </ItemGroup>
 
 </Project>

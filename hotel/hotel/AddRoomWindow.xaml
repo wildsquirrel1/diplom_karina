@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:hotel"
         mc:Ignorable="d"
-        Title="AddRoomWindow" Height="950" MinHeight="730" MaxHeight="1000"  Width="1500" MinWidth="900" MaxWidth="1600" WindowState="Maximized" FontSize="40" WindowStartupLocation="CenterScreen" Icon="C:\Users\Пользователь\source\repos\hotel\hotel\images\local-hotel_118960.png">
+        Title="AddRoomWindow" Height="950" MinHeight="730" MaxHeight="1000"  Width="1500" MinWidth="900" MaxWidth="1600" WindowState="Maximized" FontSize="40" WindowStartupLocation="CenterScreen" Icon="images\local-hotel_118960.png">
     <Window.Resources>
         <Style TargetType="Button">
             <Setter Property="FontSize" Value="34"/>
@@ -34,7 +34,7 @@
                 <TextBlock Text="Сотрудник: " FontSize="24" Foreground="Black" Name="emplName" TextWrapping="Wrap"/>
                 <TextBlock Text="Роль: " FontSize="20" Foreground="Black" Name="emplRole" TextWrapping="Wrap"/>
             </StackPanel>
-            <Image Source="C:\Users\Пользователь\source\repos\hotel\hotel\images\icon-icons (2).png" VerticalAlignment="Center" Width="80" HorizontalAlignment="Center" Margin="0 0 550 0" />
+            <Image Source="images\icon-icons (2).png" VerticalAlignment="Center" Width="80" HorizontalAlignment="Center" Margin="0 0 550 0" />
             <Button x:Name="back" Content="X"
                     HorizontalAlignment="Right" VerticalAlignment="Top"
                     Width="60" Height="60" FontSize="40"

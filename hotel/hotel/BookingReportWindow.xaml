@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:hotel"
         mc:Ignorable="d"
-        Title="Отчёт по проживанию" Height="950" MinHeight="730" MaxHeight="1000" Width="1500" MinWidth="900" MaxWidth="1600" WindowState="Maximized" FontSize="16" WindowStartupLocation="CenterScreen" Icon="C:\Users\Пользователь\source\repos\hotel\hotel\images\local-hotel_118960.png">
+        Title="Отчёт по проживанию" Height="950" MinHeight="730" MaxHeight="1000" Width="1500" MinWidth="900" MaxWidth="1600" WindowState="Maximized" FontSize="16" WindowStartupLocation="CenterScreen" Icon="images\local-hotel_118960.png">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
@@ -19,7 +19,7 @@
                    Text="ЖУРНАЛ ПО ПРОЖИВАНИЮ КЛИЕНТОВ В ОТЕЛЕ С __ ПО __ Г." 
                    HorizontalAlignment="Center" VerticalAlignment="Center"
                    FontSize="20" FontWeight="Bold" Margin="0,10"/>
-        <Image Source="C:\Users\Пользователь\source\repos\hotel\hotel\images\icon-icons (2).png" Width="90" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0 0 690 0"/>
+        <Image Source="images\icon-icons (2).png" Width="90" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0 0 690 0"/>
 
         <StackPanel Grid.Row="0" Margin="30,0,0,0" VerticalAlignment="Center" HorizontalAlignment="Left" Width="320">
             <TextBlock Text="Сотрудник: " FontSize="20" Foreground="Black" Name="emplName" TextWrapping="Wrap"/>

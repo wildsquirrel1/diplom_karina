@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:hotel"
         mc:Ignorable="d"
-        Title="Главный менеджер по отелям" Height="950" MinHeight="730" MaxHeight="1000"  Width="1500" MinWidth="900" MaxWidth="1600" WindowState="Maximized" FontSize="40" WindowStartupLocation="CenterScreen" Icon="C:\Users\Пользователь\source\repos\hotel\hotel\images\local-hotel_118960.png">
+        Title="Главный менеджер по отелям" Height="950" MinHeight="730" MaxHeight="1000"  Width="1500" MinWidth="900" MaxWidth="1600" WindowState="Maximized" FontSize="40" WindowStartupLocation="CenterScreen" Icon="images\local-hotel_118960.png">
     <Window.Resources>
         <!-- Стиль для всех кнопок -->
         <Style TargetType="Button">
@@ -56,26 +56,13 @@
                 <Run Text="Простой" FontSize="52" FontWeight="Bold" Foreground="#8A6DF7"/>
                 <Run Text="Комфорт" FontSize="52" FontWeight="Bold" Foreground="Black"/>
             </TextBlock>
-            <Image Source="C:\Users\Пользователь\source\repos\hotel\hotel\images\icon-icons (2).png" Width="150" VerticalAlignment="Center" HorizontalAlignment="Left"/>
+            <Image Source="images\icon-icons (2).png" Width="150" VerticalAlignment="Center" HorizontalAlignment="Left"/>
 
             <Button Grid.Row="1" Name="hotels" Content="Отели" Click="hotels_Click"/>
             <Button Grid.Row="2" Name="reports" Content="Отчеты" Click="reports_Click"/>
             <Button Grid.Row="3" Name="employees" Content="Сотрудники" Click="employees_Click" />
         </Grid>
 
-        <Button Grid.Column="2" 
-                Content="X" 
-                FontSize="22" 
-                FontWeight="Bold"
-                Width="40" Height="40" 
-                Background="#8A6DF7" 
-                Foreground="White"
-                BorderBrush="Transparent"
-                Cursor="Hand"
-                VerticalAlignment="Top" 
-                HorizontalAlignment="Right" 
-                Margin="0,30,30,0"
-                Name="exit"
-                Click="exit_Click"/>
+        <Button Grid.Column="2" Content="X" FontSize="22" FontWeight="Bold" Width="40" Height="40" Background="#8A6DF7" Foreground="White" BorderBrush="Transparent" Cursor="Hand" VerticalAlignment="Top" HorizontalAlignment="Right" Margin="0,30,30,0" Name="exit" Click="exit_Click"/>
     </Grid>
 </Window>

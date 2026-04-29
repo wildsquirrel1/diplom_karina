@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:hotel"
         mc:Ignorable="d"
-        Title="Добавление сотрудника" Height="950" MinHeight="730" MaxHeight="1000"  Width="1500" MinWidth="900" MaxWidth="1600" WindowState="Maximized" FontSize="40" WindowStartupLocation="CenterScreen" Icon="C:\Users\Пользователь\source\repos\hotel\hotel\images\local-hotel_118960.png">
+        Title="Добавление сотрудника" Height="950" MinHeight="730" MaxHeight="1000"  Width="1500" MinWidth="900" MaxWidth="1600" WindowState="Maximized" FontSize="40" WindowStartupLocation="CenterScreen" Icon="images\local-hotel_118960.png">
     <Window.Resources>
         <Style TargetType="Button">
             <Setter Property="FontSize" Value="34"/>
@@ -125,7 +125,7 @@
                     Width="60" Height="60" FontSize="40" Click="back_Click" Margin="0,20,20,0"/>
             <TextBlock Text="Добавление" HorizontalAlignment="Center" VerticalAlignment="Center"
                        FontSize="48"/>
-            <Image Source="C:\Users\Пользователь\source\repos\hotel\hotel\images\icon-icons (2).png" VerticalAlignment="Center" Margin="0 0 350 0" HorizontalAlignment="Center" Width="90"/>
+            <Image Source="images\icon-icons (2).png" VerticalAlignment="Center" Margin="0 0 350 0" HorizontalAlignment="Center" Width="90"/>
         </Grid>
     </Grid>
 </Window>

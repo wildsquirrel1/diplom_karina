@@ -18,15 +18,24 @@ namespace hotel.Data
     {
         public static async Task<Employee?> Auth(string email, string password)
         {
-            using (var clint = new HttpClient())
+            try
             {
-                var result = clint.GetAsync($"https://localhost:7042/api/Employee/{email}, {password}").Result;
 
-                if(result.StatusCode == System.Net.HttpStatusCode.OK)
+                using (var clint = new HttpClient())
                 {
-                    return JsonConvert.DeserializeObject<Employee>((await result.Content.ReadAsStringAsync()));
+                    var result = clint.GetAsync($"https://localhost:7042/api/Employee/{email}, {password}").Result;
+
+                    if(result.StatusCode == System.Net.HttpStatusCode.OK)
+                    {
+                        return JsonConvert.DeserializeObject<Employee>((await result.Content.ReadAsStringAsync()));
+                    }
+                    return null;    
                 }
-                return null;    
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Hello, world!");
+                return null;
             }
         } 
 

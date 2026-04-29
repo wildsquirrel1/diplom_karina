@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:hotel"
         mc:Ignorable="d"
-        Title="Авторизация" Height="950" MinHeight="730" MaxHeight="1000"  Width="1500" MinWidth="900" MaxWidth="1600" WindowState="Maximized" FontSize="40" WindowStartupLocation="CenterScreen" Icon="C:\Users\Пользователь\source\repos\hotel\hotel\images\local-hotel_118960.png">
+        Title="Авторизация" Height="950" MinHeight="730" MaxHeight="1000"  Width="1500" MinWidth="900" MaxWidth="1600" WindowState="Maximized" FontSize="40" WindowStartupLocation="CenterScreen" Icon="images\local-hotel_118960.png">
     <Window.Resources>
         <!-- Стиль для всех кнопок -->
         <Style TargetType="Button">
@@ -35,7 +35,7 @@
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
         <Grid Grid.Column="0">
-            <Image Source="C:\Users\Пользователь\source\repos\hotel\hotel\images\Hotel.jpg" HorizontalAlignment="Left"/>
+            <Image Source="images\Hotel.jpg" HorizontalAlignment="Left"/>
         </Grid>
 
         <Grid Grid.Column="1">

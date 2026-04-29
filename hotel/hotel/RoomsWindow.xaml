@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:hotel"
         mc:Ignorable="d"
-        Title="Номера" Height="950" MinHeight="730" MaxHeight="1000"  Width="1500" MinWidth="900" MaxWidth="1600" WindowState="Maximized" FontSize="40" WindowStartupLocation="CenterScreen" Icon="C:\Users\Пользователь\source\repos\hotel\hotel\images\local-hotel_118960.png">
+        Title="Номера" Height="950" MinHeight="730" MaxHeight="1000"  Width="1500" MinWidth="900" MaxWidth="1600" WindowState="Maximized" FontSize="40" WindowStartupLocation="CenterScreen" Icon="images\local-hotel_118960.png">
     <Window.Resources>
         <Style TargetType="TextBox">
             <Style.Setters>
@@ -51,7 +51,7 @@
                 <TextBlock Text="Сотрудник: " FontSize="25" Foreground="Black" Name="emplName" TextWrapping="Wrap"/>
                 <TextBlock Text="Роль: " FontSize="23" Foreground="Black" Name="emplRole" TextWrapping="Wrap"/> 
             </StackPanel>
-            <Image Source="C:\Users\Пользователь\source\repos\hotel\hotel\images\icon-icons (2).png" Width="90" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0 0 400 0" />
+            <Image Source="images\icon-icons (2).png" Width="90" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0 0 400 0" />
             <TextBlock Text="Номера отеля" 
                        HorizontalAlignment="Center" 
                        VerticalAlignment="Center"

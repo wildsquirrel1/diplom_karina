@@ -35,7 +35,17 @@ namespace hotel
 
         public Autorisation()
         {
-            InitializeComponent();
+
+            try
+            {
+                InitializeComponent();
+            }
+            catch (Exception)
+            {
+
+                MessageBox.Show("ЙЦУКЕНГШ");
+                throw;
+            }
         }
 
         private async void entryB_Click(object sender, RoutedEventArgs e)

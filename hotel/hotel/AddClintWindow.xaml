@@ -8,7 +8,7 @@
         Title="Добавление клиента" Height="950" MinHeight="730" MaxHeight="1000"
         Width="1500" MinWidth="900" MaxWidth="1600" WindowState="Maximized"
         FontSize="40" WindowStartupLocation="CenterScreen"
-        Icon="C:\Users\Пользователь\source\repos\hotel\hotel\images\local-hotel_118960.png">
+        Icon="images\local-hotel_118960.png">
     <Window.Resources>
         <Style TargetType="Button">
             <Setter Property="FontSize" Value="34"/>
@@ -36,7 +36,7 @@
             <Button x:Name="exit" Content="X" HorizontalAlignment="Right" VerticalAlignment="Top" Width="60" Height="60" FontSize="40" Click="exit_Click" Margin="0,20,20,0"/>
             <TextBlock Text="Добавление клиента/гостя" HorizontalAlignment="Center" VerticalAlignment="Center"
        FontSize="48"/>
-            <Image Source="C:\Users\Пользователь\source\repos\hotel\hotel\images\icon-icons (2).png" VerticalAlignment="Center" Margin="0 0 700 0" HorizontalAlignment="Center" Width="90"/>
+            <Image Source="images\icon-icons (2).png" VerticalAlignment="Center" Margin="0 0 700 0" HorizontalAlignment="Center" Width="90"/>
         </Grid>
 
         <Grid Grid.Row="1">
