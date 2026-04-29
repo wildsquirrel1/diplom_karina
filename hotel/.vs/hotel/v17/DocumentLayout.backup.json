@@ -3,28 +3,40 @@
   "WorkspaceRootPath": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\hotel\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{19D6FB2F-E60B-457B-9BE7-59091229D166}|hotel\\hotel.csproj|c:\\users\\\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\hotel\\hotel\\reviewwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{19D6FB2F-E60B-457B-9BE7-59091229D166}|hotel\\hotel.csproj|solutionrelative:hotel\\reviewwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{19D6FB2F-E60B-457B-9BE7-59091229D166}|hotel\\hotel.csproj|c:\\users\\\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\hotel\\hotel\\servicewindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{19D6FB2F-E60B-457B-9BE7-59091229D166}|hotel\\hotel.csproj|solutionrelative:hotel\\servicewindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{19D6FB2F-E60B-457B-9BE7-59091229D166}|hotel\\hotel.csproj|c:\\users\\\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\hotel\\hotel\\hotelswindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{19D6FB2F-E60B-457B-9BE7-59091229D166}|hotel\\hotel.csproj|solutionrelative:hotel\\hotelswindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{19D6FB2F-E60B-457B-9BE7-59091229D166}|hotel\\hotel.csproj|c:\\users\\\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\hotel\\hotel\\reviewcontrol.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{19D6FB2F-E60B-457B-9BE7-59091229D166}|hotel\\hotel.csproj|solutionrelative:hotel\\reviewcontrol.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{19D6FB2F-E60B-457B-9BE7-59091229D166}|hotel\\hotel.csproj|c:\\users\\\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\hotel\\hotel\\servicecontrol.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{19D6FB2F-E60B-457B-9BE7-59091229D166}|hotel\\hotel.csproj|solutionrelative:hotel\\servicecontrol.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{19D6FB2F-E60B-457B-9BE7-59091229D166}|hotel\\hotel.csproj|c:\\users\\\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\hotel\\hotel\\reviewwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{19D6FB2F-E60B-457B-9BE7-59091229D166}|hotel\\hotel.csproj|solutionrelative:hotel\\reviewwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{19D6FB2F-E60B-457B-9BE7-59091229D166}|hotel\\hotel.csproj|c:\\users\\\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\hotel\\hotel\\hotelcontrol.xaml.cs||{8B382828-6202-11D1-8870-0000F87579D2}|",
-      "RelativeMoniker": "D:0:0:{19D6FB2F-E60B-457B-9BE7-59091229D166}|hotel\\hotel.csproj|solutionrelative:hotel\\hotelcontrol.xaml.cs||{8B382828-6202-11D1-8870-0000F87579D2}|"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{19D6FB2F-E60B-457B-9BE7-59091229D166}|hotel\\hotel.csproj|c:\\users\\\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\hotel\\hotel\\mainmanager.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{19D6FB2F-E60B-457B-9BE7-59091229D166}|hotel\\hotel.csproj|solutionrelative:hotel\\mainmanager.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{19D6FB2F-E60B-457B-9BE7-59091229D166}|hotel\\hotel.csproj|c:\\users\\\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\hotel\\hotel\\reviewwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{19D6FB2F-E60B-457B-9BE7-59091229D166}|hotel\\hotel.csproj|solutionrelative:hotel\\reviewwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{19D6FB2F-E60B-457B-9BE7-59091229D166}|hotel\\hotel.csproj|c:\\users\\\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\hotel\\hotel\\reviewcontrol.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{19D6FB2F-E60B-457B-9BE7-59091229D166}|hotel\\hotel.csproj|solutionrelative:hotel\\reviewcontrol.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{19D6FB2F-E60B-457B-9BE7-59091229D166}|hotel\\hotel.csproj|c:\\users\\\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\hotel\\hotel\\hotelswindow.xaml.cs||{8B382828-6202-11D1-8870-0000F87579D2}|",
+      "RelativeMoniker": "D:0:0:{19D6FB2F-E60B-457B-9BE7-59091229D166}|hotel\\hotel.csproj|solutionrelative:hotel\\hotelswindow.xaml.cs||{8B382828-6202-11D1-8870-0000F87579D2}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{19D6FB2F-E60B-457B-9BE7-59091229D166}|hotel\\hotel.csproj|c:\\users\\\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\hotel\\hotel\\hotelswindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{19D6FB2F-E60B-457B-9BE7-59091229D166}|hotel\\hotel.csproj|solutionrelative:hotel\\hotelswindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{19D6FB2F-E60B-457B-9BE7-59091229D166}|hotel\\hotel.csproj|c:\\users\\\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\hotel\\hotel\\hotelcontrol.xaml.cs||{8B382828-6202-11D1-8870-0000F87579D2}|",
+      "RelativeMoniker": "D:0:0:{19D6FB2F-E60B-457B-9BE7-59091229D166}|hotel\\hotel.csproj|solutionrelative:hotel\\hotelcontrol.xaml.cs||{8B382828-6202-11D1-8870-0000F87579D2}|"
     },
     {
       "AbsoluteMoniker": "D:0:0:{19D6FB2F-E60B-457B-9BE7-59091229D166}|hotel\\hotel.csproj|c:\\users\\\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\hotel\\hotel\\data\\api.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -81,10 +93,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{19D6FB2F-E60B-457B-9BE7-59091229D166}|hotel\\hotel.csproj|c:\\users\\\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\hotel\\hotel\\mainmanager.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{19D6FB2F-E60B-457B-9BE7-59091229D166}|hotel\\hotel.csproj|solutionrelative:hotel\\mainmanager.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{19D6FB2F-E60B-457B-9BE7-59091229D166}|hotel\\hotel.csproj|c:\\users\\\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\hotel\\hotel\\hotelswindow.xaml.cs||{8B382828-6202-11D1-8870-0000F87579D2}|",
-      "RelativeMoniker": "D:0:0:{19D6FB2F-E60B-457B-9BE7-59091229D166}|hotel\\hotel.csproj|solutionrelative:hotel\\hotelswindow.xaml.cs||{8B382828-6202-11D1-8870-0000F87579D2}|"
     },
     {
       "AbsoluteMoniker": "D:0:0:{19D6FB2F-E60B-457B-9BE7-59091229D166}|hotel\\hotel.csproj|c:\\users\\\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\hotel\\hotel\\headhotelmanagerwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -263,20 +271,12 @@
       "RelativeMoniker": "D:0:0:{19D6FB2F-E60B-457B-9BE7-59091229D166}|hotel\\hotel.csproj|solutionrelative:hotel\\model\\hoteldcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{19D6FB2F-E60B-457B-9BE7-59091229D166}|hotel\\hotel.csproj|c:\\users\\\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\hotel\\hotel\\servicewindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{19D6FB2F-E60B-457B-9BE7-59091229D166}|hotel\\hotel.csproj|solutionrelative:hotel\\servicewindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{19D6FB2F-E60B-457B-9BE7-59091229D166}|hotel\\hotel.csproj|c:\\users\\\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\hotel\\hotel\\editservicewindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{19D6FB2F-E60B-457B-9BE7-59091229D166}|hotel\\hotel.csproj|solutionrelative:hotel\\editservicewindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{19D6FB2F-E60B-457B-9BE7-59091229D166}|hotel\\hotel.csproj|c:\\users\\\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\hotel\\hotel\\addservicewindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{19D6FB2F-E60B-457B-9BE7-59091229D166}|hotel\\hotel.csproj|solutionrelative:hotel\\addservicewindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{19D6FB2F-E60B-457B-9BE7-59091229D166}|hotel\\hotel.csproj|c:\\users\\\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\hotel\\hotel\\servicecontrol.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{19D6FB2F-E60B-457B-9BE7-59091229D166}|hotel\\hotel.csproj|solutionrelative:hotel\\servicecontrol.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{19D6FB2F-E60B-457B-9BE7-59091229D166}|hotel\\hotel.csproj|c:\\users\\\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\hotel\\hotel\\employeecontrol.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
@@ -356,34 +356,23 @@
         },
         {
           "DockedHeight": 128,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "ReviewControl.xaml",
-              "DocumentMoniker": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\hotel\\hotel\\ReviewControl.xaml",
-              "RelativeDocumentMoniker": "hotel\\ReviewControl.xaml",
-              "ToolTip": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\hotel\\hotel\\ReviewControl.xaml",
-              "RelativeToolTip": "hotel\\ReviewControl.xaml",
+              "DocumentIndex": 0,
+              "Title": "ServiceWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\hotel\\hotel\\ServiceWindow.xaml",
+              "RelativeDocumentMoniker": "hotel\\ServiceWindow.xaml",
+              "ToolTip": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\hotel\\hotel\\ServiceWindow.xaml",
+              "RelativeToolTip": "hotel\\ServiceWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2026-04-27T11:59:40.335Z"
+              "WhenOpened": "2026-04-24T11:42:35.402Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "HotelControl.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\hotel\\hotel\\HotelControl.xaml.cs",
-              "RelativeDocumentMoniker": "hotel\\HotelControl.xaml.cs",
-              "ToolTip": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\hotel\\hotel\\HotelControl.xaml.cs",
-              "RelativeToolTip": "hotel\\HotelControl.xaml.cs",
-              "ViewState": "AgIAAGIAAAAAAAAAAAAIwHAAAAA4AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-07T08:24:30.869Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
               "Title": "ReviewWindow.xaml",
               "DocumentMoniker": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\hotel\\hotel\\ReviewWindow.xaml",
               "RelativeDocumentMoniker": "hotel\\ReviewWindow.xaml",
@@ -395,18 +384,80 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ReviewWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\hotel\\hotel\\ReviewWindow.xaml.cs",
+              "RelativeDocumentMoniker": "hotel\\ReviewWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\hotel\\hotel\\ReviewWindow.xaml.cs",
+              "RelativeToolTip": "hotel\\ReviewWindow.xaml.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAAwwBgAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-27T11:54:52.111Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 5,
+              "Title": "ReviewControl.xaml",
+              "DocumentMoniker": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\hotel\\hotel\\ReviewControl.xaml",
+              "RelativeDocumentMoniker": "hotel\\ReviewControl.xaml",
+              "ToolTip": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\hotel\\hotel\\ReviewControl.xaml",
+              "RelativeToolTip": "hotel\\ReviewControl.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-04-27T11:59:40.335Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "MainManager.xaml",
               "DocumentMoniker": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\hotel\\hotel\\MainManager.xaml",
               "RelativeDocumentMoniker": "hotel\\MainManager.xaml",
               "ToolTip": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\hotel\\hotel\\MainManager.xaml",
               "RelativeToolTip": "hotel\\MainManager.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-10-31T10:54:26.558Z"
+              "WhenOpened": "2025-10-31T10:54:26.558Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ServiceControl.xaml",
+              "DocumentMoniker": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\hotel\\hotel\\ServiceControl.xaml",
+              "RelativeDocumentMoniker": "hotel\\ServiceControl.xaml",
+              "ToolTip": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\hotel\\hotel\\ServiceControl.xaml",
+              "RelativeToolTip": "hotel\\ServiceControl.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-04-24T11:42:18.487Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 6,
+              "Title": "HotelsWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\hotel\\hotel\\HotelsWindow.xaml.cs",
+              "RelativeDocumentMoniker": "hotel\\HotelsWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\hotel\\hotel\\HotelsWindow.xaml.cs",
+              "RelativeToolTip": "hotel\\HotelsWindow.xaml.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAAB4AAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-28T09:44:37.668Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "HotelsWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\hotel\\hotel\\HotelsWindow.xaml",
+              "RelativeDocumentMoniker": "hotel\\HotelsWindow.xaml",
+              "ToolTip": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\hotel\\hotel\\HotelsWindow.xaml",
+              "RelativeToolTip": "hotel\\HotelsWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-11-28T08:54:01.079Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
               "Title": "Api.cs",
               "DocumentMoniker": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\hotel\\hotel\\Data\\Api.cs",
               "RelativeDocumentMoniker": "hotel\\Data\\Api.cs",
@@ -418,30 +469,19 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "HotelsWindow.xaml",
-              "DocumentMoniker": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\hotel\\hotel\\HotelsWindow.xaml",
-              "RelativeDocumentMoniker": "hotel\\HotelsWindow.xaml",
-              "ToolTip": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\hotel\\hotel\\HotelsWindow.xaml",
-              "RelativeToolTip": "hotel\\HotelsWindow.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-11-28T08:54:01.079Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "ReviewWindow.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\hotel\\hotel\\ReviewWindow.xaml.cs",
-              "RelativeDocumentMoniker": "hotel\\ReviewWindow.xaml.cs",
-              "ToolTip": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\hotel\\hotel\\ReviewWindow.xaml.cs",
-              "RelativeToolTip": "hotel\\ReviewWindow.xaml.cs",
-              "ViewState": "AgIAABcAAAAAAAAAAAAIwB4AAABKAAAAAAAAAA==",
+              "DocumentIndex": 8,
+              "Title": "HotelControl.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\hotel\\hotel\\HotelControl.xaml.cs",
+              "RelativeDocumentMoniker": "hotel\\HotelControl.xaml.cs",
+              "ToolTip": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\hotel\\hotel\\HotelControl.xaml.cs",
+              "RelativeToolTip": "hotel\\HotelControl.xaml.cs",
+              "ViewState": "AgIAAGIAAAAAAAAAAAAIwHAAAAA4AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-27T11:54:52.111Z"
+              "WhenOpened": "2025-11-07T08:24:30.869Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 10,
               "Title": "ReviewControl.xaml.cs",
               "DocumentMoniker": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\hotel\\hotel\\ReviewControl.xaml.cs",
               "RelativeDocumentMoniker": "hotel\\ReviewControl.xaml.cs",
@@ -453,7 +493,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 15,
               "Title": "CommHotel.cs",
               "DocumentMoniker": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\hotel\\hotel\\Models\\CommHotel.cs",
               "RelativeDocumentMoniker": "hotel\\Models\\CommHotel.cs",
@@ -465,7 +505,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 11,
               "Title": "HotelControl.xaml",
               "DocumentMoniker": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\hotel\\hotel\\HotelControl.xaml",
               "RelativeDocumentMoniker": "hotel\\HotelControl.xaml",
@@ -476,7 +516,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 12,
               "Title": "EditHotelWindow.xaml.cs",
               "DocumentMoniker": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\hotel\\hotel\\EditHotelWindow.xaml.cs",
               "RelativeDocumentMoniker": "hotel\\EditHotelWindow.xaml.cs",
@@ -488,7 +528,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 13,
               "Title": "EditHotelWindow.xaml",
               "DocumentMoniker": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\hotel\\hotel\\EditHotelWindow.xaml",
               "RelativeDocumentMoniker": "hotel\\EditHotelWindow.xaml",
@@ -499,7 +539,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 14,
               "Title": "AddHotelWindow.xaml",
               "DocumentMoniker": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\hotel\\hotel\\AddHotelWindow.xaml",
               "RelativeDocumentMoniker": "hotel\\AddHotelWindow.xaml",
@@ -510,7 +550,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 16,
               "Title": "Hotel.cs",
               "DocumentMoniker": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\hotel\\hotel\\Models\\Hotel.cs",
               "RelativeDocumentMoniker": "hotel\\Models\\Hotel.cs",
@@ -522,7 +562,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 19,
               "Title": "RoomsWindow.xaml.cs",
               "DocumentMoniker": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\hotel\\hotel\\RoomsWindow.xaml.cs",
               "RelativeDocumentMoniker": "hotel\\RoomsWindow.xaml.cs",
@@ -534,7 +574,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 20,
               "Title": "RoomControl.xaml.cs",
               "DocumentMoniker": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\hotel\\hotel\\RoomControl.xaml.cs",
               "RelativeDocumentMoniker": "hotel\\RoomControl.xaml.cs",
@@ -546,7 +586,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 21,
               "Title": "RoomsWindow.xaml",
               "DocumentMoniker": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\hotel\\hotel\\RoomsWindow.xaml",
               "RelativeDocumentMoniker": "hotel\\RoomsWindow.xaml",
@@ -557,7 +597,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 17,
               "Title": "ServiceWindow.xaml.cs",
               "DocumentMoniker": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\hotel\\hotel\\ServiceWindow.xaml.cs",
               "RelativeDocumentMoniker": "hotel\\ServiceWindow.xaml.cs",
@@ -569,7 +609,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 18,
               "Title": "ServiceControl.xaml.cs",
               "DocumentMoniker": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\hotel\\hotel\\ServiceControl.xaml.cs",
               "RelativeDocumentMoniker": "hotel\\ServiceControl.xaml.cs",
@@ -581,7 +621,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 22,
               "Title": "MainManager.xaml.cs",
               "DocumentMoniker": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\hotel\\hotel\\MainManager.xaml.cs",
               "RelativeDocumentMoniker": "hotel\\MainManager.xaml.cs",
@@ -593,19 +633,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "HotelsWindow.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\hotel\\hotel\\HotelsWindow.xaml.cs",
-              "RelativeDocumentMoniker": "hotel\\HotelsWindow.xaml.cs",
-              "ToolTip": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\hotel\\hotel\\HotelsWindow.xaml.cs",
-              "RelativeToolTip": "hotel\\HotelsWindow.xaml.cs",
-              "ViewState": "AgIAAHsAAAAAAAAAAAAIwJMAAAAOAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-28T09:44:37.668Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 23,
               "Title": "HeadHotelManagerWindow.xaml.cs",
               "DocumentMoniker": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\hotel\\hotel\\HeadHotelManagerWindow.xaml.cs",
               "RelativeDocumentMoniker": "hotel\\HeadHotelManagerWindow.xaml.cs",
@@ -617,7 +645,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 24,
               "Title": "EmployeeHHMWindow.xaml.cs",
               "DocumentMoniker": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\hotel\\hotel\\EmployeeHHMWindow.xaml.cs",
               "RelativeDocumentMoniker": "hotel\\EmployeeHHMWindow.xaml.cs",
@@ -629,7 +657,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 25,
               "Title": "EmployeeControl.xaml.cs",
               "DocumentMoniker": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\hotel\\hotel\\EmployeeControl.xaml.cs",
               "RelativeDocumentMoniker": "hotel\\EmployeeControl.xaml.cs",
@@ -641,7 +669,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 26,
               "Title": "EditServiceWindow.xaml.cs",
               "DocumentMoniker": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\hotel\\hotel\\EditServiceWindow.xaml.cs",
               "RelativeDocumentMoniker": "hotel\\EditServiceWindow.xaml.cs",
@@ -653,7 +681,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 62,
+              "DocumentIndex": 64,
               "Title": "Room.cs",
               "DocumentMoniker": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\hotel\\hotel\\Models\\Room.cs",
               "RelativeDocumentMoniker": "hotel\\Models\\Room.cs",
@@ -666,17 +694,6 @@
             {
               "$type": "Document",
               "DocumentIndex": 65,
-              "Title": "ServiceWindow.xaml",
-              "DocumentMoniker": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\hotel\\hotel\\ServiceWindow.xaml",
-              "RelativeDocumentMoniker": "hotel\\ServiceWindow.xaml",
-              "ToolTip": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\hotel\\hotel\\ServiceWindow.xaml",
-              "RelativeToolTip": "hotel\\ServiceWindow.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2026-04-24T11:42:35.402Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 63,
               "Title": "App.xaml",
               "DocumentMoniker": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\hotel\\hotel\\App.xaml",
               "RelativeDocumentMoniker": "hotel\\App.xaml",
@@ -688,7 +705,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 64,
+              "DocumentIndex": 66,
               "Title": "HoteldContext.cs",
               "DocumentMoniker": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\hotel\\hotel\\Model\\HoteldContext.cs",
               "RelativeDocumentMoniker": "hotel\\Model\\HoteldContext.cs",
@@ -700,7 +717,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 28,
               "Title": "EditEmployeeWindow.xaml.cs",
               "DocumentMoniker": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\hotel\\hotel\\EditEmployeeWindow.xaml.cs",
               "RelativeDocumentMoniker": "hotel\\EditEmployeeWindow.xaml.cs",
@@ -712,7 +729,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 29,
               "Title": "BookingServiceSpecialist.xaml.cs",
               "DocumentMoniker": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\hotel\\hotel\\BookingServiceSpecialist.xaml.cs",
               "RelativeDocumentMoniker": "hotel\\BookingServiceSpecialist.xaml.cs",
@@ -724,7 +741,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 30,
               "Title": "BookingReportWindow.xaml.cs",
               "DocumentMoniker": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\hotel\\hotel\\BookingReportWindow.xaml.cs",
               "RelativeDocumentMoniker": "hotel\\BookingReportWindow.xaml.cs",
@@ -732,11 +749,12 @@
               "RelativeToolTip": "hotel\\BookingReportWindow.xaml.cs",
               "ViewState": "AgIAAAABAAAAAAAAAAAwwOcAAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-07T18:13:08.499Z"
+              "WhenOpened": "2025-12-07T18:13:08.499Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 27,
               "Title": "EditRoomWindow.xaml.cs",
               "DocumentMoniker": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\hotel\\hotel\\EditRoomWindow.xaml.cs",
               "RelativeDocumentMoniker": "hotel\\EditRoomWindow.xaml.cs",
@@ -748,7 +766,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 31,
               "Title": "BookingControl.xaml.cs",
               "DocumentMoniker": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\hotel\\hotel\\BookingControl.xaml.cs",
               "RelativeDocumentMoniker": "hotel\\BookingControl.xaml.cs",
@@ -760,7 +778,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 32,
               "Title": "Autorisation.xaml.cs",
               "DocumentMoniker": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\hotel\\hotel\\Autorisation.xaml.cs",
               "RelativeDocumentMoniker": "hotel\\Autorisation.xaml.cs",
@@ -772,7 +790,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
+              "DocumentIndex": 33,
               "Title": "BookingControl.xaml",
               "DocumentMoniker": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\hotel\\hotel\\BookingControl.xaml",
               "RelativeDocumentMoniker": "hotel\\BookingControl.xaml",
@@ -783,7 +801,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 32,
+              "DocumentIndex": 34,
               "Title": "App.xaml.cs",
               "DocumentMoniker": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\hotel\\hotel\\App.xaml.cs",
               "RelativeDocumentMoniker": "hotel\\App.xaml.cs",
@@ -795,7 +813,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 33,
+              "DocumentIndex": 35,
               "Title": "AddServiceWindow.xaml.cs",
               "DocumentMoniker": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\hotel\\hotel\\AddServiceWindow.xaml.cs",
               "RelativeDocumentMoniker": "hotel\\AddServiceWindow.xaml.cs",
@@ -807,7 +825,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 34,
+              "DocumentIndex": 36,
               "Title": "AddRoomWindow.xaml.cs",
               "DocumentMoniker": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\hotel\\hotel\\AddRoomWindow.xaml.cs",
               "RelativeDocumentMoniker": "hotel\\AddRoomWindow.xaml.cs",
@@ -819,7 +837,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 35,
+              "DocumentIndex": 37,
               "Title": "AddHotelWindow.xaml.cs",
               "DocumentMoniker": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\hotel\\hotel\\AddHotelWindow.xaml.cs",
               "RelativeDocumentMoniker": "hotel\\AddHotelWindow.xaml.cs",
@@ -827,11 +845,12 @@
               "RelativeToolTip": "hotel\\AddHotelWindow.xaml.cs",
               "ViewState": "AgIAAFYAAAAAAAAAAAAswGsAAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-13T11:18:58.32Z"
+              "WhenOpened": "2025-11-13T11:18:58.32Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 36,
+              "DocumentIndex": 38,
               "Title": "AddClintWindow.xaml.cs",
               "DocumentMoniker": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\hotel\\hotel\\AddClintWindow.xaml.cs",
               "RelativeDocumentMoniker": "hotel\\AddClintWindow.xaml.cs",
@@ -843,7 +862,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 37,
+              "DocumentIndex": 39,
               "Title": "AddEmployeeWindow.xaml.cs",
               "DocumentMoniker": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\hotel\\hotel\\AddEmployeeWindow.xaml.cs",
               "RelativeDocumentMoniker": "hotel\\AddEmployeeWindow.xaml.cs",
@@ -851,11 +870,12 @@
               "RelativeToolTip": "hotel\\AddEmployeeWindow.xaml.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-09T07:50:45.814Z"
+              "WhenOpened": "2025-12-09T07:50:45.814Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 38,
+              "DocumentIndex": 40,
               "Title": "AddBookingWindow.xaml.cs",
               "DocumentMoniker": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\hotel\\hotel\\AddBookingWindow.xaml.cs",
               "RelativeDocumentMoniker": "hotel\\AddBookingWindow.xaml.cs",
@@ -863,11 +883,12 @@
               "RelativeToolTip": "hotel\\AddBookingWindow.xaml.cs",
               "ViewState": "AgIAANYAAAAAAAAAAAAwwMsAAAAqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-11T05:08:51.287Z"
+              "WhenOpened": "2025-12-11T05:08:51.287Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 39,
+              "DocumentIndex": 41,
               "Title": "Book.cs",
               "DocumentMoniker": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\hotel\\hotel\\Model\\Book.cs",
               "RelativeDocumentMoniker": "hotel\\Model\\Book.cs",
@@ -879,7 +900,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 40,
+              "DocumentIndex": 42,
               "Title": "Book.cs",
               "DocumentMoniker": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\hotel\\hotel\\Models\\Book.cs",
               "RelativeDocumentMoniker": "hotel\\Models\\Book.cs",
@@ -891,7 +912,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 41,
+              "DocumentIndex": 43,
               "Title": "Category.cs",
               "DocumentMoniker": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\hotel\\hotel\\Models\\Category.cs",
               "RelativeDocumentMoniker": "hotel\\Models\\Category.cs",
@@ -903,7 +924,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 42,
+              "DocumentIndex": 44,
               "Title": "BookService.cs",
               "DocumentMoniker": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\hotel\\hotel\\Models\\BookService.cs",
               "RelativeDocumentMoniker": "hotel\\Models\\BookService.cs",
@@ -915,7 +936,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 43,
+              "DocumentIndex": 45,
               "Title": "AddBookingWindow.xaml",
               "DocumentMoniker": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\hotel\\hotel\\AddBookingWindow.xaml",
               "RelativeDocumentMoniker": "hotel\\AddBookingWindow.xaml",
@@ -926,7 +947,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 44,
+              "DocumentIndex": 46,
               "Title": "Hotel.cs",
               "DocumentMoniker": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\hotel\\hotel\\Model\\Hotel.cs",
               "RelativeDocumentMoniker": "hotel\\Model\\Hotel.cs",
@@ -938,7 +959,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 45,
+              "DocumentIndex": 47,
               "Title": "Guest.cs",
               "DocumentMoniker": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\hotel\\hotel\\Model\\Guest.cs",
               "RelativeDocumentMoniker": "hotel\\Model\\Guest.cs",
@@ -950,7 +971,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 46,
+              "DocumentIndex": 48,
               "Title": "Floor.cs",
               "DocumentMoniker": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\hotel\\hotel\\Model\\Floor.cs",
               "RelativeDocumentMoniker": "hotel\\Model\\Floor.cs",
@@ -962,7 +983,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 47,
+              "DocumentIndex": 49,
               "Title": "Favorite.cs",
               "DocumentMoniker": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\hotel\\hotel\\Model\\Favorite.cs",
               "RelativeDocumentMoniker": "hotel\\Model\\Favorite.cs",
@@ -974,7 +995,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 48,
+              "DocumentIndex": 50,
               "Title": "Employee.cs",
               "DocumentMoniker": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\hotel\\hotel\\Model\\Employee.cs",
               "RelativeDocumentMoniker": "hotel\\Model\\Employee.cs",
@@ -986,7 +1007,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 49,
+              "DocumentIndex": 51,
               "Title": "CommHotel.cs",
               "DocumentMoniker": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\hotel\\hotel\\Model\\CommHotel.cs",
               "RelativeDocumentMoniker": "hotel\\Model\\CommHotel.cs",
@@ -998,7 +1019,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 50,
+              "DocumentIndex": 52,
               "Title": "Comment.cs",
               "DocumentMoniker": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\hotel\\hotel\\Model\\Comment.cs",
               "RelativeDocumentMoniker": "hotel\\Model\\Comment.cs",
@@ -1010,7 +1031,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 51,
+              "DocumentIndex": 53,
               "Title": "ClintGuest.cs",
               "DocumentMoniker": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\hotel\\hotel\\Model\\ClintGuest.cs",
               "RelativeDocumentMoniker": "hotel\\Model\\ClintGuest.cs",
@@ -1022,7 +1043,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 52,
+              "DocumentIndex": 54,
               "Title": "Clint.cs",
               "DocumentMoniker": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\hotel\\hotel\\Model\\Clint.cs",
               "RelativeDocumentMoniker": "hotel\\Model\\Clint.cs",
@@ -1034,7 +1055,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 53,
+              "DocumentIndex": 55,
               "Title": "Category.cs",
               "DocumentMoniker": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\hotel\\hotel\\Model\\Category.cs",
               "RelativeDocumentMoniker": "hotel\\Model\\Category.cs",
@@ -1046,7 +1067,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 54,
+              "DocumentIndex": 56,
               "Title": "BookService.cs",
               "DocumentMoniker": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\hotel\\hotel\\Model\\BookService.cs",
               "RelativeDocumentMoniker": "hotel\\Model\\BookService.cs",
@@ -1058,7 +1079,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 55,
+              "DocumentIndex": 57,
               "Title": "StatusRoom.cs",
               "DocumentMoniker": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\hotel\\hotel\\Model\\StatusRoom.cs",
               "RelativeDocumentMoniker": "hotel\\Model\\StatusRoom.cs",
@@ -1070,7 +1091,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 56,
+              "DocumentIndex": 58,
               "Title": "Service.cs",
               "DocumentMoniker": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\hotel\\hotel\\Model\\Service.cs",
               "RelativeDocumentMoniker": "hotel\\Model\\Service.cs",
@@ -1082,7 +1103,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 57,
+              "DocumentIndex": 59,
               "Title": "Room.cs",
               "DocumentMoniker": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\hotel\\hotel\\Model\\Room.cs",
               "RelativeDocumentMoniker": "hotel\\Model\\Room.cs",
@@ -1094,7 +1115,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 58,
+              "DocumentIndex": 60,
               "Title": "Role.cs",
               "DocumentMoniker": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\hotel\\hotel\\Model\\Role.cs",
               "RelativeDocumentMoniker": "hotel\\Model\\Role.cs",
@@ -1106,7 +1127,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 59,
+              "DocumentIndex": 61,
               "Title": "PhotoCategory.cs",
               "DocumentMoniker": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\hotel\\hotel\\Model\\PhotoCategory.cs",
               "RelativeDocumentMoniker": "hotel\\Model\\PhotoCategory.cs",
@@ -1118,7 +1139,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 60,
+              "DocumentIndex": 62,
               "Title": "Photo.cs",
               "DocumentMoniker": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\hotel\\hotel\\Model\\Photo.cs",
               "RelativeDocumentMoniker": "hotel\\Model\\Photo.cs",
@@ -1130,7 +1151,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 61,
+              "DocumentIndex": 63,
               "Title": "Floor.cs",
               "DocumentMoniker": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\hotel\\hotel\\Models\\Floor.cs",
               "RelativeDocumentMoniker": "hotel\\Models\\Floor.cs",
@@ -1142,7 +1163,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 66,
+              "DocumentIndex": 67,
               "Title": "EditServiceWindow.xaml",
               "DocumentMoniker": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\hotel\\hotel\\EditServiceWindow.xaml",
               "RelativeDocumentMoniker": "hotel\\EditServiceWindow.xaml",
@@ -1154,17 +1175,6 @@
             {
               "$type": "Document",
               "DocumentIndex": 68,
-              "Title": "ServiceControl.xaml",
-              "DocumentMoniker": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\hotel\\hotel\\ServiceControl.xaml",
-              "RelativeDocumentMoniker": "hotel\\ServiceControl.xaml",
-              "ToolTip": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\hotel\\hotel\\ServiceControl.xaml",
-              "RelativeToolTip": "hotel\\ServiceControl.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2026-04-24T11:42:18.487Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 67,
               "Title": "AddServiceWindow.xaml",
               "DocumentMoniker": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\hotel\\hotel\\AddServiceWindow.xaml",
               "RelativeDocumentMoniker": "hotel\\AddServiceWindow.xaml",

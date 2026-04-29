@@ -149,7 +149,7 @@ namespace hotel {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/hotel;component/bookingreportwindow.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/hotel;V1.0.0.0;component/bookingreportwindow.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\BookingReportWindow.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

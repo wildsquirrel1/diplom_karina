@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Пользователь\\source\\repos\\hotel\\hotel\\hotel.csproj": {}
+    "C:\\Users\\Пользователь\\source\\repos\\diplom-karina\\diplom_karina\\hotel\\hotel\\hotel.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Пользователь\\source\\repos\\hotel\\hotel\\hotel.csproj": {
+    "C:\\Users\\Пользователь\\source\\repos\\diplom-karina\\diplom_karina\\hotel\\hotel\\hotel.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Пользователь\\source\\repos\\hotel\\hotel\\hotel.csproj",
+        "projectUniqueName": "C:\\Users\\Пользователь\\source\\repos\\diplom-karina\\diplom_karina\\hotel\\hotel\\hotel.csproj",
         "projectName": "hotel",
-        "projectPath": "C:\\Users\\Пользователь\\source\\repos\\hotel\\hotel\\hotel.csproj",
+        "projectPath": "C:\\Users\\Пользователь\\source\\repos\\diplom-karina\\diplom_karina\\hotel\\hotel\\hotel.csproj",
         "packagesPath": "C:\\Users\\Пользователь\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Пользователь\\source\\repos\\hotel\\hotel\\obj\\",
+        "outputPath": "C:\\Users\\Пользователь\\source\\repos\\diplom-karina\\diplom_karina\\hotel\\hotel\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Пользователь\\AppData\\Roaming\\NuGet\\NuGet.Config",

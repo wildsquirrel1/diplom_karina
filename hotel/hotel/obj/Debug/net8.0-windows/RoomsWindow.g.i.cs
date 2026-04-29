@@ -141,7 +141,7 @@ namespace hotel {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/hotel;component/roomswindow.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/hotel;V1.0.0.0;component/roomswindow.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\RoomsWindow.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

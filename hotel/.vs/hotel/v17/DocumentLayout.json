@@ -1,341 +1,341 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\hotel\\",
+  "WorkspaceRootPath": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\diplom-karina\\diplom_karina\\hotel\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{19D6FB2F-E60B-457B-9BE7-59091229D166}|hotel\\hotel.csproj|c:\\users\\\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\hotel\\hotel\\servicewindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "AbsoluteMoniker": "D:0:0:{19D6FB2F-E60B-457B-9BE7-59091229D166}|hotel\\hotel.csproj|c:\\users\\\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\diplom-karina\\diplom_karina\\hotel\\hotel\\servicewindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{19D6FB2F-E60B-457B-9BE7-59091229D166}|hotel\\hotel.csproj|solutionrelative:hotel\\servicewindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{19D6FB2F-E60B-457B-9BE7-59091229D166}|hotel\\hotel.csproj|c:\\users\\\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\hotel\\hotel\\servicecontrol.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "AbsoluteMoniker": "D:0:0:{19D6FB2F-E60B-457B-9BE7-59091229D166}|hotel\\hotel.csproj|c:\\users\\\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\diplom-karina\\diplom_karina\\hotel\\hotel\\servicecontrol.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{19D6FB2F-E60B-457B-9BE7-59091229D166}|hotel\\hotel.csproj|solutionrelative:hotel\\servicecontrol.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{19D6FB2F-E60B-457B-9BE7-59091229D166}|hotel\\hotel.csproj|c:\\users\\\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\hotel\\hotel\\reviewwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{19D6FB2F-E60B-457B-9BE7-59091229D166}|hotel\\hotel.csproj|c:\\users\\\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\diplom-karina\\diplom_karina\\hotel\\hotel\\reviewwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{19D6FB2F-E60B-457B-9BE7-59091229D166}|hotel\\hotel.csproj|solutionrelative:hotel\\reviewwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{19D6FB2F-E60B-457B-9BE7-59091229D166}|hotel\\hotel.csproj|c:\\users\\\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\hotel\\hotel\\mainmanager.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "AbsoluteMoniker": "D:0:0:{19D6FB2F-E60B-457B-9BE7-59091229D166}|hotel\\hotel.csproj|c:\\users\\\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\diplom-karina\\diplom_karina\\hotel\\hotel\\mainmanager.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{19D6FB2F-E60B-457B-9BE7-59091229D166}|hotel\\hotel.csproj|solutionrelative:hotel\\mainmanager.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{19D6FB2F-E60B-457B-9BE7-59091229D166}|hotel\\hotel.csproj|c:\\users\\\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\hotel\\hotel\\reviewwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "AbsoluteMoniker": "D:0:0:{19D6FB2F-E60B-457B-9BE7-59091229D166}|hotel\\hotel.csproj|c:\\users\\\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\diplom-karina\\diplom_karina\\hotel\\hotel\\reviewwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{19D6FB2F-E60B-457B-9BE7-59091229D166}|hotel\\hotel.csproj|solutionrelative:hotel\\reviewwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{19D6FB2F-E60B-457B-9BE7-59091229D166}|hotel\\hotel.csproj|c:\\users\\\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\hotel\\hotel\\reviewcontrol.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "AbsoluteMoniker": "D:0:0:{19D6FB2F-E60B-457B-9BE7-59091229D166}|hotel\\hotel.csproj|c:\\users\\\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\diplom-karina\\diplom_karina\\hotel\\hotel\\reviewcontrol.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{19D6FB2F-E60B-457B-9BE7-59091229D166}|hotel\\hotel.csproj|solutionrelative:hotel\\reviewcontrol.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{19D6FB2F-E60B-457B-9BE7-59091229D166}|hotel\\hotel.csproj|c:\\users\\\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\hotel\\hotel\\hotelswindow.xaml.cs||{8B382828-6202-11D1-8870-0000F87579D2}|",
+      "AbsoluteMoniker": "D:0:0:{19D6FB2F-E60B-457B-9BE7-59091229D166}|hotel\\hotel.csproj|c:\\users\\\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\diplom-karina\\diplom_karina\\hotel\\hotel\\hotelswindow.xaml.cs||{8B382828-6202-11D1-8870-0000F87579D2}|",
       "RelativeMoniker": "D:0:0:{19D6FB2F-E60B-457B-9BE7-59091229D166}|hotel\\hotel.csproj|solutionrelative:hotel\\hotelswindow.xaml.cs||{8B382828-6202-11D1-8870-0000F87579D2}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{19D6FB2F-E60B-457B-9BE7-59091229D166}|hotel\\hotel.csproj|c:\\users\\\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\hotel\\hotel\\hotelswindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "AbsoluteMoniker": "D:0:0:{19D6FB2F-E60B-457B-9BE7-59091229D166}|hotel\\hotel.csproj|c:\\users\\\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\diplom-karina\\diplom_karina\\hotel\\hotel\\hotelswindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{19D6FB2F-E60B-457B-9BE7-59091229D166}|hotel\\hotel.csproj|solutionrelative:hotel\\hotelswindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{19D6FB2F-E60B-457B-9BE7-59091229D166}|hotel\\hotel.csproj|c:\\users\\\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\hotel\\hotel\\hotelcontrol.xaml.cs||{8B382828-6202-11D1-8870-0000F87579D2}|",
+      "AbsoluteMoniker": "D:0:0:{19D6FB2F-E60B-457B-9BE7-59091229D166}|hotel\\hotel.csproj|c:\\users\\\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\diplom-karina\\diplom_karina\\hotel\\hotel\\hotelcontrol.xaml.cs||{8B382828-6202-11D1-8870-0000F87579D2}|",
       "RelativeMoniker": "D:0:0:{19D6FB2F-E60B-457B-9BE7-59091229D166}|hotel\\hotel.csproj|solutionrelative:hotel\\hotelcontrol.xaml.cs||{8B382828-6202-11D1-8870-0000F87579D2}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{19D6FB2F-E60B-457B-9BE7-59091229D166}|hotel\\hotel.csproj|c:\\users\\\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\hotel\\hotel\\data\\api.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{19D6FB2F-E60B-457B-9BE7-59091229D166}|hotel\\hotel.csproj|c:\\users\\\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\diplom-karina\\diplom_karina\\hotel\\hotel\\data\\api.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{19D6FB2F-E60B-457B-9BE7-59091229D166}|hotel\\hotel.csproj|solutionrelative:hotel\\data\\api.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{19D6FB2F-E60B-457B-9BE7-59091229D166}|hotel\\hotel.csproj|c:\\users\\\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\hotel\\hotel\\reviewcontrol.xaml.cs||{8B382828-6202-11D1-8870-0000F87579D2}|",
+      "AbsoluteMoniker": "D:0:0:{19D6FB2F-E60B-457B-9BE7-59091229D166}|hotel\\hotel.csproj|c:\\users\\\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\diplom-karina\\diplom_karina\\hotel\\hotel\\reviewcontrol.xaml.cs||{8B382828-6202-11D1-8870-0000F87579D2}|",
       "RelativeMoniker": "D:0:0:{19D6FB2F-E60B-457B-9BE7-59091229D166}|hotel\\hotel.csproj|solutionrelative:hotel\\reviewcontrol.xaml.cs||{8B382828-6202-11D1-8870-0000F87579D2}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{19D6FB2F-E60B-457B-9BE7-59091229D166}|hotel\\hotel.csproj|c:\\users\\\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\hotel\\hotel\\hotelcontrol.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "AbsoluteMoniker": "D:0:0:{19D6FB2F-E60B-457B-9BE7-59091229D166}|hotel\\hotel.csproj|c:\\users\\\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\diplom-karina\\diplom_karina\\hotel\\hotel\\hotelcontrol.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{19D6FB2F-E60B-457B-9BE7-59091229D166}|hotel\\hotel.csproj|solutionrelative:hotel\\hotelcontrol.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{19D6FB2F-E60B-457B-9BE7-59091229D166}|hotel\\hotel.csproj|c:\\users\\\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\hotel\\hotel\\edithotelwindow.xaml.cs||{8B382828-6202-11D1-8870-0000F87579D2}|",
+      "AbsoluteMoniker": "D:0:0:{19D6FB2F-E60B-457B-9BE7-59091229D166}|hotel\\hotel.csproj|c:\\users\\\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\diplom-karina\\diplom_karina\\hotel\\hotel\\edithotelwindow.xaml.cs||{8B382828-6202-11D1-8870-0000F87579D2}|",
       "RelativeMoniker": "D:0:0:{19D6FB2F-E60B-457B-9BE7-59091229D166}|hotel\\hotel.csproj|solutionrelative:hotel\\edithotelwindow.xaml.cs||{8B382828-6202-11D1-8870-0000F87579D2}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{19D6FB2F-E60B-457B-9BE7-59091229D166}|hotel\\hotel.csproj|c:\\users\\\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\hotel\\hotel\\edithotelwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "AbsoluteMoniker": "D:0:0:{19D6FB2F-E60B-457B-9BE7-59091229D166}|hotel\\hotel.csproj|c:\\users\\\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\diplom-karina\\diplom_karina\\hotel\\hotel\\edithotelwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{19D6FB2F-E60B-457B-9BE7-59091229D166}|hotel\\hotel.csproj|solutionrelative:hotel\\edithotelwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{19D6FB2F-E60B-457B-9BE7-59091229D166}|hotel\\hotel.csproj|c:\\users\\\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\hotel\\hotel\\addhotelwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "AbsoluteMoniker": "D:0:0:{19D6FB2F-E60B-457B-9BE7-59091229D166}|hotel\\hotel.csproj|c:\\users\\\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\diplom-karina\\diplom_karina\\hotel\\hotel\\addhotelwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{19D6FB2F-E60B-457B-9BE7-59091229D166}|hotel\\hotel.csproj|solutionrelative:hotel\\addhotelwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{19D6FB2F-E60B-457B-9BE7-59091229D166}|hotel\\hotel.csproj|c:\\users\\\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\hotel\\hotel\\models\\commhotel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{19D6FB2F-E60B-457B-9BE7-59091229D166}|hotel\\hotel.csproj|c:\\users\\\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\diplom-karina\\diplom_karina\\hotel\\hotel\\models\\commhotel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{19D6FB2F-E60B-457B-9BE7-59091229D166}|hotel\\hotel.csproj|solutionrelative:hotel\\models\\commhotel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{19D6FB2F-E60B-457B-9BE7-59091229D166}|hotel\\hotel.csproj|c:\\users\\\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\hotel\\hotel\\models\\hotel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{19D6FB2F-E60B-457B-9BE7-59091229D166}|hotel\\hotel.csproj|c:\\users\\\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\diplom-karina\\diplom_karina\\hotel\\hotel\\models\\hotel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{19D6FB2F-E60B-457B-9BE7-59091229D166}|hotel\\hotel.csproj|solutionrelative:hotel\\models\\hotel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{19D6FB2F-E60B-457B-9BE7-59091229D166}|hotel\\hotel.csproj|c:\\users\\\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\hotel\\hotel\\servicewindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{19D6FB2F-E60B-457B-9BE7-59091229D166}|hotel\\hotel.csproj|c:\\users\\\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\diplom-karina\\diplom_karina\\hotel\\hotel\\servicewindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{19D6FB2F-E60B-457B-9BE7-59091229D166}|hotel\\hotel.csproj|solutionrelative:hotel\\servicewindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{19D6FB2F-E60B-457B-9BE7-59091229D166}|hotel\\hotel.csproj|c:\\users\\\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\hotel\\hotel\\servicecontrol.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{19D6FB2F-E60B-457B-9BE7-59091229D166}|hotel\\hotel.csproj|c:\\users\\\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\diplom-karina\\diplom_karina\\hotel\\hotel\\servicecontrol.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{19D6FB2F-E60B-457B-9BE7-59091229D166}|hotel\\hotel.csproj|solutionrelative:hotel\\servicecontrol.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{19D6FB2F-E60B-457B-9BE7-59091229D166}|hotel\\hotel.csproj|c:\\users\\\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\hotel\\hotel\\roomswindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{19D6FB2F-E60B-457B-9BE7-59091229D166}|hotel\\hotel.csproj|c:\\users\\\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\diplom-karina\\diplom_karina\\hotel\\hotel\\roomswindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{19D6FB2F-E60B-457B-9BE7-59091229D166}|hotel\\hotel.csproj|solutionrelative:hotel\\roomswindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{19D6FB2F-E60B-457B-9BE7-59091229D166}|hotel\\hotel.csproj|c:\\users\\\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\hotel\\hotel\\roomcontrol.xaml.cs||{8B382828-6202-11D1-8870-0000F87579D2}|",
+      "AbsoluteMoniker": "D:0:0:{19D6FB2F-E60B-457B-9BE7-59091229D166}|hotel\\hotel.csproj|c:\\users\\\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\diplom-karina\\diplom_karina\\hotel\\hotel\\roomcontrol.xaml.cs||{8B382828-6202-11D1-8870-0000F87579D2}|",
       "RelativeMoniker": "D:0:0:{19D6FB2F-E60B-457B-9BE7-59091229D166}|hotel\\hotel.csproj|solutionrelative:hotel\\roomcontrol.xaml.cs||{8B382828-6202-11D1-8870-0000F87579D2}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{19D6FB2F-E60B-457B-9BE7-59091229D166}|hotel\\hotel.csproj|c:\\users\\\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\hotel\\hotel\\roomswindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "AbsoluteMoniker": "D:0:0:{19D6FB2F-E60B-457B-9BE7-59091229D166}|hotel\\hotel.csproj|c:\\users\\\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\diplom-karina\\diplom_karina\\hotel\\hotel\\roomswindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{19D6FB2F-E60B-457B-9BE7-59091229D166}|hotel\\hotel.csproj|solutionrelative:hotel\\roomswindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{19D6FB2F-E60B-457B-9BE7-59091229D166}|hotel\\hotel.csproj|c:\\users\\\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\hotel\\hotel\\mainmanager.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{19D6FB2F-E60B-457B-9BE7-59091229D166}|hotel\\hotel.csproj|c:\\users\\\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\diplom-karina\\diplom_karina\\hotel\\hotel\\mainmanager.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{19D6FB2F-E60B-457B-9BE7-59091229D166}|hotel\\hotel.csproj|solutionrelative:hotel\\mainmanager.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{19D6FB2F-E60B-457B-9BE7-59091229D166}|hotel\\hotel.csproj|c:\\users\\\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\hotel\\hotel\\headhotelmanagerwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{19D6FB2F-E60B-457B-9BE7-59091229D166}|hotel\\hotel.csproj|c:\\users\\\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\diplom-karina\\diplom_karina\\hotel\\hotel\\headhotelmanagerwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{19D6FB2F-E60B-457B-9BE7-59091229D166}|hotel\\hotel.csproj|solutionrelative:hotel\\headhotelmanagerwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{19D6FB2F-E60B-457B-9BE7-59091229D166}|hotel\\hotel.csproj|c:\\users\\\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\hotel\\hotel\\employeehhmwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{19D6FB2F-E60B-457B-9BE7-59091229D166}|hotel\\hotel.csproj|c:\\users\\\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\diplom-karina\\diplom_karina\\hotel\\hotel\\employeehhmwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{19D6FB2F-E60B-457B-9BE7-59091229D166}|hotel\\hotel.csproj|solutionrelative:hotel\\employeehhmwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{19D6FB2F-E60B-457B-9BE7-59091229D166}|hotel\\hotel.csproj|c:\\users\\\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\hotel\\hotel\\employeecontrol.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{19D6FB2F-E60B-457B-9BE7-59091229D166}|hotel\\hotel.csproj|c:\\users\\\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\diplom-karina\\diplom_karina\\hotel\\hotel\\employeecontrol.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{19D6FB2F-E60B-457B-9BE7-59091229D166}|hotel\\hotel.csproj|solutionrelative:hotel\\employeecontrol.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{19D6FB2F-E60B-457B-9BE7-59091229D166}|hotel\\hotel.csproj|c:\\users\\\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\hotel\\hotel\\editservicewindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{19D6FB2F-E60B-457B-9BE7-59091229D166}|hotel\\hotel.csproj|c:\\users\\\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\diplom-karina\\diplom_karina\\hotel\\hotel\\editservicewindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{19D6FB2F-E60B-457B-9BE7-59091229D166}|hotel\\hotel.csproj|solutionrelative:hotel\\editservicewindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{19D6FB2F-E60B-457B-9BE7-59091229D166}|hotel\\hotel.csproj|c:\\users\\\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\hotel\\hotel\\editroomwindow.xaml.cs||{8B382828-6202-11D1-8870-0000F87579D2}|",
+      "AbsoluteMoniker": "D:0:0:{19D6FB2F-E60B-457B-9BE7-59091229D166}|hotel\\hotel.csproj|c:\\users\\\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\diplom-karina\\diplom_karina\\hotel\\hotel\\editroomwindow.xaml.cs||{8B382828-6202-11D1-8870-0000F87579D2}|",
       "RelativeMoniker": "D:0:0:{19D6FB2F-E60B-457B-9BE7-59091229D166}|hotel\\hotel.csproj|solutionrelative:hotel\\editroomwindow.xaml.cs||{8B382828-6202-11D1-8870-0000F87579D2}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{19D6FB2F-E60B-457B-9BE7-59091229D166}|hotel\\hotel.csproj|c:\\users\\\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\hotel\\hotel\\editemployeewindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{19D6FB2F-E60B-457B-9BE7-59091229D166}|hotel\\hotel.csproj|c:\\users\\\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\diplom-karina\\diplom_karina\\hotel\\hotel\\editemployeewindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{19D6FB2F-E60B-457B-9BE7-59091229D166}|hotel\\hotel.csproj|solutionrelative:hotel\\editemployeewindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{19D6FB2F-E60B-457B-9BE7-59091229D166}|hotel\\hotel.csproj|c:\\users\\\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\hotel\\hotel\\bookingservicespecialist.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{19D6FB2F-E60B-457B-9BE7-59091229D166}|hotel\\hotel.csproj|c:\\users\\\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\diplom-karina\\diplom_karina\\hotel\\hotel\\bookingservicespecialist.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{19D6FB2F-E60B-457B-9BE7-59091229D166}|hotel\\hotel.csproj|solutionrelative:hotel\\bookingservicespecialist.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{19D6FB2F-E60B-457B-9BE7-59091229D166}|hotel\\hotel.csproj|c:\\users\\\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\hotel\\hotel\\bookingreportwindow.xaml.cs||{8B382828-6202-11D1-8870-0000F87579D2}|",
+      "AbsoluteMoniker": "D:0:0:{19D6FB2F-E60B-457B-9BE7-59091229D166}|hotel\\hotel.csproj|c:\\users\\\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\diplom-karina\\diplom_karina\\hotel\\hotel\\bookingreportwindow.xaml.cs||{8B382828-6202-11D1-8870-0000F87579D2}|",
       "RelativeMoniker": "D:0:0:{19D6FB2F-E60B-457B-9BE7-59091229D166}|hotel\\hotel.csproj|solutionrelative:hotel\\bookingreportwindow.xaml.cs||{8B382828-6202-11D1-8870-0000F87579D2}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{19D6FB2F-E60B-457B-9BE7-59091229D166}|hotel\\hotel.csproj|c:\\users\\\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\hotel\\hotel\\bookingcontrol.xaml.cs||{8B382828-6202-11D1-8870-0000F87579D2}|",
+      "AbsoluteMoniker": "D:0:0:{19D6FB2F-E60B-457B-9BE7-59091229D166}|hotel\\hotel.csproj|c:\\users\\\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\diplom-karina\\diplom_karina\\hotel\\hotel\\bookingcontrol.xaml.cs||{8B382828-6202-11D1-8870-0000F87579D2}|",
       "RelativeMoniker": "D:0:0:{19D6FB2F-E60B-457B-9BE7-59091229D166}|hotel\\hotel.csproj|solutionrelative:hotel\\bookingcontrol.xaml.cs||{8B382828-6202-11D1-8870-0000F87579D2}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{19D6FB2F-E60B-457B-9BE7-59091229D166}|hotel\\hotel.csproj|c:\\users\\\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\hotel\\hotel\\autorisation.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{19D6FB2F-E60B-457B-9BE7-59091229D166}|hotel\\hotel.csproj|c:\\users\\\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\diplom-karina\\diplom_karina\\hotel\\hotel\\autorisation.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{19D6FB2F-E60B-457B-9BE7-59091229D166}|hotel\\hotel.csproj|solutionrelative:hotel\\autorisation.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{19D6FB2F-E60B-457B-9BE7-59091229D166}|hotel\\hotel.csproj|c:\\users\\\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\hotel\\hotel\\bookingcontrol.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "AbsoluteMoniker": "D:0:0:{19D6FB2F-E60B-457B-9BE7-59091229D166}|hotel\\hotel.csproj|c:\\users\\\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\diplom-karina\\diplom_karina\\hotel\\hotel\\bookingcontrol.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{19D6FB2F-E60B-457B-9BE7-59091229D166}|hotel\\hotel.csproj|solutionrelative:hotel\\bookingcontrol.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{19D6FB2F-E60B-457B-9BE7-59091229D166}|hotel\\hotel.csproj|c:\\users\\\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\hotel\\hotel\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{19D6FB2F-E60B-457B-9BE7-59091229D166}|hotel\\hotel.csproj|c:\\users\\\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\diplom-karina\\diplom_karina\\hotel\\hotel\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{19D6FB2F-E60B-457B-9BE7-59091229D166}|hotel\\hotel.csproj|solutionrelative:hotel\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{19D6FB2F-E60B-457B-9BE7-59091229D166}|hotel\\hotel.csproj|c:\\users\\\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\hotel\\hotel\\addservicewindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{19D6FB2F-E60B-457B-9BE7-59091229D166}|hotel\\hotel.csproj|c:\\users\\\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\diplom-karina\\diplom_karina\\hotel\\hotel\\addservicewindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{19D6FB2F-E60B-457B-9BE7-59091229D166}|hotel\\hotel.csproj|solutionrelative:hotel\\addservicewindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{19D6FB2F-E60B-457B-9BE7-59091229D166}|hotel\\hotel.csproj|c:\\users\\\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\hotel\\hotel\\addroomwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{19D6FB2F-E60B-457B-9BE7-59091229D166}|hotel\\hotel.csproj|c:\\users\\\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\diplom-karina\\diplom_karina\\hotel\\hotel\\addroomwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{19D6FB2F-E60B-457B-9BE7-59091229D166}|hotel\\hotel.csproj|solutionrelative:hotel\\addroomwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{19D6FB2F-E60B-457B-9BE7-59091229D166}|hotel\\hotel.csproj|c:\\users\\\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\hotel\\hotel\\addhotelwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{19D6FB2F-E60B-457B-9BE7-59091229D166}|hotel\\hotel.csproj|c:\\users\\\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\diplom-karina\\diplom_karina\\hotel\\hotel\\addhotelwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{19D6FB2F-E60B-457B-9BE7-59091229D166}|hotel\\hotel.csproj|solutionrelative:hotel\\addhotelwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{19D6FB2F-E60B-457B-9BE7-59091229D166}|hotel\\hotel.csproj|c:\\users\\\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\hotel\\hotel\\addclintwindow.xaml.cs||{8B382828-6202-11D1-8870-0000F87579D2}|",
+      "AbsoluteMoniker": "D:0:0:{19D6FB2F-E60B-457B-9BE7-59091229D166}|hotel\\hotel.csproj|c:\\users\\\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\diplom-karina\\diplom_karina\\hotel\\hotel\\addclintwindow.xaml.cs||{8B382828-6202-11D1-8870-0000F87579D2}|",
       "RelativeMoniker": "D:0:0:{19D6FB2F-E60B-457B-9BE7-59091229D166}|hotel\\hotel.csproj|solutionrelative:hotel\\addclintwindow.xaml.cs||{8B382828-6202-11D1-8870-0000F87579D2}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{19D6FB2F-E60B-457B-9BE7-59091229D166}|hotel\\hotel.csproj|c:\\users\\\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\hotel\\hotel\\addemployeewindow.xaml.cs||{8B382828-6202-11D1-8870-0000F87579D2}|",
+      "AbsoluteMoniker": "D:0:0:{19D6FB2F-E60B-457B-9BE7-59091229D166}|hotel\\hotel.csproj|c:\\users\\\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\diplom-karina\\diplom_karina\\hotel\\hotel\\addemployeewindow.xaml.cs||{8B382828-6202-11D1-8870-0000F87579D2}|",
       "RelativeMoniker": "D:0:0:{19D6FB2F-E60B-457B-9BE7-59091229D166}|hotel\\hotel.csproj|solutionrelative:hotel\\addemployeewindow.xaml.cs||{8B382828-6202-11D1-8870-0000F87579D2}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{19D6FB2F-E60B-457B-9BE7-59091229D166}|hotel\\hotel.csproj|c:\\users\\\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\hotel\\hotel\\addbookingwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{19D6FB2F-E60B-457B-9BE7-59091229D166}|hotel\\hotel.csproj|c:\\users\\\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\diplom-karina\\diplom_karina\\hotel\\hotel\\addbookingwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{19D6FB2F-E60B-457B-9BE7-59091229D166}|hotel\\hotel.csproj|solutionrelative:hotel\\addbookingwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{19D6FB2F-E60B-457B-9BE7-59091229D166}|hotel\\hotel.csproj|c:\\users\\\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\hotel\\hotel\\model\\book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{19D6FB2F-E60B-457B-9BE7-59091229D166}|hotel\\hotel.csproj|c:\\users\\\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\diplom-karina\\diplom_karina\\hotel\\hotel\\model\\book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{19D6FB2F-E60B-457B-9BE7-59091229D166}|hotel\\hotel.csproj|solutionrelative:hotel\\model\\book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{19D6FB2F-E60B-457B-9BE7-59091229D166}|hotel\\hotel.csproj|c:\\users\\\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\hotel\\hotel\\models\\book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{19D6FB2F-E60B-457B-9BE7-59091229D166}|hotel\\hotel.csproj|c:\\users\\\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\diplom-karina\\diplom_karina\\hotel\\hotel\\models\\book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{19D6FB2F-E60B-457B-9BE7-59091229D166}|hotel\\hotel.csproj|solutionrelative:hotel\\models\\book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{19D6FB2F-E60B-457B-9BE7-59091229D166}|hotel\\hotel.csproj|c:\\users\\\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\hotel\\hotel\\models\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{19D6FB2F-E60B-457B-9BE7-59091229D166}|hotel\\hotel.csproj|c:\\users\\\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\diplom-karina\\diplom_karina\\hotel\\hotel\\models\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{19D6FB2F-E60B-457B-9BE7-59091229D166}|hotel\\hotel.csproj|solutionrelative:hotel\\models\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{19D6FB2F-E60B-457B-9BE7-59091229D166}|hotel\\hotel.csproj|c:\\users\\\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\hotel\\hotel\\models\\bookservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{19D6FB2F-E60B-457B-9BE7-59091229D166}|hotel\\hotel.csproj|c:\\users\\\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\diplom-karina\\diplom_karina\\hotel\\hotel\\models\\bookservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{19D6FB2F-E60B-457B-9BE7-59091229D166}|hotel\\hotel.csproj|solutionrelative:hotel\\models\\bookservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{19D6FB2F-E60B-457B-9BE7-59091229D166}|hotel\\hotel.csproj|c:\\users\\\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\hotel\\hotel\\addbookingwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "AbsoluteMoniker": "D:0:0:{19D6FB2F-E60B-457B-9BE7-59091229D166}|hotel\\hotel.csproj|c:\\users\\\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\diplom-karina\\diplom_karina\\hotel\\hotel\\addbookingwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{19D6FB2F-E60B-457B-9BE7-59091229D166}|hotel\\hotel.csproj|solutionrelative:hotel\\addbookingwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{19D6FB2F-E60B-457B-9BE7-59091229D166}|hotel\\hotel.csproj|c:\\users\\\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\hotel\\hotel\\model\\hotel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{19D6FB2F-E60B-457B-9BE7-59091229D166}|hotel\\hotel.csproj|c:\\users\\\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\diplom-karina\\diplom_karina\\hotel\\hotel\\model\\hotel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{19D6FB2F-E60B-457B-9BE7-59091229D166}|hotel\\hotel.csproj|solutionrelative:hotel\\model\\hotel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{19D6FB2F-E60B-457B-9BE7-59091229D166}|hotel\\hotel.csproj|c:\\users\\\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\hotel\\hotel\\model\\guest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{19D6FB2F-E60B-457B-9BE7-59091229D166}|hotel\\hotel.csproj|c:\\users\\\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\diplom-karina\\diplom_karina\\hotel\\hotel\\model\\guest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{19D6FB2F-E60B-457B-9BE7-59091229D166}|hotel\\hotel.csproj|solutionrelative:hotel\\model\\guest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{19D6FB2F-E60B-457B-9BE7-59091229D166}|hotel\\hotel.csproj|c:\\users\\\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\hotel\\hotel\\model\\floor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{19D6FB2F-E60B-457B-9BE7-59091229D166}|hotel\\hotel.csproj|c:\\users\\\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\diplom-karina\\diplom_karina\\hotel\\hotel\\model\\floor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{19D6FB2F-E60B-457B-9BE7-59091229D166}|hotel\\hotel.csproj|solutionrelative:hotel\\model\\floor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{19D6FB2F-E60B-457B-9BE7-59091229D166}|hotel\\hotel.csproj|c:\\users\\\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\hotel\\hotel\\model\\favorite.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{19D6FB2F-E60B-457B-9BE7-59091229D166}|hotel\\hotel.csproj|c:\\users\\\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\diplom-karina\\diplom_karina\\hotel\\hotel\\model\\favorite.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{19D6FB2F-E60B-457B-9BE7-59091229D166}|hotel\\hotel.csproj|solutionrelative:hotel\\model\\favorite.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{19D6FB2F-E60B-457B-9BE7-59091229D166}|hotel\\hotel.csproj|c:\\users\\\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\hotel\\hotel\\model\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{19D6FB2F-E60B-457B-9BE7-59091229D166}|hotel\\hotel.csproj|c:\\users\\\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\diplom-karina\\diplom_karina\\hotel\\hotel\\model\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{19D6FB2F-E60B-457B-9BE7-59091229D166}|hotel\\hotel.csproj|solutionrelative:hotel\\model\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{19D6FB2F-E60B-457B-9BE7-59091229D166}|hotel\\hotel.csproj|c:\\users\\\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\hotel\\hotel\\model\\commhotel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{19D6FB2F-E60B-457B-9BE7-59091229D166}|hotel\\hotel.csproj|c:\\users\\\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\diplom-karina\\diplom_karina\\hotel\\hotel\\model\\commhotel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{19D6FB2F-E60B-457B-9BE7-59091229D166}|hotel\\hotel.csproj|solutionrelative:hotel\\model\\commhotel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{19D6FB2F-E60B-457B-9BE7-59091229D166}|hotel\\hotel.csproj|c:\\users\\\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\hotel\\hotel\\model\\comment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{19D6FB2F-E60B-457B-9BE7-59091229D166}|hotel\\hotel.csproj|c:\\users\\\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\diplom-karina\\diplom_karina\\hotel\\hotel\\model\\comment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{19D6FB2F-E60B-457B-9BE7-59091229D166}|hotel\\hotel.csproj|solutionrelative:hotel\\model\\comment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{19D6FB2F-E60B-457B-9BE7-59091229D166}|hotel\\hotel.csproj|c:\\users\\\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\hotel\\hotel\\model\\clintguest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{19D6FB2F-E60B-457B-9BE7-59091229D166}|hotel\\hotel.csproj|c:\\users\\\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\diplom-karina\\diplom_karina\\hotel\\hotel\\model\\clintguest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{19D6FB2F-E60B-457B-9BE7-59091229D166}|hotel\\hotel.csproj|solutionrelative:hotel\\model\\clintguest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{19D6FB2F-E60B-457B-9BE7-59091229D166}|hotel\\hotel.csproj|c:\\users\\\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\hotel\\hotel\\model\\clint.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{19D6FB2F-E60B-457B-9BE7-59091229D166}|hotel\\hotel.csproj|c:\\users\\\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\diplom-karina\\diplom_karina\\hotel\\hotel\\model\\clint.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{19D6FB2F-E60B-457B-9BE7-59091229D166}|hotel\\hotel.csproj|solutionrelative:hotel\\model\\clint.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{19D6FB2F-E60B-457B-9BE7-59091229D166}|hotel\\hotel.csproj|c:\\users\\\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\hotel\\hotel\\model\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{19D6FB2F-E60B-457B-9BE7-59091229D166}|hotel\\hotel.csproj|c:\\users\\\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\diplom-karina\\diplom_karina\\hotel\\hotel\\model\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{19D6FB2F-E60B-457B-9BE7-59091229D166}|hotel\\hotel.csproj|solutionrelative:hotel\\model\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{19D6FB2F-E60B-457B-9BE7-59091229D166}|hotel\\hotel.csproj|c:\\users\\\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\hotel\\hotel\\model\\bookservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{19D6FB2F-E60B-457B-9BE7-59091229D166}|hotel\\hotel.csproj|c:\\users\\\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\diplom-karina\\diplom_karina\\hotel\\hotel\\model\\bookservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{19D6FB2F-E60B-457B-9BE7-59091229D166}|hotel\\hotel.csproj|solutionrelative:hotel\\model\\bookservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{19D6FB2F-E60B-457B-9BE7-59091229D166}|hotel\\hotel.csproj|c:\\users\\\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\hotel\\hotel\\model\\statusroom.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{19D6FB2F-E60B-457B-9BE7-59091229D166}|hotel\\hotel.csproj|c:\\users\\\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\diplom-karina\\diplom_karina\\hotel\\hotel\\model\\statusroom.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{19D6FB2F-E60B-457B-9BE7-59091229D166}|hotel\\hotel.csproj|solutionrelative:hotel\\model\\statusroom.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{19D6FB2F-E60B-457B-9BE7-59091229D166}|hotel\\hotel.csproj|c:\\users\\\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\hotel\\hotel\\model\\service.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{19D6FB2F-E60B-457B-9BE7-59091229D166}|hotel\\hotel.csproj|c:\\users\\\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\diplom-karina\\diplom_karina\\hotel\\hotel\\model\\service.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{19D6FB2F-E60B-457B-9BE7-59091229D166}|hotel\\hotel.csproj|solutionrelative:hotel\\model\\service.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{19D6FB2F-E60B-457B-9BE7-59091229D166}|hotel\\hotel.csproj|c:\\users\\\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\hotel\\hotel\\model\\room.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{19D6FB2F-E60B-457B-9BE7-59091229D166}|hotel\\hotel.csproj|c:\\users\\\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\diplom-karina\\diplom_karina\\hotel\\hotel\\model\\room.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{19D6FB2F-E60B-457B-9BE7-59091229D166}|hotel\\hotel.csproj|solutionrelative:hotel\\model\\room.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{19D6FB2F-E60B-457B-9BE7-59091229D166}|hotel\\hotel.csproj|c:\\users\\\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\hotel\\hotel\\model\\role.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{19D6FB2F-E60B-457B-9BE7-59091229D166}|hotel\\hotel.csproj|c:\\users\\\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\diplom-karina\\diplom_karina\\hotel\\hotel\\model\\role.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{19D6FB2F-E60B-457B-9BE7-59091229D166}|hotel\\hotel.csproj|solutionrelative:hotel\\model\\role.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{19D6FB2F-E60B-457B-9BE7-59091229D166}|hotel\\hotel.csproj|c:\\users\\\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\hotel\\hotel\\model\\photocategory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{19D6FB2F-E60B-457B-9BE7-59091229D166}|hotel\\hotel.csproj|c:\\users\\\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\diplom-karina\\diplom_karina\\hotel\\hotel\\model\\photocategory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{19D6FB2F-E60B-457B-9BE7-59091229D166}|hotel\\hotel.csproj|solutionrelative:hotel\\model\\photocategory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{19D6FB2F-E60B-457B-9BE7-59091229D166}|hotel\\hotel.csproj|c:\\users\\\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\hotel\\hotel\\model\\photo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{19D6FB2F-E60B-457B-9BE7-59091229D166}|hotel\\hotel.csproj|c:\\users\\\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\diplom-karina\\diplom_karina\\hotel\\hotel\\model\\photo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{19D6FB2F-E60B-457B-9BE7-59091229D166}|hotel\\hotel.csproj|solutionrelative:hotel\\model\\photo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{19D6FB2F-E60B-457B-9BE7-59091229D166}|hotel\\hotel.csproj|c:\\users\\\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\hotel\\hotel\\models\\floor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{19D6FB2F-E60B-457B-9BE7-59091229D166}|hotel\\hotel.csproj|c:\\users\\\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\diplom-karina\\diplom_karina\\hotel\\hotel\\models\\floor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{19D6FB2F-E60B-457B-9BE7-59091229D166}|hotel\\hotel.csproj|solutionrelative:hotel\\models\\floor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{19D6FB2F-E60B-457B-9BE7-59091229D166}|hotel\\hotel.csproj|c:\\users\\\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\hotel\\hotel\\models\\room.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{19D6FB2F-E60B-457B-9BE7-59091229D166}|hotel\\hotel.csproj|c:\\users\\\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\diplom-karina\\diplom_karina\\hotel\\hotel\\models\\room.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{19D6FB2F-E60B-457B-9BE7-59091229D166}|hotel\\hotel.csproj|solutionrelative:hotel\\models\\room.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{19D6FB2F-E60B-457B-9BE7-59091229D166}|hotel\\hotel.csproj|c:\\users\\\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\hotel\\hotel\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "AbsoluteMoniker": "D:0:0:{19D6FB2F-E60B-457B-9BE7-59091229D166}|hotel\\hotel.csproj|c:\\users\\\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\diplom-karina\\diplom_karina\\hotel\\hotel\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{19D6FB2F-E60B-457B-9BE7-59091229D166}|hotel\\hotel.csproj|solutionrelative:hotel\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{19D6FB2F-E60B-457B-9BE7-59091229D166}|hotel\\hotel.csproj|c:\\users\\\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\hotel\\hotel\\model\\hoteldcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{19D6FB2F-E60B-457B-9BE7-59091229D166}|hotel\\hotel.csproj|c:\\users\\\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\diplom-karina\\diplom_karina\\hotel\\hotel\\model\\hoteldcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{19D6FB2F-E60B-457B-9BE7-59091229D166}|hotel\\hotel.csproj|solutionrelative:hotel\\model\\hoteldcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{19D6FB2F-E60B-457B-9BE7-59091229D166}|hotel\\hotel.csproj|c:\\users\\\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\hotel\\hotel\\editservicewindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "AbsoluteMoniker": "D:0:0:{19D6FB2F-E60B-457B-9BE7-59091229D166}|hotel\\hotel.csproj|c:\\users\\\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\diplom-karina\\diplom_karina\\hotel\\hotel\\editservicewindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{19D6FB2F-E60B-457B-9BE7-59091229D166}|hotel\\hotel.csproj|solutionrelative:hotel\\editservicewindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{19D6FB2F-E60B-457B-9BE7-59091229D166}|hotel\\hotel.csproj|c:\\users\\\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\hotel\\hotel\\addservicewindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "AbsoluteMoniker": "D:0:0:{19D6FB2F-E60B-457B-9BE7-59091229D166}|hotel\\hotel.csproj|c:\\users\\\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\diplom-karina\\diplom_karina\\hotel\\hotel\\addservicewindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{19D6FB2F-E60B-457B-9BE7-59091229D166}|hotel\\hotel.csproj|solutionrelative:hotel\\addservicewindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{19D6FB2F-E60B-457B-9BE7-59091229D166}|hotel\\hotel.csproj|c:\\users\\\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\hotel\\hotel\\employeecontrol.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "AbsoluteMoniker": "D:0:0:{19D6FB2F-E60B-457B-9BE7-59091229D166}|hotel\\hotel.csproj|c:\\users\\\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\diplom-karina\\diplom_karina\\hotel\\hotel\\employeecontrol.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{19D6FB2F-E60B-457B-9BE7-59091229D166}|hotel\\hotel.csproj|solutionrelative:hotel\\employeecontrol.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{19D6FB2F-E60B-457B-9BE7-59091229D166}|hotel\\hotel.csproj|c:\\users\\\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\hotel\\hotel\\headhotelmanagerwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "AbsoluteMoniker": "D:0:0:{19D6FB2F-E60B-457B-9BE7-59091229D166}|hotel\\hotel.csproj|c:\\users\\\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\diplom-karina\\diplom_karina\\hotel\\hotel\\headhotelmanagerwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{19D6FB2F-E60B-457B-9BE7-59091229D166}|hotel\\hotel.csproj|solutionrelative:hotel\\headhotelmanagerwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{19D6FB2F-E60B-457B-9BE7-59091229D166}|hotel\\hotel.csproj|c:\\users\\\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\hotel\\hotel\\bookingservicespecialist.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "AbsoluteMoniker": "D:0:0:{19D6FB2F-E60B-457B-9BE7-59091229D166}|hotel\\hotel.csproj|c:\\users\\\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\diplom-karina\\diplom_karina\\hotel\\hotel\\bookingservicespecialist.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{19D6FB2F-E60B-457B-9BE7-59091229D166}|hotel\\hotel.csproj|solutionrelative:hotel\\bookingservicespecialist.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{19D6FB2F-E60B-457B-9BE7-59091229D166}|hotel\\hotel.csproj|c:\\users\\\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\hotel\\hotel\\roomcontrol.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "AbsoluteMoniker": "D:0:0:{19D6FB2F-E60B-457B-9BE7-59091229D166}|hotel\\hotel.csproj|c:\\users\\\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\diplom-karina\\diplom_karina\\hotel\\hotel\\roomcontrol.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{19D6FB2F-E60B-457B-9BE7-59091229D166}|hotel\\hotel.csproj|solutionrelative:hotel\\roomcontrol.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{19D6FB2F-E60B-457B-9BE7-59091229D166}|hotel\\hotel.csproj|c:\\users\\\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\hotel\\hotel\\employeehhmwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "AbsoluteMoniker": "D:0:0:{19D6FB2F-E60B-457B-9BE7-59091229D166}|hotel\\hotel.csproj|c:\\users\\\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\diplom-karina\\diplom_karina\\hotel\\hotel\\employeehhmwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{19D6FB2F-E60B-457B-9BE7-59091229D166}|hotel\\hotel.csproj|solutionrelative:hotel\\employeehhmwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{19D6FB2F-E60B-457B-9BE7-59091229D166}|hotel\\hotel.csproj|c:\\users\\\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\hotel\\hotel\\bookingreportwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "AbsoluteMoniker": "D:0:0:{19D6FB2F-E60B-457B-9BE7-59091229D166}|hotel\\hotel.csproj|c:\\users\\\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\diplom-karina\\diplom_karina\\hotel\\hotel\\bookingreportwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{19D6FB2F-E60B-457B-9BE7-59091229D166}|hotel\\hotel.csproj|solutionrelative:hotel\\bookingreportwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{19D6FB2F-E60B-457B-9BE7-59091229D166}|hotel\\hotel.csproj|c:\\users\\\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\hotel\\hotel\\addclintwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "AbsoluteMoniker": "D:0:0:{19D6FB2F-E60B-457B-9BE7-59091229D166}|hotel\\hotel.csproj|c:\\users\\\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\diplom-karina\\diplom_karina\\hotel\\hotel\\addclintwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{19D6FB2F-E60B-457B-9BE7-59091229D166}|hotel\\hotel.csproj|solutionrelative:hotel\\addclintwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{19D6FB2F-E60B-457B-9BE7-59091229D166}|hotel\\hotel.csproj|c:\\users\\\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\hotel\\hotel\\editemployeewindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "AbsoluteMoniker": "D:0:0:{19D6FB2F-E60B-457B-9BE7-59091229D166}|hotel\\hotel.csproj|c:\\users\\\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\diplom-karina\\diplom_karina\\hotel\\hotel\\editemployeewindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{19D6FB2F-E60B-457B-9BE7-59091229D166}|hotel\\hotel.csproj|solutionrelative:hotel\\editemployeewindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{19D6FB2F-E60B-457B-9BE7-59091229D166}|hotel\\hotel.csproj|c:\\users\\\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\hotel\\hotel\\addemployeewindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "AbsoluteMoniker": "D:0:0:{19D6FB2F-E60B-457B-9BE7-59091229D166}|hotel\\hotel.csproj|c:\\users\\\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\diplom-karina\\diplom_karina\\hotel\\hotel\\addemployeewindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{19D6FB2F-E60B-457B-9BE7-59091229D166}|hotel\\hotel.csproj|solutionrelative:hotel\\addemployeewindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{19D6FB2F-E60B-457B-9BE7-59091229D166}|hotel\\hotel.csproj|c:\\users\\\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\hotel\\hotel\\addroomwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "AbsoluteMoniker": "D:0:0:{19D6FB2F-E60B-457B-9BE7-59091229D166}|hotel\\hotel.csproj|c:\\users\\\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\diplom-karina\\diplom_karina\\hotel\\hotel\\addroomwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{19D6FB2F-E60B-457B-9BE7-59091229D166}|hotel\\hotel.csproj|solutionrelative:hotel\\addroomwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{19D6FB2F-E60B-457B-9BE7-59091229D166}|hotel\\hotel.csproj|c:\\users\\\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\hotel\\hotel\\editroomwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "AbsoluteMoniker": "D:0:0:{19D6FB2F-E60B-457B-9BE7-59091229D166}|hotel\\hotel.csproj|c:\\users\\\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\diplom-karina\\diplom_karina\\hotel\\hotel\\editroomwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{19D6FB2F-E60B-457B-9BE7-59091229D166}|hotel\\hotel.csproj|solutionrelative:hotel\\editroomwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{19D6FB2F-E60B-457B-9BE7-59091229D166}|hotel\\hotel.csproj|c:\\users\\\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\hotel\\hotel\\autorisation.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "AbsoluteMoniker": "D:0:0:{19D6FB2F-E60B-457B-9BE7-59091229D166}|hotel\\hotel.csproj|c:\\users\\\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\diplom-karina\\diplom_karina\\hotel\\hotel\\autorisation.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{19D6FB2F-E60B-457B-9BE7-59091229D166}|hotel\\hotel.csproj|solutionrelative:hotel\\autorisation.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{19D6FB2F-E60B-457B-9BE7-59091229D166}|hotel\\hotel.csproj|c:\\users\\\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\hotel\\hotel\\hotel.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "AbsoluteMoniker": "D:0:0:{19D6FB2F-E60B-457B-9BE7-59091229D166}|hotel\\hotel.csproj|c:\\users\\\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\diplom-karina\\diplom_karina\\hotel\\hotel\\hotel.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
       "RelativeMoniker": "D:0:0:{19D6FB2F-E60B-457B-9BE7-59091229D166}|hotel\\hotel.csproj|solutionrelative:hotel\\hotel.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{19D6FB2F-E60B-457B-9BE7-59091229D166}|hotel\\hotel.csproj|c:\\users\\\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\hotel\\hotel\\assemblyinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{19D6FB2F-E60B-457B-9BE7-59091229D166}|hotel\\hotel.csproj|c:\\users\\\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\diplom-karina\\diplom_karina\\hotel\\hotel\\assemblyinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{19D6FB2F-E60B-457B-9BE7-59091229D166}|hotel\\hotel.csproj|solutionrelative:hotel\\assemblyinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\hotel\\hotel\\obj\\Debug\\net8.0-windows\\EditHotelWindow.g.i.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\diplom-karina\\diplom_karina\\hotel\\hotel\\obj\\Debug\\net8.0-windows\\EditHotelWindow.g.i.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:hotel\\obj\\Debug\\net8.0-windows\\EditHotelWindow.g.i.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -362,9 +362,9 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "ServiceWindow.xaml",
-              "DocumentMoniker": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\hotel\\hotel\\ServiceWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\diplom-karina\\diplom_karina\\hotel\\hotel\\ServiceWindow.xaml",
               "RelativeDocumentMoniker": "hotel\\ServiceWindow.xaml",
-              "ToolTip": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\hotel\\hotel\\ServiceWindow.xaml",
+              "ToolTip": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\diplom-karina\\diplom_karina\\hotel\\hotel\\ServiceWindow.xaml",
               "RelativeToolTip": "hotel\\ServiceWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2026-04-24T11:42:35.402Z",
@@ -374,83 +374,77 @@
               "$type": "Document",
               "DocumentIndex": 4,
               "Title": "ReviewWindow.xaml",
-              "DocumentMoniker": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\hotel\\hotel\\ReviewWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\diplom-karina\\diplom_karina\\hotel\\hotel\\ReviewWindow.xaml",
               "RelativeDocumentMoniker": "hotel\\ReviewWindow.xaml",
-              "ToolTip": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\hotel\\hotel\\ReviewWindow.xaml",
+              "ToolTip": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\diplom-karina\\diplom_karina\\hotel\\hotel\\ReviewWindow.xaml",
               "RelativeToolTip": "hotel\\ReviewWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2026-04-27T11:51:08.919Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-27T11:51:08.919Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
               "Title": "ReviewWindow.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\hotel\\hotel\\ReviewWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\diplom-karina\\diplom_karina\\hotel\\hotel\\ReviewWindow.xaml.cs",
               "RelativeDocumentMoniker": "hotel\\ReviewWindow.xaml.cs",
-              "ToolTip": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\hotel\\hotel\\ReviewWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\diplom-karina\\diplom_karina\\hotel\\hotel\\ReviewWindow.xaml.cs",
               "RelativeToolTip": "hotel\\ReviewWindow.xaml.cs",
               "ViewState": "AgIAABIAAAAAAAAAAAAwwBgAAAAaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-27T11:54:52.111Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-27T11:54:52.111Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
               "Title": "ReviewControl.xaml",
-              "DocumentMoniker": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\hotel\\hotel\\ReviewControl.xaml",
+              "DocumentMoniker": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\diplom-karina\\diplom_karina\\hotel\\hotel\\ReviewControl.xaml",
               "RelativeDocumentMoniker": "hotel\\ReviewControl.xaml",
-              "ToolTip": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\hotel\\hotel\\ReviewControl.xaml",
+              "ToolTip": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\diplom-karina\\diplom_karina\\hotel\\hotel\\ReviewControl.xaml",
               "RelativeToolTip": "hotel\\ReviewControl.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2026-04-27T11:59:40.335Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-27T11:59:40.335Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
               "Title": "MainManager.xaml",
-              "DocumentMoniker": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\hotel\\hotel\\MainManager.xaml",
+              "DocumentMoniker": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\diplom-karina\\diplom_karina\\hotel\\hotel\\MainManager.xaml",
               "RelativeDocumentMoniker": "hotel\\MainManager.xaml",
-              "ToolTip": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\hotel\\hotel\\MainManager.xaml",
+              "ToolTip": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\diplom-karina\\diplom_karina\\hotel\\hotel\\MainManager.xaml",
               "RelativeToolTip": "hotel\\MainManager.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-10-31T10:54:26.558Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-31T10:54:26.558Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
               "Title": "ServiceControl.xaml",
-              "DocumentMoniker": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\hotel\\hotel\\ServiceControl.xaml",
+              "DocumentMoniker": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\diplom-karina\\diplom_karina\\hotel\\hotel\\ServiceControl.xaml",
               "RelativeDocumentMoniker": "hotel\\ServiceControl.xaml",
-              "ToolTip": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\hotel\\hotel\\ServiceControl.xaml",
+              "ToolTip": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\diplom-karina\\diplom_karina\\hotel\\hotel\\ServiceControl.xaml",
               "RelativeToolTip": "hotel\\ServiceControl.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2026-04-24T11:42:18.487Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-24T11:42:18.487Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 6,
               "Title": "HotelsWindow.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\hotel\\hotel\\HotelsWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\diplom-karina\\diplom_karina\\hotel\\hotel\\HotelsWindow.xaml.cs",
               "RelativeDocumentMoniker": "hotel\\HotelsWindow.xaml.cs",
-              "ToolTip": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\hotel\\hotel\\HotelsWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\diplom-karina\\diplom_karina\\hotel\\hotel\\HotelsWindow.xaml.cs",
               "RelativeToolTip": "hotel\\HotelsWindow.xaml.cs",
               "ViewState": "AgIAAA8AAAAAAAAAAAAAAB4AAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-28T09:44:37.668Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-28T09:44:37.668Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 7,
               "Title": "HotelsWindow.xaml",
-              "DocumentMoniker": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\hotel\\hotel\\HotelsWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\diplom-karina\\diplom_karina\\hotel\\hotel\\HotelsWindow.xaml",
               "RelativeDocumentMoniker": "hotel\\HotelsWindow.xaml",
-              "ToolTip": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\hotel\\hotel\\HotelsWindow.xaml",
+              "ToolTip": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\diplom-karina\\diplom_karina\\hotel\\hotel\\HotelsWindow.xaml",
               "RelativeToolTip": "hotel\\HotelsWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2025-11-28T08:54:01.079Z"
@@ -459,9 +453,9 @@
               "$type": "Document",
               "DocumentIndex": 9,
               "Title": "Api.cs",
-              "DocumentMoniker": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\hotel\\hotel\\Data\\Api.cs",
+              "DocumentMoniker": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\diplom-karina\\diplom_karina\\hotel\\hotel\\Data\\Api.cs",
               "RelativeDocumentMoniker": "hotel\\Data\\Api.cs",
-              "ToolTip": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\hotel\\hotel\\Data\\Api.cs",
+              "ToolTip": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\diplom-karina\\diplom_karina\\hotel\\hotel\\Data\\Api.cs",
               "RelativeToolTip": "hotel\\Data\\Api.cs",
               "ViewState": "AgIAALEBAAAAAAAAAAAuwNMBAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -471,9 +465,9 @@
               "$type": "Document",
               "DocumentIndex": 8,
               "Title": "HotelControl.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\hotel\\hotel\\HotelControl.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\diplom-karina\\diplom_karina\\hotel\\hotel\\HotelControl.xaml.cs",
               "RelativeDocumentMoniker": "hotel\\HotelControl.xaml.cs",
-              "ToolTip": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\hotel\\hotel\\HotelControl.xaml.cs",
+              "ToolTip": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\diplom-karina\\diplom_karina\\hotel\\hotel\\HotelControl.xaml.cs",
               "RelativeToolTip": "hotel\\HotelControl.xaml.cs",
               "ViewState": "AgIAAGIAAAAAAAAAAAAIwHAAAAA4AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -483,9 +477,9 @@
               "$type": "Document",
               "DocumentIndex": 10,
               "Title": "ReviewControl.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\hotel\\hotel\\ReviewControl.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\diplom-karina\\diplom_karina\\hotel\\hotel\\ReviewControl.xaml.cs",
               "RelativeDocumentMoniker": "hotel\\ReviewControl.xaml.cs",
-              "ToolTip": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\hotel\\hotel\\ReviewControl.xaml.cs",
+              "ToolTip": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\diplom-karina\\diplom_karina\\hotel\\hotel\\ReviewControl.xaml.cs",
               "RelativeToolTip": "hotel\\ReviewControl.xaml.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAACYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -495,9 +489,9 @@
               "$type": "Document",
               "DocumentIndex": 15,
               "Title": "CommHotel.cs",
-              "DocumentMoniker": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\hotel\\hotel\\Models\\CommHotel.cs",
+              "DocumentMoniker": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\diplom-karina\\diplom_karina\\hotel\\hotel\\Models\\CommHotel.cs",
               "RelativeDocumentMoniker": "hotel\\Models\\CommHotel.cs",
-              "ToolTip": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\hotel\\hotel\\Models\\CommHotel.cs",
+              "ToolTip": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\diplom-karina\\diplom_karina\\hotel\\hotel\\Models\\CommHotel.cs",
               "RelativeToolTip": "hotel\\Models\\CommHotel.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -507,9 +501,9 @@
               "$type": "Document",
               "DocumentIndex": 11,
               "Title": "HotelControl.xaml",
-              "DocumentMoniker": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\hotel\\hotel\\HotelControl.xaml",
+              "DocumentMoniker": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\diplom-karina\\diplom_karina\\hotel\\hotel\\HotelControl.xaml",
               "RelativeDocumentMoniker": "hotel\\HotelControl.xaml",
-              "ToolTip": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\hotel\\hotel\\HotelControl.xaml",
+              "ToolTip": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\diplom-karina\\diplom_karina\\hotel\\hotel\\HotelControl.xaml",
               "RelativeToolTip": "hotel\\HotelControl.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2025-11-07T08:07:33.754Z"
@@ -518,9 +512,9 @@
               "$type": "Document",
               "DocumentIndex": 12,
               "Title": "EditHotelWindow.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\hotel\\hotel\\EditHotelWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\diplom-karina\\diplom_karina\\hotel\\hotel\\EditHotelWindow.xaml.cs",
               "RelativeDocumentMoniker": "hotel\\EditHotelWindow.xaml.cs",
-              "ToolTip": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\hotel\\hotel\\EditHotelWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\diplom-karina\\diplom_karina\\hotel\\hotel\\EditHotelWindow.xaml.cs",
               "RelativeToolTip": "hotel\\EditHotelWindow.xaml.cs",
               "ViewState": "AgIAAAwBAAAAAAAAAAAAwCMBAABtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -530,9 +524,9 @@
               "$type": "Document",
               "DocumentIndex": 13,
               "Title": "EditHotelWindow.xaml",
-              "DocumentMoniker": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\hotel\\hotel\\EditHotelWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\diplom-karina\\diplom_karina\\hotel\\hotel\\EditHotelWindow.xaml",
               "RelativeDocumentMoniker": "hotel\\EditHotelWindow.xaml",
-              "ToolTip": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\hotel\\hotel\\EditHotelWindow.xaml",
+              "ToolTip": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\diplom-karina\\diplom_karina\\hotel\\hotel\\EditHotelWindow.xaml",
               "RelativeToolTip": "hotel\\EditHotelWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2025-11-13T10:31:50.431Z"
@@ -541,9 +535,9 @@
               "$type": "Document",
               "DocumentIndex": 14,
               "Title": "AddHotelWindow.xaml",
-              "DocumentMoniker": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\hotel\\hotel\\AddHotelWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\diplom-karina\\diplom_karina\\hotel\\hotel\\AddHotelWindow.xaml",
               "RelativeDocumentMoniker": "hotel\\AddHotelWindow.xaml",
-              "ToolTip": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\hotel\\hotel\\AddHotelWindow.xaml",
+              "ToolTip": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\diplom-karina\\diplom_karina\\hotel\\hotel\\AddHotelWindow.xaml",
               "RelativeToolTip": "hotel\\AddHotelWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2025-11-13T08:23:36.197Z"
@@ -552,9 +546,9 @@
               "$type": "Document",
               "DocumentIndex": 16,
               "Title": "Hotel.cs",
-              "DocumentMoniker": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\hotel\\hotel\\Models\\Hotel.cs",
+              "DocumentMoniker": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\diplom-karina\\diplom_karina\\hotel\\hotel\\Models\\Hotel.cs",
               "RelativeDocumentMoniker": "hotel\\Models\\Hotel.cs",
-              "ToolTip": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\hotel\\hotel\\Models\\Hotel.cs",
+              "ToolTip": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\diplom-karina\\diplom_karina\\hotel\\hotel\\Models\\Hotel.cs",
               "RelativeToolTip": "hotel\\Models\\Hotel.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -564,9 +558,9 @@
               "$type": "Document",
               "DocumentIndex": 19,
               "Title": "RoomsWindow.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\hotel\\hotel\\RoomsWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\diplom-karina\\diplom_karina\\hotel\\hotel\\RoomsWindow.xaml.cs",
               "RelativeDocumentMoniker": "hotel\\RoomsWindow.xaml.cs",
-              "ToolTip": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\hotel\\hotel\\RoomsWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\diplom-karina\\diplom_karina\\hotel\\hotel\\RoomsWindow.xaml.cs",
               "RelativeToolTip": "hotel\\RoomsWindow.xaml.cs",
               "ViewState": "AgIAABIAAAAAAAAAAAAAAAIAAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -576,9 +570,9 @@
               "$type": "Document",
               "DocumentIndex": 20,
               "Title": "RoomControl.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\hotel\\hotel\\RoomControl.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\diplom-karina\\diplom_karina\\hotel\\hotel\\RoomControl.xaml.cs",
               "RelativeDocumentMoniker": "hotel\\RoomControl.xaml.cs",
-              "ToolTip": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\hotel\\hotel\\RoomControl.xaml.cs",
+              "ToolTip": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\diplom-karina\\diplom_karina\\hotel\\hotel\\RoomControl.xaml.cs",
               "RelativeToolTip": "hotel\\RoomControl.xaml.cs",
               "ViewState": "AgIAACcAAAAAAAAAAAAYwAAAAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -588,9 +582,9 @@
               "$type": "Document",
               "DocumentIndex": 21,
               "Title": "RoomsWindow.xaml",
-              "DocumentMoniker": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\hotel\\hotel\\RoomsWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\diplom-karina\\diplom_karina\\hotel\\hotel\\RoomsWindow.xaml",
               "RelativeDocumentMoniker": "hotel\\RoomsWindow.xaml",
-              "ToolTip": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\hotel\\hotel\\RoomsWindow.xaml",
+              "ToolTip": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\diplom-karina\\diplom_karina\\hotel\\hotel\\RoomsWindow.xaml",
               "RelativeToolTip": "hotel\\RoomsWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2025-11-28T08:44:14.832Z"
@@ -599,9 +593,9 @@
               "$type": "Document",
               "DocumentIndex": 17,
               "Title": "ServiceWindow.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\hotel\\hotel\\ServiceWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\diplom-karina\\diplom_karina\\hotel\\hotel\\ServiceWindow.xaml.cs",
               "RelativeDocumentMoniker": "hotel\\ServiceWindow.xaml.cs",
-              "ToolTip": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\hotel\\hotel\\ServiceWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\diplom-karina\\diplom_karina\\hotel\\hotel\\ServiceWindow.xaml.cs",
               "RelativeToolTip": "hotel\\ServiceWindow.xaml.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -611,9 +605,9 @@
               "$type": "Document",
               "DocumentIndex": 18,
               "Title": "ServiceControl.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\hotel\\hotel\\ServiceControl.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\diplom-karina\\diplom_karina\\hotel\\hotel\\ServiceControl.xaml.cs",
               "RelativeDocumentMoniker": "hotel\\ServiceControl.xaml.cs",
-              "ToolTip": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\hotel\\hotel\\ServiceControl.xaml.cs",
+              "ToolTip": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\diplom-karina\\diplom_karina\\hotel\\hotel\\ServiceControl.xaml.cs",
               "RelativeToolTip": "hotel\\ServiceControl.xaml.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -623,9 +617,9 @@
               "$type": "Document",
               "DocumentIndex": 22,
               "Title": "MainManager.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\hotel\\hotel\\MainManager.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\diplom-karina\\diplom_karina\\hotel\\hotel\\MainManager.xaml.cs",
               "RelativeDocumentMoniker": "hotel\\MainManager.xaml.cs",
-              "ToolTip": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\hotel\\hotel\\MainManager.xaml.cs",
+              "ToolTip": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\diplom-karina\\diplom_karina\\hotel\\hotel\\MainManager.xaml.cs",
               "RelativeToolTip": "hotel\\MainManager.xaml.cs",
               "ViewState": "AgIAAB8AAAAAAAAAAAAQwAAAAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -635,9 +629,9 @@
               "$type": "Document",
               "DocumentIndex": 23,
               "Title": "HeadHotelManagerWindow.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\hotel\\hotel\\HeadHotelManagerWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\diplom-karina\\diplom_karina\\hotel\\hotel\\HeadHotelManagerWindow.xaml.cs",
               "RelativeDocumentMoniker": "hotel\\HeadHotelManagerWindow.xaml.cs",
-              "ToolTip": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\hotel\\hotel\\HeadHotelManagerWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\diplom-karina\\diplom_karina\\hotel\\hotel\\HeadHotelManagerWindow.xaml.cs",
               "RelativeToolTip": "hotel\\HeadHotelManagerWindow.xaml.cs",
               "ViewState": "AgIAABcAAAAAAAAAAAAAwA8AAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -647,9 +641,9 @@
               "$type": "Document",
               "DocumentIndex": 24,
               "Title": "EmployeeHHMWindow.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\hotel\\hotel\\EmployeeHHMWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\diplom-karina\\diplom_karina\\hotel\\hotel\\EmployeeHHMWindow.xaml.cs",
               "RelativeDocumentMoniker": "hotel\\EmployeeHHMWindow.xaml.cs",
-              "ToolTip": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\hotel\\hotel\\EmployeeHHMWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\diplom-karina\\diplom_karina\\hotel\\hotel\\EmployeeHHMWindow.xaml.cs",
               "RelativeToolTip": "hotel\\EmployeeHHMWindow.xaml.cs",
               "ViewState": "AgIAAIgAAAAAAAAAAADwvwEAAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -659,9 +653,9 @@
               "$type": "Document",
               "DocumentIndex": 25,
               "Title": "EmployeeControl.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\hotel\\hotel\\EmployeeControl.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\diplom-karina\\diplom_karina\\hotel\\hotel\\EmployeeControl.xaml.cs",
               "RelativeDocumentMoniker": "hotel\\EmployeeControl.xaml.cs",
-              "ToolTip": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\hotel\\hotel\\EmployeeControl.xaml.cs",
+              "ToolTip": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\diplom-karina\\diplom_karina\\hotel\\hotel\\EmployeeControl.xaml.cs",
               "RelativeToolTip": "hotel\\EmployeeControl.xaml.cs",
               "ViewState": "AgIAAGEAAAAAAAAAAAAAwAIAAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -671,9 +665,9 @@
               "$type": "Document",
               "DocumentIndex": 26,
               "Title": "EditServiceWindow.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\hotel\\hotel\\EditServiceWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\diplom-karina\\diplom_karina\\hotel\\hotel\\EditServiceWindow.xaml.cs",
               "RelativeDocumentMoniker": "hotel\\EditServiceWindow.xaml.cs",
-              "ToolTip": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\hotel\\hotel\\EditServiceWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\diplom-karina\\diplom_karina\\hotel\\hotel\\EditServiceWindow.xaml.cs",
               "RelativeToolTip": "hotel\\EditServiceWindow.xaml.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -683,9 +677,9 @@
               "$type": "Document",
               "DocumentIndex": 64,
               "Title": "Room.cs",
-              "DocumentMoniker": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\hotel\\hotel\\Models\\Room.cs",
+              "DocumentMoniker": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\diplom-karina\\diplom_karina\\hotel\\hotel\\Models\\Room.cs",
               "RelativeDocumentMoniker": "hotel\\Models\\Room.cs",
-              "ToolTip": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\hotel\\hotel\\Models\\Room.cs",
+              "ToolTip": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\diplom-karina\\diplom_karina\\hotel\\hotel\\Models\\Room.cs",
               "RelativeToolTip": "hotel\\Models\\Room.cs",
               "ViewState": "AgIAAAsAAAAAAAAAAAA3wAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -695,9 +689,9 @@
               "$type": "Document",
               "DocumentIndex": 65,
               "Title": "App.xaml",
-              "DocumentMoniker": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\hotel\\hotel\\App.xaml",
+              "DocumentMoniker": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\diplom-karina\\diplom_karina\\hotel\\hotel\\App.xaml",
               "RelativeDocumentMoniker": "hotel\\App.xaml",
-              "ToolTip": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\hotel\\hotel\\App.xaml",
+              "ToolTip": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\diplom-karina\\diplom_karina\\hotel\\hotel\\App.xaml",
               "RelativeToolTip": "hotel\\App.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2025-10-30T17:47:45.61Z",
@@ -707,9 +701,9 @@
               "$type": "Document",
               "DocumentIndex": 66,
               "Title": "HoteldContext.cs",
-              "DocumentMoniker": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\hotel\\hotel\\Model\\HoteldContext.cs",
+              "DocumentMoniker": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\diplom-karina\\diplom_karina\\hotel\\hotel\\Model\\HoteldContext.cs",
               "RelativeDocumentMoniker": "hotel\\Model\\HoteldContext.cs",
-              "ToolTip": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\hotel\\hotel\\Model\\HoteldContext.cs",
+              "ToolTip": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\diplom-karina\\diplom_karina\\hotel\\hotel\\Model\\HoteldContext.cs",
               "RelativeToolTip": "hotel\\Model\\HoteldContext.cs",
               "ViewState": "AgIAAK4AAAAAAAAAAAAowOgAAAApAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -719,9 +713,9 @@
               "$type": "Document",
               "DocumentIndex": 28,
               "Title": "EditEmployeeWindow.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\hotel\\hotel\\EditEmployeeWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\diplom-karina\\diplom_karina\\hotel\\hotel\\EditEmployeeWindow.xaml.cs",
               "RelativeDocumentMoniker": "hotel\\EditEmployeeWindow.xaml.cs",
-              "ToolTip": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\hotel\\hotel\\EditEmployeeWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\diplom-karina\\diplom_karina\\hotel\\hotel\\EditEmployeeWindow.xaml.cs",
               "RelativeToolTip": "hotel\\EditEmployeeWindow.xaml.cs",
               "ViewState": "AgIAABgBAAAAAAAAAADwvwEAAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -731,9 +725,9 @@
               "$type": "Document",
               "DocumentIndex": 29,
               "Title": "BookingServiceSpecialist.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\hotel\\hotel\\BookingServiceSpecialist.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\diplom-karina\\diplom_karina\\hotel\\hotel\\BookingServiceSpecialist.xaml.cs",
               "RelativeDocumentMoniker": "hotel\\BookingServiceSpecialist.xaml.cs",
-              "ToolTip": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\hotel\\hotel\\BookingServiceSpecialist.xaml.cs",
+              "ToolTip": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\diplom-karina\\diplom_karina\\hotel\\hotel\\BookingServiceSpecialist.xaml.cs",
               "RelativeToolTip": "hotel\\BookingServiceSpecialist.xaml.cs",
               "ViewState": "AgIAALoAAAAAAAAAAAA4wAEAAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -743,22 +737,21 @@
               "$type": "Document",
               "DocumentIndex": 30,
               "Title": "BookingReportWindow.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\hotel\\hotel\\BookingReportWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\diplom-karina\\diplom_karina\\hotel\\hotel\\BookingReportWindow.xaml.cs",
               "RelativeDocumentMoniker": "hotel\\BookingReportWindow.xaml.cs",
-              "ToolTip": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\hotel\\hotel\\BookingReportWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\diplom-karina\\diplom_karina\\hotel\\hotel\\BookingReportWindow.xaml.cs",
               "RelativeToolTip": "hotel\\BookingReportWindow.xaml.cs",
               "ViewState": "AgIAAAABAAAAAAAAAAAwwOcAAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-07T18:13:08.499Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-07T18:13:08.499Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 27,
               "Title": "EditRoomWindow.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\hotel\\hotel\\EditRoomWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\diplom-karina\\diplom_karina\\hotel\\hotel\\EditRoomWindow.xaml.cs",
               "RelativeDocumentMoniker": "hotel\\EditRoomWindow.xaml.cs",
-              "ToolTip": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\hotel\\hotel\\EditRoomWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\diplom-karina\\diplom_karina\\hotel\\hotel\\EditRoomWindow.xaml.cs",
               "RelativeToolTip": "hotel\\EditRoomWindow.xaml.cs",
               "ViewState": "AgIAAKkAAAAAAAAAAAAcwAEAAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -768,9 +761,9 @@
               "$type": "Document",
               "DocumentIndex": 31,
               "Title": "BookingControl.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\hotel\\hotel\\BookingControl.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\diplom-karina\\diplom_karina\\hotel\\hotel\\BookingControl.xaml.cs",
               "RelativeDocumentMoniker": "hotel\\BookingControl.xaml.cs",
-              "ToolTip": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\hotel\\hotel\\BookingControl.xaml.cs",
+              "ToolTip": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\diplom-karina\\diplom_karina\\hotel\\hotel\\BookingControl.xaml.cs",
               "RelativeToolTip": "hotel\\BookingControl.xaml.cs",
               "ViewState": "AgIAAA8AAAAAAAAAAAAAAAEAAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -780,9 +773,9 @@
               "$type": "Document",
               "DocumentIndex": 32,
               "Title": "Autorisation.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\hotel\\hotel\\Autorisation.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\diplom-karina\\diplom_karina\\hotel\\hotel\\Autorisation.xaml.cs",
               "RelativeDocumentMoniker": "hotel\\Autorisation.xaml.cs",
-              "ToolTip": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\hotel\\hotel\\Autorisation.xaml.cs",
+              "ToolTip": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\diplom-karina\\diplom_karina\\hotel\\hotel\\Autorisation.xaml.cs",
               "RelativeToolTip": "hotel\\Autorisation.xaml.cs",
               "ViewState": "AgIAAEcAAAAAAAAAAAAgwAEAAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -792,9 +785,9 @@
               "$type": "Document",
               "DocumentIndex": 33,
               "Title": "BookingControl.xaml",
-              "DocumentMoniker": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\hotel\\hotel\\BookingControl.xaml",
+              "DocumentMoniker": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\diplom-karina\\diplom_karina\\hotel\\hotel\\BookingControl.xaml",
               "RelativeDocumentMoniker": "hotel\\BookingControl.xaml",
-              "ToolTip": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\hotel\\hotel\\BookingControl.xaml",
+              "ToolTip": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\diplom-karina\\diplom_karina\\hotel\\hotel\\BookingControl.xaml",
               "RelativeToolTip": "hotel\\BookingControl.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2026-04-09T01:52:09.281Z"
@@ -803,9 +796,9 @@
               "$type": "Document",
               "DocumentIndex": 34,
               "Title": "App.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\hotel\\hotel\\App.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\diplom-karina\\diplom_karina\\hotel\\hotel\\App.xaml.cs",
               "RelativeDocumentMoniker": "hotel\\App.xaml.cs",
-              "ToolTip": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\hotel\\hotel\\App.xaml.cs",
+              "ToolTip": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\diplom-karina\\diplom_karina\\hotel\\hotel\\App.xaml.cs",
               "RelativeToolTip": "hotel\\App.xaml.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -815,9 +808,9 @@
               "$type": "Document",
               "DocumentIndex": 35,
               "Title": "AddServiceWindow.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\hotel\\hotel\\AddServiceWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\diplom-karina\\diplom_karina\\hotel\\hotel\\AddServiceWindow.xaml.cs",
               "RelativeDocumentMoniker": "hotel\\AddServiceWindow.xaml.cs",
-              "ToolTip": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\hotel\\hotel\\AddServiceWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\diplom-karina\\diplom_karina\\hotel\\hotel\\AddServiceWindow.xaml.cs",
               "RelativeToolTip": "hotel\\AddServiceWindow.xaml.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -827,9 +820,9 @@
               "$type": "Document",
               "DocumentIndex": 36,
               "Title": "AddRoomWindow.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\hotel\\hotel\\AddRoomWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\diplom-karina\\diplom_karina\\hotel\\hotel\\AddRoomWindow.xaml.cs",
               "RelativeDocumentMoniker": "hotel\\AddRoomWindow.xaml.cs",
-              "ToolTip": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\hotel\\hotel\\AddRoomWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\diplom-karina\\diplom_karina\\hotel\\hotel\\AddRoomWindow.xaml.cs",
               "RelativeToolTip": "hotel\\AddRoomWindow.xaml.cs",
               "ViewState": "AgIAAGUAAAAAAAAAAAAswAEAAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -839,22 +832,21 @@
               "$type": "Document",
               "DocumentIndex": 37,
               "Title": "AddHotelWindow.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\hotel\\hotel\\AddHotelWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\diplom-karina\\diplom_karina\\hotel\\hotel\\AddHotelWindow.xaml.cs",
               "RelativeDocumentMoniker": "hotel\\AddHotelWindow.xaml.cs",
-              "ToolTip": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\hotel\\hotel\\AddHotelWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\diplom-karina\\diplom_karina\\hotel\\hotel\\AddHotelWindow.xaml.cs",
               "RelativeToolTip": "hotel\\AddHotelWindow.xaml.cs",
               "ViewState": "AgIAAFYAAAAAAAAAAAAswGsAAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-13T11:18:58.32Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-13T11:18:58.32Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 38,
               "Title": "AddClintWindow.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\hotel\\hotel\\AddClintWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\diplom-karina\\diplom_karina\\hotel\\hotel\\AddClintWindow.xaml.cs",
               "RelativeDocumentMoniker": "hotel\\AddClintWindow.xaml.cs",
-              "ToolTip": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\hotel\\hotel\\AddClintWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\diplom-karina\\diplom_karina\\hotel\\hotel\\AddClintWindow.xaml.cs",
               "RelativeToolTip": "hotel\\AddClintWindow.xaml.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -864,35 +856,33 @@
               "$type": "Document",
               "DocumentIndex": 39,
               "Title": "AddEmployeeWindow.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\hotel\\hotel\\AddEmployeeWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\diplom-karina\\diplom_karina\\hotel\\hotel\\AddEmployeeWindow.xaml.cs",
               "RelativeDocumentMoniker": "hotel\\AddEmployeeWindow.xaml.cs",
-              "ToolTip": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\hotel\\hotel\\AddEmployeeWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\diplom-karina\\diplom_karina\\hotel\\hotel\\AddEmployeeWindow.xaml.cs",
               "RelativeToolTip": "hotel\\AddEmployeeWindow.xaml.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-09T07:50:45.814Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-09T07:50:45.814Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 40,
               "Title": "AddBookingWindow.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\hotel\\hotel\\AddBookingWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\diplom-karina\\diplom_karina\\hotel\\hotel\\AddBookingWindow.xaml.cs",
               "RelativeDocumentMoniker": "hotel\\AddBookingWindow.xaml.cs",
-              "ToolTip": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\hotel\\hotel\\AddBookingWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\diplom-karina\\diplom_karina\\hotel\\hotel\\AddBookingWindow.xaml.cs",
               "RelativeToolTip": "hotel\\AddBookingWindow.xaml.cs",
               "ViewState": "AgIAANYAAAAAAAAAAAAwwMsAAAAqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-11T05:08:51.287Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-11T05:08:51.287Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 41,
               "Title": "Book.cs",
-              "DocumentMoniker": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\hotel\\hotel\\Model\\Book.cs",
+              "DocumentMoniker": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\diplom-karina\\diplom_karina\\hotel\\hotel\\Model\\Book.cs",
               "RelativeDocumentMoniker": "hotel\\Model\\Book.cs",
-              "ToolTip": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\hotel\\hotel\\Model\\Book.cs",
+              "ToolTip": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\diplom-karina\\diplom_karina\\hotel\\hotel\\Model\\Book.cs",
               "RelativeToolTip": "hotel\\Model\\Book.cs",
               "ViewState": "AgIAAAwAAAAAAAAAAAAYwBwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -902,9 +892,9 @@
               "$type": "Document",
               "DocumentIndex": 42,
               "Title": "Book.cs",
-              "DocumentMoniker": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\hotel\\hotel\\Models\\Book.cs",
+              "DocumentMoniker": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\diplom-karina\\diplom_karina\\hotel\\hotel\\Models\\Book.cs",
               "RelativeDocumentMoniker": "hotel\\Models\\Book.cs",
-              "ToolTip": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\hotel\\hotel\\Models\\Book.cs",
+              "ToolTip": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\diplom-karina\\diplom_karina\\hotel\\hotel\\Models\\Book.cs",
               "RelativeToolTip": "hotel\\Models\\Book.cs",
               "ViewState": "AgIAAAwAAAAAAAAAAAAYwBoAAABhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -914,9 +904,9 @@
               "$type": "Document",
               "DocumentIndex": 43,
               "Title": "Category.cs",
-              "DocumentMoniker": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\hotel\\hotel\\Models\\Category.cs",
+              "DocumentMoniker": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\diplom-karina\\diplom_karina\\hotel\\hotel\\Models\\Category.cs",
               "RelativeDocumentMoniker": "hotel\\Models\\Category.cs",
-              "ToolTip": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\hotel\\hotel\\Models\\Category.cs",
+              "ToolTip": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\diplom-karina\\diplom_karina\\hotel\\hotel\\Models\\Category.cs",
               "RelativeToolTip": "hotel\\Models\\Category.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -926,9 +916,9 @@
               "$type": "Document",
               "DocumentIndex": 44,
               "Title": "BookService.cs",
-              "DocumentMoniker": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\hotel\\hotel\\Models\\BookService.cs",
+              "DocumentMoniker": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\diplom-karina\\diplom_karina\\hotel\\hotel\\Models\\BookService.cs",
               "RelativeDocumentMoniker": "hotel\\Models\\BookService.cs",
-              "ToolTip": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\hotel\\hotel\\Models\\BookService.cs",
+              "ToolTip": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\diplom-karina\\diplom_karina\\hotel\\hotel\\Models\\BookService.cs",
               "RelativeToolTip": "hotel\\Models\\BookService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -938,9 +928,9 @@
               "$type": "Document",
               "DocumentIndex": 45,
               "Title": "AddBookingWindow.xaml",
-              "DocumentMoniker": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\hotel\\hotel\\AddBookingWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\diplom-karina\\diplom_karina\\hotel\\hotel\\AddBookingWindow.xaml",
               "RelativeDocumentMoniker": "hotel\\AddBookingWindow.xaml",
-              "ToolTip": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\hotel\\hotel\\AddBookingWindow.xaml",
+              "ToolTip": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\diplom-karina\\diplom_karina\\hotel\\hotel\\AddBookingWindow.xaml",
               "RelativeToolTip": "hotel\\AddBookingWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2025-12-10T07:23:34.159Z"
@@ -949,9 +939,9 @@
               "$type": "Document",
               "DocumentIndex": 46,
               "Title": "Hotel.cs",
-              "DocumentMoniker": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\hotel\\hotel\\Model\\Hotel.cs",
+              "DocumentMoniker": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\diplom-karina\\diplom_karina\\hotel\\hotel\\Model\\Hotel.cs",
               "RelativeDocumentMoniker": "hotel\\Model\\Hotel.cs",
-              "ToolTip": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\hotel\\hotel\\Model\\Hotel.cs",
+              "ToolTip": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\diplom-karina\\diplom_karina\\hotel\\hotel\\Model\\Hotel.cs",
               "RelativeToolTip": "hotel\\Model\\Hotel.cs",
               "ViewState": "AgIAAAsAAAAAAAAAAAA3wAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -961,9 +951,9 @@
               "$type": "Document",
               "DocumentIndex": 47,
               "Title": "Guest.cs",
-              "DocumentMoniker": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\hotel\\hotel\\Model\\Guest.cs",
+              "DocumentMoniker": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\diplom-karina\\diplom_karina\\hotel\\hotel\\Model\\Guest.cs",
               "RelativeDocumentMoniker": "hotel\\Model\\Guest.cs",
-              "ToolTip": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\hotel\\hotel\\Model\\Guest.cs",
+              "ToolTip": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\diplom-karina\\diplom_karina\\hotel\\hotel\\Model\\Guest.cs",
               "RelativeToolTip": "hotel\\Model\\Guest.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -973,9 +963,9 @@
               "$type": "Document",
               "DocumentIndex": 48,
               "Title": "Floor.cs",
-              "DocumentMoniker": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\hotel\\hotel\\Model\\Floor.cs",
+              "DocumentMoniker": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\diplom-karina\\diplom_karina\\hotel\\hotel\\Model\\Floor.cs",
               "RelativeDocumentMoniker": "hotel\\Model\\Floor.cs",
-              "ToolTip": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\hotel\\hotel\\Model\\Floor.cs",
+              "ToolTip": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\diplom-karina\\diplom_karina\\hotel\\hotel\\Model\\Floor.cs",
               "RelativeToolTip": "hotel\\Model\\Floor.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -985,9 +975,9 @@
               "$type": "Document",
               "DocumentIndex": 49,
               "Title": "Favorite.cs",
-              "DocumentMoniker": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\hotel\\hotel\\Model\\Favorite.cs",
+              "DocumentMoniker": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\diplom-karina\\diplom_karina\\hotel\\hotel\\Model\\Favorite.cs",
               "RelativeDocumentMoniker": "hotel\\Model\\Favorite.cs",
-              "ToolTip": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\hotel\\hotel\\Model\\Favorite.cs",
+              "ToolTip": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\diplom-karina\\diplom_karina\\hotel\\hotel\\Model\\Favorite.cs",
               "RelativeToolTip": "hotel\\Model\\Favorite.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -997,9 +987,9 @@
               "$type": "Document",
               "DocumentIndex": 50,
               "Title": "Employee.cs",
-              "DocumentMoniker": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\hotel\\hotel\\Model\\Employee.cs",
+              "DocumentMoniker": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\diplom-karina\\diplom_karina\\hotel\\hotel\\Model\\Employee.cs",
               "RelativeDocumentMoniker": "hotel\\Model\\Employee.cs",
-              "ToolTip": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\hotel\\hotel\\Model\\Employee.cs",
+              "ToolTip": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\diplom-karina\\diplom_karina\\hotel\\hotel\\Model\\Employee.cs",
               "RelativeToolTip": "hotel\\Model\\Employee.cs",
               "ViewState": "AgIAAA8AAAAAAAAAAAA7wBEAAAATAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -1009,9 +999,9 @@
               "$type": "Document",
               "DocumentIndex": 51,
               "Title": "CommHotel.cs",
-              "DocumentMoniker": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\hotel\\hotel\\Model\\CommHotel.cs",
+              "DocumentMoniker": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\diplom-karina\\diplom_karina\\hotel\\hotel\\Model\\CommHotel.cs",
               "RelativeDocumentMoniker": "hotel\\Model\\CommHotel.cs",
-              "ToolTip": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\hotel\\hotel\\Model\\CommHotel.cs",
+              "ToolTip": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\diplom-karina\\diplom_karina\\hotel\\hotel\\Model\\CommHotel.cs",
               "RelativeToolTip": "hotel\\Model\\CommHotel.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAABFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -1021,9 +1011,9 @@
               "$type": "Document",
               "DocumentIndex": 52,
               "Title": "Comment.cs",
-              "DocumentMoniker": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\hotel\\hotel\\Model\\Comment.cs",
+              "DocumentMoniker": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\diplom-karina\\diplom_karina\\hotel\\hotel\\Model\\Comment.cs",
               "RelativeDocumentMoniker": "hotel\\Model\\Comment.cs",
-              "ToolTip": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\hotel\\hotel\\Model\\Comment.cs",
+              "ToolTip": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\diplom-karina\\diplom_karina\\hotel\\hotel\\Model\\Comment.cs",
               "RelativeToolTip": "hotel\\Model\\Comment.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -1033,9 +1023,9 @@
               "$type": "Document",
               "DocumentIndex": 53,
               "Title": "ClintGuest.cs",
-              "DocumentMoniker": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\hotel\\hotel\\Model\\ClintGuest.cs",
+              "DocumentMoniker": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\diplom-karina\\diplom_karina\\hotel\\hotel\\Model\\ClintGuest.cs",
               "RelativeDocumentMoniker": "hotel\\Model\\ClintGuest.cs",
-              "ToolTip": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\hotel\\hotel\\Model\\ClintGuest.cs",
+              "ToolTip": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\diplom-karina\\diplom_karina\\hotel\\hotel\\Model\\ClintGuest.cs",
               "RelativeToolTip": "hotel\\Model\\ClintGuest.cs",
               "ViewState": "AgIAAAcAAAAAAAAAAAAzwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -1045,9 +1035,9 @@
               "$type": "Document",
               "DocumentIndex": 54,
               "Title": "Clint.cs",
-              "DocumentMoniker": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\hotel\\hotel\\Model\\Clint.cs",
+              "DocumentMoniker": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\diplom-karina\\diplom_karina\\hotel\\hotel\\Model\\Clint.cs",
               "RelativeDocumentMoniker": "hotel\\Model\\Clint.cs",
-              "ToolTip": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\hotel\\hotel\\Model\\Clint.cs",
+              "ToolTip": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\diplom-karina\\diplom_karina\\hotel\\hotel\\Model\\Clint.cs",
               "RelativeToolTip": "hotel\\Model\\Clint.cs",
               "ViewState": "AgIAAA0AAAAAAAAAAAA5wAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -1057,9 +1047,9 @@
               "$type": "Document",
               "DocumentIndex": 55,
               "Title": "Category.cs",
-              "DocumentMoniker": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\hotel\\hotel\\Model\\Category.cs",
+              "DocumentMoniker": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\diplom-karina\\diplom_karina\\hotel\\hotel\\Model\\Category.cs",
               "RelativeDocumentMoniker": "hotel\\Model\\Category.cs",
-              "ToolTip": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\hotel\\hotel\\Model\\Category.cs",
+              "ToolTip": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\diplom-karina\\diplom_karina\\hotel\\hotel\\Model\\Category.cs",
               "RelativeToolTip": "hotel\\Model\\Category.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -1069,9 +1059,9 @@
               "$type": "Document",
               "DocumentIndex": 56,
               "Title": "BookService.cs",
-              "DocumentMoniker": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\hotel\\hotel\\Model\\BookService.cs",
+              "DocumentMoniker": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\diplom-karina\\diplom_karina\\hotel\\hotel\\Model\\BookService.cs",
               "RelativeDocumentMoniker": "hotel\\Model\\BookService.cs",
-              "ToolTip": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\hotel\\hotel\\Model\\BookService.cs",
+              "ToolTip": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\diplom-karina\\diplom_karina\\hotel\\hotel\\Model\\BookService.cs",
               "RelativeToolTip": "hotel\\Model\\BookService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -1081,9 +1071,9 @@
               "$type": "Document",
               "DocumentIndex": 57,
               "Title": "StatusRoom.cs",
-              "DocumentMoniker": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\hotel\\hotel\\Model\\StatusRoom.cs",
+              "DocumentMoniker": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\diplom-karina\\diplom_karina\\hotel\\hotel\\Model\\StatusRoom.cs",
               "RelativeDocumentMoniker": "hotel\\Model\\StatusRoom.cs",
-              "ToolTip": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\hotel\\hotel\\Model\\StatusRoom.cs",
+              "ToolTip": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\diplom-karina\\diplom_karina\\hotel\\hotel\\Model\\StatusRoom.cs",
               "RelativeToolTip": "hotel\\Model\\StatusRoom.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -1093,9 +1083,9 @@
               "$type": "Document",
               "DocumentIndex": 58,
               "Title": "Service.cs",
-              "DocumentMoniker": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\hotel\\hotel\\Model\\Service.cs",
+              "DocumentMoniker": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\diplom-karina\\diplom_karina\\hotel\\hotel\\Model\\Service.cs",
               "RelativeDocumentMoniker": "hotel\\Model\\Service.cs",
-              "ToolTip": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\hotel\\hotel\\Model\\Service.cs",
+              "ToolTip": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\diplom-karina\\diplom_karina\\hotel\\hotel\\Model\\Service.cs",
               "RelativeToolTip": "hotel\\Model\\Service.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -1105,9 +1095,9 @@
               "$type": "Document",
               "DocumentIndex": 59,
               "Title": "Room.cs",
-              "DocumentMoniker": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\hotel\\hotel\\Model\\Room.cs",
+              "DocumentMoniker": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\diplom-karina\\diplom_karina\\hotel\\hotel\\Model\\Room.cs",
               "RelativeDocumentMoniker": "hotel\\Model\\Room.cs",
-              "ToolTip": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\hotel\\hotel\\Model\\Room.cs",
+              "ToolTip": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\diplom-karina\\diplom_karina\\hotel\\hotel\\Model\\Room.cs",
               "RelativeToolTip": "hotel\\Model\\Room.cs",
               "ViewState": "AgIAAAcAAAAAAAAAAAAzwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -1117,9 +1107,9 @@
               "$type": "Document",
               "DocumentIndex": 60,
               "Title": "Role.cs",
-              "DocumentMoniker": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\hotel\\hotel\\Model\\Role.cs",
+              "DocumentMoniker": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\diplom-karina\\diplom_karina\\hotel\\hotel\\Model\\Role.cs",
               "RelativeDocumentMoniker": "hotel\\Model\\Role.cs",
-              "ToolTip": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\hotel\\hotel\\Model\\Role.cs",
+              "ToolTip": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\diplom-karina\\diplom_karina\\hotel\\hotel\\Model\\Role.cs",
               "RelativeToolTip": "hotel\\Model\\Role.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -1129,9 +1119,9 @@
               "$type": "Document",
               "DocumentIndex": 61,
               "Title": "PhotoCategory.cs",
-              "DocumentMoniker": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\hotel\\hotel\\Model\\PhotoCategory.cs",
+              "DocumentMoniker": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\diplom-karina\\diplom_karina\\hotel\\hotel\\Model\\PhotoCategory.cs",
               "RelativeDocumentMoniker": "hotel\\Model\\PhotoCategory.cs",
-              "ToolTip": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\hotel\\hotel\\Model\\PhotoCategory.cs",
+              "ToolTip": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\diplom-karina\\diplom_karina\\hotel\\hotel\\Model\\PhotoCategory.cs",
               "RelativeToolTip": "hotel\\Model\\PhotoCategory.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -1141,9 +1131,9 @@
               "$type": "Document",
               "DocumentIndex": 62,
               "Title": "Photo.cs",
-              "DocumentMoniker": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\hotel\\hotel\\Model\\Photo.cs",
+              "DocumentMoniker": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\diplom-karina\\diplom_karina\\hotel\\hotel\\Model\\Photo.cs",
               "RelativeDocumentMoniker": "hotel\\Model\\Photo.cs",
-              "ToolTip": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\hotel\\hotel\\Model\\Photo.cs",
+              "ToolTip": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\diplom-karina\\diplom_karina\\hotel\\hotel\\Model\\Photo.cs",
               "RelativeToolTip": "hotel\\Model\\Photo.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -1153,9 +1143,9 @@
               "$type": "Document",
               "DocumentIndex": 63,
               "Title": "Floor.cs",
-              "DocumentMoniker": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\hotel\\hotel\\Models\\Floor.cs",
+              "DocumentMoniker": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\diplom-karina\\diplom_karina\\hotel\\hotel\\Models\\Floor.cs",
               "RelativeDocumentMoniker": "hotel\\Models\\Floor.cs",
-              "ToolTip": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\hotel\\hotel\\Models\\Floor.cs",
+              "ToolTip": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\diplom-karina\\diplom_karina\\hotel\\hotel\\Models\\Floor.cs",
               "RelativeToolTip": "hotel\\Models\\Floor.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAALAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -1165,9 +1155,9 @@
               "$type": "Document",
               "DocumentIndex": 67,
               "Title": "EditServiceWindow.xaml",
-              "DocumentMoniker": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\hotel\\hotel\\EditServiceWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\diplom-karina\\diplom_karina\\hotel\\hotel\\EditServiceWindow.xaml",
               "RelativeDocumentMoniker": "hotel\\EditServiceWindow.xaml",
-              "ToolTip": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\hotel\\hotel\\EditServiceWindow.xaml",
+              "ToolTip": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\diplom-karina\\diplom_karina\\hotel\\hotel\\EditServiceWindow.xaml",
               "RelativeToolTip": "hotel\\EditServiceWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2026-04-24T11:43:07.653Z"
@@ -1176,9 +1166,9 @@
               "$type": "Document",
               "DocumentIndex": 68,
               "Title": "AddServiceWindow.xaml",
-              "DocumentMoniker": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\hotel\\hotel\\AddServiceWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\diplom-karina\\diplom_karina\\hotel\\hotel\\AddServiceWindow.xaml",
               "RelativeDocumentMoniker": "hotel\\AddServiceWindow.xaml",
-              "ToolTip": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\hotel\\hotel\\AddServiceWindow.xaml",
+              "ToolTip": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\diplom-karina\\diplom_karina\\hotel\\hotel\\AddServiceWindow.xaml",
               "RelativeToolTip": "hotel\\AddServiceWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2026-04-24T11:42:51.81Z"
@@ -1187,9 +1177,9 @@
               "$type": "Document",
               "DocumentIndex": 69,
               "Title": "EmployeeControl.xaml",
-              "DocumentMoniker": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\hotel\\hotel\\EmployeeControl.xaml",
+              "DocumentMoniker": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\diplom-karina\\diplom_karina\\hotel\\hotel\\EmployeeControl.xaml",
               "RelativeDocumentMoniker": "hotel\\EmployeeControl.xaml",
-              "ToolTip": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\hotel\\hotel\\EmployeeControl.xaml",
+              "ToolTip": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\diplom-karina\\diplom_karina\\hotel\\hotel\\EmployeeControl.xaml",
               "RelativeToolTip": "hotel\\EmployeeControl.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2025-11-27T13:38:16.527Z"
@@ -1198,9 +1188,9 @@
               "$type": "Document",
               "DocumentIndex": 78,
               "Title": "AddRoomWindow.xaml",
-              "DocumentMoniker": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\hotel\\hotel\\AddRoomWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\diplom-karina\\diplom_karina\\hotel\\hotel\\AddRoomWindow.xaml",
               "RelativeDocumentMoniker": "hotel\\AddRoomWindow.xaml",
-              "ToolTip": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\hotel\\hotel\\AddRoomWindow.xaml",
+              "ToolTip": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\diplom-karina\\diplom_karina\\hotel\\hotel\\AddRoomWindow.xaml",
               "RelativeToolTip": "hotel\\AddRoomWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2025-11-28T06:19:35.863Z"
@@ -1209,9 +1199,9 @@
               "$type": "Document",
               "DocumentIndex": 79,
               "Title": "EditRoomWindow.xaml",
-              "DocumentMoniker": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\hotel\\hotel\\EditRoomWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\diplom-karina\\diplom_karina\\hotel\\hotel\\EditRoomWindow.xaml",
               "RelativeDocumentMoniker": "hotel\\EditRoomWindow.xaml",
-              "ToolTip": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\hotel\\hotel\\EditRoomWindow.xaml",
+              "ToolTip": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\diplom-karina\\diplom_karina\\hotel\\hotel\\EditRoomWindow.xaml",
               "RelativeToolTip": "hotel\\EditRoomWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2025-11-28T06:19:19.365Z"
@@ -1220,9 +1210,9 @@
               "$type": "Document",
               "DocumentIndex": 80,
               "Title": "Autorisation.xaml",
-              "DocumentMoniker": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\hotel\\hotel\\Autorisation.xaml",
+              "DocumentMoniker": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\diplom-karina\\diplom_karina\\hotel\\hotel\\Autorisation.xaml",
               "RelativeDocumentMoniker": "hotel\\Autorisation.xaml",
-              "ToolTip": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\hotel\\hotel\\Autorisation.xaml",
+              "ToolTip": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\diplom-karina\\diplom_karina\\hotel\\hotel\\Autorisation.xaml",
               "RelativeToolTip": "hotel\\Autorisation.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2025-10-30T17:47:12.123Z"
@@ -1231,9 +1221,9 @@
               "$type": "Document",
               "DocumentIndex": 77,
               "Title": "AddEmployeeWindow.xaml",
-              "DocumentMoniker": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\hotel\\hotel\\AddEmployeeWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\diplom-karina\\diplom_karina\\hotel\\hotel\\AddEmployeeWindow.xaml",
               "RelativeDocumentMoniker": "hotel\\AddEmployeeWindow.xaml",
-              "ToolTip": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\hotel\\hotel\\AddEmployeeWindow.xaml",
+              "ToolTip": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\diplom-karina\\diplom_karina\\hotel\\hotel\\AddEmployeeWindow.xaml",
               "RelativeToolTip": "hotel\\AddEmployeeWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2025-11-27T23:44:34.796Z"
@@ -1242,9 +1232,9 @@
               "$type": "Document",
               "DocumentIndex": 70,
               "Title": "HeadHotelManagerWindow.xaml",
-              "DocumentMoniker": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\hotel\\hotel\\HeadHotelManagerWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\diplom-karina\\diplom_karina\\hotel\\hotel\\HeadHotelManagerWindow.xaml",
               "RelativeDocumentMoniker": "hotel\\HeadHotelManagerWindow.xaml",
-              "ToolTip": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\hotel\\hotel\\HeadHotelManagerWindow.xaml",
+              "ToolTip": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\diplom-karina\\diplom_karina\\hotel\\hotel\\HeadHotelManagerWindow.xaml",
               "RelativeToolTip": "hotel\\HeadHotelManagerWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2025-10-31T10:53:38.841Z"
@@ -1253,9 +1243,9 @@
               "$type": "Document",
               "DocumentIndex": 71,
               "Title": "BookingServiceSpecialist.xaml",
-              "DocumentMoniker": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\hotel\\hotel\\BookingServiceSpecialist.xaml",
+              "DocumentMoniker": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\diplom-karina\\diplom_karina\\hotel\\hotel\\BookingServiceSpecialist.xaml",
               "RelativeDocumentMoniker": "hotel\\BookingServiceSpecialist.xaml",
-              "ToolTip": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\hotel\\hotel\\BookingServiceSpecialist.xaml",
+              "ToolTip": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\diplom-karina\\diplom_karina\\hotel\\hotel\\BookingServiceSpecialist.xaml",
               "RelativeToolTip": "hotel\\BookingServiceSpecialist.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2025-10-31T10:54:52.927Z"
@@ -1264,9 +1254,9 @@
               "$type": "Document",
               "DocumentIndex": 72,
               "Title": "RoomControl.xaml",
-              "DocumentMoniker": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\hotel\\hotel\\RoomControl.xaml",
+              "DocumentMoniker": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\diplom-karina\\diplom_karina\\hotel\\hotel\\RoomControl.xaml",
               "RelativeDocumentMoniker": "hotel\\RoomControl.xaml",
-              "ToolTip": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\hotel\\hotel\\RoomControl.xaml",
+              "ToolTip": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\diplom-karina\\diplom_karina\\hotel\\hotel\\RoomControl.xaml",
               "RelativeToolTip": "hotel\\RoomControl.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2025-11-28T06:13:30.404Z"
@@ -1275,9 +1265,9 @@
               "$type": "Document",
               "DocumentIndex": 73,
               "Title": "EmployeeHHMWindow.xaml",
-              "DocumentMoniker": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\hotel\\hotel\\EmployeeHHMWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\diplom-karina\\diplom_karina\\hotel\\hotel\\EmployeeHHMWindow.xaml",
               "RelativeDocumentMoniker": "hotel\\EmployeeHHMWindow.xaml",
-              "ToolTip": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\hotel\\hotel\\EmployeeHHMWindow.xaml",
+              "ToolTip": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\diplom-karina\\diplom_karina\\hotel\\hotel\\EmployeeHHMWindow.xaml",
               "RelativeToolTip": "hotel\\EmployeeHHMWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2025-11-27T12:06:05.46Z"
@@ -1286,9 +1276,9 @@
               "$type": "Document",
               "DocumentIndex": 74,
               "Title": "BookingReportWindow.xaml",
-              "DocumentMoniker": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\hotel\\hotel\\BookingReportWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\diplom-karina\\diplom_karina\\hotel\\hotel\\BookingReportWindow.xaml",
               "RelativeDocumentMoniker": "hotel\\BookingReportWindow.xaml",
-              "ToolTip": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\hotel\\hotel\\BookingReportWindow.xaml",
+              "ToolTip": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\diplom-karina\\diplom_karina\\hotel\\hotel\\BookingReportWindow.xaml",
               "RelativeToolTip": "hotel\\BookingReportWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2025-12-07T18:12:26.585Z"
@@ -1297,9 +1287,9 @@
               "$type": "Document",
               "DocumentIndex": 76,
               "Title": "EditEmployeeWindow.xaml",
-              "DocumentMoniker": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\hotel\\hotel\\EditEmployeeWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\diplom-karina\\diplom_karina\\hotel\\hotel\\EditEmployeeWindow.xaml",
               "RelativeDocumentMoniker": "hotel\\EditEmployeeWindow.xaml",
-              "ToolTip": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\hotel\\hotel\\EditEmployeeWindow.xaml",
+              "ToolTip": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\diplom-karina\\diplom_karina\\hotel\\hotel\\EditEmployeeWindow.xaml",
               "RelativeToolTip": "hotel\\EditEmployeeWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2025-11-28T08:38:07.099Z"
@@ -1308,9 +1298,9 @@
               "$type": "Document",
               "DocumentIndex": 75,
               "Title": "AddClintWindow.xaml",
-              "DocumentMoniker": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\hotel\\hotel\\AddClintWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\diplom-karina\\diplom_karina\\hotel\\hotel\\AddClintWindow.xaml",
               "RelativeDocumentMoniker": "hotel\\AddClintWindow.xaml",
-              "ToolTip": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\hotel\\hotel\\AddClintWindow.xaml",
+              "ToolTip": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\diplom-karina\\diplom_karina\\hotel\\hotel\\AddClintWindow.xaml",
               "RelativeToolTip": "hotel\\AddClintWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2025-12-12T14:19:22.765Z"
@@ -1319,9 +1309,9 @@
               "$type": "Document",
               "DocumentIndex": 81,
               "Title": "hotel.csproj",
-              "DocumentMoniker": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\hotel\\hotel\\hotel.csproj",
+              "DocumentMoniker": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\diplom-karina\\diplom_karina\\hotel\\hotel\\hotel.csproj",
               "RelativeDocumentMoniker": "hotel\\hotel.csproj",
-              "ToolTip": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\hotel\\hotel\\hotel.csproj",
+              "ToolTip": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\diplom-karina\\diplom_karina\\hotel\\hotel\\hotel.csproj",
               "RelativeToolTip": "hotel\\hotel.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
@@ -1331,9 +1321,9 @@
               "$type": "Document",
               "DocumentIndex": 83,
               "Title": "EditHotelWindow.g.i.cs",
-              "DocumentMoniker": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\hotel\\hotel\\obj\\Debug\\net8.0-windows\\EditHotelWindow.g.i.cs",
+              "DocumentMoniker": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\diplom-karina\\diplom_karina\\hotel\\hotel\\obj\\Debug\\net8.0-windows\\EditHotelWindow.g.i.cs",
               "RelativeDocumentMoniker": "hotel\\obj\\Debug\\net8.0-windows\\EditHotelWindow.g.i.cs",
-              "ToolTip": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\hotel\\hotel\\obj\\Debug\\net8.0-windows\\EditHotelWindow.g.i.cs",
+              "ToolTip": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\diplom-karina\\diplom_karina\\hotel\\hotel\\obj\\Debug\\net8.0-windows\\EditHotelWindow.g.i.cs",
               "RelativeToolTip": "hotel\\obj\\Debug\\net8.0-windows\\EditHotelWindow.g.i.cs",
               "ViewState": "AgIAABYAAAAAAAAAAAArwCkAAAAZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -1343,9 +1333,9 @@
               "$type": "Document",
               "DocumentIndex": 82,
               "Title": "AssemblyInfo.cs",
-              "DocumentMoniker": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\hotel\\hotel\\AssemblyInfo.cs",
+              "DocumentMoniker": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\diplom-karina\\diplom_karina\\hotel\\hotel\\AssemblyInfo.cs",
               "RelativeDocumentMoniker": "hotel\\AssemblyInfo.cs",
-              "ToolTip": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\hotel\\hotel\\AssemblyInfo.cs",
+              "ToolTip": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\diplom-karina\\diplom_karina\\hotel\\hotel\\AssemblyInfo.cs",
               "RelativeToolTip": "hotel\\AssemblyInfo.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
