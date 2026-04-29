@@ -1,0 +1,166 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup />
+  <ItemGroup>
+    <ApplicationDefinition Update="App.xaml">
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Update="AddBookingWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="AddClintWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="AddEmployeeWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="AddHotelWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="AddRoomWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="AddServiceWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="BookingControl.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="BookingReportWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="BookingServiceSpecialist.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="EditEmployeeWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="EditHotelWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="EditRoomWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="EditServiceWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="EmployeeControl.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="EmployeeHHMWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="HeadHotelManagerWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="HotelControl.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="HotelsWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="MainManager.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="ReviewControl.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="ReviewWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="RoomControl.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="RoomsWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="ServiceControl.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="ServiceWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="AddBookingWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="AddClintWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="AddEmployeeWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="AddHotelWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="AddRoomWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="AddServiceWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Autorisation.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="BookingControl.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="BookingReportWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="BookingServiceSpecialist.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="EditEmployeeWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="EditHotelWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="EditRoomWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="EditServiceWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="EmployeeControl.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="EmployeeHHMWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="HeadHotelManagerWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="HotelControl.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="HotelsWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="MainManager.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="ReviewControl.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="ReviewWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="RoomControl.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="RoomsWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="ServiceControl.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="ServiceWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+</Project>

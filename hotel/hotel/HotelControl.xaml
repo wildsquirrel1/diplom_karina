@@ -1,0 +1,55 @@
+﻿<UserControl x:Class="hotel.HotelControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:hotel"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+    <Border BorderBrush="LavenderBlush" BorderThickness="1" CornerRadius="5" Padding="10" Margin="5">
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition Width="2*"/>
+            </Grid.ColumnDefinitions>
+
+            <Grid Grid.Column="1">
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="auto"/>
+                 </Grid.RowDefinitions>
+
+                <TextBlock Margin="5 15 0 0" Grid.Row="0" Name="nameH" TextWrapping="Wrap" Text="textblock" FontWeight="Medium" FontSize="30" />
+                <TextBlock Margin="5 15 0 0" Grid.Row="1" Name="addressH" TextWrapping="Wrap" Text="textblock" FontSize="30"/>
+                <TextBlock Margin="5 15 0 0" Grid.Row="2" Name="cityH" TextWrapping="Wrap" Text="textblock" FontSize="30"/>
+                <TextBlock Margin="5 15 0 0" Grid.Row="3" Name="phoneH" TextWrapping="Wrap" Text="textblock" FontSize="30"/>
+                <TextBlock Margin="5 15 0 0" Grid.Row="4" Name="emailH" TextWrapping="Wrap" Text="textblock" FontSize="30"/>
+                <TextBlock Margin="5 15 0 0" Grid.Row="5" Name="starsH" TextWrapping="Wrap" Text="textblock" FontSize="30"/>
+
+                <Grid Grid.Row="6">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+                    <Button Grid.Column="0" Content="Изменить" FontSize="30" Name="edit" Click="edit_Click"  />
+                    <Button Grid.Column="1" Content="Отзывы" FontSize="30" Name="reviewsBtn" Click="reviewsBtn_Click" />
+                    
+                </Grid>
+
+            </Grid>
+
+            <Grid Grid.Column="0">
+                <Border BorderBrush="BlueViolet" BorderThickness="2" Height="350" Width="400">
+                    <Image Source="{Binding Photo}" Name="photo" Stretch="UniformToFill" HorizontalAlignment="Center" VerticalAlignment="Center" ClipToBounds="True"/>
+                </Border>
+            </Grid>
+            
+        </Grid>
+    </Border>
+</UserControl>

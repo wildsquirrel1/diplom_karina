@@ -1,0 +1,38 @@
+﻿<UserControl x:Class="hotel.EmployeeControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:hotel"
+             mc:Ignorable="d" 
+             d:DesignHeight="140" d:DesignWidth="900">
+    <Border BorderBrush="LightGray" BorderThickness="1" CornerRadius="6" Margin="5" Padding="12">
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1.8*" />
+                <ColumnDefinition Width="1.2*"/>
+                <ColumnDefinition Width="Auto"/>
+            </Grid.ColumnDefinitions>
+
+            <!-- Основная информация: ФИО, должность, отель -->
+            <StackPanel Grid.Column="0" VerticalAlignment="Center">
+                <TextBlock x:Name="fullNameBlock" FontSize="18" FontWeight="Bold" TextTrimming="CharacterEllipsis"/>
+                <TextBlock x:Name="roleBlock" FontSize="16" Foreground="SteelBlue" TextTrimming="CharacterEllipsis"/>
+                <TextBlock x:Name="hotelBlock" FontSize="16" Foreground="Gray" TextTrimming="CharacterEllipsis"/>
+                <TextBlock x:Name="statusBlock" FontSize="14" FontStyle="Italic" Foreground="Red" Visibility="Collapsed"/>
+            </StackPanel>
+
+            <!-- Контакты -->
+            <StackPanel Grid.Column="1" VerticalAlignment="Center" Margin="10,0">
+                <TextBlock x:Name="phoneBlock" FontSize="16"/>
+                <TextBlock x:Name="emailBlock" FontSize="16"/>
+            </StackPanel>
+
+            <!-- Кнопки -->
+            <StackPanel Grid.Column="2" VerticalAlignment="Center" Orientation="Vertical" HorizontalAlignment="Right">
+                <Button Content="Редактировать" Name="Edit" Click="Edit_Click" Padding="8,5" Margin="5" FontSize="14"/>
+                <Button Name="Fire" Click="Fire_Click" Padding="8,5" Margin="5" FontSize="14"/>
+            </StackPanel>
+        </Grid>
+    </Border>
+</UserControl>

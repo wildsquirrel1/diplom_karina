@@ -1,0 +1,131 @@
+﻿<Window x:Class="hotel.AddEmployeeWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:hotel"
+        mc:Ignorable="d"
+        Title="Добавление сотрудника" Height="950" MinHeight="730" MaxHeight="1000"  Width="1500" MinWidth="900" MaxWidth="1600" WindowState="Maximized" FontSize="40" WindowStartupLocation="CenterScreen" Icon="C:\Users\Пользователь\source\repos\hotel\hotel\images\local-hotel_118960.png">
+    <Window.Resources>
+        <Style TargetType="Button">
+            <Setter Property="FontSize" Value="34"/>
+            <Setter Property="Foreground" Value="White"/>
+            <Setter Property="Background" Value="#8A6DF7"/>
+            <Setter Property="HorizontalAlignment" Value="Center"/>
+            <Setter Property="Width" Value="360"/>
+            <Setter Property="Height" Value="60"/>
+            <Setter Property="Margin" Value="0,90,0,0"/>
+            <Setter Property="BorderBrush" Value="Transparent"/>
+            <Setter Property="Cursor" Value="Hand"/>
+        </Style>
+    </Window.Resources>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition />
+            <RowDefinition Height="8*"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+
+        <Grid Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+
+            <StackPanel Margin="50,30" VerticalAlignment="Top">
+                <Grid Margin="0,0,0,20">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                    </Grid.RowDefinitions>
+                    <TextBlock Text="Фамилия:" FontSize="40"/>
+                    <TextBox x:Name="lastnameT" Grid.Row="1" Height="60"
+                             PreviewTextInput="lastnameT_PreviewTextInput"/>
+                </Grid>
+
+                <Grid Margin="0,0,0,20">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                    </Grid.RowDefinitions>
+                    <TextBlock Text="Имя:" FontSize="40"/>
+                    <TextBox x:Name="nameT" Grid.Row="1" Height="60"
+                             PreviewTextInput="nameT_PreviewTextInput"/>
+                </Grid>
+
+                <Grid Margin="0,0,0,20">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                    </Grid.RowDefinitions>
+                    <TextBlock Text="Отчество:" FontSize="40"/>
+                    <TextBox x:Name="patronymicT" Grid.Row="1" Height="60"
+                             PreviewTextInput="patronymicT_PreviewTextInput"/>
+                </Grid>
+
+                <Grid Margin="0,0,0,20">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                    </Grid.RowDefinitions>
+                    <TextBlock Text="Номер телефона:" FontSize="40"/>
+                    <TextBox x:Name="phoneT" Grid.Row="1" Height="60"
+                             KeyDown="phoneT_KeyDown"/>
+                </Grid>
+
+                <Grid Margin="0,0,0,20">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                    </Grid.RowDefinitions>
+                    <TextBlock Text="Электронная почта:" FontSize="40"/>
+                    <TextBox x:Name="emailT" Grid.Row="1" Height="60"/>
+                </Grid>
+            </StackPanel>
+
+            <StackPanel Margin="50,30" Grid.Column="1" VerticalAlignment="Top">
+                <Grid Margin="0,0,0,20">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                    </Grid.RowDefinitions>
+                    <TextBlock Text="Пароль:" FontSize="40"/>
+                    <PasswordBox x:Name="passwordPB" Grid.Row="1" Height="60"/>
+                </Grid>
+
+                <Grid Margin="0,0,0,20">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                    </Grid.RowDefinitions>
+                    <TextBlock Text="Дата рождения:" FontSize="40"/>
+                    <DatePicker x:Name="birth" Grid.Row="1" Height="60" SelectedDateFormat="Short"/>
+                </Grid>
+
+                <Grid Margin="0,0,0,20">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                    </Grid.RowDefinitions>
+                    <TextBlock Text="Отель:" FontSize="40"/>
+                    <ComboBox x:Name="hotelCB" Grid.Row="1" Height="60"/>
+                </Grid>
+            </StackPanel>
+        </Grid>
+
+        <Button Grid.Row="2" Content="Добавить" Name="addB" Padding="20,5"
+                HorizontalAlignment="Center" Margin="0,10" Click="addB_Click"/>
+
+        <Grid Grid.Row="0">
+            <StackPanel Grid.Column="0" Margin="30,10,0,0" VerticalAlignment="Top">
+                <TextBlock Text="Сотрудник: " FontSize="30" Foreground="Black" Name="emplName" TextWrapping="Wrap"/>
+                <TextBlock Text="Роль: " FontSize="28" Foreground="Black" Name="emplRole" TextWrapping="Wrap"/>
+            </StackPanel>
+            <Button x:Name="back" Content="X" HorizontalAlignment="Right" VerticalAlignment="Top"
+                    Width="60" Height="60" FontSize="40" Click="back_Click" Margin="0,20,20,0"/>
+            <TextBlock Text="Добавление" HorizontalAlignment="Center" VerticalAlignment="Center"
+                       FontSize="48"/>
+            <Image Source="C:\Users\Пользователь\source\repos\hotel\hotel\images\icon-icons (2).png" VerticalAlignment="Center" Margin="0 0 350 0" HorizontalAlignment="Center" Width="90"/>
+        </Grid>
+    </Grid>
+</Window>

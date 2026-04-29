@@ -1,0 +1,66 @@
+﻿<Window x:Class="hotel.BookingReportWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:hotel"
+        mc:Ignorable="d"
+        Title="Отчёт по проживанию" Height="950" MinHeight="730" MaxHeight="1000" Width="1500" MinWidth="900" MaxWidth="1600" WindowState="Maximized" FontSize="16" WindowStartupLocation="CenterScreen" Icon="C:\Users\Пользователь\source\repos\hotel\hotel\images\local-hotel_118960.png">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <!-- Заголовок -->
+        <TextBlock Grid.Row="0" 
+                   Text="ЖУРНАЛ ПО ПРОЖИВАНИЮ КЛИЕНТОВ В ОТЕЛЕ С __ ПО __ Г." 
+                   HorizontalAlignment="Center" VerticalAlignment="Center"
+                   FontSize="20" FontWeight="Bold" Margin="0,10"/>
+        <Image Source="C:\Users\Пользователь\source\repos\hotel\hotel\images\icon-icons (2).png" Width="90" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0 0 690 0"/>
+
+        <StackPanel Grid.Row="0" Margin="30,0,0,0" VerticalAlignment="Center" HorizontalAlignment="Left" Width="320">
+            <TextBlock Text="Сотрудник: " FontSize="20" Foreground="Black" Name="emplName" TextWrapping="Wrap"/>
+            <TextBlock Text="Роль: " FontSize="20" Foreground="Black" Name="emplRole" TextWrapping="Wrap"/>
+        </StackPanel>
+
+        <Button Grid.Row="0" Content="X" FontSize="22" FontWeight="Bold" Width="40" Height="40" Background="#8A6DF7" Foreground="White" BorderBrush="Transparent" Cursor="Hand" VerticalAlignment="Top" HorizontalAlignment="Right" Margin="0,20,30,0" Name="exit" Click="exit_Click"/>
+
+        <StackPanel Grid.Row="1" Orientation="Horizontal" Margin="20">
+            <TextBlock Text="Отель:" Margin="0,0,5,0"/>
+            <ComboBox x:Name="hotelCB" Width="200" Margin="0,0,15,0" Height="36" FontSize="16"/>
+            <TextBlock Text="С:" Margin="0,0,5,0"/>
+            <DatePicker x:Name="startDatePicker" Margin="0,0,15,0" Height="36" FontSize="16"/>
+            <TextBlock Text="По:" Margin="0,0,5,0"/>
+            <DatePicker x:Name="endDatePicker" Margin="0,0,15,0" Height="36" FontSize="16"/>
+            <Button Content="Сформировать отчёт" Name="GenerateReport" Click="GenerateReport_Click" Padding="10,5" FontSize="16"/>
+            <Button Content="Экспорт в Word" Name="ExportToWordB" Click="ExportToWord_Click" Padding="10,5" FontSize="16" Background="#2e8b57" Foreground="White"/>
+
+            <TextBlock x:Name="Title"
+           Grid.Row="0" 
+           Text="ЖУРНАЛ ПО ПРОЖИВАНИЮ КЛИЕНТОВ В ОТЕЛЕ С __ ПО __ Г." 
+           HorizontalAlignment="Center" VerticalAlignment="Center"
+           FontSize="20" FontWeight="Bold" Margin="0,10"/>
+        </StackPanel>
+
+        <DataGrid Grid.Row="2" x:Name="reportGrid" AutoGenerateColumns="False" Margin="20"
+                  CanUserAddRows="False" IsReadOnly="True" FontSize="16" Visibility="Hidden">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="№ брони" Binding="{Binding Idbook}" Width="100"/>
+                <DataGridTextColumn Header="Номер комнаты" Binding="{Binding Room.Name}" Width="120"/>
+                <DataGridTextColumn Header="Ф.И.О. клиента" Binding="{Binding GuestFullName}" Width="200"/>
+                <DataGridTextColumn Header="Кол-во гостей" Binding="{Binding NumOfGuests}" Width="120"/>
+                <DataGridTextColumn Header="Дата въезда" Binding="{Binding CheckInDate, StringFormat=dd.MM.yyyy}" Width="120"/>
+                <DataGridTextColumn Header="Дата выезда" Binding="{Binding DepartureDate, StringFormat=dd.MM.yyyy}" Width="120"/>
+                <DataGridTextColumn Header="Сумма оплаты" Binding="{Binding TotalAmount, StringFormat=N0}" Width="120"/>
+            </DataGrid.Columns>
+        </DataGrid>
+
+        <Label Grid.Row="2" Content="Данные не найдены" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="40" Visibility="Visible" Name="notfound"/>
+
+        <TextBlock Grid.Row="3" x:Name="totalAmountLabel" HorizontalAlignment="Right" VerticalAlignment="Bottom" 
+                   FontSize="18" FontWeight="Bold" Margin="0,0,20,20"/>
+    </Grid>
+</Window>
