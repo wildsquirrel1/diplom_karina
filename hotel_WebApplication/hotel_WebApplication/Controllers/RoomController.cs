@@ -21,14 +21,14 @@ namespace hotel_WebApplication.Controllers
         [HttpGet]
         public async Task<ActionResult<List<Room>>> Get()
         {
-            return Ok(await _context.Rooms.Include(r => r.IdCategoryNavigation).ThenInclude(c => c.PhotoCategories).ThenInclude(pc => pc.Photo).Include(r => r.Floor).Include(r => r.Hotel).Include(r => r.Status).ToListAsync());
+            return Ok(await _context.Rooms.Include(r => r.IdCategoryNavigation).Include(r => r.Floor).Include(r => r.Hotel).Include(r => r.Status).ToListAsync());
         }
 
         // GET api/<RoomController>/5
         [HttpGet("{id}")]
         public async Task<ActionResult<Room>> Get(int id)
         {
-            var room = await _context.Rooms.Include(r => r.IdCategoryNavigation).ThenInclude(c => c.PhotoCategories).ThenInclude(pc => pc.Photo).Include(r => r.Floor).Include(r => r.Hotel).Include(r => r.Status).FirstOrDefaultAsync(r => r.Idroom == id);
+            var room = await _context.Rooms.Include(r => r.IdCategoryNavigation).Include(r => r.Floor).Include(r => r.Hotel).Include(r => r.Status).FirstOrDefaultAsync(r => r.Idroom == id);
 
             if (room == null)
                 return NotFound("Номер не найден");

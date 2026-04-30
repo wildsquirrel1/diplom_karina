@@ -34,7 +34,7 @@ namespace hotel
             LoadRoomsAsync();
         }
 
-        private async void LoadRoomsAsync()
+        public async Task LoadRoomsAsync()
         {
             roomList.Children.Clear();
             try
@@ -99,34 +99,34 @@ namespace hotel
             };
         }
 
-        private void sortBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        private async void sortBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             if(roomList !=  null)
             {
-                LoadRoomsAsync();
+                await LoadRoomsAsync();
                 NotFound();
             }
         }
 
-        private void filterBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        private async void filterBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             if (roomList != null)
             {
-                LoadRoomsAsync();
+                await LoadRoomsAsync();
                 NotFound();
             }
         }
 
-        private void addRoom_Click(object sender, RoutedEventArgs e)
+        private async void addRoom_Click(object sender, RoutedEventArgs e)
         {
             var addWindow = new AddRoomWindow(_currentUser);
             if (addWindow.ShowDialog() == true)
             {
-                LoadRoomsAsync();
+                await LoadRoomsAsync();
             }
         }
 
-        private void searchTB_TextChanged(object sender, TextChangedEventArgs e)
+        private async void searchTB_TextChanged(object sender, TextChangedEventArgs e)
         {
             if (string.IsNullOrEmpty(searchTB.Text))
             {
@@ -138,7 +138,7 @@ namespace hotel
             }
             if (roomList != null)
             {
-                LoadRoomsAsync();
+                await LoadRoomsAsync();
                 NotFound();
             }
         }

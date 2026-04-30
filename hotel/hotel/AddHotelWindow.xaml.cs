@@ -82,7 +82,7 @@ namespace hotel
             else
             {
                 nameT.Text = $"Простой Комфорт {EditHotelWindow.CapitalizeFirstLetter(city)}";
-            }
+            }   
         }
 
         private async void addB_Click(object sender, RoutedEventArgs e)

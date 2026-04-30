@@ -124,7 +124,7 @@ namespace hotel
 
             /*if (!isValidAddress(address))
             {
-                MessageBox.Show("Адрес должен быть в формате: ул. Название, д. 12 или ул. Название, д. 12/3 или ул. Название, д. 12а", "Уведомление", MessageBoxButton.OK, MessageBoxImage.Warning);
+                MessageBox.Show("Адрес должен быть в формате: ул. Название, или ул. Название, д. 12/3 или ул. Название, д. 12а", "Уведомление", MessageBoxButton.OK, MessageBoxImage.Warning);
                 return false;
             }*/
 
@@ -237,7 +237,11 @@ namespace hotel
         {
             if (string.IsNullOrEmpty(address) || address.Length > 100)
                 return false;
-            var regex = new Regex(@"^улица\. [^,\d]+, д\. \d+(?:[/][\dа-яА-ЯёЁ]|[а-яА-ЯёЁ])?$");
+
+            //var regex = new Regex(@"^улица\. [^,\d]+, д\. \d+(?:[/][\dа-яА-ЯёЁ]|[а-яА-ЯёЁ])?$");
+
+            var regex = new Regex(@"^улица\. [^,\d]+, \d+(?:[/][\dа-яА-ЯёЁ]|[а-яА-ЯёЁ])?$");
+
             return regex.IsMatch(address);
         }
 
