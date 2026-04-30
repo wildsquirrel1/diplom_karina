@@ -27,6 +27,7 @@ namespace hotel
         private string _currentSearch = "";
         private int _currentSortIndex = 0;
         HeadHotelManagerWindow HeadHotelManagerWindow = new HeadHotelManagerWindow();
+        private Dictionary<int, double?> _hotelRatings = new();
         Employee Employee;
         public HotelsWindow(Employee employee)
         {
@@ -43,11 +44,17 @@ namespace hotel
             if (_allhotels.Count == 0 || string.IsNullOrEmpty(_currentSearch))
             {
                 _allhotels = await Api.GetHotels();
+                _hotelRatings.Clear();
+                foreach (var hotel in _allhotels)
+                {
+                    var ratingData = await Api.GetHotelRatingAsync(hotel.Idhotel);
+                    _hotelRatings[hotel.Idhotel] = ratingData?.rating;
+                }
             }
 
             _allhotels = ApplySearch(_allhotels, searchTB.Text.ToLower());
             _allhotels = ApplySort(_allhotels, sordCB.SelectedIndex);
-            _allhotels = ApplyFilter(_allhotels, filterCB.SelectedIndex.ToString());
+            _allhotels = ApplyFilter(_allhotels, filterCB.SelectedIndex);
 
             hotelCount.Text = $"Найдено отелей: {_allhotels.Count}";
             if (_allhotels == null || _allhotels.Count == 0)
@@ -84,7 +91,7 @@ namespace hotel
             {
                 search.Visibility = Visibility.Hidden;
             }
-            if(hotelList != null)
+            if (hotelList != null)
             {
                 loadHotels();
                 NotFound();
@@ -93,7 +100,7 @@ namespace hotel
 
         private void sordCB_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-            if(hotelList != null)
+            if (hotelList != null)
             {
                 loadHotels();
                 NotFound();
@@ -102,7 +109,7 @@ namespace hotel
 
         private void filterCB_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-            if(hotelList != null)
+            if (hotelList != null)
             {
                 loadHotels();
                 NotFound();
@@ -112,16 +119,18 @@ namespace hotel
         private void addHotel_Click(object sender, RoutedEventArgs e)
         {
             AddHotelWindow addHotel = new AddHotelWindow(Employee);
-            if(addHotel.ShowDialog() == true)
+            if (addHotel.ShowDialog() == true)
             {
+                _allhotels.Clear();
+                _hotelRatings.Clear();
                 loadHotels();
             }
-            
+
         }
 
         public List<Hotel> ApplySearch(List<Hotel> hotelList, string search)
         {
-            if(!string.IsNullOrEmpty(search))
+            if (!string.IsNullOrEmpty(search))
             {
                 hotelList = hotelList.Where(h => h.Name.ToLower().Contains(search)).ToList();
             }
@@ -139,19 +148,30 @@ namespace hotel
             };
         }
 
-        public List<Hotel> ApplyFilter(List<Hotel> hotelList, string selectedValue)
+        public List<Hotel> ApplyFilter(List<Hotel> hotelList, int selectedValue)
         {
-            if(filterCB.SelectedIndex == 0)
+            if (selectedValue == 0)
             {
                 return hotelList;
             }
-            //hotelList = hotelList.Where(h => h.Stars.ToString() == selectedValue).ToList();
-            return hotelList;
+
+            return hotelList.Where(h =>
+            {
+                // Получаем рейтинг из словаря
+                if (!_hotelRatings.TryGetValue(h.Idhotel, out var rating))
+                    return false;
+
+                if (!rating.HasValue)
+                    return false;
+
+                int roundedRating = (int)Math.Round(rating.Value);
+                return roundedRating == selectedValue;
+            }).ToList();
         }
 
         public void NotFound()
         {
-            if(hotelList.Children.Count == 0 || hotelList == null)
+            if (hotelList.Children.Count == 0 || hotelList == null)
             {
                 notfound.Visibility = Visibility.Visible;
                 stack.Visibility = Visibility.Collapsed;

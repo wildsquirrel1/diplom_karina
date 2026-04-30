@@ -110,7 +110,7 @@ namespace hotel
 
         private void reviewsBtn_Click(object sender, RoutedEventArgs e)
         {
-            var review = new ReviewWindow(hotel1.Idhotel);
+            var review = new ReviewWindow(hotel1.Idhotel, _currEmpl);
             bool? result = review.ShowDialog();
 
             if(result == true && HotelsWindow.Instance != null)
