@@ -1,5 +1,6 @@
 ﻿using hotel.Data;
 using hotel.Models;
+using Microsoft.Web.WebView2.Core;
 using Microsoft.Win32;
 using System;
 using System.Collections.Generic;
@@ -37,6 +38,8 @@ namespace hotel
             emplRole.Text += " " + currEmployee.IdroleNavigation.Name;
 
             nameOfDocument.Text = "Файл не выбран";
+
+            LoadYandexMaps();
         }
 
         private void nameT_PreviewTextInput(object sender, TextCompositionEventArgs e)
@@ -83,7 +86,7 @@ namespace hotel
         private async void addB_Click(object sender, RoutedEventArgs e)
         {
             if(string.IsNullOrEmpty(nameT.Text) || string.IsNullOrEmpty(address.Text) || string.IsNullOrEmpty(cityT.Text)
-                || string.IsNullOrEmpty(phontT.Text) || string.IsNullOrEmpty(emailT.Text) || starsCB.SelectedIndex == -1)
+                || string.IsNullOrEmpty(phontT.Text) || string.IsNullOrEmpty(emailT.Text) /*|| starsCB.SelectedIndex == -1*/)
             {
                 MessageBox.Show("Заполните пустые поля", "Уведомление");
                 return;
@@ -215,6 +218,127 @@ namespace hotel
                     nameOfDocument.Foreground = Brushes.Red;
                 }
             }
+        }
+
+
+        // Загрузка Яндекс карты
+        private async void LoadYandexMaps()
+        {
+            try
+            {
+                await YandexMapWebView.EnsureCoreWebView2Async();
+                System.Diagnostics.Debug.WriteLine("WebView2 инициализирован");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Ошибка WebView2: {ex.Message}");
+                return;
+            }
+
+            await YandexMapWebView.EnsureCoreWebView2Async();
+
+            // HTML со встроенной картой
+            string html = @"
+                <!DOCTYPE html>
+                <html>
+                <head>
+                    <meta charset='utf-8'>
+                    <script src='https://api-maps.yandex.com/2.1/?apikey=e0855f9d-43db-40c1-bccd-c33341fdf936&lang=ru_RU'></script>
+                    <style>
+                        html, body, #map { width: 100%; height: 100%; margin: 0; padding: 0; }
+                    </style>
+                </head>
+                <body>
+                    <div id='map'></div>
+                    <script>
+                        var myMap, myPlacemark;
+
+                        ymaps.ready(init);
+
+                        function init() {
+                            myMap = new ymaps.Map('map', {
+                                center: [55.76, 37.64],
+                                zoom: 10,
+                                controls: ['zoomControl', 'searchControl']
+                            });
+            
+                            // Клик по карте
+                            myMap.events.add('click', function (e) {
+                                var coords = e.get('coords');
+                                setPlacemark(coords);
+                
+                                ymaps.geocode(coords).then(function (res) {
+                                    var obj = res.geoObjects.get(0);
+                                    sendToCSharp(obj);
+                                });
+                            });
+                        }
+
+                        function setPlacemark(coords) {
+                            if (myPlacemark) myMap.geoObjects.remove(myPlacemark);
+                            myPlacemark = new ymaps.Placemark(coords);
+                            myMap.geoObjects.add(myPlacemark);
+                        }
+
+                        // Поиск по адресу из C#
+                        function searchAddress(query) {
+                            ymaps.geocode(query).then(function (res) {
+                                var obj = res.geoObjects.get(0);
+                                if (!obj) {
+                                    window.chrome.webview.postMessage(JSON.stringify({error: 'Не найдено'}));
+                                    return;
+                                }
+                                var coords = obj.geometry.getCoordinates();
+                                myMap.setCenter(coords, 16);
+                                setPlacemark(coords);
+                                sendToCSharp(obj);
+                            });
+                        }
+
+                        // Отправка данных в C#
+                        function sendToCSharp(geoObject) {
+                            var data = {
+                                address: geoObject.getAddressLine(),
+                                city: geoObject.getLocalities().join(', ') || '',
+                                country: geoObject.getCountry() || '',
+                                coords: geoObject.geometry.getCoordinates()
+                            };
+                            window.chrome.webview.postMessage(JSON.stringify(data));
+                        }
+                    </script>
+                </body>
+                </html>";
+
+            YandexMapWebView.NavigateToString(html);
+
+            // Обработка сообщений из JavaScript
+            YandexMapWebView.WebMessageReceived += OnWebMessageReceived;
+        }
+
+        private void OnWebMessageReceived(object? sender, CoreWebView2WebMessageReceivedEventArgs e)
+        {
+            Dispatcher.Invoke(() =>
+            {
+                string json = e.TryGetWebMessageAsString();
+
+                // Проверка на ошибку
+                if (json.Contains("\"error\""))
+                {
+                    address.Text = "Место не найдено";
+                    cityT.Text = "Место не найдено";
+                    return;
+                }
+
+                // Парсим JSON
+                var data = System.Text.Json.JsonSerializer.Deserialize<AddressData>(json);
+
+                if (data != null)
+                {
+                    // Форматируем вывод: Город | Полный адрес
+                    address.Text = data.address;
+                    cityT.Text = data.city;
+                }
+            });
         }
     }
 }

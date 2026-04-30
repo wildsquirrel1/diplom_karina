@@ -5,7 +5,8 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:hotel"
         mc:Ignorable="d"
-        Title="Редактирование" Height="950" MinHeight="730" MaxHeight="1000"  Width="1500" MinWidth="900" MaxWidth="1600" WindowState="Maximized" FontSize="40" WindowStartupLocation="CenterScreen" Icon="images\local-hotel_118960.png">
+        xmlns:wv2="clr-namespace:Microsoft.Web.WebView2.Wpf;assembly=Microsoft.Web.WebView2.Wpf"
+        Title="Редактирование" d:Height="1900" Height="950" MinHeight="730" MaxHeight="1000"  Width="1500" MinWidth="900" MaxWidth="1600" WindowState="Maximized" FontSize="40" WindowStartupLocation="CenterScreen" Icon="images\local-hotel_118960.png">
     <Window.Resources>
         <Style TargetType="Button">
             <Setter Property="FontSize" Value="34"/>
@@ -22,9 +23,9 @@
     </Window.Resources>
     <Grid>
         <Grid.RowDefinitions>
-            <RowDefinition/>
+            <RowDefinition Height="Auto"/>
             <RowDefinition Height="8*"/>
-            <RowDefinition/>
+            <RowDefinition Height="Auto"/>
         </Grid.RowDefinitions>
 
         <Grid Grid.Row="1">
@@ -41,88 +42,86 @@
                 </StackPanel>
             </Grid>
 
-            <Grid Grid.Column="1">
-                <Grid.RowDefinitions>
-                    <RowDefinition/>
-                    <RowDefinition/>
-                    <RowDefinition/>
-                    <RowDefinition/>
-                    <RowDefinition/>
-                    <RowDefinition/>
-                </Grid.RowDefinitions>
-
-                <Grid Grid.Row="0">
+            <ScrollViewer Grid.Column="1">
+                <Grid>
                     <Grid.RowDefinitions>
-                        <RowDefinition/>
-                        <RowDefinition/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
                     </Grid.RowDefinitions>
-                    <TextBlock Text="Название:"/>
-                    <TextBox x:Name="nameT" Grid.Row="1" PreviewTextInput="nameT_PreviewTextInput" IsReadOnly="True" />
+
+                    <Grid Grid.Row="0" Margin="0,5">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                        </Grid.RowDefinitions>
+                        <TextBlock Text="Название:"/>
+                        <TextBox x:Name="nameT" Grid.Row="1" PreviewTextInput="nameT_PreviewTextInput" IsReadOnly="True" />
+                    </Grid>
+
+                    <Grid Grid.Row="1" Margin="0,5">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                        </Grid.RowDefinitions>
+                        <TextBlock Text="Номер телефона:"/>
+                        <TextBox x:Name="phoneT" Grid.Row="1" KeyDown="phoneT_KeyDown" />
+                    </Grid>
+
+                    <Grid Grid.Row="2" Margin="0,5">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                        </Grid.RowDefinitions>
+                        <TextBlock Text="Электронная почта:"/>
+                        <TextBox x:Name="emailT" Grid.Row="1" />
+                    </Grid>
+
+                    <Grid Grid.Row="3" Margin="0,5">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                        </Grid.RowDefinitions>
+                        <TextBlock Text="Главный менеджер:"/>
+                        <ComboBox Grid.Row="1" Name="mainManager" />
+                    </Grid>
+
+                    <Grid Grid.Row="4" Margin="0,5">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                        </Grid.RowDefinitions>
+                        <TextBlock Text="Адрес:"/>
+                        <TextBox x:Name="address" Grid.Row="1" PreviewTextInput="address_PreviewTextInput" />
+                    </Grid>
+
+                    <Grid Grid.Row="5" Margin="0,5">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                        </Grid.RowDefinitions>
+                        <TextBlock Text="Город:"/>
+                        <TextBox x:Name="cityT" Grid.Row="1" TextChanged="cityT_TextChanged" PreviewTextInput="cityT_PreviewTextInput" />
+                    </Grid>
+
+                    <Grid Grid.Row="6" Margin="0,5">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="450"/>
+                        </Grid.RowDefinitions>
+                        <TextBlock Text="Карта:"/>
+                        <wv2:WebView2 Grid.Row="1" x:Name="YandexMapWebView"/>
+                    </Grid>
+
+                    <Button Grid.Row="7" x:Name="edit" Click="edit_Click" Margin="10" Width="250" Height="50" Content="Изменить" />
                 </Grid>
-
-                <Grid Grid.Row="1">
-                    <Grid.RowDefinitions>
-                        <RowDefinition/>
-                        <RowDefinition/>
-                    </Grid.RowDefinitions>
-                    <TextBlock Text="Адрес:"/>
-                    <TextBox x:Name="address" Grid.Row="1" PreviewTextInput="address_PreviewTextInput" />
-                </Grid>
-
-                <Grid Grid.Row="2">
-                    <Grid.RowDefinitions>
-                        <RowDefinition/>
-                        <RowDefinition/>
-                    </Grid.RowDefinitions>
-                    <TextBlock Text="Город:"/>
-                    <TextBox x:Name="cityT" Grid.Row="1" TextChanged="cityT_TextChanged" PreviewTextInput="cityT_PreviewTextInput" />
-                </Grid>
-
-                <Grid Grid.Row="3">
-                    <Grid.RowDefinitions>
-                        <RowDefinition/>
-                        <RowDefinition/>
-                    </Grid.RowDefinitions>
-                    <TextBlock Text="Номер телефона:"/>
-                    <TextBox x:Name="phoneT" Grid.Row="1" KeyDown="phoneT_KeyDown" />
-                </Grid>
-
-                <Grid Grid.Row="4">
-                    <Grid.RowDefinitions>
-                        <RowDefinition/>
-                        <RowDefinition/>
-                    </Grid.RowDefinitions>
-                    <TextBlock Text="Электронная почта:"/>
-                    <TextBox x:Name="emailT" Grid.Row="1" />
-                </Grid>
-
-                <Grid Grid.Row="5">
-                    <Grid.RowDefinitions>
-                        <RowDefinition/>
-                        <RowDefinition/>
-                    </Grid.RowDefinitions>
-                    <TextBlock Text="Главный менеждер:"/>
-                    <ComboBox Grid.Row="1" Name="mainManager"  />
-                </Grid>
-
-                <!--<Grid Grid.Row="6">
-                    <Grid.RowDefinitions>
-                        <RowDefinition/>
-                        <RowDefinition/>
-                    </Grid.RowDefinitions>
-                    <TextBlock Text="Количество звезд:"/>
-                    <ComboBox Grid.Row="1" x:Name="starsCB"  SelectedIndex="0">
-                        <ComboBoxItem>1</ComboBoxItem>
-                        <ComboBoxItem>2</ComboBoxItem>
-                        <ComboBoxItem>3</ComboBoxItem>
-                        <ComboBoxItem>4</ComboBoxItem>
-                        <ComboBoxItem>5</ComboBoxItem>
-                    </ComboBox>
-                </Grid>-->
-            </Grid>
+            </ScrollViewer>
         </Grid>
-
-        <Button Grid.Row="2" Name="edit" Click="edit_Click" Width="300" Content="Изменить" />
 
         <Grid Grid.Row="0">
             <TextBlock Text="Редактирование" VerticalAlignment="Center" HorizontalAlignment="Center" />
@@ -133,6 +132,5 @@
             </StackPanel>
             <Image Source="images\icon-icons (2).png" VerticalAlignment="Center" Width="90" HorizontalAlignment="Center" Margin="0 0 390 0" />
         </Grid>
-
     </Grid>
 </Window>

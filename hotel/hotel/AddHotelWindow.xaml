@@ -5,7 +5,8 @@
             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
             xmlns:local="clr-namespace:hotel"
             mc:Ignorable="d"
-            Title="Добавление" Height="950" MinHeight="730" MaxHeight="1000"  Width="1500" MinWidth="900" MaxWidth="1600" WindowState="Maximized" FontSize="40" WindowStartupLocation="CenterScreen" Icon="images\local-hotel_118960.png">
+            xmlns:wv2="clr-namespace:Microsoft.Web.WebView2.Wpf;assembly=Microsoft.Web.WebView2.Wpf"
+            Title="Добавление" Height="950" MinHeight="730" Width="1500" MinWidth="900" WindowState="Maximized" FontSize="40" WindowStartupLocation="CenterScreen" Icon="images\local-hotel_118960.png">
     <Window.Resources>
         <Style TargetType="Button">
             <Setter Property="FontSize" Value="34"/>
@@ -21,118 +22,143 @@
             <Setter Property="Cursor" Value="Hand"/>
         </Style>
     </Window.Resources>
+
+    <Grid>
+        <!-- Основной контент -->
         <Grid>
             <Grid.RowDefinitions>
-                <RowDefinition/>
-                <RowDefinition Height="8*"/>
-                <RowDefinition/>
+                <RowDefinition Height="Auto"/>
+                <!-- Шапка -->
+                <RowDefinition Height="*"/>
+                <!-- Контент с прокруткой -->
             </Grid.RowDefinitions>
 
-            <Grid Grid.Row="1">
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition/>
-                    <ColumnDefinition Width="2*"/>
-                </Grid.ColumnDefinitions>
-
-                <Grid Grid.Row="0">
-                    <Image Source="{Binding Photo}" x:Name="photoDisplay" Stretch="Uniform" Height="550"/>
-                <Button Name="loadPhoto" Click="loadPhoto_Click" Content="Загрузить фотографию" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0 5 5 0" Padding="8 4" />
-            </Grid>
-
-                <Grid Grid.Column="1">
-                    <Grid.RowDefinitions>
-                        <RowDefinition/>
-                        <RowDefinition/>
-                        <RowDefinition/>
-                        <RowDefinition/>
-                    <RowDefinition/>
-                    <RowDefinition/>
-                    </Grid.RowDefinitions>
-
-                    <Grid Grid.Row="0">
-                        <Grid.RowDefinitions>
-                            <RowDefinition/>
-                            <RowDefinition/>
-                        </Grid.RowDefinitions>
-                        <TextBlock Text="Название:"/>
-                        <TextBox x:Name="nameT" Grid.Row="1" PreviewTextInput="nameT_PreviewTextInput" MaxLength="100" IsEnabled="False" />
-                    </Grid>
-
-                    <Grid Grid.Row="1">
-                        <Grid.RowDefinitions>
-                            <RowDefinition/>
-                            <RowDefinition/>
-                        </Grid.RowDefinitions>
-                        <TextBlock Text="Адрес:"/>
-                        <TextBox x:Name="address" Grid.Row="1" PreviewTextInput="address_PreviewTextInput"  MaxLength="150"/>
-                    </Grid>
-
-                    <Grid Grid.Row="2">
-                        <Grid.RowDefinitions>
-                            <RowDefinition/>
-                            <RowDefinition/>
-                        </Grid.RowDefinitions>
-                        <TextBlock Text="Город:"/>
-                        <TextBox x:Name="cityT" Grid.Row="1" TextChanged="cityT_TextChanged" MaxLength="100" PreviewTextInput="cityT_PreviewTextInput" />
-                    </Grid>
-
-                <Grid Grid.Row="3">
-                    <Grid.RowDefinitions>
-                        <RowDefinition/>
-                        <RowDefinition/>
-                    </Grid.RowDefinitions>
-                    <TextBlock Text="Номер телефона:"/>
-                    <TextBox x:Name="phontT" Grid.Row="1" KeyDown="phontT_KeyDown" MaxLength="11" />
-                </Grid>
-
-                <Grid Grid.Row="4">
-                    <Grid.RowDefinitions>
-                        <RowDefinition/>
-                        <RowDefinition/>
-                    </Grid.RowDefinitions>
-                    <TextBlock Text="Электронная почта:"/>
-                    <TextBox x:Name="emailT" Grid.Row="1" MaxHeight="120" />
-                </Grid>
-
-                <Grid Grid.Row="5">
-                    <Grid.RowDefinitions>
-                        <RowDefinition/>
-                        <RowDefinition/>
-                    </Grid.RowDefinitions>
-                    <TextBlock Text="Договор: "/>
-                    <Button x:Name="pdfFormatDocument" Grid.Row="1" HorizontalAlignment="Left" Content="Загрузить PDF файл" Click="pdfFormatDocument_Click" />
-                    <TextBlock x:Name="nameOfDocument" Grid.Row="1" HorizontalAlignment="Right"/>
-                </Grid>
-
-                <Grid Grid.Row="5" Visibility="Collapsed">
-                    <Grid.RowDefinitions>
-                        <RowDefinition/>
-                        <RowDefinition/>
-                    </Grid.RowDefinitions>
-                    <TextBlock Text="Количество звезд:"/>
-                    <ComboBox Grid.Row="1" x:Name="starsCB"  SelectedIndex="0">
-                        <ComboBoxItem>1</ComboBoxItem>
-                        <ComboBoxItem>2</ComboBoxItem>
-                        <ComboBoxItem>3</ComboBoxItem>
-                        <ComboBoxItem>4</ComboBoxItem>
-                        <ComboBoxItem>5</ComboBoxItem>
-                    </ComboBox>
-                </Grid>
-            </Grid>
-            </Grid>
-
-            <Button Grid.Row="2" Name="addB" Click="addB_Click" Content="Добавить" />
-
+            <!-- Шапка (твоя текущая Grid.Row=0) -->
             <Grid Grid.Row="0">
-                <Button x:Name="back" Content="x" Height="65" Width="65" FontSize="40" VerticalAlignment="Center" HorizontalAlignment="Right" Click="back_Click"/>
-                <TextBlock Text="Добавление" VerticalAlignment="Center" HorizontalAlignment="Center" />
-                <StackPanel Grid.Column="0" Margin="30,10,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Width="500">
+                <Button x:Name="back" Content="x" Height="65" Width="65" FontSize="40" 
+                    VerticalAlignment="Center" HorizontalAlignment="Right" Click="back_Click"/>
+                <TextBlock Text="Добавление" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                <StackPanel Margin="30,10,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Width="500">
                     <TextBlock Text="Сотрудник: " FontSize="30" Foreground="Black" Name="emplName" TextWrapping="Wrap"/>
                     <TextBlock Text="Роль: " FontSize="28" Foreground="Black" Name="emplRole" TextWrapping="Wrap"/>
                 </StackPanel>
-            <Image Source="images\icon-icons (2).png" VerticalAlignment="Center" Width="90" HorizontalAlignment="Center" Margin="0 0 350 0" />
+                <Image Source="images\icon-icons (2).png" VerticalAlignment="Center" Width="90" 
+                   HorizontalAlignment="Center" Margin="0 0 350 0"/>
+            </Grid>
 
-        </Grid>
+            <!-- Контент с прокруткой -->
+            <ScrollViewer Grid.Row="1" VerticalScrollBarVisibility="Auto">
+                <!-- Тут весь твой Grid с фото, полями и картой -->
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                        <ColumnDefinition Width="2*"/>
+                    </Grid.ColumnDefinitions>
 
+                    <!-- Левая колонка: фото -->
+                    <Grid>
+                        <Image Source="{Binding Photo}" x:Name="photoDisplay" Stretch="Uniform" Height="550"/>
+                        <Button Name="loadPhoto" Click="loadPhoto_Click" Content="Загрузить фотографию" 
+                            HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0 5 5 0" Padding="8 4"/>
+                    </Grid>
+
+                    <!-- Правая колонка: поля формы -->
+                    <Grid Grid.Column="1">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                            <!-- Карта -->
+                        </Grid.RowDefinitions>
+
+                        <!-- Название -->
+                        <Grid Grid.Row="0" Margin="0,5">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="Auto"/>
+                            </Grid.RowDefinitions>
+                            <TextBlock Text="Название:"/>
+                            <TextBox x:Name="nameT" Grid.Row="1" PreviewTextInput="nameT_PreviewTextInput" 
+                                 MaxLength="100" IsEnabled="False"/>
+                        </Grid>
+
+                        <!-- Телефон -->
+                        <Grid Grid.Row="1" Margin="0,5">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="Auto"/>
+                            </Grid.RowDefinitions>
+                            <TextBlock Text="Номер телефона:"/>
+                            <TextBox x:Name="phontT" Grid.Row="1" KeyDown="phontT_KeyDown" MaxLength="11"/>
+                        </Grid>
+
+                        <!-- Email -->
+                        <Grid Grid.Row="2" Margin="0,5">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="Auto"/>
+                            </Grid.RowDefinitions>
+                            <TextBlock Text="Электронная почта:"/>
+                            <TextBox x:Name="emailT" Grid.Row="1" MaxHeight="120"/>
+                        </Grid>
+
+                        <!-- Договор -->
+                        <Grid Grid.Row="3" Margin="0,5">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="Auto"/>
+                            </Grid.RowDefinitions>
+                            <TextBlock Text="Договор: "/>
+                            <Button x:Name="pdfFormatDocument" Grid.Row="1" HorizontalAlignment="Left" 
+                                Content="Загрузить PDF файл" Click="pdfFormatDocument_Click"/>
+                            <TextBlock x:Name="nameOfDocument" Grid.Row="1" HorizontalAlignment="Right"/>
+                        </Grid>
+
+                        <!-- Адрес -->
+                        <Grid Grid.Row="4" Margin="0,5">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="Auto"/>
+                            </Grid.RowDefinitions>
+                            <TextBlock Text="Адрес:"/>
+                            <TextBox x:Name="address" Grid.Row="1" PreviewTextInput="address_PreviewTextInput" 
+                                 MaxLength="150"/>
+                        </Grid>
+
+                        <!-- Город -->
+                        <Grid Grid.Row="5" Margin="0,5">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="Auto"/>
+                            </Grid.RowDefinitions>
+                            <TextBlock Text="Город:"/>
+                            <TextBox x:Name="cityT" Grid.Row="1" TextChanged="cityT_TextChanged" 
+                                 MaxLength="100" PreviewTextInput="cityT_PreviewTextInput"/>
+                        </Grid>
+
+                        <!-- Карта -->
+                        <Grid Grid.Row="6" Margin="0,5">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="450"/>
+                                <!-- Фиксированная высота карты -->
+                            </Grid.RowDefinitions>
+                            <TextBlock Text="Карта:"/>
+                            <wv2:WebView2 Grid.Row="1" x:Name="YandexMapWebView"/>
+                        </Grid>
+
+                        <!-- Кнопка "Добавить" -->
+                        <Button Grid.Row="7" x:Name="addB" Click="addB_Click" Content="Добавить" 
+                            VerticalAlignment="Bottom" HorizontalAlignment="Stretch" 
+                            Height="50" Margin="10"/>
+                    </Grid>
+                </Grid>
+            </ScrollViewer>
         </Grid>
-    </Window>
+    </Grid>
+</Window>

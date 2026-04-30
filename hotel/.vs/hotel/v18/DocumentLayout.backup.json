@@ -3,8 +3,32 @@
   "WorkspaceRootPath": "C:\\Users\\SVTFOE_HUAWEI_PC\\Desktop\\Projects\\02-College\\03-Karina-Diplom\\diplom_karina\\hotel\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{19D6FB2F-E60B-457B-9BE7-59091229D166}|hotel\\hotel.csproj|c:\\users\\svtfoe_huawei_pc\\desktop\\projects\\02-college\\03-karina-diplom\\diplom_karina\\hotel\\hotel\\addhotelwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{19D6FB2F-E60B-457B-9BE7-59091229D166}|hotel\\hotel.csproj|solutionrelative:hotel\\addhotelwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{19D6FB2F-E60B-457B-9BE7-59091229D166}|hotel\\hotel.csproj|c:\\users\\svtfoe_huawei_pc\\desktop\\projects\\02-college\\03-karina-diplom\\diplom_karina\\hotel\\hotel\\edithotelwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{19D6FB2F-E60B-457B-9BE7-59091229D166}|hotel\\hotel.csproj|solutionrelative:hotel\\edithotelwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{19D6FB2F-E60B-457B-9BE7-59091229D166}|hotel\\hotel.csproj|c:\\users\\svtfoe_huawei_pc\\desktop\\projects\\02-college\\03-karina-diplom\\diplom_karina\\hotel\\hotel\\addhotelwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{19D6FB2F-E60B-457B-9BE7-59091229D166}|hotel\\hotel.csproj|solutionrelative:hotel\\addhotelwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{19D6FB2F-E60B-457B-9BE7-59091229D166}|hotel\\hotel.csproj|c:\\users\\svtfoe_huawei_pc\\desktop\\projects\\02-college\\03-karina-diplom\\diplom_karina\\hotel\\hotel\\edithotelwindow.xaml.cs||{8B382828-6202-11D1-8870-0000F87579D2}|",
+      "RelativeMoniker": "D:0:0:{19D6FB2F-E60B-457B-9BE7-59091229D166}|hotel\\hotel.csproj|solutionrelative:hotel\\edithotelwindow.xaml.cs||{8B382828-6202-11D1-8870-0000F87579D2}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{19D6FB2F-E60B-457B-9BE7-59091229D166}|hotel\\hotel.csproj|c:\\users\\svtfoe_huawei_pc\\desktop\\projects\\02-college\\03-karina-diplom\\diplom_karina\\hotel\\hotel\\models\\book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{19D6FB2F-E60B-457B-9BE7-59091229D166}|hotel\\hotel.csproj|solutionrelative:hotel\\models\\book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{19D6FB2F-E60B-457B-9BE7-59091229D166}|hotel\\hotel.csproj|c:\\users\\svtfoe_huawei_pc\\desktop\\projects\\02-college\\03-karina-diplom\\diplom_karina\\hotel\\hotel\\data\\api.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{19D6FB2F-E60B-457B-9BE7-59091229D166}|hotel\\hotel.csproj|solutionrelative:hotel\\data\\api.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{19D6FB2F-E60B-457B-9BE7-59091229D166}|hotel\\hotel.csproj|c:\\users\\svtfoe_huawei_pc\\desktop\\projects\\02-college\\03-karina-diplom\\diplom_karina\\hotel\\hotel\\editemployeewindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{19D6FB2F-E60B-457B-9BE7-59091229D166}|hotel\\hotel.csproj|solutionrelative:hotel\\editemployeewindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{19D6FB2F-E60B-457B-9BE7-59091229D166}|hotel\\hotel.csproj|c:\\users\\svtfoe_huawei_pc\\desktop\\projects\\02-college\\03-karina-diplom\\diplom_karina\\hotel\\hotel\\addroomwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -13,10 +37,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{19D6FB2F-E60B-457B-9BE7-59091229D166}|hotel\\hotel.csproj|c:\\users\\svtfoe_huawei_pc\\desktop\\projects\\02-college\\03-karina-diplom\\diplom_karina\\hotel\\hotel\\roomcontrol.xaml.cs||{8B382828-6202-11D1-8870-0000F87579D2}|",
       "RelativeMoniker": "D:0:0:{19D6FB2F-E60B-457B-9BE7-59091229D166}|hotel\\hotel.csproj|solutionrelative:hotel\\roomcontrol.xaml.cs||{8B382828-6202-11D1-8870-0000F87579D2}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{19D6FB2F-E60B-457B-9BE7-59091229D166}|hotel\\hotel.csproj|c:\\users\\svtfoe_huawei_pc\\desktop\\projects\\02-college\\03-karina-diplom\\diplom_karina\\hotel\\hotel\\editemployeewindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{19D6FB2F-E60B-457B-9BE7-59091229D166}|hotel\\hotel.csproj|solutionrelative:hotel\\editemployeewindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{19D6FB2F-E60B-457B-9BE7-59091229D166}|hotel\\hotel.csproj|c:\\users\\svtfoe_huawei_pc\\desktop\\projects\\02-college\\03-karina-diplom\\diplom_karina\\hotel\\hotel\\autorisation.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
@@ -74,10 +94,6 @@
       "RelativeMoniker": "D:0:0:{19D6FB2F-E60B-457B-9BE7-59091229D166}|hotel\\hotel.csproj|solutionrelative:hotel\\editroomwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{19D6FB2F-E60B-457B-9BE7-59091229D166}|hotel\\hotel.csproj|c:\\users\\svtfoe_huawei_pc\\desktop\\projects\\02-college\\03-karina-diplom\\diplom_karina\\hotel\\hotel\\edithotelwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{19D6FB2F-E60B-457B-9BE7-59091229D166}|hotel\\hotel.csproj|solutionrelative:hotel\\edithotelwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{19D6FB2F-E60B-457B-9BE7-59091229D166}|hotel\\hotel.csproj|c:\\users\\svtfoe_huawei_pc\\desktop\\projects\\02-college\\03-karina-diplom\\diplom_karina\\hotel\\hotel\\bookingservicespecialist.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{19D6FB2F-E60B-457B-9BE7-59091229D166}|hotel\\hotel.csproj|solutionrelative:hotel\\bookingservicespecialist.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
@@ -108,10 +124,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{19D6FB2F-E60B-457B-9BE7-59091229D166}|hotel\\hotel.csproj|c:\\users\\svtfoe_huawei_pc\\desktop\\projects\\02-college\\03-karina-diplom\\diplom_karina\\hotel\\hotel\\addroomwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{19D6FB2F-E60B-457B-9BE7-59091229D166}|hotel\\hotel.csproj|solutionrelative:hotel\\addroomwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{19D6FB2F-E60B-457B-9BE7-59091229D166}|hotel\\hotel.csproj|c:\\users\\svtfoe_huawei_pc\\desktop\\projects\\02-college\\03-karina-diplom\\diplom_karina\\hotel\\hotel\\addhotelwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{19D6FB2F-E60B-457B-9BE7-59091229D166}|hotel\\hotel.csproj|solutionrelative:hotel\\addhotelwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{19D6FB2F-E60B-457B-9BE7-59091229D166}|hotel\\hotel.csproj|c:\\users\\svtfoe_huawei_pc\\desktop\\projects\\02-college\\03-karina-diplom\\diplom_karina\\hotel\\hotel\\addemployeewindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
@@ -152,10 +164,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{19D6FB2F-E60B-457B-9BE7-59091229D166}|hotel\\hotel.csproj|c:\\users\\svtfoe_huawei_pc\\desktop\\projects\\02-college\\03-karina-diplom\\diplom_karina\\hotel\\hotel\\hotelcontrol.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{19D6FB2F-E60B-457B-9BE7-59091229D166}|hotel\\hotel.csproj|solutionrelative:hotel\\hotelcontrol.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{19D6FB2F-E60B-457B-9BE7-59091229D166}|hotel\\hotel.csproj|c:\\users\\svtfoe_huawei_pc\\desktop\\projects\\02-college\\03-karina-diplom\\diplom_karina\\hotel\\hotel\\edithotelwindow.xaml.cs||{8B382828-6202-11D1-8870-0000F87579D2}|",
-      "RelativeMoniker": "D:0:0:{19D6FB2F-E60B-457B-9BE7-59091229D166}|hotel\\hotel.csproj|solutionrelative:hotel\\edithotelwindow.xaml.cs||{8B382828-6202-11D1-8870-0000F87579D2}|"
     },
     {
       "AbsoluteMoniker": "D:0:0:{19D6FB2F-E60B-457B-9BE7-59091229D166}|hotel\\hotel.csproj|c:\\users\\svtfoe_huawei_pc\\desktop\\projects\\02-college\\03-karina-diplom\\diplom_karina\\hotel\\hotel\\models\\commhotel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -222,10 +230,6 @@
       "RelativeMoniker": "D:0:0:{19D6FB2F-E60B-457B-9BE7-59091229D166}|hotel\\hotel.csproj|solutionrelative:hotel\\addservicewindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{19D6FB2F-E60B-457B-9BE7-59091229D166}|hotel\\hotel.csproj|c:\\users\\svtfoe_huawei_pc\\desktop\\projects\\02-college\\03-karina-diplom\\diplom_karina\\hotel\\hotel\\addhotelwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{19D6FB2F-E60B-457B-9BE7-59091229D166}|hotel\\hotel.csproj|solutionrelative:hotel\\addhotelwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{19D6FB2F-E60B-457B-9BE7-59091229D166}|hotel\\hotel.csproj|c:\\users\\svtfoe_huawei_pc\\desktop\\projects\\02-college\\03-karina-diplom\\diplom_karina\\hotel\\hotel\\addclintwindow.xaml.cs||{8B382828-6202-11D1-8870-0000F87579D2}|",
       "RelativeMoniker": "D:0:0:{19D6FB2F-E60B-457B-9BE7-59091229D166}|hotel\\hotel.csproj|solutionrelative:hotel\\addclintwindow.xaml.cs||{8B382828-6202-11D1-8870-0000F87579D2}|"
     },
@@ -240,10 +244,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{19D6FB2F-E60B-457B-9BE7-59091229D166}|hotel\\hotel.csproj|c:\\users\\svtfoe_huawei_pc\\desktop\\projects\\02-college\\03-karina-diplom\\diplom_karina\\hotel\\hotel\\model\\book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{19D6FB2F-E60B-457B-9BE7-59091229D166}|hotel\\hotel.csproj|solutionrelative:hotel\\model\\book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{19D6FB2F-E60B-457B-9BE7-59091229D166}|hotel\\hotel.csproj|c:\\users\\svtfoe_huawei_pc\\desktop\\projects\\02-college\\03-karina-diplom\\diplom_karina\\hotel\\hotel\\models\\book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{19D6FB2F-E60B-457B-9BE7-59091229D166}|hotel\\hotel.csproj|solutionrelative:hotel\\models\\book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{19D6FB2F-E60B-457B-9BE7-59091229D166}|hotel\\hotel.csproj|c:\\users\\svtfoe_huawei_pc\\desktop\\projects\\02-college\\03-karina-diplom\\diplom_karina\\hotel\\hotel\\models\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -336,10 +336,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{19D6FB2F-E60B-457B-9BE7-59091229D166}|hotel\\hotel.csproj|c:\\users\\svtfoe_huawei_pc\\desktop\\projects\\02-college\\03-karina-diplom\\diplom_karina\\hotel\\hotel\\hotel.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
       "RelativeMoniker": "D:0:0:{19D6FB2F-E60B-457B-9BE7-59091229D166}|hotel\\hotel.csproj|solutionrelative:hotel\\hotel.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\SVTFOE_HUAWEI_PC\\Desktop\\Projects\\02-College\\03-Karina-Diplom\\diplom_karina\\hotel\\hotel\\obj\\Debug\\net8.0-windows\\EditHotelWindow.g.i.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:hotel\\obj\\Debug\\net8.0-windows\\EditHotelWindow.g.i.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -365,13 +361,17 @@
             },
             {
               "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
               "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
             }
           ]
         },
         {
           "DockedHeight": 128,
-          "SelectedChildIndex": 9,
+          "SelectedChildIndex": 7,
           "Children": [
             {
               "$type": "Bookmark",
@@ -379,76 +379,154 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "RoomControl.xaml",
-              "DocumentMoniker": "C:\\Users\\SVTFOE_HUAWEI_PC\\Desktop\\Projects\\02-College\\03-Karina-Diplom\\diplom_karina\\hotel\\hotel\\RoomControl.xaml",
-              "RelativeDocumentMoniker": "hotel\\RoomControl.xaml",
-              "ToolTip": "C:\\Users\\SVTFOE_HUAWEI_PC\\Desktop\\Projects\\02-College\\03-Karina-Diplom\\diplom_karina\\hotel\\hotel\\RoomControl.xaml",
-              "RelativeToolTip": "hotel\\RoomControl.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-11-28T06:13:30.404Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "RoomsWindow.xaml",
-              "DocumentMoniker": "C:\\Users\\SVTFOE_HUAWEI_PC\\Desktop\\Projects\\02-College\\03-Karina-Diplom\\diplom_karina\\hotel\\hotel\\RoomsWindow.xaml",
-              "RelativeDocumentMoniker": "hotel\\RoomsWindow.xaml",
-              "ToolTip": "C:\\Users\\SVTFOE_HUAWEI_PC\\Desktop\\Projects\\02-College\\03-Karina-Diplom\\diplom_karina\\hotel\\hotel\\RoomsWindow.xaml",
-              "RelativeToolTip": "hotel\\RoomsWindow.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-11-28T08:44:14.832Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "XamlReader.cs",
-              "DocumentMoniker": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\AppData\\Local\\Temp\\.vsdbgsrc\\ee34aec267e065140087abd7fd236fad482e6d3ee1f4162ad1b181c8d9923474\\XamlReader.cs",
-              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\..\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\AppData\\Local\\Temp\\.vsdbgsrc\\ee34aec267e065140087abd7fd236fad482e6d3ee1f4162ad1b181c8d9923474\\XamlReader.cs",
-              "ToolTip": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\AppData\\Local\\Temp\\.vsdbgsrc\\ee34aec267e065140087abd7fd236fad482e6d3ee1f4162ad1b181c8d9923474\\XamlReader.cs [\u0422\u043E\u043B\u044C\u043A\u043E \u0447\u0442\u0435\u043D\u0438\u0435]",
-              "RelativeToolTip": "..\\..\\..\\..\\..\\..\\..\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\AppData\\Local\\Temp\\.vsdbgsrc\\ee34aec267e065140087abd7fd236fad482e6d3ee1f4162ad1b181c8d9923474\\XamlReader.cs [\u0422\u043E\u043B\u044C\u043A\u043E \u0447\u0442\u0435\u043D\u0438\u0435]",
-              "ViewState": "AgIAAOoBAAAAAAAAAAD4v/4BAAACAAAAAQAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-29T14:26:58.95Z",
-              "EditorCaption": " [\u0422\u043E\u043B\u044C\u043A\u043E \u0447\u0442\u0435\u043D\u0438\u0435]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "ReviewControl.xaml",
-              "DocumentMoniker": "C:\\Users\\SVTFOE_HUAWEI_PC\\Desktop\\Projects\\02-College\\03-Karina-Diplom\\diplom_karina\\hotel\\hotel\\ReviewControl.xaml",
-              "RelativeDocumentMoniker": "hotel\\ReviewControl.xaml",
-              "ToolTip": "C:\\Users\\SVTFOE_HUAWEI_PC\\Desktop\\Projects\\02-College\\03-Karina-Diplom\\diplom_karina\\hotel\\hotel\\ReviewControl.xaml",
-              "RelativeToolTip": "hotel\\ReviewControl.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2026-04-27T11:59:40.335Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "MainManager.xaml",
-              "DocumentMoniker": "C:\\Users\\SVTFOE_HUAWEI_PC\\Desktop\\Projects\\02-College\\03-Karina-Diplom\\diplom_karina\\hotel\\hotel\\MainManager.xaml",
-              "RelativeDocumentMoniker": "hotel\\MainManager.xaml",
-              "ToolTip": "C:\\Users\\SVTFOE_HUAWEI_PC\\Desktop\\Projects\\02-College\\03-Karina-Diplom\\diplom_karina\\hotel\\hotel\\MainManager.xaml",
-              "RelativeToolTip": "hotel\\MainManager.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-10-31T10:54:26.558Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 6,
               "Title": "EditEmployeeWindow.xaml",
               "DocumentMoniker": "C:\\Users\\SVTFOE_HUAWEI_PC\\Desktop\\Projects\\02-College\\03-Karina-Diplom\\diplom_karina\\hotel\\hotel\\EditEmployeeWindow.xaml",
               "RelativeDocumentMoniker": "hotel\\EditEmployeeWindow.xaml",
               "ToolTip": "C:\\Users\\SVTFOE_HUAWEI_PC\\Desktop\\Projects\\02-College\\03-Karina-Diplom\\diplom_karina\\hotel\\hotel\\EditEmployeeWindow.xaml",
               "RelativeToolTip": "hotel\\EditEmployeeWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-11-28T08:38:07.099Z",
+              "WhenOpened": "2026-04-30T08:31:45.594Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "EditHotelWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\SVTFOE_HUAWEI_PC\\Desktop\\Projects\\02-College\\03-Karina-Diplom\\diplom_karina\\hotel\\hotel\\EditHotelWindow.xaml",
+              "RelativeDocumentMoniker": "hotel\\EditHotelWindow.xaml",
+              "ToolTip": "C:\\Users\\SVTFOE_HUAWEI_PC\\Desktop\\Projects\\02-College\\03-Karina-Diplom\\diplom_karina\\hotel\\hotel\\EditHotelWindow.xaml",
+              "RelativeToolTip": "hotel\\EditHotelWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-04-30T08:31:45.699Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "EditHotelWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\SVTFOE_HUAWEI_PC\\Desktop\\Projects\\02-College\\03-Karina-Diplom\\diplom_karina\\hotel\\hotel\\EditHotelWindow.xaml.cs",
+              "RelativeDocumentMoniker": "hotel\\EditHotelWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\SVTFOE_HUAWEI_PC\\Desktop\\Projects\\02-College\\03-Karina-Diplom\\diplom_karina\\hotel\\hotel\\EditHotelWindow.xaml.cs",
+              "RelativeToolTip": "hotel\\EditHotelWindow.xaml.cs",
+              "ViewState": "AgIAAJABAAAAAAAAAAAqwKwBAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-30T08:31:45.846Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "ReviewControl.xaml",
+              "DocumentMoniker": "C:\\Users\\SVTFOE_HUAWEI_PC\\Desktop\\Projects\\02-College\\03-Karina-Diplom\\diplom_karina\\hotel\\hotel\\ReviewControl.xaml",
+              "RelativeDocumentMoniker": "hotel\\ReviewControl.xaml",
+              "ToolTip": "C:\\Users\\SVTFOE_HUAWEI_PC\\Desktop\\Projects\\02-College\\03-Karina-Diplom\\diplom_karina\\hotel\\hotel\\ReviewControl.xaml",
+              "RelativeToolTip": "hotel\\ReviewControl.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-04-30T08:31:45.582Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
+              "Title": "AddHotelWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\SVTFOE_HUAWEI_PC\\Desktop\\Projects\\02-College\\03-Karina-Diplom\\diplom_karina\\hotel\\hotel\\AddHotelWindow.xaml.cs",
+              "RelativeDocumentMoniker": "hotel\\AddHotelWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\SVTFOE_HUAWEI_PC\\Desktop\\Projects\\02-College\\03-Karina-Diplom\\diplom_karina\\hotel\\hotel\\AddHotelWindow.xaml.cs",
+              "RelativeToolTip": "hotel\\AddHotelWindow.xaml.cs",
+              "ViewState": "AgIAADYBAAAAAAAAAAAQwEUBAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-30T08:31:45.97Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Api.cs",
+              "DocumentMoniker": "C:\\Users\\SVTFOE_HUAWEI_PC\\Desktop\\Projects\\02-College\\03-Karina-Diplom\\diplom_karina\\hotel\\hotel\\Data\\Api.cs",
+              "RelativeDocumentMoniker": "hotel\\Data\\Api.cs",
+              "ToolTip": "C:\\Users\\SVTFOE_HUAWEI_PC\\Desktop\\Projects\\02-College\\03-Karina-Diplom\\diplom_karina\\hotel\\hotel\\Data\\Api.cs",
+              "RelativeToolTip": "hotel\\Data\\Api.cs",
+              "ViewState": "AgIAAEkAAAAAAAAAAAAswFkAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-30T08:31:45.613Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AddHotelWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\SVTFOE_HUAWEI_PC\\Desktop\\Projects\\02-College\\03-Karina-Diplom\\diplom_karina\\hotel\\hotel\\AddHotelWindow.xaml",
+              "RelativeDocumentMoniker": "hotel\\AddHotelWindow.xaml",
+              "ToolTip": "C:\\Users\\SVTFOE_HUAWEI_PC\\Desktop\\Projects\\02-College\\03-Karina-Diplom\\diplom_karina\\hotel\\hotel\\AddHotelWindow.xaml",
+              "RelativeToolTip": "hotel\\AddHotelWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-04-30T08:31:45.76Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Book.cs",
+              "DocumentMoniker": "C:\\Users\\SVTFOE_HUAWEI_PC\\Desktop\\Projects\\02-College\\03-Karina-Diplom\\diplom_karina\\hotel\\hotel\\Models\\Book.cs",
+              "RelativeDocumentMoniker": "hotel\\Models\\Book.cs",
+              "ToolTip": "C:\\Users\\SVTFOE_HUAWEI_PC\\Desktop\\Projects\\02-College\\03-Karina-Diplom\\diplom_karina\\hotel\\hotel\\Models\\Book.cs",
+              "RelativeToolTip": "hotel\\Models\\Book.cs",
+              "ViewState": "AgIAACQAAAAAAAAAAAAIwEYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-30T08:31:46Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "RoomControl.xaml",
+              "DocumentMoniker": "C:\\Users\\SVTFOE_HUAWEI_PC\\Desktop\\Projects\\02-College\\03-Karina-Diplom\\diplom_karina\\hotel\\hotel\\RoomControl.xaml",
+              "RelativeDocumentMoniker": "hotel\\RoomControl.xaml",
+              "ToolTip": "C:\\Users\\SVTFOE_HUAWEI_PC\\Desktop\\Projects\\02-College\\03-Karina-Diplom\\diplom_karina\\hotel\\hotel\\RoomControl.xaml",
+              "RelativeToolTip": "hotel\\RoomControl.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-04-30T08:31:45.436Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "MainManager.xaml",
+              "DocumentMoniker": "C:\\Users\\SVTFOE_HUAWEI_PC\\Desktop\\Projects\\02-College\\03-Karina-Diplom\\diplom_karina\\hotel\\hotel\\MainManager.xaml",
+              "RelativeDocumentMoniker": "hotel\\MainManager.xaml",
+              "ToolTip": "C:\\Users\\SVTFOE_HUAWEI_PC\\Desktop\\Projects\\02-College\\03-Karina-Diplom\\diplom_karina\\hotel\\hotel\\MainManager.xaml",
+              "RelativeToolTip": "hotel\\MainManager.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-04-30T08:31:45.587Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "XamlReader.cs",
+              "DocumentMoniker": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\AppData\\Local\\Temp\\.vsdbgsrc\\ee34aec267e065140087abd7fd236fad482e6d3ee1f4162ad1b181c8d9923474\\XamlReader.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\..\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\AppData\\Local\\Temp\\.vsdbgsrc\\ee34aec267e065140087abd7fd236fad482e6d3ee1f4162ad1b181c8d9923474\\XamlReader.cs",
+              "ToolTip": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\AppData\\Local\\Temp\\.vsdbgsrc\\ee34aec267e065140087abd7fd236fad482e6d3ee1f4162ad1b181c8d9923474\\XamlReader.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\..\\..\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\AppData\\Local\\Temp\\.vsdbgsrc\\ee34aec267e065140087abd7fd236fad482e6d3ee1f4162ad1b181c8d9923474\\XamlReader.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-30T08:31:45.574Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "RoomsWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\SVTFOE_HUAWEI_PC\\Desktop\\Projects\\02-College\\03-Karina-Diplom\\diplom_karina\\hotel\\hotel\\RoomsWindow.xaml",
+              "RelativeDocumentMoniker": "hotel\\RoomsWindow.xaml",
+              "ToolTip": "C:\\Users\\SVTFOE_HUAWEI_PC\\Desktop\\Projects\\02-College\\03-Karina-Diplom\\diplom_karina\\hotel\\hotel\\RoomsWindow.xaml",
+              "RelativeToolTip": "hotel\\RoomsWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-04-30T08:31:45.538Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
               "Title": "RoomControl.xaml.cs",
               "DocumentMoniker": "C:\\Users\\SVTFOE_HUAWEI_PC\\Desktop\\Projects\\02-College\\03-Karina-Diplom\\diplom_karina\\hotel\\hotel\\RoomControl.xaml.cs",
               "RelativeDocumentMoniker": "hotel\\RoomControl.xaml.cs",
@@ -456,12 +534,12 @@
               "RelativeToolTip": "hotel\\RoomControl.xaml.cs",
               "ViewState": "AgIAACYAAAAAAAAAAAAjwDkAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-28T06:14:43.757Z",
+              "WhenOpened": "2026-04-30T08:31:45.6Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 7,
               "Title": "AddRoomWindow.xaml.cs",
               "DocumentMoniker": "C:\\Users\\SVTFOE_HUAWEI_PC\\Desktop\\Projects\\02-College\\03-Karina-Diplom\\diplom_karina\\hotel\\hotel\\AddRoomWindow.xaml.cs",
               "RelativeDocumentMoniker": "hotel\\AddRoomWindow.xaml.cs",
@@ -469,168 +547,156 @@
               "RelativeToolTip": "hotel\\AddRoomWindow.xaml.cs",
               "ViewState": "AgIAAGIAAAAAAAAAAAAiwGYAAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-28T08:29:06.498Z",
+              "WhenOpened": "2026-04-30T08:31:45.606Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Api.cs",
-              "DocumentMoniker": "C:\\Users\\SVTFOE_HUAWEI_PC\\Desktop\\Projects\\02-College\\03-Karina-Diplom\\diplom_karina\\hotel\\hotel\\Data\\Api.cs",
-              "RelativeDocumentMoniker": "hotel\\Data\\Api.cs",
-              "ToolTip": "C:\\Users\\SVTFOE_HUAWEI_PC\\Desktop\\Projects\\02-College\\03-Karina-Diplom\\diplom_karina\\hotel\\hotel\\Data\\Api.cs",
-              "RelativeToolTip": "hotel\\Data\\Api.cs",
-              "ViewState": "AgIAANgAAAAAAAAAAAArwN4AAAAxAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-31T08:44:36.896Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 14,
               "Title": "ReviewWindow.xaml",
               "DocumentMoniker": "C:\\Users\\SVTFOE_HUAWEI_PC\\Desktop\\Projects\\02-College\\03-Karina-Diplom\\diplom_karina\\hotel\\hotel\\ReviewWindow.xaml",
               "RelativeDocumentMoniker": "hotel\\ReviewWindow.xaml",
               "ToolTip": "C:\\Users\\SVTFOE_HUAWEI_PC\\Desktop\\Projects\\02-College\\03-Karina-Diplom\\diplom_karina\\hotel\\hotel\\ReviewWindow.xaml",
               "RelativeToolTip": "hotel\\ReviewWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2026-04-27T11:51:08.919Z"
+              "WhenOpened": "2026-04-30T08:31:45.642Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 11,
               "Title": "ServiceWindow.xaml",
               "DocumentMoniker": "C:\\Users\\SVTFOE_HUAWEI_PC\\Desktop\\Projects\\02-College\\03-Karina-Diplom\\diplom_karina\\hotel\\hotel\\ServiceWindow.xaml",
               "RelativeDocumentMoniker": "hotel\\ServiceWindow.xaml",
               "ToolTip": "C:\\Users\\SVTFOE_HUAWEI_PC\\Desktop\\Projects\\02-College\\03-Karina-Diplom\\diplom_karina\\hotel\\hotel\\ServiceWindow.xaml",
               "RelativeToolTip": "hotel\\ServiceWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2026-04-24T11:42:35.402Z"
+              "WhenOpened": "2026-04-30T08:31:45.648Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 9,
               "Title": "Autorisation.xaml",
               "DocumentMoniker": "C:\\Users\\SVTFOE_HUAWEI_PC\\Desktop\\Projects\\02-College\\03-Karina-Diplom\\diplom_karina\\hotel\\hotel\\Autorisation.xaml",
               "RelativeDocumentMoniker": "hotel\\Autorisation.xaml",
               "ToolTip": "C:\\Users\\SVTFOE_HUAWEI_PC\\Desktop\\Projects\\02-College\\03-Karina-Diplom\\diplom_karina\\hotel\\hotel\\Autorisation.xaml",
               "RelativeToolTip": "hotel\\Autorisation.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-10-30T17:47:12.123Z"
+              "WhenOpened": "2026-04-30T08:31:45.654Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 17,
               "Title": "HotelsWindow.xaml",
               "DocumentMoniker": "C:\\Users\\SVTFOE_HUAWEI_PC\\Desktop\\Projects\\02-College\\03-Karina-Diplom\\diplom_karina\\hotel\\hotel\\HotelsWindow.xaml",
               "RelativeDocumentMoniker": "hotel\\HotelsWindow.xaml",
               "ToolTip": "C:\\Users\\SVTFOE_HUAWEI_PC\\Desktop\\Projects\\02-College\\03-Karina-Diplom\\diplom_karina\\hotel\\hotel\\HotelsWindow.xaml",
               "RelativeToolTip": "hotel\\HotelsWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-11-28T08:54:01.079Z"
+              "WhenOpened": "2026-04-30T08:31:45.66Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 18,
               "Title": "HeadHotelManagerWindow.xaml",
               "DocumentMoniker": "C:\\Users\\SVTFOE_HUAWEI_PC\\Desktop\\Projects\\02-College\\03-Karina-Diplom\\diplom_karina\\hotel\\hotel\\HeadHotelManagerWindow.xaml",
               "RelativeDocumentMoniker": "hotel\\HeadHotelManagerWindow.xaml",
               "ToolTip": "C:\\Users\\SVTFOE_HUAWEI_PC\\Desktop\\Projects\\02-College\\03-Karina-Diplom\\diplom_karina\\hotel\\hotel\\HeadHotelManagerWindow.xaml",
               "RelativeToolTip": "hotel\\HeadHotelManagerWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-10-31T10:53:38.841Z"
+              "WhenOpened": "2026-04-30T08:31:45.666Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 19,
               "Title": "EmployeeHHMWindow.xaml",
               "DocumentMoniker": "C:\\Users\\SVTFOE_HUAWEI_PC\\Desktop\\Projects\\02-College\\03-Karina-Diplom\\diplom_karina\\hotel\\hotel\\EmployeeHHMWindow.xaml",
               "RelativeDocumentMoniker": "hotel\\EmployeeHHMWindow.xaml",
               "ToolTip": "C:\\Users\\SVTFOE_HUAWEI_PC\\Desktop\\Projects\\02-College\\03-Karina-Diplom\\diplom_karina\\hotel\\hotel\\EmployeeHHMWindow.xaml",
               "RelativeToolTip": "hotel\\EmployeeHHMWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-11-27T12:06:05.46Z"
+              "WhenOpened": "2026-04-30T08:31:45.673Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 20,
               "Title": "EmployeeControl.xaml",
               "DocumentMoniker": "C:\\Users\\SVTFOE_HUAWEI_PC\\Desktop\\Projects\\02-College\\03-Karina-Diplom\\diplom_karina\\hotel\\hotel\\EmployeeControl.xaml",
               "RelativeDocumentMoniker": "hotel\\EmployeeControl.xaml",
               "ToolTip": "C:\\Users\\SVTFOE_HUAWEI_PC\\Desktop\\Projects\\02-College\\03-Karina-Diplom\\diplom_karina\\hotel\\hotel\\EmployeeControl.xaml",
               "RelativeToolTip": "hotel\\EmployeeControl.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-11-27T13:38:16.527Z"
+              "WhenOpened": "2026-04-30T08:31:45.68Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 21,
               "Title": "EditServiceWindow.xaml",
               "DocumentMoniker": "C:\\Users\\SVTFOE_HUAWEI_PC\\Desktop\\Projects\\02-College\\03-Karina-Diplom\\diplom_karina\\hotel\\hotel\\EditServiceWindow.xaml",
               "RelativeDocumentMoniker": "hotel\\EditServiceWindow.xaml",
               "ToolTip": "C:\\Users\\SVTFOE_HUAWEI_PC\\Desktop\\Projects\\02-College\\03-Karina-Diplom\\diplom_karina\\hotel\\hotel\\EditServiceWindow.xaml",
               "RelativeToolTip": "hotel\\EditServiceWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2026-04-24T11:43:07.653Z"
+              "WhenOpened": "2026-04-30T08:31:45.686Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 22,
               "Title": "EditRoomWindow.xaml",
               "DocumentMoniker": "C:\\Users\\SVTFOE_HUAWEI_PC\\Desktop\\Projects\\02-College\\03-Karina-Diplom\\diplom_karina\\hotel\\hotel\\EditRoomWindow.xaml",
               "RelativeDocumentMoniker": "hotel\\EditRoomWindow.xaml",
               "ToolTip": "C:\\Users\\SVTFOE_HUAWEI_PC\\Desktop\\Projects\\02-College\\03-Karina-Diplom\\diplom_karina\\hotel\\hotel\\EditRoomWindow.xaml",
               "RelativeToolTip": "hotel\\EditRoomWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-11-28T06:19:19.365Z"
+              "WhenOpened": "2026-04-30T08:31:45.693Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "EditHotelWindow.xaml",
-              "DocumentMoniker": "C:\\Users\\SVTFOE_HUAWEI_PC\\Desktop\\Projects\\02-College\\03-Karina-Diplom\\diplom_karina\\hotel\\hotel\\EditHotelWindow.xaml",
-              "RelativeDocumentMoniker": "hotel\\EditHotelWindow.xaml",
-              "ToolTip": "C:\\Users\\SVTFOE_HUAWEI_PC\\Desktop\\Projects\\02-College\\03-Karina-Diplom\\diplom_karina\\hotel\\hotel\\EditHotelWindow.xaml",
-              "RelativeToolTip": "hotel\\EditHotelWindow.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-11-13T10:31:50.431Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 23,
               "Title": "BookingServiceSpecialist.xaml",
               "DocumentMoniker": "C:\\Users\\SVTFOE_HUAWEI_PC\\Desktop\\Projects\\02-College\\03-Karina-Diplom\\diplom_karina\\hotel\\hotel\\BookingServiceSpecialist.xaml",
               "RelativeDocumentMoniker": "hotel\\BookingServiceSpecialist.xaml",
               "ToolTip": "C:\\Users\\SVTFOE_HUAWEI_PC\\Desktop\\Projects\\02-College\\03-Karina-Diplom\\diplom_karina\\hotel\\hotel\\BookingServiceSpecialist.xaml",
               "RelativeToolTip": "hotel\\BookingServiceSpecialist.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-10-31T10:54:52.927Z"
+              "WhenOpened": "2026-04-30T08:31:45.706Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 24,
               "Title": "BookingReportWindow.xaml",
               "DocumentMoniker": "C:\\Users\\SVTFOE_HUAWEI_PC\\Desktop\\Projects\\02-College\\03-Karina-Diplom\\diplom_karina\\hotel\\hotel\\BookingReportWindow.xaml",
               "RelativeDocumentMoniker": "hotel\\BookingReportWindow.xaml",
               "ToolTip": "C:\\Users\\SVTFOE_HUAWEI_PC\\Desktop\\Projects\\02-College\\03-Karina-Diplom\\diplom_karina\\hotel\\hotel\\BookingReportWindow.xaml",
               "RelativeToolTip": "hotel\\BookingReportWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-12-07T18:12:26.585Z"
+              "WhenOpened": "2026-04-30T08:31:45.713Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 25,
               "Title": "BookingControl.xaml",
               "DocumentMoniker": "C:\\Users\\SVTFOE_HUAWEI_PC\\Desktop\\Projects\\02-College\\03-Karina-Diplom\\diplom_karina\\hotel\\hotel\\BookingControl.xaml",
               "RelativeDocumentMoniker": "hotel\\BookingControl.xaml",
               "ToolTip": "C:\\Users\\SVTFOE_HUAWEI_PC\\Desktop\\Projects\\02-College\\03-Karina-Diplom\\diplom_karina\\hotel\\hotel\\BookingControl.xaml",
               "RelativeToolTip": "hotel\\BookingControl.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2026-04-09T01:52:09.281Z"
+              "WhenOpened": "2026-04-30T08:31:45.72Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 26,
               "Title": "App.xaml.cs",
               "DocumentMoniker": "C:\\Users\\SVTFOE_HUAWEI_PC\\Desktop\\Projects\\02-College\\03-Karina-Diplom\\diplom_karina\\hotel\\hotel\\App.xaml.cs",
               "RelativeDocumentMoniker": "hotel\\App.xaml.cs",
@@ -638,11 +704,12 @@
               "RelativeToolTip": "hotel\\App.xaml.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-31T08:45:37.539Z"
+              "WhenOpened": "2026-04-30T08:31:45.726Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 27,
               "Title": "AssemblyInfo.cs",
               "DocumentMoniker": "C:\\Users\\SVTFOE_HUAWEI_PC\\Desktop\\Projects\\02-College\\03-Karina-Diplom\\diplom_karina\\hotel\\hotel\\AssemblyInfo.cs",
               "RelativeDocumentMoniker": "hotel\\AssemblyInfo.cs",
@@ -650,88 +717,84 @@
               "RelativeToolTip": "hotel\\AssemblyInfo.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-30T17:47:49.013Z"
+              "WhenOpened": "2026-04-30T08:31:45.734Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 28,
               "Title": "App.xaml",
               "DocumentMoniker": "C:\\Users\\SVTFOE_HUAWEI_PC\\Desktop\\Projects\\02-College\\03-Karina-Diplom\\diplom_karina\\hotel\\hotel\\App.xaml",
               "RelativeDocumentMoniker": "hotel\\App.xaml",
               "ToolTip": "C:\\Users\\SVTFOE_HUAWEI_PC\\Desktop\\Projects\\02-College\\03-Karina-Diplom\\diplom_karina\\hotel\\hotel\\App.xaml",
               "RelativeToolTip": "hotel\\App.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-10-30T17:47:45.61Z"
+              "WhenOpened": "2026-04-30T08:31:45.741Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 29,
               "Title": "AddServiceWindow.xaml",
               "DocumentMoniker": "C:\\Users\\SVTFOE_HUAWEI_PC\\Desktop\\Projects\\02-College\\03-Karina-Diplom\\diplom_karina\\hotel\\hotel\\AddServiceWindow.xaml",
               "RelativeDocumentMoniker": "hotel\\AddServiceWindow.xaml",
               "ToolTip": "C:\\Users\\SVTFOE_HUAWEI_PC\\Desktop\\Projects\\02-College\\03-Karina-Diplom\\diplom_karina\\hotel\\hotel\\AddServiceWindow.xaml",
               "RelativeToolTip": "hotel\\AddServiceWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2026-04-24T11:42:51.81Z"
+              "WhenOpened": "2026-04-30T08:31:45.747Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 30,
               "Title": "AddRoomWindow.xaml",
               "DocumentMoniker": "C:\\Users\\SVTFOE_HUAWEI_PC\\Desktop\\Projects\\02-College\\03-Karina-Diplom\\diplom_karina\\hotel\\hotel\\AddRoomWindow.xaml",
               "RelativeDocumentMoniker": "hotel\\AddRoomWindow.xaml",
               "ToolTip": "C:\\Users\\SVTFOE_HUAWEI_PC\\Desktop\\Projects\\02-College\\03-Karina-Diplom\\diplom_karina\\hotel\\hotel\\AddRoomWindow.xaml",
               "RelativeToolTip": "hotel\\AddRoomWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-11-28T06:19:35.863Z"
+              "WhenOpened": "2026-04-30T08:31:45.753Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
-              "Title": "AddHotelWindow.xaml",
-              "DocumentMoniker": "C:\\Users\\SVTFOE_HUAWEI_PC\\Desktop\\Projects\\02-College\\03-Karina-Diplom\\diplom_karina\\hotel\\hotel\\AddHotelWindow.xaml",
-              "RelativeDocumentMoniker": "hotel\\AddHotelWindow.xaml",
-              "ToolTip": "C:\\Users\\SVTFOE_HUAWEI_PC\\Desktop\\Projects\\02-College\\03-Karina-Diplom\\diplom_karina\\hotel\\hotel\\AddHotelWindow.xaml",
-              "RelativeToolTip": "hotel\\AddHotelWindow.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-11-13T08:23:36.197Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 32,
+              "DocumentIndex": 35,
               "Title": "ServiceControl.xaml",
               "DocumentMoniker": "C:\\Users\\SVTFOE_HUAWEI_PC\\Desktop\\Projects\\02-College\\03-Karina-Diplom\\diplom_karina\\hotel\\hotel\\ServiceControl.xaml",
               "RelativeDocumentMoniker": "hotel\\ServiceControl.xaml",
               "ToolTip": "C:\\Users\\SVTFOE_HUAWEI_PC\\Desktop\\Projects\\02-College\\03-Karina-Diplom\\diplom_karina\\hotel\\hotel\\ServiceControl.xaml",
               "RelativeToolTip": "hotel\\ServiceControl.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2026-04-24T11:42:18.487Z"
+              "WhenOpened": "2026-04-30T08:31:45.766Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 32,
               "Title": "AddClintWindow.xaml",
               "DocumentMoniker": "C:\\Users\\SVTFOE_HUAWEI_PC\\Desktop\\Projects\\02-College\\03-Karina-Diplom\\diplom_karina\\hotel\\hotel\\AddClintWindow.xaml",
               "RelativeDocumentMoniker": "hotel\\AddClintWindow.xaml",
               "ToolTip": "C:\\Users\\SVTFOE_HUAWEI_PC\\Desktop\\Projects\\02-College\\03-Karina-Diplom\\diplom_karina\\hotel\\hotel\\AddClintWindow.xaml",
               "RelativeToolTip": "hotel\\AddClintWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-12-12T14:19:22.765Z"
+              "WhenOpened": "2026-04-30T08:31:45.772Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 33,
               "Title": "AddBookingWindow.xaml",
               "DocumentMoniker": "C:\\Users\\SVTFOE_HUAWEI_PC\\Desktop\\Projects\\02-College\\03-Karina-Diplom\\diplom_karina\\hotel\\hotel\\AddBookingWindow.xaml",
               "RelativeDocumentMoniker": "hotel\\AddBookingWindow.xaml",
               "ToolTip": "C:\\Users\\SVTFOE_HUAWEI_PC\\Desktop\\Projects\\02-College\\03-Karina-Diplom\\diplom_karina\\hotel\\hotel\\AddBookingWindow.xaml",
               "RelativeToolTip": "hotel\\AddBookingWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-12-10T07:23:34.159Z"
+              "WhenOpened": "2026-04-30T08:31:45.778Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
+              "DocumentIndex": 34,
               "Title": "Autorisation.xaml.cs",
               "DocumentMoniker": "C:\\Users\\SVTFOE_HUAWEI_PC\\Desktop\\Projects\\02-College\\03-Karina-Diplom\\diplom_karina\\hotel\\hotel\\Autorisation.xaml.cs",
               "RelativeDocumentMoniker": "hotel\\Autorisation.xaml.cs",
@@ -739,22 +802,24 @@
               "RelativeToolTip": "hotel\\Autorisation.xaml.cs",
               "ViewState": "AgIAAA4AAAAAAAAAAAD4vygAAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-30T17:47:09.214Z"
+              "WhenOpened": "2026-04-30T08:31:45.784Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 31,
               "Title": "AddEmployeeWindow.xaml",
               "DocumentMoniker": "C:\\Users\\SVTFOE_HUAWEI_PC\\Desktop\\Projects\\02-College\\03-Karina-Diplom\\diplom_karina\\hotel\\hotel\\AddEmployeeWindow.xaml",
               "RelativeDocumentMoniker": "hotel\\AddEmployeeWindow.xaml",
               "ToolTip": "C:\\Users\\SVTFOE_HUAWEI_PC\\Desktop\\Projects\\02-College\\03-Karina-Diplom\\diplom_karina\\hotel\\hotel\\AddEmployeeWindow.xaml",
               "RelativeToolTip": "hotel\\AddEmployeeWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-11-27T23:44:34.796Z"
+              "WhenOpened": "2026-04-30T08:31:45.791Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 33,
+              "DocumentIndex": 36,
               "Title": "ReviewWindow.xaml.cs",
               "DocumentMoniker": "C:\\Users\\SVTFOE_HUAWEI_PC\\Desktop\\Projects\\02-College\\03-Karina-Diplom\\diplom_karina\\hotel\\hotel\\ReviewWindow.xaml.cs",
               "RelativeDocumentMoniker": "hotel\\ReviewWindow.xaml.cs",
@@ -762,24 +827,25 @@
               "RelativeToolTip": "hotel\\ReviewWindow.xaml.cs",
               "ViewState": "AgIAABIAAAAAAAAAAAAwwBgAAAAaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-27T11:54:52.111Z"
+              "WhenOpened": "2026-04-30T08:31:45.798Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 34,
+              "DocumentIndex": 37,
               "Title": "HotelsWindow.xaml.cs",
               "DocumentMoniker": "C:\\Users\\SVTFOE_HUAWEI_PC\\Desktop\\Projects\\02-College\\03-Karina-Diplom\\diplom_karina\\hotel\\hotel\\HotelsWindow.xaml.cs",
               "RelativeDocumentMoniker": "hotel\\HotelsWindow.xaml.cs",
               "ToolTip": "C:\\Users\\SVTFOE_HUAWEI_PC\\Desktop\\Projects\\02-College\\03-Karina-Diplom\\diplom_karina\\hotel\\hotel\\HotelsWindow.xaml.cs",
               "RelativeToolTip": "hotel\\HotelsWindow.xaml.cs",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAAAB4AAAAtAAAAAAAAAA==",
+              "ViewState": "AgIAAAwAAAAAAAAAAIBJwB4AAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-28T09:44:37.668Z",
+              "WhenOpened": "2026-04-30T08:31:45.805Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 35,
+              "DocumentIndex": 38,
               "Title": "HotelControl.xaml.cs",
               "DocumentMoniker": "C:\\Users\\SVTFOE_HUAWEI_PC\\Desktop\\Projects\\02-College\\03-Karina-Diplom\\diplom_karina\\hotel\\hotel\\HotelControl.xaml.cs",
               "RelativeDocumentMoniker": "hotel\\HotelControl.xaml.cs",
@@ -787,11 +853,12 @@
               "RelativeToolTip": "hotel\\HotelControl.xaml.cs",
               "ViewState": "AgIAAGIAAAAAAAAAAAAIwHAAAAA4AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-07T08:24:30.869Z"
+              "WhenOpened": "2026-04-30T08:31:45.816Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 36,
+              "DocumentIndex": 39,
               "Title": "ReviewControl.xaml.cs",
               "DocumentMoniker": "C:\\Users\\SVTFOE_HUAWEI_PC\\Desktop\\Projects\\02-College\\03-Karina-Diplom\\diplom_karina\\hotel\\hotel\\ReviewControl.xaml.cs",
               "RelativeDocumentMoniker": "hotel\\ReviewControl.xaml.cs",
@@ -799,11 +866,12 @@
               "RelativeToolTip": "hotel\\ReviewControl.xaml.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAACYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-27T12:01:33.842Z"
+              "WhenOpened": "2026-04-30T08:31:45.824Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 39,
+              "DocumentIndex": 41,
               "Title": "CommHotel.cs",
               "DocumentMoniker": "C:\\Users\\SVTFOE_HUAWEI_PC\\Desktop\\Projects\\02-College\\03-Karina-Diplom\\diplom_karina\\hotel\\hotel\\Models\\CommHotel.cs",
               "RelativeDocumentMoniker": "hotel\\Models\\CommHotel.cs",
@@ -811,34 +879,24 @@
               "RelativeToolTip": "hotel\\Models\\CommHotel.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-28T11:06:54.552Z"
+              "WhenOpened": "2026-04-30T08:31:45.832Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 37,
+              "DocumentIndex": 40,
               "Title": "HotelControl.xaml",
               "DocumentMoniker": "C:\\Users\\SVTFOE_HUAWEI_PC\\Desktop\\Projects\\02-College\\03-Karina-Diplom\\diplom_karina\\hotel\\hotel\\HotelControl.xaml",
               "RelativeDocumentMoniker": "hotel\\HotelControl.xaml",
               "ToolTip": "C:\\Users\\SVTFOE_HUAWEI_PC\\Desktop\\Projects\\02-College\\03-Karina-Diplom\\diplom_karina\\hotel\\hotel\\HotelControl.xaml",
               "RelativeToolTip": "hotel\\HotelControl.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-11-07T08:07:33.754Z"
+              "WhenOpened": "2026-04-30T08:31:45.839Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 38,
-              "Title": "EditHotelWindow.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\SVTFOE_HUAWEI_PC\\Desktop\\Projects\\02-College\\03-Karina-Diplom\\diplom_karina\\hotel\\hotel\\EditHotelWindow.xaml.cs",
-              "RelativeDocumentMoniker": "hotel\\EditHotelWindow.xaml.cs",
-              "ToolTip": "C:\\Users\\SVTFOE_HUAWEI_PC\\Desktop\\Projects\\02-College\\03-Karina-Diplom\\diplom_karina\\hotel\\hotel\\EditHotelWindow.xaml.cs",
-              "RelativeToolTip": "hotel\\EditHotelWindow.xaml.cs",
-              "ViewState": "AgIAAAwBAAAAAAAAAAAAwCMBAABtAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-13T12:03:03.977Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 40,
+              "DocumentIndex": 42,
               "Title": "Hotel.cs",
               "DocumentMoniker": "C:\\Users\\SVTFOE_HUAWEI_PC\\Desktop\\Projects\\02-College\\03-Karina-Diplom\\diplom_karina\\hotel\\hotel\\Models\\Hotel.cs",
               "RelativeDocumentMoniker": "hotel\\Models\\Hotel.cs",
@@ -846,23 +904,25 @@
               "RelativeToolTip": "hotel\\Models\\Hotel.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-28T11:06:11.222Z"
+              "WhenOpened": "2026-04-30T08:31:45.853Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 43,
+              "DocumentIndex": 45,
               "Title": "RoomsWindow.xaml.cs",
               "DocumentMoniker": "C:\\Users\\SVTFOE_HUAWEI_PC\\Desktop\\Projects\\02-College\\03-Karina-Diplom\\diplom_karina\\hotel\\hotel\\RoomsWindow.xaml.cs",
               "RelativeDocumentMoniker": "hotel\\RoomsWindow.xaml.cs",
               "ToolTip": "C:\\Users\\SVTFOE_HUAWEI_PC\\Desktop\\Projects\\02-College\\03-Karina-Diplom\\diplom_karina\\hotel\\hotel\\RoomsWindow.xaml.cs",
               "RelativeToolTip": "hotel\\RoomsWindow.xaml.cs",
-              "ViewState": "AgIAABIAAAAAAAAAAAAAAAIAAAASAAAAAAAAAA==",
+              "ViewState": "AgIAAA8AAAAAAAAAAIBJwAIAAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-28T08:54:47.848Z"
+              "WhenOpened": "2026-04-30T08:31:45.86Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 41,
+              "DocumentIndex": 43,
               "Title": "ServiceWindow.xaml.cs",
               "DocumentMoniker": "C:\\Users\\SVTFOE_HUAWEI_PC\\Desktop\\Projects\\02-College\\03-Karina-Diplom\\diplom_karina\\hotel\\hotel\\ServiceWindow.xaml.cs",
               "RelativeDocumentMoniker": "hotel\\ServiceWindow.xaml.cs",
@@ -870,11 +930,12 @@
               "RelativeToolTip": "hotel\\ServiceWindow.xaml.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-28T09:42:03.072Z"
+              "WhenOpened": "2026-04-30T08:31:45.866Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 42,
+              "DocumentIndex": 44,
               "Title": "ServiceControl.xaml.cs",
               "DocumentMoniker": "C:\\Users\\SVTFOE_HUAWEI_PC\\Desktop\\Projects\\02-College\\03-Karina-Diplom\\diplom_karina\\hotel\\hotel\\ServiceControl.xaml.cs",
               "RelativeDocumentMoniker": "hotel\\ServiceControl.xaml.cs",
@@ -882,11 +943,12 @@
               "RelativeToolTip": "hotel\\ServiceControl.xaml.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-26T08:36:22.611Z"
+              "WhenOpened": "2026-04-30T08:31:45.873Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 44,
+              "DocumentIndex": 46,
               "Title": "MainManager.xaml.cs",
               "DocumentMoniker": "C:\\Users\\SVTFOE_HUAWEI_PC\\Desktop\\Projects\\02-College\\03-Karina-Diplom\\diplom_karina\\hotel\\hotel\\MainManager.xaml.cs",
               "RelativeDocumentMoniker": "hotel\\MainManager.xaml.cs",
@@ -894,11 +956,12 @@
               "RelativeToolTip": "hotel\\MainManager.xaml.cs",
               "ViewState": "AgIAAB8AAAAAAAAAAAAQwAAAAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-31T12:15:17.205Z"
+              "WhenOpened": "2026-04-30T08:31:45.88Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 45,
+              "DocumentIndex": 47,
               "Title": "HeadHotelManagerWindow.xaml.cs",
               "DocumentMoniker": "C:\\Users\\SVTFOE_HUAWEI_PC\\Desktop\\Projects\\02-College\\03-Karina-Diplom\\diplom_karina\\hotel\\hotel\\HeadHotelManagerWindow.xaml.cs",
               "RelativeDocumentMoniker": "hotel\\HeadHotelManagerWindow.xaml.cs",
@@ -906,11 +969,12 @@
               "RelativeToolTip": "hotel\\HeadHotelManagerWindow.xaml.cs",
               "ViewState": "AgIAABcAAAAAAAAAAAAAwA8AAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-06T19:50:44.673Z"
+              "WhenOpened": "2026-04-30T08:31:45.886Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 46,
+              "DocumentIndex": 48,
               "Title": "EmployeeHHMWindow.xaml.cs",
               "DocumentMoniker": "C:\\Users\\SVTFOE_HUAWEI_PC\\Desktop\\Projects\\02-College\\03-Karina-Diplom\\diplom_karina\\hotel\\hotel\\EmployeeHHMWindow.xaml.cs",
               "RelativeDocumentMoniker": "hotel\\EmployeeHHMWindow.xaml.cs",
@@ -918,11 +982,12 @@
               "RelativeToolTip": "hotel\\EmployeeHHMWindow.xaml.cs",
               "ViewState": "AgIAAIgAAAAAAAAAAADwvwEAAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-27T12:06:46.096Z"
+              "WhenOpened": "2026-04-30T08:31:45.894Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 47,
+              "DocumentIndex": 49,
               "Title": "EmployeeControl.xaml.cs",
               "DocumentMoniker": "C:\\Users\\SVTFOE_HUAWEI_PC\\Desktop\\Projects\\02-College\\03-Karina-Diplom\\diplom_karina\\hotel\\hotel\\EmployeeControl.xaml.cs",
               "RelativeDocumentMoniker": "hotel\\EmployeeControl.xaml.cs",
@@ -930,11 +995,12 @@
               "RelativeToolTip": "hotel\\EmployeeControl.xaml.cs",
               "ViewState": "AgIAAGEAAAAAAAAAAAAAwAIAAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-27T14:50:57.575Z"
+              "WhenOpened": "2026-04-30T08:31:45.901Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 48,
+              "DocumentIndex": 50,
               "Title": "EditServiceWindow.xaml.cs",
               "DocumentMoniker": "C:\\Users\\SVTFOE_HUAWEI_PC\\Desktop\\Projects\\02-College\\03-Karina-Diplom\\diplom_karina\\hotel\\hotel\\EditServiceWindow.xaml.cs",
               "RelativeDocumentMoniker": "hotel\\EditServiceWindow.xaml.cs",
@@ -942,7 +1008,8 @@
               "RelativeToolTip": "hotel\\EditServiceWindow.xaml.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-28T09:40:06.944Z"
+              "WhenOpened": "2026-04-30T08:31:45.907Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -952,9 +1019,10 @@
               "RelativeDocumentMoniker": "hotel\\Models\\Room.cs",
               "ToolTip": "C:\\Users\\SVTFOE_HUAWEI_PC\\Desktop\\Projects\\02-College\\03-Karina-Diplom\\diplom_karina\\hotel\\hotel\\Models\\Room.cs",
               "RelativeToolTip": "hotel\\Models\\Room.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAA3wAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAYwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-28T08:34:17.357Z"
+              "WhenOpened": "2026-04-30T08:31:45.912Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -966,11 +1034,12 @@
               "RelativeToolTip": "hotel\\Model\\HoteldContext.cs",
               "ViewState": "AgIAAK4AAAAAAAAAAAAowOgAAAApAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-27T13:00:57.178Z"
+              "WhenOpened": "2026-04-30T08:31:45.92Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 50,
+              "DocumentIndex": 52,
               "Title": "EditEmployeeWindow.xaml.cs",
               "DocumentMoniker": "C:\\Users\\SVTFOE_HUAWEI_PC\\Desktop\\Projects\\02-College\\03-Karina-Diplom\\diplom_karina\\hotel\\hotel\\EditEmployeeWindow.xaml.cs",
               "RelativeDocumentMoniker": "hotel\\EditEmployeeWindow.xaml.cs",
@@ -978,23 +1047,25 @@
               "RelativeToolTip": "hotel\\EditEmployeeWindow.xaml.cs",
               "ViewState": "AgIAABgBAAAAAAAAAADwvwEAAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-28T06:17:48.488Z"
+              "WhenOpened": "2026-04-30T08:31:45.925Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 51,
+              "DocumentIndex": 53,
               "Title": "BookingServiceSpecialist.xaml.cs",
               "DocumentMoniker": "C:\\Users\\SVTFOE_HUAWEI_PC\\Desktop\\Projects\\02-College\\03-Karina-Diplom\\diplom_karina\\hotel\\hotel\\BookingServiceSpecialist.xaml.cs",
               "RelativeDocumentMoniker": "hotel\\BookingServiceSpecialist.xaml.cs",
               "ToolTip": "C:\\Users\\SVTFOE_HUAWEI_PC\\Desktop\\Projects\\02-College\\03-Karina-Diplom\\diplom_karina\\hotel\\hotel\\BookingServiceSpecialist.xaml.cs",
               "RelativeToolTip": "hotel\\BookingServiceSpecialist.xaml.cs",
-              "ViewState": "AgIAALoAAAAAAAAAAAA4wAEAAAASAAAAAAAAAA==",
+              "ViewState": "AgIAALsAAAAAAAAAAAAcwAEAAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-28T08:38:53.316Z"
+              "WhenOpened": "2026-04-30T08:31:45.933Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 52,
+              "DocumentIndex": 54,
               "Title": "BookingReportWindow.xaml.cs",
               "DocumentMoniker": "C:\\Users\\SVTFOE_HUAWEI_PC\\Desktop\\Projects\\02-College\\03-Karina-Diplom\\diplom_karina\\hotel\\hotel\\BookingReportWindow.xaml.cs",
               "RelativeDocumentMoniker": "hotel\\BookingReportWindow.xaml.cs",
@@ -1002,12 +1073,12 @@
               "RelativeToolTip": "hotel\\BookingReportWindow.xaml.cs",
               "ViewState": "AgIAAAABAAAAAAAAAAAwwOcAAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-07T18:13:08.499Z",
+              "WhenOpened": "2026-04-30T08:31:45.94Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 49,
+              "DocumentIndex": 51,
               "Title": "EditRoomWindow.xaml.cs",
               "DocumentMoniker": "C:\\Users\\SVTFOE_HUAWEI_PC\\Desktop\\Projects\\02-College\\03-Karina-Diplom\\diplom_karina\\hotel\\hotel\\EditRoomWindow.xaml.cs",
               "RelativeDocumentMoniker": "hotel\\EditRoomWindow.xaml.cs",
@@ -1015,23 +1086,25 @@
               "RelativeToolTip": "hotel\\EditRoomWindow.xaml.cs",
               "ViewState": "AgIAAKkAAAAAAAAAAAAcwAEAAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-28T06:24:20.336Z"
+              "WhenOpened": "2026-04-30T08:31:45.947Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 53,
+              "DocumentIndex": 55,
               "Title": "BookingControl.xaml.cs",
               "DocumentMoniker": "C:\\Users\\SVTFOE_HUAWEI_PC\\Desktop\\Projects\\02-College\\03-Karina-Diplom\\diplom_karina\\hotel\\hotel\\BookingControl.xaml.cs",
               "RelativeDocumentMoniker": "hotel\\BookingControl.xaml.cs",
               "ToolTip": "C:\\Users\\SVTFOE_HUAWEI_PC\\Desktop\\Projects\\02-College\\03-Karina-Diplom\\diplom_karina\\hotel\\hotel\\BookingControl.xaml.cs",
               "RelativeToolTip": "hotel\\BookingControl.xaml.cs",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAAAAEAAAASAAAAAAAAAA==",
+              "ViewState": "AgIAAAwAAAAAAAAAAIBJwAEAAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-09T03:35:09.016Z"
+              "WhenOpened": "2026-04-30T08:31:45.955Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 54,
+              "DocumentIndex": 56,
               "Title": "AddServiceWindow.xaml.cs",
               "DocumentMoniker": "C:\\Users\\SVTFOE_HUAWEI_PC\\Desktop\\Projects\\02-College\\03-Karina-Diplom\\diplom_karina\\hotel\\hotel\\AddServiceWindow.xaml.cs",
               "RelativeDocumentMoniker": "hotel\\AddServiceWindow.xaml.cs",
@@ -1039,24 +1112,12 @@
               "RelativeToolTip": "hotel\\AddServiceWindow.xaml.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-26T08:34:22.894Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 55,
-              "Title": "AddHotelWindow.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\SVTFOE_HUAWEI_PC\\Desktop\\Projects\\02-College\\03-Karina-Diplom\\diplom_karina\\hotel\\hotel\\AddHotelWindow.xaml.cs",
-              "RelativeDocumentMoniker": "hotel\\AddHotelWindow.xaml.cs",
-              "ToolTip": "C:\\Users\\SVTFOE_HUAWEI_PC\\Desktop\\Projects\\02-College\\03-Karina-Diplom\\diplom_karina\\hotel\\hotel\\AddHotelWindow.xaml.cs",
-              "RelativeToolTip": "hotel\\AddHotelWindow.xaml.cs",
-              "ViewState": "AgIAAFYAAAAAAAAAAAAswGsAAAAkAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-13T11:18:58.32Z",
+              "WhenOpened": "2026-04-30T08:31:45.962Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 56,
+              "DocumentIndex": 57,
               "Title": "AddClintWindow.xaml.cs",
               "DocumentMoniker": "C:\\Users\\SVTFOE_HUAWEI_PC\\Desktop\\Projects\\02-College\\03-Karina-Diplom\\diplom_karina\\hotel\\hotel\\AddClintWindow.xaml.cs",
               "RelativeDocumentMoniker": "hotel\\AddClintWindow.xaml.cs",
@@ -1064,11 +1125,12 @@
               "RelativeToolTip": "hotel\\AddClintWindow.xaml.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-12T14:19:35.963Z"
+              "WhenOpened": "2026-04-30T08:31:45.975Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 57,
+              "DocumentIndex": 58,
               "Title": "AddEmployeeWindow.xaml.cs",
               "DocumentMoniker": "C:\\Users\\SVTFOE_HUAWEI_PC\\Desktop\\Projects\\02-College\\03-Karina-Diplom\\diplom_karina\\hotel\\hotel\\AddEmployeeWindow.xaml.cs",
               "RelativeDocumentMoniker": "hotel\\AddEmployeeWindow.xaml.cs",
@@ -1076,12 +1138,12 @@
               "RelativeToolTip": "hotel\\AddEmployeeWindow.xaml.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-09T07:50:45.814Z",
+              "WhenOpened": "2026-04-30T08:31:45.982Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 58,
+              "DocumentIndex": 59,
               "Title": "AddBookingWindow.xaml.cs",
               "DocumentMoniker": "C:\\Users\\SVTFOE_HUAWEI_PC\\Desktop\\Projects\\02-College\\03-Karina-Diplom\\diplom_karina\\hotel\\hotel\\AddBookingWindow.xaml.cs",
               "RelativeDocumentMoniker": "hotel\\AddBookingWindow.xaml.cs",
@@ -1089,12 +1151,12 @@
               "RelativeToolTip": "hotel\\AddBookingWindow.xaml.cs",
               "ViewState": "AgIAANYAAAAAAAAAAAAwwMsAAAAqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-11T05:08:51.287Z",
+              "WhenOpened": "2026-04-30T08:31:45.988Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 59,
+              "DocumentIndex": 60,
               "Title": "Book.cs",
               "DocumentMoniker": "C:\\Users\\SVTFOE_HUAWEI_PC\\Desktop\\Projects\\02-College\\03-Karina-Diplom\\diplom_karina\\hotel\\hotel\\Model\\Book.cs",
               "RelativeDocumentMoniker": "hotel\\Model\\Book.cs",
@@ -1102,19 +1164,8 @@
               "RelativeToolTip": "hotel\\Model\\Book.cs",
               "ViewState": "AgIAAAwAAAAAAAAAAAAYwBwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-26T08:09:01.402Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 60,
-              "Title": "Book.cs",
-              "DocumentMoniker": "C:\\Users\\SVTFOE_HUAWEI_PC\\Desktop\\Projects\\02-College\\03-Karina-Diplom\\diplom_karina\\hotel\\hotel\\Models\\Book.cs",
-              "RelativeDocumentMoniker": "hotel\\Models\\Book.cs",
-              "ToolTip": "C:\\Users\\SVTFOE_HUAWEI_PC\\Desktop\\Projects\\02-College\\03-Karina-Diplom\\diplom_karina\\hotel\\hotel\\Models\\Book.cs",
-              "RelativeToolTip": "hotel\\Models\\Book.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAYwBoAAABhAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-28T08:32:15.152Z"
+              "WhenOpened": "2026-04-30T08:31:45.994Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -1126,7 +1177,8 @@
               "RelativeToolTip": "hotel\\Models\\Category.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-28T08:34:15.571Z"
+              "WhenOpened": "2026-04-30T08:31:46.006Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -1138,7 +1190,8 @@
               "RelativeToolTip": "hotel\\Models\\BookService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-28T08:33:54.913Z"
+              "WhenOpened": "2026-04-30T08:31:46.018Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -1148,9 +1201,10 @@
               "RelativeDocumentMoniker": "hotel\\Model\\Hotel.cs",
               "ToolTip": "C:\\Users\\SVTFOE_HUAWEI_PC\\Desktop\\Projects\\02-College\\03-Karina-Diplom\\diplom_karina\\hotel\\hotel\\Model\\Hotel.cs",
               "RelativeToolTip": "hotel\\Model\\Hotel.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAA3wAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAYwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-26T08:31:58.219Z"
+              "WhenOpened": "2026-04-30T08:31:46.025Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -1162,7 +1216,8 @@
               "RelativeToolTip": "hotel\\Model\\Guest.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-26T08:31:59.794Z"
+              "WhenOpened": "2026-04-30T08:31:46.033Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -1174,7 +1229,8 @@
               "RelativeToolTip": "hotel\\Model\\Floor.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-26T08:31:07.164Z"
+              "WhenOpened": "2026-04-30T08:31:46.04Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -1186,7 +1242,8 @@
               "RelativeToolTip": "hotel\\Model\\Favorite.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-28T08:34:33.178Z"
+              "WhenOpened": "2026-04-30T08:31:46.046Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -1196,9 +1253,10 @@
               "RelativeDocumentMoniker": "hotel\\Model\\Employee.cs",
               "ToolTip": "C:\\Users\\SVTFOE_HUAWEI_PC\\Desktop\\Projects\\02-College\\03-Karina-Diplom\\diplom_karina\\hotel\\hotel\\Model\\Employee.cs",
               "RelativeToolTip": "hotel\\Model\\Employee.cs",
-              "ViewState": "AgIAAA8AAAAAAAAAAAA7wBEAAAATAAAAAAAAAA==",
+              "ViewState": "AgIAABAAAAAAAAAAAAAkwBEAAAATAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-27T12:57:32.237Z"
+              "WhenOpened": "2026-04-30T08:31:46.056Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -1210,7 +1268,8 @@
               "RelativeToolTip": "hotel\\Model\\CommHotel.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAABFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-26T13:04:10.869Z"
+              "WhenOpened": "2026-04-30T08:31:46.063Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -1222,7 +1281,8 @@
               "RelativeToolTip": "hotel\\Model\\Comment.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-27T12:57:43.7Z"
+              "WhenOpened": "2026-04-30T08:31:46.069Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -1232,9 +1292,10 @@
               "RelativeDocumentMoniker": "hotel\\Model\\ClintGuest.cs",
               "ToolTip": "C:\\Users\\SVTFOE_HUAWEI_PC\\Desktop\\Projects\\02-College\\03-Karina-Diplom\\diplom_karina\\hotel\\hotel\\Model\\ClintGuest.cs",
               "RelativeToolTip": "hotel\\Model\\ClintGuest.cs",
-              "ViewState": "AgIAAAcAAAAAAAAAAAAzwAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAAwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-28T08:34:24.123Z"
+              "WhenOpened": "2026-04-30T08:31:46.075Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -1244,9 +1305,10 @@
               "RelativeDocumentMoniker": "hotel\\Model\\Clint.cs",
               "ToolTip": "C:\\Users\\SVTFOE_HUAWEI_PC\\Desktop\\Projects\\02-College\\03-Karina-Diplom\\diplom_karina\\hotel\\hotel\\Model\\Clint.cs",
               "RelativeToolTip": "hotel\\Model\\Clint.cs",
-              "ViewState": "AgIAAA0AAAAAAAAAAAA5wAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAgwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-26T08:10:56.292Z"
+              "WhenOpened": "2026-04-30T08:31:46.081Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -1258,7 +1320,8 @@
               "RelativeToolTip": "hotel\\Model\\Category.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-26T08:10:46.511Z"
+              "WhenOpened": "2026-04-30T08:31:46.088Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -1270,7 +1333,8 @@
               "RelativeToolTip": "hotel\\Model\\BookService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-26T08:10:27.532Z"
+              "WhenOpened": "2026-04-30T08:31:46.095Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -1282,7 +1346,8 @@
               "RelativeToolTip": "hotel\\Model\\StatusRoom.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-26T08:31:50.305Z"
+              "WhenOpened": "2026-04-30T08:31:46.102Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -1294,7 +1359,8 @@
               "RelativeToolTip": "hotel\\Model\\Service.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-26T08:31:51.033Z"
+              "WhenOpened": "2026-04-30T08:31:46.108Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -1304,9 +1370,10 @@
               "RelativeDocumentMoniker": "hotel\\Model\\Room.cs",
               "ToolTip": "C:\\Users\\SVTFOE_HUAWEI_PC\\Desktop\\Projects\\02-College\\03-Karina-Diplom\\diplom_karina\\hotel\\hotel\\Model\\Room.cs",
               "RelativeToolTip": "hotel\\Model\\Room.cs",
-              "ViewState": "AgIAAAcAAAAAAAAAAAAzwAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAAwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-26T08:31:52.29Z"
+              "WhenOpened": "2026-04-30T08:31:46.115Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -1318,7 +1385,8 @@
               "RelativeToolTip": "hotel\\Model\\Role.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-26T08:31:53.492Z"
+              "WhenOpened": "2026-04-30T08:31:46.123Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -1330,7 +1398,8 @@
               "RelativeToolTip": "hotel\\Model\\PhotoCategory.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-26T08:31:54.465Z"
+              "WhenOpened": "2026-04-30T08:31:46.13Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -1342,7 +1411,8 @@
               "RelativeToolTip": "hotel\\Model\\Photo.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-26T08:31:56.339Z"
+              "WhenOpened": "2026-04-30T08:31:46.136Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -1354,7 +1424,8 @@
               "RelativeToolTip": "hotel\\Models\\Floor.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAALAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-28T08:34:47.13Z"
+              "WhenOpened": "2026-04-30T08:31:46.143Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -1366,19 +1437,8 @@
               "RelativeToolTip": "hotel\\hotel.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-11-22T04:19:30.261Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 84,
-              "Title": "EditHotelWindow.g.i.cs",
-              "DocumentMoniker": "C:\\Users\\SVTFOE_HUAWEI_PC\\Desktop\\Projects\\02-College\\03-Karina-Diplom\\diplom_karina\\hotel\\hotel\\obj\\Debug\\net8.0-windows\\EditHotelWindow.g.i.cs",
-              "RelativeDocumentMoniker": "hotel\\obj\\Debug\\net8.0-windows\\EditHotelWindow.g.i.cs",
-              "ToolTip": "C:\\Users\\SVTFOE_HUAWEI_PC\\Desktop\\Projects\\02-College\\03-Karina-Diplom\\diplom_karina\\hotel\\hotel\\obj\\Debug\\net8.0-windows\\EditHotelWindow.g.i.cs",
-              "RelativeToolTip": "hotel\\obj\\Debug\\net8.0-windows\\EditHotelWindow.g.i.cs",
-              "ViewState": "AgIAABYAAAAAAAAAAAArwCkAAAAZAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-21T15:12:54.92Z"
+              "WhenOpened": "2026-04-30T08:31:46.153Z",
+              "EditorCaption": ""
             }
           ]
         }

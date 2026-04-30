@@ -1,6 +1,10 @@
-﻿using DocumentFormat.OpenXml.ExtendedProperties;
+﻿using DocumentFormat.OpenXml.Bibliography;
+using DocumentFormat.OpenXml.ExtendedProperties;
 using hotel.Data;
 using hotel.Models;
+using Microsoft.Web.WebView2;
+using Microsoft.Web.WebView2.Core;
+using Microsoft.Web.WebView2.Wpf;
 using System;
 using System.Collections.Generic;
 using System.DirectoryServices.ActiveDirectory;
@@ -27,7 +31,7 @@ namespace hotel
     public partial class EditHotelWindow : Window
     {
         private Hotel selectedhotel;
-        private byte[]? _newPhotoBytes; 
+        private byte[]? _newPhotoBytes;
         private List<Employee> _allEmployees = new();
         private List<Employee> _availableManagers = new();
         private Employee _currEmpl;
@@ -44,7 +48,11 @@ namespace hotel
 
             _newPhotoBytes = hotel.Photo;
             UpdatePhotoDisplay();
+
+            LoadYandexMaps();
         }
+
+        public EditHotelWindow() { }
 
         private async void LoadData()
         {
@@ -83,9 +91,6 @@ namespace hotel
                 mainManager.SelectedIndex = -1;
             }
         }
-
-
-            public EditHotelWindow() { }
 
         private void UpdatePhotoDisplay()
         {
@@ -229,7 +234,7 @@ namespace hotel
 
         public bool isValidAddress(string address)
         {
-            if(string.IsNullOrEmpty(address) || address.Length > 100)
+            if (string.IsNullOrEmpty(address) || address.Length > 100)
                 return false;
             var regex = new Regex(@"^ул\. [^,\d]+, д\. \d+(?:[/][\dа-яА-ЯёЁ]|[а-яА-ЯёЁ])?$");
             return regex.IsMatch(address);
@@ -276,7 +281,7 @@ namespace hotel
         private async void edit_Click(object sender, RoutedEventArgs e)
         {
             if (string.IsNullOrEmpty(nameT.Text) || string.IsNullOrEmpty(address.Text) || string.IsNullOrEmpty(cityT.Text)
-                || string.IsNullOrEmpty(phoneT.Text) || string.IsNullOrEmpty(emailT.Text) ||  mainManager.SelectedIndex == -1)
+                || string.IsNullOrEmpty(phoneT.Text) || string.IsNullOrEmpty(emailT.Text) || mainManager.SelectedIndex == -1)
             {
                 MessageBox.Show("Заполните пустые поля", "Уведомление");
                 return;
@@ -373,7 +378,7 @@ namespace hotel
         {
             try
             {
-                return new BitmapImage(new Uri("pack://application:,,,/Images/default-hotel.jpg"));
+                return new BitmapImage(new Uri("pack://application:,,,/images/a-none-logo.jpg"));
             }
             catch
             {
@@ -383,7 +388,7 @@ namespace hotel
 
         private void deleteB_Click(object sender, RoutedEventArgs e)
         {
-            _newPhotoBytes = null; 
+            _newPhotoBytes = null;
             photoDisplay.Source = GetDefaultImage();
         }
 
@@ -395,8 +400,8 @@ namespace hotel
             };
             if (dialog.ShowDialog() == true)
             {
-                _newPhotoBytes = File.ReadAllBytes(dialog.FileName); 
-                photoDisplay.Source = LoadBitmap(_newPhotoBytes); 
+                _newPhotoBytes = File.ReadAllBytes(dialog.FileName);
+                photoDisplay.Source = LoadBitmap(_newPhotoBytes);
             }
         }
         private ImageSource LoadBitmap(byte[]? imageData)
@@ -420,5 +425,135 @@ namespace hotel
                 return GetDefaultImage();
             }
         }
+
+        // Загрузка Яндекс карты
+        private async void LoadYandexMaps()
+        {
+            try
+            {
+                await YandexMapWebView.EnsureCoreWebView2Async();
+                System.Diagnostics.Debug.WriteLine("WebView2 инициализирован");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Ошибка WebView2: {ex.Message}");
+                return;
+            }
+
+            await YandexMapWebView.EnsureCoreWebView2Async();
+
+            // HTML со встроенной картой
+            string html = @"
+                <!DOCTYPE html>
+                <html>
+                <head>
+                    <meta charset='utf-8'>
+                    <script src='https://api-maps.yandex.com/2.1/?apikey=e0855f9d-43db-40c1-bccd-c33341fdf936&lang=ru_RU'></script>
+                    <style>
+                        html, body, #map { width: 100%; height: 100%; margin: 0; padding: 0; }
+                    </style>
+                </head>
+                <body>
+                    <div id='map'></div>
+                    <script>
+                        var myMap, myPlacemark;
+
+                        ymaps.ready(init);
+
+                        function init() {
+                            myMap = new ymaps.Map('map', {
+                                center: [55.76, 37.64],
+                                zoom: 10,
+                                controls: ['zoomControl', 'searchControl']
+                            });
+            
+                            // Клик по карте
+                            myMap.events.add('click', function (e) {
+                                var coords = e.get('coords');
+                                setPlacemark(coords);
+                
+                                ymaps.geocode(coords).then(function (res) {
+                                    var obj = res.geoObjects.get(0);
+                                    sendToCSharp(obj);
+                                });
+                            });
+                        }
+
+                        function setPlacemark(coords) {
+                            if (myPlacemark) myMap.geoObjects.remove(myPlacemark);
+                            myPlacemark = new ymaps.Placemark(coords);
+                            myMap.geoObjects.add(myPlacemark);
+                        }
+
+                        // Поиск по адресу из C#
+                        function searchAddress(query) {
+                            ymaps.geocode(query).then(function (res) {
+                                var obj = res.geoObjects.get(0);
+                                if (!obj) {
+                                    window.chrome.webview.postMessage(JSON.stringify({error: 'Не найдено'}));
+                                    return;
+                                }
+                                var coords = obj.geometry.getCoordinates();
+                                myMap.setCenter(coords, 16);
+                                setPlacemark(coords);
+                                sendToCSharp(obj);
+                            });
+                        }
+
+                        // Отправка данных в C#
+                        function sendToCSharp(geoObject) {
+                            var data = {
+                                address: geoObject.getAddressLine(),
+                                city: geoObject.getLocalities().join(', ') || '',
+                                country: geoObject.getCountry() || '',
+                                coords: geoObject.geometry.getCoordinates()
+                            };
+                            window.chrome.webview.postMessage(JSON.stringify(data));
+                        }
+                    </script>
+                </body>
+                </html>";
+
+            YandexMapWebView.NavigateToString(html);
+
+            // Обработка сообщений из JavaScript
+            YandexMapWebView.WebMessageReceived += OnWebMessageReceived;
+        }
+
+        private void OnWebMessageReceived(object? sender, CoreWebView2WebMessageReceivedEventArgs e)
+        {
+            Dispatcher.Invoke(() =>
+            {
+                string json = e.TryGetWebMessageAsString();
+
+                // Проверка на ошибку
+                if (json.Contains("\"error\""))
+                {
+                    address.Text = "Место не найдено";
+                    cityT.Text = "Место не найдено";
+                    return;
+                }
+
+                // Парсим JSON
+                var data = System.Text.Json.JsonSerializer.Deserialize<AddressData>(json);
+
+                if (data != null)
+                {
+                    // Форматируем вывод: Город | Полный адрес
+                    address.Text = data.address;
+                    cityT.Text = data.city;
+                }
+            });
+        }
+
     }
+}
+
+// Не менять!
+public class AddressData
+{
+    public string address { get; set; } = "";
+    public string city { get; set; } = "";
+    public string country { get; set; } = "";
+    public double[] coords { get; set; } = Array.Empty<double>();
 }

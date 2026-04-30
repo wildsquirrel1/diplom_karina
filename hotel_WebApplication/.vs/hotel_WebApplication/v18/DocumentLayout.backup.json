@@ -246,7 +246,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 621,
-          "SelectedChildIndex": 9,
+          "SelectedChildIndex": 10,
           "Children": [
             {
               "$type": "Bookmark",
@@ -262,6 +262,10 @@
             },
             {
               "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
               "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
             },
             {
@@ -274,8 +278,7 @@
               "RelativeToolTip": "hotel_WebApplication\\Model\\Favorite.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-29T15:23:48.357Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-30T08:34:18.259Z"
             },
             {
               "$type": "Document",
@@ -287,7 +290,7 @@
               "RelativeToolTip": "hotel_WebApplication\\Program.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-31T08:19:00.999Z"
+              "WhenOpened": "2026-04-30T08:34:18.355Z"
             },
             {
               "$type": "Document",
@@ -299,8 +302,7 @@
               "RelativeToolTip": "hotel_WebApplication\\Controllers\\ClientController.cs",
               "ViewState": "AgIAAAwAAAAAAAAAAADwvyAAAABEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-12T12:26:58.843Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-30T08:34:18.364Z"
             },
             {
               "$type": "Document",
@@ -312,7 +314,7 @@
               "RelativeToolTip": "hotel_WebApplication\\Model\\Clint.cs",
               "ViewState": "AgIAAAkAAAAAAAAAAAAAwBsAAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-28T08:37:05.02Z"
+              "WhenOpened": "2026-04-30T08:34:18.374Z"
             },
             {
               "$type": "Document",
@@ -324,8 +326,7 @@
               "RelativeToolTip": "hotel_WebApplication\\Model\\Book.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-28T08:36:25.954Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-30T08:34:18.382Z"
             },
             {
               "$type": "Document",
@@ -335,9 +336,9 @@
               "RelativeDocumentMoniker": "hotel_WebApplication\\Controllers\\BookingController.cs",
               "ToolTip": "C:\\Users\\SVTFOE_HUAWEI_PC\\Desktop\\Projects\\02-College\\03-Karina-Diplom\\diplom_karina\\hotel_WebApplication\\hotel_WebApplication\\Controllers\\BookingController.cs",
               "RelativeToolTip": "hotel_WebApplication\\Controllers\\BookingController.cs",
-              "ViewState": "AgIAABMAAAAAAAAAAAAgwCYAAABLAAAAAAAAAA==",
+              "ViewState": "AgIAAA8AAAAAAAAAAAA6wCYAAABLAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-08T01:46:18.286Z",
+              "WhenOpened": "2026-04-30T08:34:18.389Z",
               "EditorCaption": ""
             },
             {
@@ -350,7 +351,7 @@
               "RelativeToolTip": "hotel_WebApplication\\Controllers\\HotelController.cs",
               "ViewState": "AgIAAGMAAAAAAAAAAAAIwHkAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-07T10:06:39.298Z"
+              "WhenOpened": "2026-04-30T08:34:18.419Z"
             },
             {
               "$type": "Document",
@@ -362,7 +363,7 @@
               "RelativeToolTip": "hotel_WebApplication\\Properties\\launchSettings.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAABAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2026-02-17T09:08:59.244Z"
+              "WhenOpened": "2026-04-30T08:34:18.425Z"
             },
             {
               "$type": "Document",
@@ -374,8 +375,7 @@
               "RelativeToolTip": "hotel_WebApplication\\Controllers\\RoomController.cs",
               "ViewState": "AgIAABgAAAAAAAAAAAAowCYAAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-28T05:21:26.901Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-30T08:34:18.433Z"
             },
             {
               "$type": "Document",
@@ -387,8 +387,7 @@
               "RelativeToolTip": "hotel_WebApplication\\Model\\DTO\\RegisterClientDto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-28T08:53:37.154Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-30T08:34:18.441Z"
             },
             {
               "$type": "Document",
@@ -400,8 +399,7 @@
               "RelativeToolTip": "hotel_WebApplication\\Model\\Room.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-28T08:45:48.248Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-30T08:34:18.448Z"
             },
             {
               "$type": "Document",
@@ -413,7 +411,7 @@
               "RelativeToolTip": "hotel_WebApplication\\Model\\Hotel.cs",
               "ViewState": "AgIAAAkAAAAAAAAAAAA1wAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-28T08:45:18.506Z"
+              "WhenOpened": "2026-04-30T08:34:18.455Z"
             },
             {
               "$type": "Document",
@@ -425,7 +423,7 @@
               "RelativeToolTip": "hotel_WebApplication\\Model\\CommHotel.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAGAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-28T08:37:49.912Z"
+              "WhenOpened": "2026-04-30T08:34:18.464Z"
             },
             {
               "$type": "Document",
@@ -437,7 +435,7 @@
               "RelativeToolTip": "hotel_WebApplication\\Model\\Comment.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAGAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-28T08:37:34.044Z"
+              "WhenOpened": "2026-04-30T08:34:18.47Z"
             },
             {
               "$type": "Document",
@@ -449,7 +447,7 @@
               "RelativeToolTip": "hotel_WebApplication\\Controllers\\ReviewController.cs",
               "ViewState": "AgIAAAgAAAAAAAAAAAApwCIAAAAnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-27T12:04:09.392Z"
+              "WhenOpened": "2026-04-30T08:34:18.478Z"
             },
             {
               "$type": "Document",
@@ -461,7 +459,7 @@
               "RelativeToolTip": "hotel_WebApplication\\hotel_WebApplication.http",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003502|",
-              "WhenOpened": "2025-10-31T08:19:07.363Z"
+              "WhenOpened": "2026-04-30T08:34:18.485Z"
             },
             {
               "$type": "Document",
@@ -473,7 +471,7 @@
               "RelativeToolTip": "hotel_WebApplication\\appsettings.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-10-31T08:26:17.755Z"
+              "WhenOpened": "2026-04-30T08:34:18.491Z"
             },
             {
               "$type": "Document",
@@ -485,7 +483,7 @@
               "RelativeToolTip": "hotel_WebApplication\\appsettings.Development.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-11-21T17:54:24.211Z"
+              "WhenOpened": "2026-04-30T08:34:18.498Z"
             },
             {
               "$type": "Document",
@@ -497,7 +495,7 @@
               "RelativeToolTip": "hotel_WebApplication\\Controllers\\GuestController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-12T12:28:01.079Z"
+              "WhenOpened": "2026-04-30T08:34:18.504Z"
             },
             {
               "$type": "Document",
@@ -509,7 +507,7 @@
               "RelativeToolTip": "hotel_WebApplication\\Models\\Book.cs",
               "ViewState": "AgIAABkAAAAAAAAAAADwvx0AAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-26T13:01:44.087Z"
+              "WhenOpened": "2026-04-30T08:34:18.511Z"
             },
             {
               "$type": "Document",
@@ -521,7 +519,7 @@
               "RelativeToolTip": "hotel_WebApplication\\Model\\HoteldContext.cs",
               "ViewState": "AgIAAF4BAAAAAAAAAAAUwHABAABCAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-28T08:56:32.017Z"
+              "WhenOpened": "2026-04-30T08:34:18.516Z"
             },
             {
               "$type": "Document",
@@ -533,7 +531,7 @@
               "RelativeToolTip": "hotel_WebApplication\\Controllers\\StatusRoomController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-27T09:19:35.15Z"
+              "WhenOpened": "2026-04-30T08:34:18.522Z"
             },
             {
               "$type": "Document",
@@ -545,7 +543,7 @@
               "RelativeToolTip": "hotel_WebApplication\\Controllers\\ServiceController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-12T12:30:09.019Z"
+              "WhenOpened": "2026-04-30T08:34:18.529Z"
             },
             {
               "$type": "Document",
@@ -557,7 +555,7 @@
               "RelativeToolTip": "hotel_WebApplication\\Controllers\\FloorController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-27T09:17:40.308Z"
+              "WhenOpened": "2026-04-30T08:34:18.534Z"
             },
             {
               "$type": "Document",
@@ -569,7 +567,7 @@
               "RelativeToolTip": "hotel_WebApplication\\Controllers\\FavoritesController.cs",
               "ViewState": "AgIAADcAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-11T04:59:39.839Z"
+              "WhenOpened": "2026-04-30T08:34:18.539Z"
             },
             {
               "$type": "Document",
@@ -581,7 +579,7 @@
               "RelativeToolTip": "hotel_WebApplication\\Controllers\\EmployeeController.cs",
               "ViewState": "AgIAAHQAAAAAAAAAAAAswAAAAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-26T11:28:28.003Z"
+              "WhenOpened": "2026-04-30T08:34:18.546Z"
             },
             {
               "$type": "Document",
@@ -593,7 +591,7 @@
               "RelativeToolTip": "hotel_WebApplication\\Controllers\\CategoryController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-03T09:30:36.925Z"
+              "WhenOpened": "2026-04-30T08:34:18.552Z"
             },
             {
               "$type": "Document",
@@ -605,7 +603,7 @@
               "RelativeToolTip": "hotel_WebApplication\\Controllers\\BookServiceController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-12T12:29:32.305Z"
+              "WhenOpened": "2026-04-30T08:34:18.559Z"
             },
             {
               "$type": "Document",
@@ -617,7 +615,7 @@
               "RelativeToolTip": "hotel_WebApplication\\Models\\DTO\\RegisterClientDto.cs",
               "ViewState": "AgIAAAIAAAAAAAAAAAAxwAQAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-26T13:27:37.653Z"
+              "WhenOpened": "2026-04-30T08:34:18.564Z"
             },
             {
               "$type": "Document",
@@ -629,7 +627,7 @@
               "RelativeToolTip": "hotel_WebApplication\\Model\\DTO\\LoginRequest.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAGAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-28T08:53:01.245Z"
+              "WhenOpened": "2026-04-30T08:34:18.571Z"
             },
             {
               "$type": "Document",
@@ -641,7 +639,7 @@
               "RelativeToolTip": "hotel_WebApplication\\Models\\DTO\\LoginRequest.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-26T13:27:00.887Z"
+              "WhenOpened": "2026-04-30T08:34:18.577Z"
             },
             {
               "$type": "Document",
@@ -653,7 +651,7 @@
               "RelativeToolTip": "hotel_WebApplication\\Model\\StatusRoom.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-28T08:46:04.954Z"
+              "WhenOpened": "2026-04-30T08:34:18.583Z"
             },
             {
               "$type": "Document",
@@ -665,7 +663,7 @@
               "RelativeToolTip": "hotel_WebApplication\\Model\\Service.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-28T08:46:04.329Z"
+              "WhenOpened": "2026-04-30T08:34:18.589Z"
             },
             {
               "$type": "Document",
@@ -677,7 +675,7 @@
               "RelativeToolTip": "hotel_WebApplication\\Models\\Room.cs",
               "ViewState": "AgIAAAoAAAAAAAAAAAAQwBsAAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-26T13:08:40.215Z"
+              "WhenOpened": "2026-04-30T08:34:18.595Z"
             },
             {
               "$type": "Document",
@@ -689,7 +687,7 @@
               "RelativeToolTip": "hotel_WebApplication\\Models\\Role.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-26T13:41:39.079Z"
+              "WhenOpened": "2026-04-30T08:34:18.601Z"
             },
             {
               "$type": "Document",
@@ -701,7 +699,7 @@
               "RelativeToolTip": "hotel_WebApplication\\Models\\PhotoCategory.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-26T13:41:35.908Z"
+              "WhenOpened": "2026-04-30T08:34:18.606Z"
             },
             {
               "$type": "Document",
@@ -713,7 +711,7 @@
               "RelativeToolTip": "hotel_WebApplication\\Models\\Photo.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-26T13:41:32.215Z"
+              "WhenOpened": "2026-04-30T08:34:18.613Z"
             },
             {
               "$type": "Document",
@@ -725,7 +723,7 @@
               "RelativeToolTip": "hotel_WebApplication\\Models\\HoteldContext.cs",
               "ViewState": "AgIAAOEBAAAAAAAAAAAmwPQBAAAnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-26T13:41:26.493Z"
+              "WhenOpened": "2026-04-30T08:34:18.619Z"
             },
             {
               "$type": "Document",
@@ -737,7 +735,7 @@
               "RelativeToolTip": "hotel_WebApplication\\Models\\Hotel.cs",
               "ViewState": "AgIAAAsAAAAAAAAAAAA3wBYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-26T13:37:15.412Z"
+              "WhenOpened": "2026-04-30T08:34:18.625Z"
             },
             {
               "$type": "Document",
@@ -749,7 +747,7 @@
               "RelativeToolTip": "hotel_WebApplication\\Models\\Service.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-26T13:09:13.072Z"
+              "WhenOpened": "2026-04-30T08:34:18.631Z"
             },
             {
               "$type": "Document",
@@ -761,7 +759,7 @@
               "RelativeToolTip": "hotel_WebApplication\\Models\\StatusRoom.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-26T13:09:13.631Z"
+              "WhenOpened": "2026-04-30T08:34:18.637Z"
             },
             {
               "$type": "Document",
@@ -773,7 +771,7 @@
               "RelativeToolTip": "hotel_WebApplication\\Model\\GuestBook.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAATAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-28T08:45:07.345Z"
+              "WhenOpened": "2026-04-30T08:34:18.643Z"
             },
             {
               "$type": "Document",
@@ -785,7 +783,7 @@
               "RelativeToolTip": "hotel_WebApplication\\Model\\Guest.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAATAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-28T08:44:48.427Z"
+              "WhenOpened": "2026-04-30T08:34:18.649Z"
             },
             {
               "$type": "Document",
@@ -797,7 +795,7 @@
               "RelativeToolTip": "hotel_WebApplication\\Model\\Floor.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-28T08:44:36.154Z"
+              "WhenOpened": "2026-04-30T08:34:18.654Z"
             },
             {
               "$type": "Document",
@@ -809,7 +807,7 @@
               "RelativeToolTip": "hotel_WebApplication\\Models\\Employee.cs",
               "ViewState": "AgIAABIAAAAAAAAAAAAowCMAAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-26T13:05:02.991Z"
+              "WhenOpened": "2026-04-30T08:34:18.66Z"
             },
             {
               "$type": "Document",
@@ -821,7 +819,7 @@
               "RelativeToolTip": "hotel_WebApplication\\Model\\Employee.cs",
               "ViewState": "AgIAABMAAAAAAAAAAAA9wCEAAAATAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-28T08:44:15.526Z"
+              "WhenOpened": "2026-04-30T08:34:18.666Z"
             },
             {
               "$type": "Document",
@@ -833,7 +831,7 @@
               "RelativeToolTip": "hotel_WebApplication\\Models\\CommHotel.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-26T13:02:36.276Z"
+              "WhenOpened": "2026-04-30T08:34:18.673Z"
             },
             {
               "$type": "Document",
@@ -845,7 +843,7 @@
               "RelativeToolTip": "hotel_WebApplication\\Models\\Favorite.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-26T13:35:52.723Z"
+              "WhenOpened": "2026-04-30T08:34:18.68Z"
             },
             {
               "$type": "Document",
@@ -857,7 +855,7 @@
               "RelativeToolTip": "hotel_WebApplication\\Models\\Guest.cs",
               "ViewState": "AgIAAAoAAAAAAAAAAAAQwBYAAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-26T13:08:21.673Z"
+              "WhenOpened": "2026-04-30T08:34:18.686Z"
             },
             {
               "$type": "Document",
@@ -869,7 +867,7 @@
               "RelativeToolTip": "hotel_WebApplication\\Models\\Comment.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-26T13:41:00.929Z"
+              "WhenOpened": "2026-04-30T08:34:18.693Z"
             },
             {
               "$type": "Document",
@@ -881,7 +879,7 @@
               "RelativeToolTip": "hotel_WebApplication\\Models\\Floor.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAADAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-26T13:05:26.067Z"
+              "WhenOpened": "2026-04-30T08:34:18.7Z"
             },
             {
               "$type": "Document",
@@ -893,7 +891,7 @@
               "RelativeToolTip": "hotel_WebApplication\\Models\\ClintGuest.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-26T13:36:18.124Z"
+              "WhenOpened": "2026-04-30T08:34:18.707Z"
             },
             {
               "$type": "Document",
@@ -905,7 +903,7 @@
               "RelativeToolTip": "hotel_WebApplication\\Model\\ClintGuest.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAATAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-28T08:37:06.859Z"
+              "WhenOpened": "2026-04-30T08:34:18.716Z"
             },
             {
               "$type": "Document",
@@ -917,7 +915,7 @@
               "RelativeToolTip": "hotel_WebApplication\\Model\\Category.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-28T08:36:53.093Z"
+              "WhenOpened": "2026-04-30T08:34:18.722Z"
             },
             {
               "$type": "Document",
@@ -929,7 +927,7 @@
               "RelativeToolTip": "hotel_WebApplication\\Model\\BookService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAATAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-28T08:36:37.867Z"
+              "WhenOpened": "2026-04-30T08:34:18.73Z"
             },
             {
               "$type": "Document",
@@ -941,7 +939,7 @@
               "RelativeToolTip": "hotel_WebApplication\\Models\\Clint.cs",
               "ViewState": "AgIAABAAAAAAAAAAAAAkwBwAAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-26T13:02:22.803Z"
+              "WhenOpened": "2026-04-30T08:34:18.735Z"
             },
             {
               "$type": "Document",
@@ -953,7 +951,7 @@
               "RelativeToolTip": "hotel_WebApplication\\Models\\Category.cs",
               "ViewState": "AgIAAAYAAAAAAAAAAAAAABIAAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-26T13:02:10.447Z"
+              "WhenOpened": "2026-04-30T08:34:18.743Z"
             },
             {
               "$type": "Document",
@@ -965,7 +963,7 @@
               "RelativeToolTip": "hotel_WebApplication\\Models\\BookService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-26T13:01:59.9Z"
+              "WhenOpened": "2026-04-30T08:34:18.749Z"
             },
             {
               "$type": "Document",
@@ -977,7 +975,7 @@
               "RelativeToolTip": "hotel_WebApplication\\hotel_WebApplication.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-10-31T08:13:09.154Z"
+              "WhenOpened": "2026-04-30T08:34:18.759Z"
             }
           ]
         },
