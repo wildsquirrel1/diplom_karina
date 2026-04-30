@@ -30,6 +30,7 @@ namespace hotel
     /// </summary>
     public partial class EditHotelWindow : Window
     {
+        private string _city;
         private Hotel selectedhotel;
         private byte[]? _newPhotoBytes;
         private List<Employee> _allEmployees = new();
@@ -58,7 +59,7 @@ namespace hotel
         {
             nameT.Text = selectedhotel.Name;
             address.Text = selectedhotel.Address;
-            cityT.Text = selectedhotel.City;
+            _city = selectedhotel.City ?? "Нет города";
             phoneT.Text = selectedhotel.PhoneNumber;
             emailT.Text = selectedhotel.Email;
             //starsCB.SelectedIndex = selectedhotel.Stars.GetValueOrDefault() - 1;
@@ -236,7 +237,7 @@ namespace hotel
         {
             if (string.IsNullOrEmpty(address) || address.Length > 100)
                 return false;
-            var regex = new Regex(@"^ул\. [^,\d]+, д\. \d+(?:[/][\dа-яА-ЯёЁ]|[а-яА-ЯёЁ])?$");
+            var regex = new Regex(@"^улица\. [^,\d]+, д\. \d+(?:[/][\dа-яА-ЯёЁ]|[а-яА-ЯёЁ])?$");
             return regex.IsMatch(address);
         }
 
@@ -267,20 +268,20 @@ namespace hotel
         }
         private void UpdateHotelName()
         {
-            string city = cityT.Text?.Trim();
+            string city = _city.Trim();
             if (string.IsNullOrEmpty(city))
             {
-                nameT.Text = "Simple Comfort";
+                nameT.Text = "Простой Комфорт";
             }
             else
             {
-                nameT.Text = $"Simple Comfort {CapitalizeFirstLetter(city)}";
+                nameT.Text = $"Простой Комфорт {CapitalizeFirstLetter(city)}";
             }
         }
 
         private async void edit_Click(object sender, RoutedEventArgs e)
         {
-            if (string.IsNullOrEmpty(nameT.Text) || string.IsNullOrEmpty(address.Text) || string.IsNullOrEmpty(cityT.Text)
+            if (string.IsNullOrEmpty(nameT.Text) || string.IsNullOrEmpty(address.Text) || string.IsNullOrEmpty(_city)
                 || string.IsNullOrEmpty(phoneT.Text) || string.IsNullOrEmpty(emailT.Text) || mainManager.SelectedIndex == -1)
             {
                 MessageBox.Show("Заполните пустые поля", "Уведомление");
@@ -294,7 +295,7 @@ namespace hotel
                     selectedManager = _availableManagers[mainManager.SelectedIndex];
                 }
 
-                string error = await EditHotel(nameT.Text, address.Text, cityT.Text, phoneT.Text, emailT.Text);
+                string error = await EditHotel(nameT.Text, address.Text, _city, phoneT.Text, emailT.Text);
                 if (error == null)
                 {
                     if (selectedManager != null)
@@ -324,7 +325,7 @@ namespace hotel
         {
             nameT.Text = string.Empty;
             address.Text = string.Empty;
-            cityT.Text = string.Empty;
+            _city = string.Empty;
             phoneT.Text = string.Empty;
             emailT.Text = string.Empty;
             //starsCB.SelectedIndex = 0;
@@ -353,7 +354,7 @@ namespace hotel
             bool hasUnsavedChanges =
             nameT.Text != selectedhotel.Name ||
             address.Text != selectedhotel.Address ||
-            cityT.Text != selectedhotel.City ||
+            _city != selectedhotel.City ||
             phoneT.Text != selectedhotel.PhoneNumber ||
             emailT.Text != selectedhotel.Email;
             //starsCB.SelectedIndex != selectedhotel.Stars - 1;
@@ -530,7 +531,7 @@ namespace hotel
                 if (json.Contains("\"error\""))
                 {
                     address.Text = "Место не найдено";
-                    cityT.Text = "Место не найдено";
+                    _city = "Место не найдено";
                     return;
                 }
 
@@ -541,11 +542,10 @@ namespace hotel
                 {
                     // Форматируем вывод: Город | Полный адрес
                     address.Text = data.address;
-                    cityT.Text = data.city;
+                    _city = data.city;
                 }
             });
         }
-
     }
 }
 

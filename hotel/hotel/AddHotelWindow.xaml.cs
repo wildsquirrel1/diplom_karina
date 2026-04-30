@@ -1,4 +1,5 @@
-﻿using hotel.Data;
+﻿using DocumentFormat.OpenXml.Bibliography;
+using hotel.Data;
 using hotel.Models;
 using Microsoft.Web.WebView2.Core;
 using Microsoft.Win32;
@@ -25,6 +26,7 @@ namespace hotel
     /// </summary>
     public partial class AddHotelWindow : Window
     {
+        private string _city;
         private byte[]? _newPhotoBytes;
         EditHotelWindow EditHotelWindow = new EditHotelWindow();
         private Employee currEmployee;
@@ -47,7 +49,7 @@ namespace hotel
             EditHotelWindow.Preview(e);
         }
 
-        /*private void address_PreviewTextInput(object sender, TextCompositionEventArgs e)
+        private void address_PreviewTextInput(object sender, TextCompositionEventArgs e)
         {
             foreach (char c in e.Text)
             {
@@ -64,7 +66,7 @@ namespace hotel
                     return;
                 }
             }
-        }*/
+        }
 
         private void cityT_PreviewTextInput(object sender, TextCompositionEventArgs e)
         {
@@ -72,7 +74,7 @@ namespace hotel
         }
         private void UpdateHotelName()
         {
-            string city = cityT.Text?.Trim();
+            string city = _city.Trim();
             if (string.IsNullOrEmpty(city))
             {
                 nameT.Text = "Простой Комфорт";
@@ -85,7 +87,7 @@ namespace hotel
 
         private async void addB_Click(object sender, RoutedEventArgs e)
         {
-            if(string.IsNullOrEmpty(nameT.Text) || string.IsNullOrEmpty(address.Text) || string.IsNullOrEmpty(cityT.Text)
+            if(string.IsNullOrEmpty(nameT.Text) || string.IsNullOrEmpty(address.Text) || string.IsNullOrEmpty(_city)
                 || string.IsNullOrEmpty(phontT.Text) || string.IsNullOrEmpty(emailT.Text) /*|| starsCB.SelectedIndex == -1*/)
             {
                 MessageBox.Show("Заполните пустые поля", "Уведомление");
@@ -106,7 +108,7 @@ namespace hotel
             {
                 Name = nameT.Text,
                 Address = address.Text,
-                City = cityT.Text,
+                City = _city,
                 PhoneNumber = phontT.Text,
                 Email = emailT.Text,
                 Photo = _newPhotoBytes // может быть null
@@ -325,7 +327,7 @@ namespace hotel
                 if (json.Contains("\"error\""))
                 {
                     address.Text = "Место не найдено";
-                    cityT.Text = "Место не найдено";
+                    _city = "Место не найдено";
                     return;
                 }
 
@@ -336,7 +338,7 @@ namespace hotel
                 {
                     // Форматируем вывод: Город | Полный адрес
                     address.Text = data.address;
-                    cityT.Text = data.city;
+                    _city = data.city;
                 }
             });
         }

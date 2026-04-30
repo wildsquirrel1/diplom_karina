@@ -72,7 +72,6 @@
                             <RowDefinition Height="Auto"/>
                             <RowDefinition Height="Auto"/>
                             <RowDefinition Height="Auto"/>
-                            <RowDefinition Height="Auto"/>
                             <!-- Карта -->
                         </Grid.RowDefinitions>
 
@@ -128,17 +127,6 @@
                             <TextBlock Text="Адрес:"/>
                             <TextBox x:Name="address" Grid.Row="1" IsEnabled="False"
                                  MaxLength="150"/>
-                        </Grid>
-
-                        <!-- Город -->
-                        <Grid Grid.Row="5" Margin="0,5">
-                            <Grid.RowDefinitions>
-                                <RowDefinition Height="Auto"/>
-                                <RowDefinition Height="Auto"/>
-                            </Grid.RowDefinitions>
-                            <TextBlock Text="Город:"/>
-                            <TextBox x:Name="cityT" Grid.Row="1" IsEnabled="False" TextChanged="cityT_TextChanged" 
-                                 MaxLength="100"/>
                         </Grid>
 
                         <!-- Карта -->

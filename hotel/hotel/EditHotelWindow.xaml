@@ -24,7 +24,7 @@
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
-            <RowDefinition Height="8*"/>
+            <RowDefinition Height="7*"/>
             <RowDefinition Height="Auto"/>
         </Grid.RowDefinitions>
 
@@ -98,15 +98,6 @@
                         </Grid.RowDefinitions>
                         <TextBlock Text="Адрес:"/>
                         <TextBox x:Name="address" Grid.Row="1" IsEnabled="False" />
-                    </Grid>
-
-                    <Grid Grid.Row="5" Margin="0,5">
-                        <Grid.RowDefinitions>
-                            <RowDefinition Height="Auto"/>
-                            <RowDefinition Height="Auto"/>
-                        </Grid.RowDefinitions>
-                        <TextBlock Text="Город:"/>
-                        <TextBox x:Name="cityT" Grid.Row="1" TextChanged="cityT_TextChanged" IsEnabled="False" />
                     </Grid>
 
                     <Grid Grid.Row="6" Margin="0,5">
