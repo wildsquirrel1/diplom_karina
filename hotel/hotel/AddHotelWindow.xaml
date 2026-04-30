@@ -126,7 +126,7 @@
                                 <RowDefinition Height="Auto"/>
                             </Grid.RowDefinitions>
                             <TextBlock Text="Адрес:"/>
-                            <TextBox x:Name="address" Grid.Row="1" PreviewTextInput="address_PreviewTextInput" 
+                            <TextBox x:Name="address" Grid.Row="1" IsEnabled="False"
                                  MaxLength="150"/>
                         </Grid>
 
@@ -137,8 +137,8 @@
                                 <RowDefinition Height="Auto"/>
                             </Grid.RowDefinitions>
                             <TextBlock Text="Город:"/>
-                            <TextBox x:Name="cityT" Grid.Row="1" TextChanged="cityT_TextChanged" 
-                                 MaxLength="100" PreviewTextInput="cityT_PreviewTextInput"/>
+                            <TextBox x:Name="cityT" Grid.Row="1" IsEnabled="False" TextChanged="cityT_TextChanged" 
+                                 MaxLength="100"/>
                         </Grid>
 
                         <!-- Карта -->

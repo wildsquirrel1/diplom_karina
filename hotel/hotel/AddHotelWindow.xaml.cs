@@ -47,7 +47,7 @@ namespace hotel
             EditHotelWindow.Preview(e);
         }
 
-        private void address_PreviewTextInput(object sender, TextCompositionEventArgs e)
+        /*private void address_PreviewTextInput(object sender, TextCompositionEventArgs e)
         {
             foreach (char c in e.Text)
             {
@@ -64,7 +64,7 @@ namespace hotel
                     return;
                 }
             }
-        }
+        }*/
 
         private void cityT_PreviewTextInput(object sender, TextCompositionEventArgs e)
         {

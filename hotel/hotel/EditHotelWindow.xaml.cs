@@ -121,11 +121,11 @@ namespace hotel
         public bool Restrictions(string address, string phone, string email)
         {
 
-            if (!isValidAddress(address))
+            /*if (!isValidAddress(address))
             {
                 MessageBox.Show("Адрес должен быть в формате: ул. Название, д. 12 или ул. Название, д. 12/3 или ул. Название, д. 12а", "Уведомление", MessageBoxButton.OK, MessageBoxImage.Warning);
                 return false;
-            }
+            }*/
 
             if (!IsValidNumber(phone))
             {
@@ -147,7 +147,7 @@ namespace hotel
             Preview(e);
         }
 
-        private void address_PreviewTextInput(object sender, TextCompositionEventArgs e)
+        /*private void address_PreviewTextInput(object sender, TextCompositionEventArgs e)
         {
             foreach (char c in e.Text)
             {
@@ -164,7 +164,7 @@ namespace hotel
                     return;
                 }
             }
-        }
+        }*/
 
         private void cityT_PreviewTextInput(object sender, TextCompositionEventArgs e)
         {
