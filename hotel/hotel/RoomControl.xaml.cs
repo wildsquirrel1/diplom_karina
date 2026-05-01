@@ -1,4 +1,5 @@
-﻿using hotel.Models;
+﻿using hotel.Data;
+using hotel.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -31,33 +32,36 @@ namespace hotel
             InitializeComponent();
             _currentUser = employee;
         }
-        private void LoadPhotos(Room room)
-        {
-            _photos.Clear();
-            if (room?.IdCategoryNavigation?.PhotoCategories != null)
-            {
-                foreach (var pc in room.IdCategoryNavigation.PhotoCategories)
-                {
-                    if (pc.Photo?.Photo1 != null)
-                        _photos.Add(pc.Photo.Photo1);
-                }
-            }
-            if (_photos.Count == 0)
-                _photos.Add(new byte[0]);
 
-            prevBtn.Visibility = _photos.Count > 1 ? Visibility.Visible : Visibility.Collapsed;
-            nextBtn.Visibility = _photos.Count > 1 ? Visibility.Visible : Visibility.Collapsed;
-        }
-
-        public void SetRoom(Room room)
+        public async void SetRoom(Room room)
         {
             _room = room;
             DataContext = _room;
+
             roomName.Text += room.Name;
-            floorName.Text += room.Floorid;
-            categoryName.Text += room.IdCategoryNavigation.Name;
-            priceCategory.Text = room.IdCategoryNavigation.Cost.ToString();
-            LoadPhotos(room);
+            floorName.Text = $"Этаж: {room.Floorid}";
+            categoryName.Text = $"Категория: {room.IdCategoryNavigation.Name}";
+            priceCategory.Text = $"{room.IdCategoryNavigation.Cost} ₽";
+
+            photoDisplay.Source = GetDefaultImage();
+
+            await LoadPhotosAsync();
+        }
+
+        private async Task LoadPhotosAsync()
+        {
+            _photos = await Api.GetRoomPhotosAsync(_room.Idroom);
+
+            if (_photos.Count == 0)
+            {
+                _photos.Add(new byte[0]);
+            }
+
+            _currentPhotoIndex = 0;
+
+            prevBtn.Visibility = _photos.Count > 1 ? Visibility.Visible : Visibility.Collapsed;
+            nextBtn.Visibility = _photos.Count > 1 ? Visibility.Visible : Visibility.Collapsed;
+
             UpdatePhotoDisplay();
         }
 
@@ -117,11 +121,17 @@ namespace hotel
             UpdatePhotoDisplay();
         }
 
-        private void editB_Click(object sender, RoutedEventArgs e)
+        private async void editB_Click(object sender, RoutedEventArgs e)
         {
-            var editWindow = new EditRoomWindow(_room,_currentUser);
-            
-            editWindow.ShowDialog();
+            var editWindow = new EditRoomWindow(_room, _currentUser);
+            if (editWindow.ShowDialog() == true)
+            {
+                var parentWindow = Window.GetWindow(this) as RoomsWindow;
+                if (parentWindow != null)
+                {
+                    await parentWindow.LoadRoomsAsync();
+                }
+            }
         }
 
         private void UserControl_Loaded(object sender, RoutedEventArgs e)

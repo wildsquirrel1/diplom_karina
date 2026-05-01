@@ -100,5 +100,26 @@ namespace hotel_WebApplication.Controllers
             return NoContent();
         }
 
+        // GET: api/Room/5/photos
+        [HttpGet("{id}/photos")]
+        public async Task<ActionResult<List<byte[]>>> GetRoomPhotos(int id)
+        {
+            var room = await _context.Rooms
+                .Include(r => r.IdCategoryNavigation)
+                    .ThenInclude(c => c.PhotoCategories)
+                        .ThenInclude(pc => pc.Photo)
+                .FirstOrDefaultAsync(r => r.Idroom == id);
+
+            if (room == null)
+                return NotFound();
+
+            var photos = room.IdCategoryNavigation.PhotoCategories
+                .Where(pc => pc.Photo?.Photo1 != null)
+                .Select(pc => pc.Photo.Photo1)
+                .ToList();
+
+            return Ok(photos);
+        }
+
     }
 }

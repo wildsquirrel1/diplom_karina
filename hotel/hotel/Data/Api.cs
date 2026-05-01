@@ -474,6 +474,23 @@ namespace hotel.Data
             }
         }
 
-
+        public static async Task<List<byte[]>> GetRoomPhotosAsync(int roomId)
+        {
+            using var client = new HttpClient();
+            try
+            {
+                var response = await client.GetAsync($"https://localhost:7042/api/Room/{roomId}/photos");
+                if (response.IsSuccessStatusCode)
+                {
+                    var json = await response.Content.ReadAsStringAsync();
+                    return JsonConvert.DeserializeObject<List<byte[]>>(json) ?? new List<byte[]>();
+                }
+                return new List<byte[]>();
+            }
+            catch
+            {
+                return new List<byte[]>();
+            }
+        }
     }
 }

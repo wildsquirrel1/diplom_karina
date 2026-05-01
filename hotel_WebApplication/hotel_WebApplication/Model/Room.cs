@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc.ModelBinding.Validation;
 using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace hotel_WebApplication.Model;
 
@@ -18,6 +19,7 @@ public partial class Room
 
     public int Hotelid { get; set; }
     [ValidateNever]
+    [NotMapped]
     public virtual ICollection<Book> Books { get; set; } = new List<Book>();
     [ValidateNever]
     public virtual Floor Floor { get; set; } = null!;

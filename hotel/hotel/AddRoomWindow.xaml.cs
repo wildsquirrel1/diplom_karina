@@ -50,7 +50,7 @@ namespace hotel
 
         private void back_Click(object sender, RoutedEventArgs e)
         {
-            this.Hide();
+            this.Close();
         }
 
         private void nameTB_PreviewTextInput(object sender, TextCompositionEventArgs e)
@@ -80,7 +80,8 @@ namespace hotel
             {
                 await addRoom(nameTB.Text, floorId, categoryId);
                 MessageBox.Show("Комната успешно добавлена", "Уведомление");
-                this.Hide();
+                this.DialogResult = true;
+                this.Close();
             }
             else
             {

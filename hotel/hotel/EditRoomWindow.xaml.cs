@@ -112,12 +112,12 @@ namespace hotel
                 );
                 MessageBox.Show("Комната успешно отредактирована!", "Уведомление");
                 DialogResult = true;
-                Close();
-                nameTB.Text = "";
+                this.Close();
+                /*nameTB.Text = "";
                 floorCB.SelectedIndex = -1;
                 categoryCB.SelectedIndex = -1;
                 priceTB.Text = "";
-                statusCB.SelectedIndex = -1;
+                statusCB.SelectedIndex = -1;*/
             }
             else
             {

@@ -64,9 +64,65 @@ namespace hotel
             }
         }
 
-        private void DateChanged(object sender, SelectionChangedEventArgs e) => UpdateCost();
-        private void roomCB_SelectionChanged(object sender, SelectionChangedEventArgs e) => UpdateCost();
+        private void DateChanged(object sender, SelectionChangedEventArgs e)
+        {
+            UpdateCost();
+            ValidateDateSelection();
+        }
 
+        private void ValidateDateSelection()
+        {
+            if (checkInDP.SelectedDate == null || checkOutDP.SelectedDate == null)
+                return;
+
+            var checkIn = checkInDP.SelectedDate.Value;
+            var checkOut = checkOutDP.SelectedDate.Value;
+
+            if (checkOut <= checkIn)
+            {
+                MessageBox.Show("Дата выезда должна быть позже даты заезда", "Уведомление");
+                checkOutDP.SelectedDate = null;
+                return;
+            }
+
+            var today = DateTime.Today.Date;
+            if (checkIn.Date < today)
+            {
+                MessageBox.Show("Дата заезда не может быть в прошлом", "Уведомление");
+                checkInDP.SelectedDate = null;
+                return;
+            }
+
+            foreach (var range in checkInDP.BlackoutDates)
+            {
+                if (checkIn.Date >= range.Start.Date && checkIn.Date <= range.End.Date)
+                {
+                    MessageBox.Show($"Выбранная дата заезда недоступна (номер забронирован)", "Уведомление");
+                    checkInDP.SelectedDate = null;
+                    return;
+                }
+            }
+
+            foreach (var range in checkOutDP.BlackoutDates)
+            {
+                if (checkOut.Date >= range.Start.Date && checkOut.Date <= range.End.Date)
+                {
+                    MessageBox.Show($"Выбранная дата выезда недоступна (номер забронирован)", "Уведомление");
+                    checkOutDP.SelectedDate = null;
+                    return;
+                }
+            }
+        }
+        private async void roomCB_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            UpdateCost();
+
+            if (roomCB.SelectedIndex != -1)
+            {
+                var selectedRoom = _rooms[roomCB.SelectedIndex];
+                await LoadBookedDatesForRoom(selectedRoom.Idroom);
+            }
+        }
         private void UpdateCost()
         {
             if (roomCB.SelectedIndex == -1 || checkInDP.SelectedDate == null || checkOutDP.SelectedDate == null)
@@ -155,10 +211,32 @@ namespace hotel
 
             var room = _rooms[roomCB.SelectedIndex];
             var client = _clients[clientCB.SelectedIndex];
+            var checkIn = DateOnly.FromDateTime(checkInDP.SelectedDate.Value);
+            var checkOut = DateOnly.FromDateTime(checkOutDP.SelectedDate.Value);
+
+            var today = DateOnly.FromDateTime(DateTime.Today);
+            if (checkIn < today)
+            {
+                MessageBox.Show("Дата заезда не может быть в прошлом", "Уведомление");
+                return;
+            }
 
             var bookings = await Api.GetBookingsForCurrentHotel(Employee.Idemployee);
 
-            if (checkOutDP.SelectedDate.HasValue && checkInDP.SelectedDate.HasValue)
+            if (bookings.Any(b => b.RoomId == room.Idroom && b.StatusBook != 4 && checkIn < b.DepartureDate && checkOut > b.CheckInDate))
+            {
+                MessageBox.Show(
+                    "На выбранные даты номер уже забронирован!\n" +
+                    "Пожалуйста, выберите другие даты или другой номер.",
+                    "Уведомление");
+
+                checkInDP.SelectedDate = null;
+                checkOutDP.SelectedDate = null;
+                await LoadBookedDatesForRoom(room.Idroom);
+                return;
+            }
+
+            /*if (checkOutDP.SelectedDate.HasValue && checkInDP.SelectedDate.HasValue)
             {
                 if (bookings.Any(b => b.RoomId == room.Idroom &&
                                       b.CheckInDate < DateOnly.FromDateTime(checkOutDP.SelectedDate.Value) &&
@@ -172,7 +250,7 @@ namespace hotel
             {
                 MessageBox.Show("Пожалуйста, выберите даты заезда и выезда.", "Уведомление");
                 return;
-            }
+            }*/
 
             var booking = new Book
             {
@@ -266,6 +344,40 @@ namespace hotel
             {
                 guestsCB.IsEnabled = false;
                 MessageBox.Show("У клиента нет зарегистрированных гостей.", "Уведомление");
+            }
+        }
+
+        private async Task LoadBookedDatesForRoom(int roomId)
+        {
+            checkInDP.BlackoutDates.Clear();
+            checkOutDP.BlackoutDates.Clear();
+
+            var allBookings = await Api.GetBookingsForCurrentHotel(Employee.Idemployee);
+
+            var roomBookings = allBookings
+                .Where(b => b.RoomId == roomId && b.StatusBook != 4)
+                .ToList();
+
+            var today = DateOnly.FromDateTime(DateTime.Today);
+
+            foreach (var booking in roomBookings)
+            {
+                var start = booking.CheckInDate;
+                var end = booking.DepartureDate.AddDays(-1);
+
+                if (end < today) continue;
+
+                if (start < today) start = today;
+
+                checkInDP.BlackoutDates.Add(new CalendarDateRange(
+                    start.ToDateTime(TimeOnly.MinValue),
+                    end.ToDateTime(TimeOnly.MinValue)
+                ));
+
+                checkOutDP.BlackoutDates.Add(new CalendarDateRange(
+                    start.ToDateTime(TimeOnly.MinValue),
+                    end.ToDateTime(TimeOnly.MinValue)
+                ));
             }
         }
 

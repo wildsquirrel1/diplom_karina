@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations.Schema;
+using System.Text.Json.Serialization;
 
 namespace hotel_WebApplication.Model;
 
@@ -20,5 +21,6 @@ public partial class Category
     [NotMapped]
     public virtual ICollection<PhotoCategory> PhotoCategories { get; set; } = new List<PhotoCategory>();
     [NotMapped]
+    [JsonIgnore]
     public virtual ICollection<Room> Rooms { get; set; } = new List<Room>();
 }

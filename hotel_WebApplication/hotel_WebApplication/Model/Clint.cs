@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc.ModelBinding.Validation;
 using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace hotel_WebApplication.Model;
 
@@ -26,6 +27,7 @@ public partial class Clint
 
     public byte[]? Photo { get; set; }
     [ValidateNever]
+    [NotMapped]
     public virtual ICollection<Book> Books { get; set; } = new List<Book>();
 
     public virtual ICollection<ClintGuest> ClintGuests { get; set; } = new List<ClintGuest>();

@@ -43,7 +43,8 @@ namespace hotel
             }
             catch (Exception ex)
             {
-                MessageBox.Show($"Ошибка загрузки номеров: {ex.Message}", "Уведомление", MessageBoxButton.OK, MessageBoxImage.Error);
+                MessageBox.Show($"Ошибка загрузки номеров: {ex.Message}", "Уведомление",
+                    MessageBoxButton.OK, MessageBoxImage.Error);
                 return;
             }
 
@@ -54,7 +55,7 @@ namespace hotel
             foreach (var room in filtered)
             {
                 var control = new RoomControl(_currentUser);
-                control.SetRoom(room);
+                control.SetRoom(room);  // ← Здесь фото загрузятся асинхронно
                 roomList.Children.Add(control);
             }
 

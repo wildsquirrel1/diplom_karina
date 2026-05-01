@@ -44,7 +44,7 @@ namespace hotel
             {
                 if (_Employee?.IdhotelNavigation != null)
                 {
-                    _allBookings = await Api.GetBookingsForCurrentHotel(_Employee.IdhotelNavigation.Idhotel);
+                    _allBookings = await Api.GetBookingsForCurrentHotel(_Employee.Idemployee);
 
                     await AutoCompleteExpiredBookings(_allBookings);
                 }

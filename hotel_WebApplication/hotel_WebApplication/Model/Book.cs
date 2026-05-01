@@ -33,6 +33,7 @@ public partial class Book
     [JsonIgnore]
     public virtual Employee? Employee { get; set; }
     [NotMapped]
+    [ValidateNever]
     public virtual ICollection<GuestBook> GuestBooks { get; set; } = new List<GuestBook>();
     [ValidateNever]
     public virtual Room Room { get; set; } = null!;
