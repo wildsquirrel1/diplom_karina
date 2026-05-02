@@ -13,7 +13,7 @@ public partial class Service
 
     public decimal Cost { get; set; }
 
-    public sbyte Status { get; set; }
+    public sbyte? Status { get; set; }
 
     public virtual ICollection<BookService> BookServices { get; set; } = new List<BookService>();
 }

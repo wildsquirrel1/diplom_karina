@@ -492,5 +492,50 @@ namespace hotel.Data
                 return new List<byte[]>();
             }
         }
+
+        public static async Task<string> UpdateService(Service service)
+        {
+            using var client = new HttpClient();
+            try
+            {
+                var json = JsonConvert.SerializeObject(service);
+                var content = new StringContent(json, Encoding.UTF8, "application/json");
+
+                var response = await client.PutAsync(
+                    $"https://localhost:7042/api/Service/{service.Idservice}",
+                    content
+                );
+
+                if (response.IsSuccessStatusCode)
+                    return null;
+
+                return await response.Content.ReadAsStringAsync();
+            }
+            catch (Exception ex)
+            {
+                return ex.Message;
+            }
+        }
+
+        public static async Task<string> AddService(Service service)
+        {
+            using var client = new HttpClient();
+            try
+            {
+                var json = JsonConvert.SerializeObject(service);
+                var content = new StringContent(json, Encoding.UTF8, "application/json");
+
+                var response = await client.PostAsync("https://localhost:7042/api/Service", content);
+
+                if (response.IsSuccessStatusCode)
+                    return null;
+
+                return await response.Content.ReadAsStringAsync();
+            }
+            catch (Exception ex)
+            {
+                return ex.Message;
+            }
+        }
     }
 }

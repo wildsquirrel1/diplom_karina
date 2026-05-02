@@ -55,7 +55,7 @@ namespace hotel
             foreach (var room in filtered)
             {
                 var control = new RoomControl(_currentUser);
-                control.SetRoom(room);  // ← Здесь фото загрузятся асинхронно
+                control.SetRoom(room);
                 roomList.Children.Add(control);
             }
 

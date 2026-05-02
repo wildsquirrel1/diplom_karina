@@ -53,7 +53,9 @@ namespace hotel
 
         private void services_Click(object sender, RoutedEventArgs e)
         {
-
+            ServiceWindow serviceWindow = new ServiceWindow(_Employee);
+            serviceWindow.Show();
+            //this.Hide();
         }
     }
 }
