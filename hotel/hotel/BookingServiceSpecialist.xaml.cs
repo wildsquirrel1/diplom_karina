@@ -206,5 +206,14 @@ namespace hotel
 
             return bookings;
         }
+
+        private void clientsBtn_Click(object sender, RoutedEventArgs e)
+        {
+            var clientsWindow = new ClientsWindow(_Employee);
+            clientsWindow.ShowDialog();
+
+            _allBookings.Clear();
+            LoadBookings();
+        }
     }
 }

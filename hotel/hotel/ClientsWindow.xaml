@@ -1,11 +1,11 @@
-﻿<Window x:Class="hotel.EmployeeHHMWindow"
+﻿<Window x:Class="hotel.ClientsWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:hotel"
         mc:Ignorable="d"
-        Title="Сотрудники" Height="950" MinHeight="730" MaxHeight="1000"  Width="1500" MinWidth="900" MaxWidth="1600" WindowState="Maximized" FontSize="40" WindowStartupLocation="CenterScreen" Icon="images\local-hotel_118960.png">
+        Title="ClientsWindow" Height="950" MinHeight="730" MaxHeight="1000"  Width="1500" MinWidth="900" MaxWidth="1600" WindowState="Maximized" FontSize="40" WindowStartupLocation="CenterScreen" Icon="images\local-hotel_118960.png">
     <Window.Resources>
         <Style TargetType="TextBox">
             <Style.Setters>
@@ -42,11 +42,9 @@
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="Auto"/>
             <RowDefinition/>
-            <RowDefinition Height="Auto"/>
         </Grid.RowDefinitions>
 
-        <!-- Заголовок -->
-        <TextBlock Grid.Row="0" Text="Сотрудники" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="48" Margin="0,20"/>
+        <TextBlock Grid.Row="0" Text="Клиенты" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="48" Margin="0,20"/>
 
         <StackPanel Grid.Row="0" Margin="30,30,0,0" VerticalAlignment="Top">
             <TextBlock Text="Сотрудник: " FontSize="30" Foreground="Black" Name="emplName" TextWrapping="Wrap"/>
@@ -57,14 +55,13 @@
 
         <Button Grid.Row="0" Name="back" Click="back_Click" Width="65" Height="65" Content="X" FontSize="40" VerticalAlignment="Center" HorizontalAlignment="Right" Margin="0 10 20 10" />
 
-        <!-- Панель: поиск + сортировка + фильтр -->
         <Grid Grid.Row="1" Margin="30">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="5*"/>
                 <ColumnDefinition Width="3*"/>
                 <ColumnDefinition Width="2*"/>
             </Grid.ColumnDefinitions>
-            
+
             <Grid Grid.Column="0" Background="White">
                 <TextBox x:Name="searchTB" MaxHeight="60" MinHeight="30" MaxWidth="900" TextChanged="searchTB_TextChanged"/>
                 <TextBlock x:Name="search" MaxWidth="900" Text="Поиск по фио: " Style="{StaticResource searchTB}"/>
@@ -77,22 +74,20 @@
                 <ComboBoxItem Content="От Я до А"/>
             </ComboBox>
 
-            <ComboBox x:Name="filterBox" Grid.Column="2" SelectedIndex="0"
-          SelectionChanged="filterBox_SelectionChanged" Margin="10,0,0,0"  FontSize="32">
+            <ComboBox x:Name="filterBox" Grid.Column="2" SelectedIndex="0" SelectionChanged="filterBox_SelectionChanged" Margin="10,0,0,0"  FontSize="32">
                 <ComboBoxItem Content="Все"/>
-                <ComboBoxItem Content="Работающие"/>
-                <ComboBoxItem Content="Уволенные"/>
+                <ComboBoxItem Content="Текущие"/>
+                <ComboBoxItem Content="Завершенные"/>
             </ComboBox>
         </Grid>
 
-        <Label Grid.Row="2" Content="Сотрудник не найден" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="40" Visibility="Visible" Name="notfound" Grid.RowSpan="2"/>
+        <Label Grid.Row="2" Content="Клиент не найден" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="40" Visibility="Visible" Name="notfound" Grid.RowSpan="2"/>
 
         <StackPanel VerticalAlignment="Top" Grid.Row="2" Visibility="Collapsed" Name="stack">
             <ScrollViewer Grid.Row="2" Margin="30,10">
-                <WrapPanel x:Name="employeesPanel"/>
+                <WrapPanel x:Name="clientsPanel"/>
             </ScrollViewer>
         </StackPanel>
 
-        <Button Grid.Row="3" Name="AddButton" Content="Добавить сотрудника" FontSize="36" Padding="25,0" HorizontalAlignment="Center" Margin="0,20" Click="AddButton_Click"/>
     </Grid>
 </Window>

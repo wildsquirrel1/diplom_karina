@@ -130,8 +130,10 @@
             </ScrollViewer>
         </Grid>
 
+        <Button Grid.Row="3" Content="Клиенты" x:Name="clientsBtn" Click="clientsBtn_Click"
+            HorizontalAlignment="Right" Margin="0 0 400 0" Padding="10,5"/>
 
-        <Button Grid.Row="3" Content="Добавить бронь" x:Name="addBookingB" Click="addBookingB_Click"
+        <Button Grid.Row="3"  Content="Добавить бронь" x:Name="addBookingB" Click="addBookingB_Click"
                 HorizontalAlignment="Right" Margin="20" Padding="10,5"/>
     </Grid>
 </Window>
