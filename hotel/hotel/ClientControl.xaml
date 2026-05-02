@@ -1,0 +1,39 @@
+﻿<UserControl x:Class="hotel.ClientControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:hotel"
+             mc:Ignorable="d" 
+             Width="700" Height="230" Margin="10">
+    <Border BorderBrush="#E0E0E0" BorderThickness="2" CornerRadius="10" Background="White">
+        <Grid Margin="15">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+
+            <!-- ФИО -->
+            <TextBlock Grid.Row="0" x:Name="fioText" FontWeight="Bold" FontSize="24" TextWrapping="Wrap"/>
+
+            <!-- Контакты -->
+            <TextBlock Grid.Row="1" x:Name="emailText" Foreground="Gray" FontSize="18"/>
+            <!-- Паспорт -->
+            <TextBlock Grid.Row="2" x:Name="passportText" Foreground="Gray" FontSize="16"/>
+
+            <!-- Статистика -->
+            <StackPanel Grid.Row="3" Orientation="Horizontal" Margin="0,10,0,0">
+                <TextBlock x:Name="bookingsCountText" FontWeight="Bold" FontSize="20"/>
+                <TextBlock Text=" | " FontSize="20" Foreground="Gray"/>
+                <TextBlock x:Name="lastBookingText" FontSize="18" Foreground="Gray"/>
+            </StackPanel>
+
+            <!-- Кнопка -->
+            <Button Grid.Row="4" Content="Показать брони" HorizontalAlignment="Right" 
+                    VerticalAlignment="Bottom" Click="ShowBookings_Click" />
+        </Grid>
+    </Border>
+</UserControl>

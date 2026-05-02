@@ -34,6 +34,12 @@
     <Compile Update="BookingServiceSpecialist.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="ClientBookingsDetailWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="ClientControl.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="ClientsWindow.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -115,6 +121,9 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="BookingServiceSpecialist.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="ClientBookingsDetailWindow.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="ClientsWindow.xaml">
