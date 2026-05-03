@@ -230,7 +230,9 @@ namespace hotel.Data
                 var json = await response.Content.ReadAsStringAsync(); var options = new JsonSerializerOptions
                 {
                     PropertyNameCaseInsensitive = true,
-                    ReferenceHandler = ReferenceHandler.Preserve 
+                    //ReferenceHandler = ReferenceHandler.Preserve 
+                    ReferenceHandler = ReferenceHandler.IgnoreCycles,
+                    PropertyNamingPolicy = JsonNamingPolicy.CamelCase
                 };
 
                 return System.Text.Json.JsonSerializer.Deserialize<List<Book>>(json, options) ?? new List<Book>();

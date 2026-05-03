@@ -273,12 +273,7 @@ namespace hotel
 
         private IContainer CellStyle(IContainer container)
         {
-            return container
-                .BorderBottom(1)
-                .BorderColor(QuestPDF.Helpers.Colors.Black)
-                .Padding(6)
-                .AlignCenter()
-                .AlignMiddle();
+            return container.BorderBottom(1).BorderColor(QuestPDF.Helpers.Colors.Black).Padding(6).AlignCenter().AlignMiddle();
         }
 
         private void exit_Click(object sender, RoutedEventArgs e)

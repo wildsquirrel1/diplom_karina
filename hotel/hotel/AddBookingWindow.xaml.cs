@@ -32,7 +32,7 @@ namespace hotel
         private List<Guest> _allGuests = new();
         private List<Service> _allServices = new();
         private List<Guest> _selectedGuests = new();
-        //private List<Service> _selectedServices = new();
+        private List<Service> _selectedServices = new();
         public AddBookingWindow(Employee employee)
         {
             InitializeComponent();
@@ -56,6 +56,8 @@ namespace hotel
                 roomCB.ItemsSource = _rooms.Select(r => r.Name).ToList();
                 guestsCB.ItemsSource = _allGuests.Select(r => $"{r.Lastname} {r.Name} {r.Patronymic}").ToList();
                 clientCB.ItemsSource = _clients.Select(c => $"{c.Lastname} {c.Name} {c.Patronymic}").ToList();
+
+                servicesLB.ItemsSource = _allServices.Select(s => s.Name).ToList();
                 _selectedGuests.Clear();
             }
             catch (Exception ex)
@@ -140,8 +142,8 @@ namespace hotel
             }
 
             var roomCost = (room.IdCategoryNavigation?.Cost ?? 0) * days;
-            //var servicesCost = _selectedServices.Sum(s => s.Cost) * days;
-            var total = roomCost /*+ servicesCost*/;
+            var servicesCost = _selectedServices.Sum(s => s.Cost) * days;
+            var total = roomCost + servicesCost;
             costTB.Text = $"Стоимость: {total:N0} руб.";
         }
 
@@ -179,7 +181,7 @@ namespace hotel
             }).ToList();
         }
 
-        /*private void addService_Click(object sender, RoutedEventArgs e)
+        private void addService_Click(object sender, RoutedEventArgs e)
         {
             if (servicesLB.SelectedItem == null) return;
 
@@ -192,7 +194,7 @@ namespace hotel
                 selectedServicesLB.ItemsSource = _selectedServices.Select(s => s.Name).ToList();
                 UpdateCost();
             }
-        }*/
+        }
 
         private async void createBooking_Click(object sender, RoutedEventArgs e)
         {
@@ -287,7 +289,7 @@ namespace hotel
                 }
             }
 
-            /*foreach (var service in _selectedServices)
+            foreach (var service in _selectedServices)
             {
                 var bookService = new BookService
                 {
@@ -300,7 +302,7 @@ namespace hotel
                     MessageBox.Show($"Ошибка при добавлении услуги: {serviceError}");
                     return;
                 }
-            }*/
+            }
 
             var days = (checkOutDP.SelectedDate.Value - checkInDP.SelectedDate.Value).Days;
             var totalCost = (room.IdCategoryNavigation?.Cost ?? 0) * days;

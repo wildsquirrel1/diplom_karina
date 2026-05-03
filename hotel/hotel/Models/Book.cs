@@ -1,6 +1,8 @@
 ﻿using Microsoft.AspNetCore.Mvc.ModelBinding.Validation;
 using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations.Schema;
+using System.Text.Json.Serialization;
 
 namespace hotel.Models;
 
@@ -26,7 +28,8 @@ public partial class Book
 
     public virtual ICollection<BookService> BookServices { get; set; } = new List<BookService>();
     public virtual Employee Employee { get; set; } = null!;
-    [ValidateNever]
+    /*[NotMapped]
+    [JsonIgnore]*/
     public virtual Clint Client { get; set; } = null!;
 
     public virtual ICollection<GuestBook> GuestBooks { get; set; } = new List<GuestBook>();

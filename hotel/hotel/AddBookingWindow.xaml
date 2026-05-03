@@ -64,7 +64,7 @@
 
                     <TextBlock Text="Гости:" Margin="0,0,0,10"/>
                     <ComboBox x:Name="guestsCB" Grid.Row="1"/>
-                    <Button Content="Добавить гостя" Grid.Row="2" Click="addGuest_Click"/>
+                    <Button Content="Добавить гостя" Grid.Row="2" HorizontalAlignment="Left" Click="addGuest_Click"/>
                     <DataGrid Grid.Row="3" x:Name="guestsDG" AutoGenerateColumns="False" IsReadOnly="True" CanUserAddRows="False" Height="200" Margin="0,25">
                         <DataGrid.Columns>
                             <DataGridTextColumn Header="ФИО" Binding="{Binding  FullName}"/>
@@ -102,12 +102,12 @@
                     <DatePicker x:Name="checkOutDP" Grid.Row="1" SelectedDateChanged="DateChanged"/>
                 </Grid>
 
-                <!--<TextBlock Text="Услуги:" Margin="0,30,0,10"/>
-        <StackPanel Orientation="Horizontal">
-            <ListBox x:Name="servicesLB" Width="300" Height="150"/>
-            <Button Content="→" Margin="20,0" Click="addService_Click"/>
-            <ListBox x:Name="selectedServicesLB" Width="300" Height="150"/>
-        </StackPanel>-->
+                <TextBlock Text="Услуги:" Margin="0,0,0,10"/>
+        <StackPanel Orientation="Vertical">
+            <ListBox x:Name="servicesLB" Width="700" Height="100"/>
+            <Button Content="→" Margin="20,0" Click="addService_Click" />
+                    <ListBox x:Name="selectedServicesLB" Width="700" Height="100"/>
+        </StackPanel>
             </StackPanel>
         </Grid>
         <TextBlock Grid.Row="3" x:Name="costTB" Text="Стоимость: 0 руб." FontSize="36" FontWeight="Bold" Margin="0,0,0,30"/>

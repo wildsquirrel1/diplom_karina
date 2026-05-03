@@ -13,9 +13,7 @@ public partial class ClintGuest
 
     public int Clientid { get; set; }
     [JsonIgnore]
-    [ValidateNever]
     public virtual Clint Client { get; set; } = null!;
     [JsonIgnore]
-    [ValidateNever]
     public virtual Guest GuestItNavigation { get; set; } = null!;
 }

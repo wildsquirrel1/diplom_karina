@@ -40,7 +40,7 @@ namespace hotel
 
             tbClient.Text = $"Клиент: {book.GuestFullName}";
 
-            //tbGuests.Text = book.NumOfGuests.ToString();
+            tbGuests.Text = book.NumOfGuests.ToString();
 
             tbCheckIn.Text = book.CheckInDate.ToString("dd.MM.yyyy");
             tbCheckOut.Text = book.DepartureDate.ToString("dd.MM.yyyy");

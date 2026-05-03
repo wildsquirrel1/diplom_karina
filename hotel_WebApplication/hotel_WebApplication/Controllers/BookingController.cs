@@ -23,8 +23,8 @@ namespace hotel_WebApplication.Controllers
         {
             //как-то добавить гостей клиентов
             var query = context.Books
-        .Include(b => b.Room).ThenInclude(r => r.IdCategoryNavigation)
-        .Include(g => g.Client).ThenInclude(c => c.ClintGuests).ThenInclude(cg => cg.GuestItNavigation).Where(b => b.Room.Hotelid == hotelId);
+        .Include(b => b.Room).ThenInclude(r => r.IdCategoryNavigation).
+        Include(b => b.Client).Include(b => b.GuestBooks).ThenInclude(gb => gb.Guest).Where(b => b.Room.Hotelid == hotelId);
 
             if (startDate.HasValue)
                 query = query.Where(b => b.CheckInDate >= DateOnly.FromDateTime(startDate.Value));
@@ -79,6 +79,12 @@ namespace hotel_WebApplication.Controllers
         {
             if (newBooking == null)
                 return BadRequest("Бронирование не может быть пустым");
+
+            var client = await context.Clints.FindAsync(newBooking.ClientId);
+            if (client == null)
+                return BadRequest("Клиент не найден");
+
+            newBooking.Client = client;
 
             var conflict = context.Books.Any(b =>
                 b.RoomId == newBooking.RoomId &&

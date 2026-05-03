@@ -27,7 +27,9 @@ public partial class Book
     public int ClientId { get; set; }
 
     public virtual ICollection<BookService> BookServices { get; set; } = new List<BookService>();
-    [NotMapped]
+    /*[NotMapped]
+    [JsonIgnore]*/
+    [ValidateNever]
     public virtual Clint Client { get; set; } = null!;
     [ValidateNever]
     [JsonIgnore]
