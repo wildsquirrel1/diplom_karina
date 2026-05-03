@@ -305,9 +305,11 @@ namespace hotel
             }
 
             var days = (checkOutDP.SelectedDate.Value - checkInDP.SelectedDate.Value).Days;
-            var totalCost = (room.IdCategoryNavigation?.Cost ?? 0) * days;
+            var roomCost = (room.IdCategoryNavigation?.Cost ?? 0) * days;
+            var servicesCost = _selectedServices.Sum(s => s.Cost) * days;
+            var totalCost = roomCost + servicesCost;
 
-            GenerateConfirmationPdf(bookingWithId, room, client, totalCost, _selectedGuests);
+            GenerateConfirmationPdf(bookingWithId, room, client, totalCost, _selectedGuests, _selectedServices);
 
             MessageBox.Show("Бронирование успешно создано!", "Уведомление");
             DialogResult = true;
@@ -383,7 +385,7 @@ namespace hotel
             }
         }
 
-        private void GenerateConfirmationPdf(Book booking, Room room, Clint client, decimal totalCost, List<Guest> guests)
+        private void GenerateConfirmationPdf(Book booking, Room room, Clint client, decimal totalCost, List<Guest> guests, List<Service> services)
         {
             string fileName = $"Подтверждение_брони_{booking.Idbook}_{DateTime.Now:yyyy-MM-dd}.pdf";
             string path = System.IO.Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.Desktop), fileName);
@@ -454,6 +456,25 @@ namespace hotel
 
                                 int nights = booking.DepartureDate.DayNumber - booking.CheckInDate.DayNumber;
                                 details.Item().Text($"Количество ночей: {nights}");
+
+                                if (services != null && services.Count > 0)
+                                {
+                                    details.Item().PaddingTop(20).Text("Дополнительные услуги:").Bold().FontSize(14);
+
+                                    var room = _rooms[roomCB.SelectedIndex]; // или передайте room как параметр
+                                    var days = (checkOutDP.SelectedDate.Value - checkInDP.SelectedDate.Value).Days;
+
+                                    foreach (var svc in services)
+                                    {
+                                        var svcTotal = svc.Cost * days;
+                                        details.Item().PaddingLeft(10).Row(svcRow =>
+                                        {
+                                            svcRow.RelativeItem(3).Text($"• {svc.Name}");
+                                            svcRow.RelativeItem(1).AlignRight().Text($"{svc.Cost:N0} ₽/день");
+                                            svcRow.RelativeItem(1).AlignRight().Text($"= {svcTotal:N0} ₽").Bold();
+                                        });
+                                    }
+                                }
 
                                 details.Item().PaddingTop(20).Text($"Способ оплаты: {(booking.Payment == 1 ? "Карта/Онлайн" : "Наличные")}");
 
