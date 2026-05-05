@@ -145,5 +145,34 @@ namespace hotel_WebApplication.Controllers
         //Узнать для чего он
         private bool ClintExists(int id) =>
         _context.Clints.Any(e => e.Idclint == id);
+
+        // GET: api/Client/{id}/bookings
+        [HttpGet("{id}/bookings")]
+        public async Task<ActionResult<List<Book>>> GetClientBookings(int id)
+        {
+            var clientExists = await _context.Clints.AnyAsync(c => c.Idclint == id);
+            if (!clientExists)
+                return NotFound("Клиент не найден");
+
+            var bookings = await _context.Books.Where(b => b.ClientId == id).Include(b => b.Room).ThenInclude(r => r.IdCategoryNavigation).Include(b => b.Room).ThenInclude(r => r.Hotel).Include(b => b.Room).ThenInclude(r => r.Floor).Include(b => b.BookServices).ThenInclude(bs => bs.Service).Include(b => b.GuestBooks).OrderByDescending(b => b.CheckInDate).ToListAsync(); 
+
+            return Ok(bookings);
+        }
+
+        [HttpGet("{id}/guests")]
+        public async Task<ActionResult<List<Guest>>> GetClientGuests(int id)
+        {
+            var clientExists = await _context.Clints.AnyAsync(c => c.Idclint == id);
+            if (!clientExists)
+                return NotFound("Клиент не найден");
+
+            var guests = await _context.ClintGuests
+                .Where(cg => cg.Clientid == id)
+                .Include(cg => cg.GuestItNavigation)
+                .Select(cg => cg.GuestItNavigation)
+                .ToListAsync();
+
+            return Ok(guests);
+        }
     }
 }

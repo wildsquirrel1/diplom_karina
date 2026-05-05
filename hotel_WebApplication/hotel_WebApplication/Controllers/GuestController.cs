@@ -28,6 +28,11 @@ namespace hotel_WebApplication.Controllers
         [HttpPost]
         public async Task<ActionResult<Guest>> Post(Guest newGuest)
         {
+            if (await _context.Guests.AnyAsync(g => g.DocumentNumber == newGuest.DocumentNumber))
+            {
+                return BadRequest(new { error = "Документ с таким номером уже зарегистрирован" });
+            }
+
             _context.Guests.Add(newGuest);
             await _context.SaveChangesAsync();
             return CreatedAtAction(nameof(Get), new { id = newGuest.Idguest }, newGuest);
