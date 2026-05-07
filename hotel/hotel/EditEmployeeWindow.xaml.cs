@@ -160,7 +160,6 @@ namespace hotel
             _employee.Email = email;
             _employee.Password = password;
             _employee.Idhotel = hotelId;
-            _employee.Status = 0;
             _employee.Birth = DateOnly.FromDateTime(birth.SelectedDate.Value);
 
             await Api.UpdateEmployee(_employee.Idemployee, _employee);

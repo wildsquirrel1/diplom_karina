@@ -77,24 +77,25 @@ namespace hotel
 
         private async void Fire_Click(object sender, RoutedEventArgs e)
         {
-            string action = Employee.Status == 1 ? "уволить" : "восстановить";
+            string action = Employee.Status == 0 ? "уволить" : "восстановить";
+            string action2 = Employee.Status == 0 ? "уволен" : "восстановлен";
             string message = $"Вы действительно хотите {action} сотрудника\n{fullNameBlock.Text}?";
 
             var result = MessageBox.Show(message, "Уведомление", MessageBoxButton.YesNo, MessageBoxImage.Warning);
             if (result == MessageBoxResult.No)
                 return;
 
-            Employee.Status = (sbyte)(Employee.Status == 1 ? 0 : 1);
+            Employee.Status = (sbyte)(Employee.Status == 0 ? 1 : 0);
 
             string error = await Api.UpdateEmployee(Employee.Idemployee, Employee);
             if (error == null)
-            {
-                MessageBox.Show($"Сотрудник успешно {action}!", "Уведомление", MessageBoxButton.OK, MessageBoxImage.Information);
+            {   
+                MessageBox.Show($"Сотрудник успешно {action2}!", "Уведомление", MessageBoxButton.OK);
                 UpdateDisplay();
             }
             else
             {
-                MessageBox.Show($"Ошибка: {error}", "Уведомление", MessageBoxButton.OK, MessageBoxImage.Error);
+                MessageBox.Show($"Ошибка: {error}", "Уведомление", MessageBoxButton.OK);
                 Employee.Status = (sbyte)(Employee.Status == 1 ? 0 : 1);
                 UpdateDisplay();
             }

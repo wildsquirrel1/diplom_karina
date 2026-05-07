@@ -13,6 +13,7 @@ public partial class Comment
     public int Stars { get; set; }
 
     public DateOnly? Date { get; set; }
+    public sbyte? Status { get; set; }
 
     //[NotMapped]
     public virtual ICollection<CommHotel> CommHotels { get; set; } = new List<CommHotel>();

@@ -38,12 +38,22 @@ namespace hotel
         private async void LoadHotelsAsync()
         {
             _hotels = await Api.GetHotels();
-            foreach (var h in _hotels)
+            hotelCB.ItemsSource = _hotels.Select(h => h.Name).ToList();
+
+            // Если главный менеджер (роль 2) — выбираем его отель и блокируем
+            if (_currentUser.Idrole == 2 && _currentUser.IdhotelNavigation != null)
             {
-                hotelCB.Items.Add(h.Name);
+                int index = _hotels.FindIndex(h => h.Idhotel == _currentUser.IdhotelNavigation.Idhotel);
+                if (index >= 0)
+                {
+                    hotelCB.SelectedIndex = index;
+                    hotelCB.IsEnabled = false; // Блокируем поле
+                }
             }
-            if (_hotels.Count > 0)
+            else if (_hotels.Count > 0)
+            {
                 hotelCB.SelectedIndex = 0;
+            }
         }
 
         private void lastnameT_PreviewTextInput(object sender, TextCompositionEventArgs e)

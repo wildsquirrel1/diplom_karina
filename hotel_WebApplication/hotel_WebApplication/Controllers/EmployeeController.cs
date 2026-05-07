@@ -82,12 +82,12 @@ namespace hotel_WebApplication.Controllers
                 return BadRequest("Данные сотрудника не указаны");
 
             if (_context.Employees.Any(e => e.Email == newEmployee.Email))
-                return BadRequest("Email уже используется другим сотрудником");
+                return BadRequest("Электронная почта уже используется другим сотрудником");
 
             if (_context.Employees.Any(e => e.PhoneNumber == newEmployee.PhoneNumber))
                 return BadRequest("Номер телефона уже используется другим сотрудником");
 
-            newEmployee.Status = 1;
+            newEmployee.Status = 0;
 
             _context.Employees.Add(newEmployee);
             await _context.SaveChangesAsync();
@@ -107,7 +107,7 @@ namespace hotel_WebApplication.Controllers
                 return NotFound("Сотрудник не найден");
 
             if (_context.Employees.Any(e => e.Email == updatedEmployee.Email && e.Idemployee != id))
-                return BadRequest("Email уже используется другим сотрудником");
+                return BadRequest("Электронная почта уже используется другим сотрудником");
 
             if (_context.Employees.Any(e => e.PhoneNumber == updatedEmployee.PhoneNumber && e.Idemployee != id))
                 return BadRequest("Номер телефона уже используется другим сотрудником");
