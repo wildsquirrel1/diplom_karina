@@ -31,7 +31,7 @@ CREATE TABLE `book_service` (
   KEY `service_id_idx` (`service_id`),
   CONSTRAINT `book_id` FOREIGN KEY (`book_id`) REFERENCES `book` (`idbook`),
   CONSTRAINT `service_id` FOREIGN KEY (`service_id`) REFERENCES `service` (`idservice`)
-) ENGINE=InnoDB AUTO_INCREMENT=10 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=13 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -40,6 +40,7 @@ CREATE TABLE `book_service` (
 
 LOCK TABLES `book_service` WRITE;
 /*!40000 ALTER TABLE `book_service` DISABLE KEYS */;
+INSERT INTO `book_service` VALUES (10,46,1),(11,48,1),(12,49,2);
 /*!40000 ALTER TABLE `book_service` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -52,4 +53,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-04-29 18:56:37
+-- Dump completed on 2026-05-07 18:36:04

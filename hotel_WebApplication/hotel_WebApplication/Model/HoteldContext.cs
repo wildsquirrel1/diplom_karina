@@ -247,6 +247,7 @@ public partial class HoteldContext : DbContext
                 .HasColumnName("comment");
             entity.Property(e => e.Date).HasColumnName("date");
             entity.Property(e => e.Stars).HasColumnName("stars");
+            entity.Property(e => e.Status).HasColumnName("status");
         });
 
         modelBuilder.Entity<Employee>(entity =>

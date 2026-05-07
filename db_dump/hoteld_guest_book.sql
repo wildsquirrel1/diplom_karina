@@ -31,7 +31,7 @@ CREATE TABLE `guest_book` (
   KEY `guestid_idx` (`guest_id`),
   CONSTRAINT `guestid` FOREIGN KEY (`guest_id`) REFERENCES `guest` (`idguest`),
   CONSTRAINT `idbook` FOREIGN KEY (`bookid`) REFERENCES `book` (`idbook`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=10 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -40,6 +40,7 @@ CREATE TABLE `guest_book` (
 
 LOCK TABLES `guest_book` WRITE;
 /*!40000 ALTER TABLE `guest_book` DISABLE KEYS */;
+INSERT INTO `guest_book` VALUES (1,1,1),(2,1,2),(3,2,3),(4,3,4),(5,46,8),(6,47,9),(7,48,9),(9,49,9);
 /*!40000 ALTER TABLE `guest_book` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -52,4 +53,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-04-29 18:56:36
+-- Dump completed on 2026-05-07 18:36:02

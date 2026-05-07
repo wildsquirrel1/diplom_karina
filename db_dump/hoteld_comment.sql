@@ -27,6 +27,7 @@ CREATE TABLE `comment` (
   `comment` varchar(150) NOT NULL,
   `stars` int NOT NULL,
   `date` date DEFAULT NULL,
+  `status` tinyint DEFAULT NULL,
   PRIMARY KEY (`idcomment`)
 ) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
@@ -37,7 +38,7 @@ CREATE TABLE `comment` (
 
 LOCK TABLES `comment` WRITE;
 /*!40000 ALTER TABLE `comment` DISABLE KEYS */;
-INSERT INTO `comment` VALUES (1,'Хороший отель и обслуживание комнат',5,NULL),(2,'Не оправдала ожидания комната',2,NULL),(3,'Все отлично, спасибо',4,NULL),(4,'Хорошая комната',4,NULL),(5,'Хорошая комната, все класс',5,NULL),(6,'Не сильно понравился персонал отеля, но очень чистые номера',4,'2026-04-27');
+INSERT INTO `comment` VALUES (1,'Хороший отель и обслуживание комнат',5,NULL,NULL),(2,'Не оправдала ожидания комната',2,NULL,NULL),(3,'Все отлично, спасибо',4,NULL,NULL),(4,'Хорошая комната',4,NULL,NULL),(5,'Хорошая комната, все класс',5,NULL,NULL),(6,'Не сильно понравился персонал отеля, но очень чистые номера',4,'2026-04-27',NULL);
 /*!40000 ALTER TABLE `comment` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -50,4 +51,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-04-29 18:56:36
+-- Dump completed on 2026-05-07 18:36:02

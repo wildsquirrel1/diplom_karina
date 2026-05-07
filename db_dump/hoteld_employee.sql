@@ -39,7 +39,7 @@ CREATE TABLE `employee` (
   KEY `idhotel_idx` (`idhotel`),
   CONSTRAINT `idhotel` FOREIGN KEY (`idhotel`) REFERENCES `hotel` (`idhotel`),
   CONSTRAINT `idrole` FOREIGN KEY (`idrole`) REFERENCES `role` (`idrole`)
-) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -48,7 +48,7 @@ CREATE TABLE `employee` (
 
 LOCK TABLES `employee` WRITE;
 /*!40000 ALTER TABLE `employee` DISABLE KEYS */;
-INSERT INTO `employee` VALUES (1,'Карина','Ишмухаметова','Айдаровна','karina.ishmuhametova@yandex.ru','2005-12-24','1','89279306308',1,1,0),(2,'Кирилл','Маркин','Дамирович','kirill.markin@yandex.ru','2000-01-01','2','89277894512',2,1,0),(3,'Ярослав','Фролов','Арсентьевич','slava.Frolov@yandex.ru','2000-01-01','3','89214561223',2,2,0),(4,'Кристина','Михайлова','Андреевна','kriss.mix@yandex.ru','2000-02-02','4','84562137845',3,1,0),(5,'Марк','Григорьев','Романович','markmark@yandex.ru','1999-01-05','5','89274561232',2,3,0),(6,'Павел','Иванов','Иванович','ivanivan@gmail.com','1990-07-18','123456789','89234321234',2,6,0);
+INSERT INTO `employee` VALUES (1,'Карина','Ишмухаметова','Айдаровна','karina.ishmuhametova@yandex.ru','2005-12-24','1','89279306308',1,1,0),(2,'Кирилл','Маркин','Дамирович','kirill.markin@yandex.ru','2000-01-01','2','89277894512',2,1,0),(3,'Ярослав','Фролов','Арсентьевич','slava.Frolov@yandex.ru','2000-01-01','3','89214561223',2,2,0),(4,'Кристина','Михайлова','Андреевна','kriss.mix@yandex.ru','2000-02-02','4','84562137845',3,1,0),(5,'Марк','Григорьев','Романович','markmark@yandex.ru','1999-01-05','5','89274561232',2,3,0),(6,'Павел','Иванов','Иванович','ivanivan@gmail.com','1990-07-18','123456789','89234321234',2,2,0),(8,'Иван','Сергеев','Денисович','ivanSergeev@gmail.com','1999-05-05','654321','89213211321',3,2,0);
 /*!40000 ALTER TABLE `employee` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -61,4 +61,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-04-29 18:56:36
+-- Dump completed on 2026-05-07 18:36:02

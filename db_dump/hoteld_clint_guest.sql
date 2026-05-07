@@ -31,7 +31,7 @@ CREATE TABLE `clint_guest` (
   KEY `idguest_idx` (`guest_it`),
   CONSTRAINT `idd_client` FOREIGN KEY (`clientid`) REFERENCES `clint` (`idclint`),
   CONSTRAINT `idguest` FOREIGN KEY (`guest_it`) REFERENCES `guest` (`idguest`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -40,6 +40,7 @@ CREATE TABLE `clint_guest` (
 
 LOCK TABLES `clint_guest` WRITE;
 /*!40000 ALTER TABLE `clint_guest` DISABLE KEYS */;
+INSERT INTO `clint_guest` VALUES (1,9,1);
 /*!40000 ALTER TABLE `clint_guest` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -52,4 +53,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-04-29 18:56:36
+-- Dump completed on 2026-05-07 18:36:03
