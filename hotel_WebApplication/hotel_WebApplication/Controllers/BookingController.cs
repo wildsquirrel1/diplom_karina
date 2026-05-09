@@ -43,7 +43,7 @@ namespace hotel_WebApplication.Controllers
             if (employee == null || employee.Idhotel == null)
                 return BadRequest("Сотрудник не привязан к отелю");
 
-            var books = await context.Books.Include(b => b.Room).ThenInclude(r => r.IdCategoryNavigation).Include(b => b.Client).Include(b => b.GuestBooks).ThenInclude(gb => gb.Guest).Where(b => b.Room.Hotelid == employee.Idhotel).ToListAsync();
+            var books = await context.Books.Include(b => b.Room).ThenInclude(r => r.IdCategoryNavigation).Include(b => b.Client).Include(b => b.GuestBooks).ThenInclude(gb => gb.Guest).Include(b => b.BookServices).ThenInclude(bs => bs.Service).Where(b => b.Room.Hotelid == employee.Idhotel).ToListAsync();
 
             return Ok(books);
         }

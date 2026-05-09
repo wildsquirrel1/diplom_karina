@@ -21,17 +21,30 @@ namespace hotel
     public partial class ClientBookingsDetailWindow : Window
     {
         Employee _employee;
+
+        private List<Book> _allBookings;
+        private Clint _currentClient;
         public ClientBookingsDetailWindow(Clint client, List<Book> clientBookings, Employee employee)
         {
             InitializeComponent();
             _employee = employee;
+
+            _currentClient = client;
+            _allBookings = new List<Book>(clientBookings);
 
             emplName.Text += $" {employee.Name} {employee.Lastname}";
             emplRole.Text += " " + employee.IdroleNavigation.Name;
 
             clientHeader.Text = $"Бронирования: {client.Lastname} {client.Name} {client.Patronymic}";
 
-            if (clientBookings.Count == 0)
+            DisplayBookings(_allBookings);
+        }
+
+        private void DisplayBookings(List<Book> allBookings)
+        {
+            bookingsList.Children.Clear();
+
+            if (allBookings.Count == 0)
             {
                 bookingsList.Children.Add(new TextBlock
                 {
@@ -43,7 +56,7 @@ namespace hotel
                 return;
             }
 
-            foreach (var booking in clientBookings)
+            foreach (var booking in allBookings)
             {
                 var card = new Border
                 {
@@ -75,6 +88,13 @@ namespace hotel
                     FontSize = 18,
                     Margin = new Thickness(0, 5, 0, 10)
                 });
+                stack.Children.Add(new TextBlock
+                {
+                    Text = $"Дата бронирования: {booking.BookingDate:dd.MM.yyyy}",
+                    FontSize = 16,
+                    Foreground = Brushes.Gray,
+                    Margin = new Thickness(0, 0, 0, 10)
+                });
 
                 stack.Children.Add(new Separator
                 {
@@ -90,6 +110,7 @@ namespace hotel
                     FontSize = 18,
                     Margin = new Thickness(0, 0, 0, 5)
                 });
+
 
                 if (booking.GuestBooks != null && booking.GuestBooks.Any())
                 {
@@ -121,6 +142,96 @@ namespace hotel
                     });
                 }
 
+                stack.Children.Add(new Separator
+                {
+                    Background = Brushes.LightGray,
+                    Height = 1,
+                    Margin = new Thickness(0, 0, 0, 10)
+                });
+
+                if (booking.BookServices != null && booking.BookServices.Any())
+                {
+                    stack.Children.Add(new TextBlock
+                    {
+                        Text = "Дополнительные услуги:",
+                        FontWeight = FontWeights.Bold,
+                        FontSize = 18,
+                        Margin = new Thickness(0, 10, 0, 5)
+                    });
+
+                    var groupedServices = booking.BookServices
+                        .GroupBy(bs => bs.ServiceId)
+                        .Select(g => new
+                        {
+                            Service = g.First().Service,
+                            Quantity = g.Count(),
+                            TotalCost = g.Sum(bs => bs.Service?.Cost ?? 0)
+                        });
+
+                    //decimal servicesTotal = 0;
+
+                    foreach (var item in groupedServices)
+                    {
+                        var serviceName = item.Service?.Name ?? "Услуга";
+                        var cost = item.Service?.Cost ?? 0;
+                        var quantity = item.Quantity;
+                        var total = item.TotalCost;
+
+                        //servicesTotal += total;
+
+                        var quantityText = quantity > 1 ? $" × {quantity}" : "";
+
+                        stack.Children.Add(new TextBlock
+                        {
+                            Text = $"• {serviceName}{quantityText} — {total:N0} ₽",
+                            FontSize = 16,
+                            Margin = new Thickness(20, 2, 0, 0)
+                        });
+                    }
+                }
+
+                var roomCostPerNight = booking.Room?.IdCategoryNavigation?.Cost ?? 0;
+                var nights = booking.DepartureDate.DayNumber - booking.CheckInDate.DayNumber;
+                var roomTotal = roomCostPerNight * nights;
+
+                var servicesTotal = booking.BookServices?
+                    .GroupBy(bs => bs.ServiceId)
+                    .Sum(g => g.Sum(bs => bs.Service?.Cost ?? 0)) ?? 0;
+
+                var grandTotal = roomTotal + servicesTotal;
+
+                stack.Children.Add(new Separator
+                {
+                    Height = 1,
+                    Margin = new Thickness(0, 15, 0, 10)
+                });
+
+                stack.Children.Add(new TextBlock
+                {
+                    Text = $"Проживание ({nights} ночей × {roomCostPerNight:N0} ₽): {roomTotal:N0} ₽",
+                    FontSize = 16,
+                    Margin = new Thickness(0, 0, 0, 5)
+                });
+
+                if (servicesTotal > 0)
+                {
+                    stack.Children.Add(new TextBlock
+                    {
+                        Text = $"Услуги: {servicesTotal:N0} ₽",
+                        FontSize = 16,
+                        Margin = new Thickness(0, 0, 0, 5)
+                    });
+                }
+
+                stack.Children.Add(new TextBlock
+                {
+                    Text = $"ИТОГО: {grandTotal:N0} ₽",
+                    FontSize = 20,
+                    FontWeight = FontWeights.Bold,
+                    Foreground = Brushes.Black,
+                    Margin = new Thickness(0, 10, 0, 0)
+                });
+
                 card.Child = stack;
                 bookingsList.Children.Add(card);
             }
@@ -145,5 +256,41 @@ namespace hotel
             3 => "Завершено",
             _ => "Неизвестно"
         };
+
+        private void searchTB_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            if (string.IsNullOrEmpty(searchTB.Text))
+                search.Visibility = Visibility.Visible;
+            else
+                search.Visibility = Visibility.Hidden;
+
+            // Поиск по дате
+            var searchText = searchTB.Text.Trim();
+
+            if (string.IsNullOrEmpty(searchText))
+            {
+                DisplayBookings(_allBookings);
+                return;
+            }
+
+            if (DateOnly.TryParse(searchText, new System.Globalization.CultureInfo("ru-RU"), System.Globalization.DateTimeStyles.None, out var searchDate))
+            {
+                var filtered = _allBookings
+                    .Where(b => b.CheckInDate == searchDate)
+                    .ToList();
+                DisplayBookings(filtered);
+            }
+            else
+            {
+                bookingsList.Children.Clear();
+                bookingsList.Children.Add(new TextBlock
+                {
+                    Text = "Введите дату в формате ДД.ММ.ГГГГ",
+                    Foreground = Brushes.Orange,
+                    FontSize = 16,
+                    Margin = new Thickness(10)
+                });
+            }
+        }
     }
 }

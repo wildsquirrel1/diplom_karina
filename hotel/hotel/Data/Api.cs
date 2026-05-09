@@ -225,17 +225,19 @@ namespace hotel.Data
             using var client = new HttpClient();
             var url = $"https://localhost:7042/api/Booking/hotel/current?employeeId={employeeId}";
             var response = await client.GetAsync(url);
+
             if (response.IsSuccessStatusCode)
             {
-                var json = await response.Content.ReadAsStringAsync(); var options = new JsonSerializerOptions
+                var json = await response.Content.ReadAsStringAsync();
+
+                // Используем Newtonsoft.Json, как в остальных методах
+                var settings = new JsonSerializerSettings
                 {
-                    PropertyNameCaseInsensitive = true,
-                    //ReferenceHandler = ReferenceHandler.Preserve 
-                    ReferenceHandler = ReferenceHandler.IgnoreCycles,
-                    PropertyNamingPolicy = JsonNamingPolicy.CamelCase
+                    ReferenceLoopHandling = ReferenceLoopHandling.Ignore,
+                    NullValueHandling = NullValueHandling.Ignore
                 };
 
-                return System.Text.Json.JsonSerializer.Deserialize<List<Book>>(json, options) ?? new List<Book>();
+                return JsonConvert.DeserializeObject<List<Book>>(json, settings) ?? new List<Book>();
             }
             return new List<Book>();
         }

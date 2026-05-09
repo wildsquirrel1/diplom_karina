@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations.Schema;
+using System.Text.Json.Serialization;
 
 namespace hotel_WebApplication.Model;
 
@@ -28,6 +29,7 @@ public partial class Clint
     public byte[]? Photo { get; set; }
     [ValidateNever]
     [NotMapped]
+    [JsonIgnore]
     public virtual ICollection<Book> Books { get; set; } = new List<Book>();
 
     public virtual ICollection<ClintGuest> ClintGuests { get; set; } = new List<ClintGuest>();

@@ -40,6 +40,7 @@
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
             <RowDefinition/>
         </Grid.RowDefinitions>
 
@@ -54,7 +55,12 @@
             <TextBlock Text="Роль: " FontSize="24" Foreground="Black" Name="emplRole" TextWrapping="Wrap"/>
         </StackPanel>
 
-        <ScrollViewer Grid.Row="1" VerticalScrollBarVisibility="Auto" Margin="0 15 0 0">
+        <Grid Grid.Row="1" Background="White">
+            <TextBox x:Name="searchTB" MaxHeight="60" MinHeight="30" TextChanged="searchTB_TextChanged"/>
+            <TextBlock x:Name="search"  Text="Поиск по дате: " Style="{StaticResource searchTB}"/>
+        </Grid>
+
+        <ScrollViewer Grid.Row="2" VerticalScrollBarVisibility="Auto" Margin="0 15 0 0">
             <StackPanel x:Name="bookingsList"/>
         </ScrollViewer>
     </Grid>

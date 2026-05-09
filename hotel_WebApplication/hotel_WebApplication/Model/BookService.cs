@@ -12,10 +12,10 @@ public partial class BookService
     public int BookId { get; set; }
 
     public int ServiceId { get; set; }
-    [JsonIgnore]
+    //[JsonIgnore]
     [ValidateNever]
     public virtual Book Book { get; set; } = null!;
-    [JsonIgnore]
+    //[JsonIgnore]
     [ValidateNever]
     public virtual Service Service { get; set; } = null!;
 }
