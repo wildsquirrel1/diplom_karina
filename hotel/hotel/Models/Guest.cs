@@ -16,6 +16,7 @@ public partial class Guest
     public sbyte DocumentType { get; set; }
 
     public string DocumentNumber { get; set; } = null!;
+    public sbyte? Status { get; set; }
 
     public virtual ICollection<ClintGuest> ClintGuests { get; set; } = new List<ClintGuest>();
 

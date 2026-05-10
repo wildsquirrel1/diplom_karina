@@ -351,6 +351,7 @@ public partial class HoteldContext : DbContext
             entity.Property(e => e.Patronymic)
                 .HasMaxLength(50)
                 .HasColumnName("patronymic");
+            entity.Property(e => e.Status).HasColumnName("status");
         });
 
         modelBuilder.Entity<GuestBook>(entity =>

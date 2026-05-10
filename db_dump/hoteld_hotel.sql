@@ -40,7 +40,7 @@ CREATE TABLE `hotel` (
 
 LOCK TABLES `hotel` WRITE;
 /*!40000 ALTER TABLE `hotel` DISABLE KEYS */;
-INSERT INTO `hotel` VALUES (1,'Простой Комфорт Москва','ул. Центральная, д. 156',' Москва','84951112233','moscow-simple-comfort@yandex.ru',NULL),(2,'Простой Комфорт Санкт-петербург','ул. Главная, д. 42','Санкт-Петербург','88122223344','spb-simple-comfort@yandex.ru',NULL),(3,'Простой Комфорт Пермь','ул. Кирова, д. 10','Пермь','89361247656','perm-simple-comfort@yandex.ru',NULL),(4,'Простой Комфорт Тольятти','ул. Повв, д. 122','Тольятти','81346562312','simple-comfort-gorod@gmail.com',NULL),(5,'Простой Комфорт Омск','ул. Урола, д. 123','Омск','89251451234','simple-comfort-omsk@yandex.ru',NULL),(6,'Простой Комфорт Рим','ул. Киркорова, д. 1/1','Рим','89231546392','roma-simple-comfort@yandex.ru',NULL),(10,'Простой Комфорт Уфа','ул. Российская, д. 1','Уфа','89234561221','ufa-simple-comfort@yandex.ru',NULL);
+INSERT INTO `hotel` VALUES (1,'Простой Комфорт Москва','ул. Центральная, д. 156',' Москва','84951112233','moscow-simple-comfort@yandex.ru',NULL),(2,'Простой Комфорт Санкт-Петербург','ул. Главная, д. 42','Санкт-Петербург','88122223344','spb-simple-comfort@yandex.ru',NULL),(3,'Простой Комфорт Пермь','ул. Кирова, д. 10','Пермь','89361247656','perm-simple-comfort@yandex.ru',NULL),(4,'Простой Комфорт Тольятти','ул. Повв, д. 122','Тольятти','81346562312','simple-comfort-gorod@gmail.com',NULL),(5,'Простой Комфорт Омск','ул. Урола, д. 123','Омск','89251451234','simple-comfort-omsk@yandex.ru',NULL),(6,'Простой Комфорт Рим','ул. Киркорова, д. 1/1','Рим','89231546392','roma-simple-comfort@yandex.ru',NULL),(10,'Простой Комфорт Уфа','ул. Российская, д. 1','Уфа','89234561221','ufa-simple-comfort@yandex.ru',NULL);
 /*!40000 ALTER TABLE `hotel` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -53,4 +53,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-05-07 18:36:02
+-- Dump completed on 2026-05-10 11:40:05

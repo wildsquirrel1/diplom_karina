@@ -18,6 +18,7 @@ public partial class Guest
     public sbyte DocumentType { get; set; }
 
     public string DocumentNumber { get; set; } = null!;
+    public sbyte? Status { get; set; }
 
     [ValidateNever]
     [NotMapped]

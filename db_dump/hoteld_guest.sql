@@ -29,6 +29,7 @@ CREATE TABLE `guest` (
   `patronymic` varchar(50) NOT NULL,
   `document_type` tinyint NOT NULL,
   `document_number` varchar(15) NOT NULL,
+  `status` tinyint DEFAULT NULL,
   PRIMARY KEY (`idguest`)
 ) ENGINE=InnoDB AUTO_INCREMENT=10 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
@@ -39,7 +40,7 @@ CREATE TABLE `guest` (
 
 LOCK TABLES `guest` WRITE;
 /*!40000 ALTER TABLE `guest` DISABLE KEYS */;
-INSERT INTO `guest` VALUES (1,'Андрей','Шаповалов','Федорович',1,'8020 123456'),(2,'Максим','Мальцев','Дмитриевич',2,'124567812'),(3,'Алина','Савина','Дмитриревна',1,'4034 110045'),(4,'Оливия','Савина','Дмитриревна',1,'3840 296812'),(5,'Андрей','Попов','Артемович',1,'9452 929446'),(6,'Альбина','Ишмухаметова','Сагитовна',1,'8026122312'),(7,'Ирина','Пахомова','Платоновна',2,'782366'),(8,'Анна','Пахомова','Антоновна',1,'8021321234'),(9,'Тимур','Иванов','Сергеевич',1,'8012 321123');
+INSERT INTO `guest` VALUES (1,'Андрей','Шаповалов','Федорович',1,'8020 123456',1),(2,'Максим','Мальцев','Дмитриевич',2,'124567812',1),(3,'Алина','Савина','Дмитриревна',1,'4034 110045',1),(4,'Оливия','Савина','Дмитриревна',1,'3840 296812',1),(5,'Андрей','Попов','Артемович',1,'9452 929446',1),(6,'Альбина','Ишмухаметова','Сагитовна',1,'8026122312',1),(7,'Ирина','Пахомова','Платоновна',2,'782366',1),(8,'Анна','Пахомова','Антоновна',1,'8021321234',1),(9,'Тимур','Иванов','Сергеевич',1,'8012 321123',1);
 /*!40000 ALTER TABLE `guest` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -52,4 +53,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-05-07 18:36:03
+-- Dump completed on 2026-05-10 11:40:05
