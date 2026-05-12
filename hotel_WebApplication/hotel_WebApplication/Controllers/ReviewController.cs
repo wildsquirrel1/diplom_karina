@@ -11,35 +11,45 @@ namespace hotel_WebApplication.Controllers
     public class ReviewController : ControllerBase
     {
         private readonly HoteldContext _context;
+        private readonly BadWordsFilter  _badWordsFilter;
 
-        public ReviewController(HoteldContext context)
+        public ReviewController(HoteldContext context, BadWordsFilter badWordsFilter)
         {
             _context = context;
+            _badWordsFilter = badWordsFilter;
         }
 
         [HttpGet("hotel/{hotelId}")]
-public async Task<IActionResult> GetReviewsByHotel(int hotelId)
-{
-    var reviews = await _context.CommHotels
-        .Where(x => x.IdHotel == hotelId)
-        .Include(x => x.IdCommNavigation)
-        .Include(x => x.IdClientNavigation)
-        .Select(x => new
+        public async Task<IActionResult> GetReviewsByHotel(int hotelId)
         {
-            commentId = x.IdComm,
-            text = x.IdCommNavigation.Comment1,
-            stars = x.IdCommNavigation.Stars,
-            date = x.IdCommNavigation.Date.HasValue? x.IdCommNavigation.Date.Value.ToDateTime(TimeOnly.MinValue): (DateTime?)null,
-            clientName = $"{x.IdClientNavigation.Lastname} {x.IdClientNavigation.Name}".Trim()
-        })
-        .OrderByDescending(x => x.date).ToListAsync();
-
-    return Ok(reviews);
-}
+            var reviews = await _context.CommHotels
+                .Where(x => x.IdHotel == hotelId)
+                .Include(x => x.IdCommNavigation)
+                .Include(x => x.IdClientNavigation)
+                .Select(x => new
+                {
+                    commentId = x.IdComm,
+                    text = x.IdCommNavigation.Comment1,
+                    stars = x.IdCommNavigation.Stars,
+                    date = x.IdCommNavigation.Date.HasValue ? x.IdCommNavigation.Date.Value.ToDateTime(TimeOnly.MinValue) : (DateTime?)null,
+                    clientName = $"{x.IdClientNavigation.Lastname} {x.IdClientNavigation.Name}".Trim()
+                }).OrderByDescending(x => x.date).ToListAsync();
+            return Ok(reviews);
+        }
 
         [HttpPost]
         public async Task<IActionResult> Add([FromBody] Comment comment1, [FromQuery] int clientId, [FromQuery] int hotelId)
         {
+
+            if (_badWordsFilter.ContainsBadWords(comment1.Comment1))
+            {
+                return BadRequest(new
+                {
+                    error = "Отзыв содержит недопустимые слова",
+                    code = "BAD_WORDS_DETECTED"
+                });
+            }
+
             comment1.Date = DateOnly.FromDateTime(DateTime.Now);
 
             _context.Comments.Add(comment1);
@@ -54,6 +64,7 @@ public async Task<IActionResult> GetReviewsByHotel(int hotelId)
             await _context.SaveChangesAsync();
 
             return Ok(comment1);
+
         }
 
         [HttpPut("{id}")]

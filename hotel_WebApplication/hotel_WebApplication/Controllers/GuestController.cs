@@ -37,5 +37,36 @@ namespace hotel_WebApplication.Controllers
             await _context.SaveChangesAsync();
             return CreatedAtAction(nameof(Get), new { id = newGuest.Idguest }, newGuest);
         }
+
+        // PUT: api/Guest/{id} (редактирование)
+        [HttpPut("{id}")]
+        public async Task<IActionResult> Put(int id, Guest updatedGuest)
+        {
+            if (id != updatedGuest.Idguest)
+                return BadRequest("Идентификатор в пути и в теле запроса не совпадают");
+
+            var existingGuest = await _context.Guests.FindAsync(id);
+            if (existingGuest == null)
+                return NotFound("Гость не найден");
+
+            if (existingGuest.DocumentNumber != updatedGuest.DocumentNumber)
+            {
+                if (await _context.Guests.AnyAsync(g => g.DocumentNumber == updatedGuest.DocumentNumber && g.Idguest != id && g.Status != 2))
+                {
+                    return BadRequest(new { error = "Документ с таким номером уже зарегистрирован" });
+                }
+            }
+
+            // Обновляем только разрешённые поля
+            existingGuest.Name = updatedGuest.Name;
+            existingGuest.Lastname = updatedGuest.Lastname;
+            existingGuest.Patronymic = updatedGuest.Patronymic;
+            existingGuest.DocumentType = updatedGuest.DocumentType;
+            existingGuest.DocumentNumber = updatedGuest.DocumentNumber;
+            existingGuest.Status = updatedGuest.Status;
+
+            await _context.SaveChangesAsync();
+            return NoContent(); // 204 - успешно обновлено
+        }
     }
 }
