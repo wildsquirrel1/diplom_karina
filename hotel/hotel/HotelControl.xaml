@@ -6,7 +6,10 @@
              xmlns:local="clr-namespace:hotel"
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
-    <Border BorderBrush="LavenderBlush" BorderThickness="1" CornerRadius="5" Padding="10" Margin="5">
+    <Border BorderBrush="{StaticResource Brush.BorderSubtle}" BorderThickness="1" CornerRadius="12" Background="{StaticResource Brush.Surface}" Padding="10" Margin="5">
+        <Border.Effect>
+            <DropShadowEffect BlurRadius="12" ShadowDepth="1" Opacity="0.08" Color="#1E1B36"/>
+        </Border.Effect>
         <Grid>
             <Grid.ColumnDefinitions>
                 <ColumnDefinition/>
@@ -15,22 +18,21 @@
 
             <Grid Grid.Column="1">
                 <Grid.RowDefinitions>
-                    <RowDefinition/>
-                    <RowDefinition/>
-                    <RowDefinition/>
-                    <RowDefinition/>
-                    <RowDefinition/>
-                    <RowDefinition/>
-                    <RowDefinition Height="auto"/>
-                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
                  </Grid.RowDefinitions>
 
-                <TextBlock Margin="5 15 0 0" Grid.Row="0" Name="nameH" TextWrapping="Wrap" Text="textblock" FontWeight="Medium" FontSize="30" />
-                <TextBlock Margin="5 15 0 0" Grid.Row="1" Name="addressH" TextWrapping="Wrap" Text="textblock" FontSize="30"/>
-                <TextBlock Margin="5 15 0 0" Grid.Row="2" Name="cityH" TextWrapping="Wrap" Text="textblock" FontSize="30"/>
-                <TextBlock Margin="5 15 0 0" Grid.Row="3" Name="phoneH" TextWrapping="Wrap" Text="textblock" FontSize="30"/>
-                <TextBlock Margin="5 15 0 0" Grid.Row="4" Name="emailH" TextWrapping="Wrap" Text="textblock" FontSize="30"/>
-                <TextBlock Margin="5 15 0 0" Grid.Row="5" Name="starsH" TextWrapping="Wrap" Text="textblock" FontSize="30"/>
+                <TextBlock Margin="5,10,8,0" Grid.Row="0" Name="nameH" TextWrapping="Wrap" Text="textblock" FontWeight="Medium" FontSize="30" Foreground="{StaticResource Brush.TextPrimary}"/>
+                <TextBlock Margin="5,8,8,0" Grid.Row="1" Name="addressH" TextWrapping="Wrap" Text="textblock" FontSize="26" Foreground="{StaticResource Brush.TextPrimary}"/>
+                <TextBlock Margin="5,8,8,0" Grid.Row="2" Name="cityH" TextWrapping="Wrap" Text="textblock" FontSize="26" Foreground="{StaticResource Brush.TextSecondary}"/>
+                <TextBlock Margin="5,8,8,0" Grid.Row="3" Name="phoneH" TextWrapping="Wrap" Text="textblock" FontSize="26" Foreground="{StaticResource Brush.TextSecondary}"/>
+                <TextBlock Margin="5,8,8,0" Grid.Row="4" Name="emailH" TextWrapping="Wrap" Text="textblock" FontSize="26" Foreground="{StaticResource Brush.TextSecondary}"/>
+                <TextBlock Margin="5,8,8,0" Grid.Row="5" Name="starsH" TextWrapping="Wrap" Text="textblock" FontSize="26" Foreground="{StaticResource Brush.TextSecondary}"/>
 
                 <Grid Grid.Row="6">
                     <Grid.ColumnDefinitions>
@@ -45,7 +47,7 @@
             </Grid>
 
             <Grid Grid.Column="0">
-                <Border BorderBrush="BlueViolet" BorderThickness="2" Height="350" Width="400">
+                <Border BorderBrush="{StaticResource Brush.Accent}" BorderThickness="2" CornerRadius="12" Height="350" Width="400" ClipToBounds="True">
                     <Image Source="{Binding Photo}" Name="photo" Stretch="UniformToFill" HorizontalAlignment="Center" VerticalAlignment="Center" ClipToBounds="True"/>
                 </Border>
             </Grid>

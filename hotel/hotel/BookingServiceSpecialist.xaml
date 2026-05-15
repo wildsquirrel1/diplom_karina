@@ -7,38 +7,7 @@
         mc:Ignorable="d"
         Title="BookingServiceSpecialist" Height="950" MinHeight="730" MaxHeight="1000"  
         Width="1500" MinWidth="900" MaxWidth="1600" WindowState="Maximized" 
-        FontSize="16" WindowStartupLocation="CenterScreen" Icon="images\local-hotel_118960.png">
-    <Window.Resources>
-        <Style TargetType="TextBox">
-            <Style.Setters>
-                <Setter Property="Background" Value="Transparent"/>
-                <Setter Property="VerticalAlignment" Value="Center"/>
-                <Setter Property="Foreground" Value="Black"/>
-            </Style.Setters>
-        </Style>
-        <Style TargetType="TextBlock" x:Key="searchTB">
-            <Style.Setters>
-                <Setter Property="FontWeight" Value="Light"/>
-                <Setter Property="VerticalAlignment" Value="Center"/>
-                <Setter Property="Foreground" Value="DarkGray"/>
-                <Setter Property="Panel.ZIndex" Value="-1"/>
-                <Setter Property="Padding" Value="10 0 0 0"/>
-            </Style.Setters>
-        </Style>
-        <Style TargetType="Button">
-            <Setter Property="FontSize" Value="34"/>
-            <!-- Увеличен шрифт -->
-            <Setter Property="Foreground" Value="White"/>
-            <Setter Property="Background" Value="#8A6DF7"/>
-            <Setter Property="HorizontalAlignment" Value="Center"/>
-            <Setter Property="Width" Value="360"/>
-            <!-- Чуть шире -->
-            <Setter Property="Height" Value="60"/>
-            <!-- Выше -->
-            <Setter Property="BorderBrush" Value="Transparent"/>
-            <Setter Property="Cursor" Value="Hand"/>
-        </Style>
-    </Window.Resources>
+        FontSize="20" WindowStartupLocation="CenterScreen" Icon="images\local-hotel_118960.png">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
@@ -47,52 +16,52 @@
             <RowDefinition Height="Auto"/>
         </Grid.RowDefinitions>
 
-        <Button Name="exit" Content="X" Width="50" Height="50" Background="#8A6DF7" Foreground="White" BorderBrush="Transparent" VerticalAlignment="Center" HorizontalAlignment="Left" Click="exit_Click"/>
+        <Button Name="exit" Content="✕" Style="{StaticResource CloseWindowButton}" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="20,10,0,0" Click="exit_Click"/>
 
         <TextBlock Grid.Row="0" Text="Бронирования отеля" VerticalAlignment="Center"
-                   HorizontalAlignment="Center" FontSize="30" Margin="10"/>
+                   HorizontalAlignment="Center" FontSize="30" FontWeight="SemiBold" Foreground="{StaticResource Brush.TextPrimary}" Margin="10"/>
 
-        <StackPanel Grid.Column="0" HorizontalAlignment="Right" VerticalAlignment="Top">
-            <TextBlock Text="Сотрудник: " FontSize="30" Foreground="Black" Name="emplName" TextWrapping="Wrap"/>
-            <TextBlock Text="Роль: " FontSize="28" Foreground="Black" Name="emplRole" TextWrapping="Wrap"/>
+        <StackPanel Grid.Row="0" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,8,24,0" MaxWidth="520">
+            <TextBlock Text="Сотрудник: " FontSize="26" Foreground="{StaticResource Brush.TextPrimary}" Name="emplName" TextWrapping="Wrap"/>
+            <TextBlock Text="Роль: " FontSize="24" Foreground="{StaticResource Brush.TextSecondary}" Name="emplRole" TextWrapping="Wrap"/>
         </StackPanel>
 
         <Grid Grid.Row="1" Margin="0,0,0,10">
             <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="auto"/>
-                <ColumnDefinition Width="890"/>
-                <ColumnDefinition Width="auto"/>
-                <ColumnDefinition Width="auto"/>
-                <ColumnDefinition Width="auto"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="Auto" MinWidth="180"/>
+                <ColumnDefinition Width="Auto" MinWidth="200"/>
             </Grid.ColumnDefinitions>
 
-            <Grid Grid.Column="1" Background="White">
-                <TextBox x:Name="searchTB" MaxHeight="60" MinHeight="30" MaxWidth="900" TextChanged="searchTB_TextChanged"/>
-                <TextBlock x:Name="search" MaxWidth="900" FontSize="20" Text="Поиск по ФИО клиента: " Style="{StaticResource searchTB}"/>
-            </Grid>
+            <Border Grid.Column="0" Background="{StaticResource Brush.Surface}" CornerRadius="14" BorderBrush="{StaticResource Brush.BorderSubtle}" BorderThickness="1" Padding="4,2" VerticalAlignment="Center" Margin="0,0,12,0">
+                <Grid>
+                    <TextBox x:Name="searchTB" Style="{StaticResource SearchOverlayTextBox}" MaxHeight="60" MinHeight="30" MaxWidth="900" TextChanged="searchTB_TextChanged"/>
+                    <TextBlock x:Name="search" MaxWidth="900" FontSize="25" Text="Поиск по ФИО клиента: " Style="{StaticResource searchTB}"/>
+                </Grid>
+            </Border>
 
-            <Grid Grid.Column="2">
+            <Grid Grid.Column="1">
                 <Grid.RowDefinitions>
                     <RowDefinition Height="Auto"/>
                     <RowDefinition Height="2*"/>
                 </Grid.RowDefinitions>
-                <TextBlock Text="По цене:"/>
+                <TextBlock Text="Сортировка:"/>
 
-                <ComboBox Grid.Row="1" x:Name="sordCB" Margin="10"  MinWidth="100" MaxWidth="300" MinHeight="30" MaxHeight="70" SelectedIndex="0" VerticalContentAlignment="Top" SelectionChanged="sordCB_SelectionChanged">
-                    <TextBlock>-</TextBlock>
-                    <TextBlock>От большей к меньше</TextBlock>
-                    <TextBlock>От меньшей к большей</TextBlock>
+                <ComboBox Grid.Row="1" x:Name="sordCB" Margin="10" MinWidth="180" MaxWidth="360" MinHeight="48" FontSize="22" SelectedIndex="0" VerticalContentAlignment="Center" SelectionChanged="sordCB_SelectionChanged">
+                    <ComboBoxItem Content="По дате заезда"/>
+                    <ComboBoxItem Content="По сумме: по убыванию"/>
+                    <ComboBoxItem Content="По сумме: по возрастанию"/>
                 </ComboBox>
             </Grid>
 
-            <Grid Grid.Column="3">
+            <Grid Grid.Column="2">
                 <Grid.RowDefinitions>
                     <RowDefinition/>
                     <RowDefinition/>
                 </Grid.RowDefinitions>
                 <TextBlock Text="По статутсу:"/>
 
-                <ComboBox Grid.Row="1" x:Name="filterCB" Margin="10" MinWidth="100" FontSize="36" MaxWidth="260" Width="250" MinHeight="30" MaxHeight="70" VerticalContentAlignment="Top" SelectedIndex="1" SelectionChanged="filterCB_SelectionChanged" >
+                <ComboBox Grid.Row="1" x:Name="filterCB" Margin="10" MinWidth="160" FontSize="22" MaxWidth="300" MinHeight="48" VerticalContentAlignment="Center" SelectedIndex="1" SelectionChanged="filterCB_SelectionChanged" >
                     <ComboBoxItem>Все</ComboBoxItem>
                     <ComboBoxItem>Активные</ComboBoxItem>
                     <ComboBoxItem>Отмененные</ComboBoxItem>
@@ -131,7 +100,7 @@
         </Grid>
 
         <Button Grid.Row="3" Content="Клиенты" x:Name="clientsBtn" Click="clientsBtn_Click"
-            HorizontalAlignment="Right" Margin="0 0 400 0" Padding="10,5"/>
+            HorizontalAlignment="Right" Margin="0 20 400 20" Padding="10,5"/>
 
         <Button Grid.Row="3"  Content="Добавить бронь" x:Name="addBookingB" Click="addBookingB_Click"
                 HorizontalAlignment="Right" Margin="20" Padding="10,5"/>

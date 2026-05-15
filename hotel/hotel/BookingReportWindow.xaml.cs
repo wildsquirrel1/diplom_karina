@@ -123,8 +123,6 @@ namespace hotel
             }
         }
 
-
-
         private void SetViewMode(bool hasData)
         {
             if (hasData)

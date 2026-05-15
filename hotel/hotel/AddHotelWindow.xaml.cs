@@ -162,10 +162,10 @@ namespace hotel
 
         }
 
-        private void cityT_TextChanged(object sender, TextChangedEventArgs e)
+        /*private void cityT_TextChanged(object sender, TextChangedEventArgs e)
         {
             UpdateHotelName();
-        }
+        }*/
 
         private void back_Click(object sender, RoutedEventArgs e)
         {

@@ -6,7 +6,10 @@
              xmlns:local="clr-namespace:hotel"
              mc:Ignorable="d" 
              Width="700" Height="230" Margin="10">
-    <Border BorderBrush="#E0E0E0" BorderThickness="2" CornerRadius="10" Background="White">
+    <Border BorderBrush="{StaticResource Brush.BorderSubtle}" BorderThickness="1" CornerRadius="14" Background="{StaticResource Brush.Surface}" Padding="15" Margin="10">
+        <Border.Effect>
+            <DropShadowEffect BlurRadius="14" ShadowDepth="2" Opacity="0.07" Color="#1E1B36"/>
+        </Border.Effect>
         <Grid Margin="15">
             <Grid.RowDefinitions>
                 <RowDefinition Height="auto"/>

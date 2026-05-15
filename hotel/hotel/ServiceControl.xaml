@@ -5,8 +5,8 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:hotel"
              mc:Ignorable="d" 
-             Width="320" Height="180" Margin="8">
-    <Border x:Name="cardBorder" BorderBrush="#E0E0E0" BorderThickness="1" CornerRadius="12" Background="White" Padding="16">
+             MinWidth="280" MaxWidth="460" MinHeight="200" Margin="8">
+    <Border x:Name="cardBorder" BorderBrush="{StaticResource Brush.BorderSubtle}" BorderThickness="1" CornerRadius="12" Background="{StaticResource Brush.Surface}" Padding="16">
 
         <Border.Triggers>
             <EventTrigger RoutedEvent="MouseEnter">
@@ -49,7 +49,7 @@
 
             </Grid>
 
-            <TextBlock Grid.Row="1" x:Name="descriptionText" TextWrapping="Wrap" FontSize="14" Foreground="#666666" Margin="0,12,0,0" MaxHeight="60"/>
+            <TextBlock Grid.Row="1" x:Name="descriptionText" TextWrapping="Wrap" FontSize="14" Foreground="{StaticResource Brush.TextSecondary}" Margin="0,12,0,0" MaxHeight="96"/>
 
             <Separator Grid.Row="2" Background="#EEEEEE" Margin="0,12,0,12"/>
 
@@ -64,8 +64,8 @@
                     <TextBlock Text="Услуга" FontSize="14" Foreground="#888888"/>
                 </StackPanel>
 
-                <Button Grid.Column="1" x:Name="editBtn" Content="изменить" FontSize="16" Width="75" Height="36" Padding="0" Background="#8A6DF7" Foreground="White" BorderBrush="Transparent" HorizontalAlignment="Center" Click="editBtn_Click"/>
-                <TextBlock Grid.Column="2" x:Name="costText" Text="0 ₽" FontWeight="Bold" FontSize="22" Foreground="#8A6DF7" HorizontalAlignment="Right"/>
+                <Button Grid.Column="1" x:Name="editBtn" Content="изменить" FontSize="14" MinWidth="100" MinHeight="40" Padding="10,6" HorizontalAlignment="Center" Click="editBtn_Click"/>
+                <TextBlock Grid.Column="2" x:Name="costText" Text="0 ₽" FontWeight="Bold" FontSize="22" Foreground="{StaticResource Brush.Accent}" HorizontalAlignment="Right"/>
             </Grid>
 
             <Border x:Name="disabledOverlay" Grid.RowSpan="4" Background="#80FFFFFF" Visibility="Collapsed" CornerRadius="12">

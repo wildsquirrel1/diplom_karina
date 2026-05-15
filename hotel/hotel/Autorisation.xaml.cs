@@ -43,7 +43,7 @@ namespace hotel
             catch (Exception)
             {
 
-                MessageBox.Show("ЙЦУКЕНГШ");
+                MessageBox.Show("Попробуйте подключить API", "Уведомление");
                 throw;
             }
         }

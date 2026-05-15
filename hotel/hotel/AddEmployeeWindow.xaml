@@ -6,19 +6,6 @@
         xmlns:local="clr-namespace:hotel"
         mc:Ignorable="d"
         Title="Добавление сотрудника" Height="950" MinHeight="730" MaxHeight="1000"  Width="1500" MinWidth="900" MaxWidth="1600" WindowState="Maximized" FontSize="40" WindowStartupLocation="CenterScreen" Icon="images\local-hotel_118960.png">
-    <Window.Resources>
-        <Style TargetType="Button">
-            <Setter Property="FontSize" Value="34"/>
-            <Setter Property="Foreground" Value="White"/>
-            <Setter Property="Background" Value="#8A6DF7"/>
-            <Setter Property="HorizontalAlignment" Value="Center"/>
-            <Setter Property="Width" Value="360"/>
-            <Setter Property="Height" Value="60"/>
-            <Setter Property="Margin" Value="0,90,0,0"/>
-            <Setter Property="BorderBrush" Value="Transparent"/>
-            <Setter Property="Cursor" Value="Hand"/>
-        </Style>
-    </Window.Resources>
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition />
@@ -121,8 +108,8 @@
                 <TextBlock Text="Сотрудник: " FontSize="30" Foreground="Black" Name="emplName" TextWrapping="Wrap"/>
                 <TextBlock Text="Роль: " FontSize="28" Foreground="Black" Name="emplRole" TextWrapping="Wrap"/>
             </StackPanel>
-            <Button x:Name="back" Content="X" HorizontalAlignment="Right" VerticalAlignment="Top"
-                    Width="60" Height="60" FontSize="40" Click="back_Click" Margin="0,20,20,0"/>
+            <Button x:Name="back" Content="✕" Style="{StaticResource CloseWindowButton}" HorizontalAlignment="Right" VerticalAlignment="Top"
+                    Click="back_Click" Margin="0,20,20,0"/>
             <TextBlock Text="Добавление" HorizontalAlignment="Center" VerticalAlignment="Center"
                        FontSize="48"/>
             <Image Source="images\icon-icons (2).png" VerticalAlignment="Center" Margin="0 0 350 0" HorizontalAlignment="Center" Width="90"/>

@@ -80,11 +80,9 @@ namespace hotel
                 return;
             }
 
-            // 🔹 2. Валидация данных
             if (!ValidateInput(nameTB.Text, descriptionTB, priceTB))
                 return;
 
-            // 🔹 3. Обновляем объект услуги
             _service.Name = nameTB.Text.Trim();
             _service.Description = descriptionTB.Text.Trim();
             _service.Cost = decimal.Parse(priceTB.Text.Replace(',', '.'));
@@ -92,14 +90,13 @@ namespace hotel
 
             try
             {
-                // 🔹 4. Отправляем на сервер
                 var error = await Api.UpdateService(_service);
 
                 if (error == null)
                 {
                     MessageBox.Show("Услуга успешно отредактирована!", "Уведомление",
                         MessageBoxButton.OK, MessageBoxImage.Information);
-                    DialogResult = true;  // ← Возвращаем успех для делегата
+                    DialogResult = true;
                     Close();
                 }
                 else

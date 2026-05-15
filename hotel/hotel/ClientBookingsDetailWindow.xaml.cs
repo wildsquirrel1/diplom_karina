@@ -24,6 +24,13 @@ namespace hotel
 
         private List<Book> _allBookings;
         private Clint _currentClient;
+
+        private static Brush AppBrush(string key, Brush fallback)
+        {
+            if (Application.Current?.TryFindResource(key) is Brush b)
+                return b;
+            return fallback;
+        }
         public ClientBookingsDetailWindow(Clint client, List<Book> clientBookings, Employee employee)
         {
             InitializeComponent();
@@ -44,14 +51,20 @@ namespace hotel
         {
             bookingsList.Children.Clear();
 
+            var textPrimary = AppBrush("Brush.TextPrimary", Brushes.Black);
+            var textSecondary = AppBrush("Brush.TextSecondary", Brushes.DimGray);
+            var textMuted = AppBrush("Brush.TextMuted", Brushes.Gray);
+            var borderSubtle = AppBrush("Brush.BorderSubtle", Brushes.LightGray);
+            var surface = AppBrush("Brush.Surface", Brushes.White);
+
             if (allBookings.Count == 0)
             {
                 bookingsList.Children.Add(new TextBlock
                 {
                     Text = "У клиента пока нет бронирований",
-                    Foreground = Brushes.Gray,
+                    Foreground = textMuted,
                     FontSize = 18,
-                    Margin = new Thickness(10)
+                    Margin = new Thickness(12, 8, 12, 8)
                 });
                 return;
             }
@@ -60,12 +73,12 @@ namespace hotel
             {
                 var card = new Border
                 {
-                    BorderBrush = Brushes.LightGray,
+                    BorderBrush = borderSubtle,
                     BorderThickness = new Thickness(1),
-                    CornerRadius = new CornerRadius(8),
-                    Margin = new Thickness(0, 0, 0, 15),
-                    Padding = new Thickness(12),
-                    Background = Brushes.White
+                    CornerRadius = new CornerRadius(14),
+                    Margin = new Thickness(8, 0, 8, 16),
+                    Padding = new Thickness(20, 18, 20, 18),
+                    Background = surface
                 };
 
                 var stack = new StackPanel();
@@ -73,42 +86,50 @@ namespace hotel
                 stack.Children.Add(new TextBlock
                 {
                     Text = $"Номер: {booking.Room?.Name ?? "Не указан"}",
-                    FontWeight = FontWeights.Bold,
-                    FontSize = 20
+                    FontWeight = FontWeights.SemiBold,
+                    FontSize = 22,
+                    Foreground = textPrimary,
+                    TextWrapping = TextWrapping.Wrap
                 });
                 stack.Children.Add(new TextBlock
                 {
                     Text = $"{booking.CheckInDate:dd.MM.yyyy} — {booking.DepartureDate:dd.MM.yyyy}",
                     FontSize = 18,
-                    Margin = new Thickness(0, 5, 0, 0)
+                    Foreground = textSecondary,
+                    Margin = new Thickness(0, 8, 0, 0),
+                    TextWrapping = TextWrapping.Wrap
                 });
                 stack.Children.Add(new TextBlock
                 {
                     Text = $"Статус: {GetStatusName(booking.StatusBook)}",
-                    FontSize = 18,
-                    Margin = new Thickness(0, 5, 0, 10)
+                    FontSize = 17,
+                    Foreground = textSecondary,
+                    Margin = new Thickness(0, 6, 0, 0),
+                    TextWrapping = TextWrapping.Wrap
                 });
                 stack.Children.Add(new TextBlock
                 {
                     Text = $"Дата бронирования: {booking.BookingDate:dd.MM.yyyy}",
-                    FontSize = 16,
-                    Foreground = Brushes.Gray,
-                    Margin = new Thickness(0, 0, 0, 10)
+                    FontSize = 15,
+                    Foreground = textMuted,
+                    Margin = new Thickness(0, 10, 0, 12),
+                    TextWrapping = TextWrapping.Wrap
                 });
 
                 stack.Children.Add(new Separator
                 {
-                    Background = Brushes.LightGray,
+                    Background = borderSubtle,
                     Height = 1,
-                    Margin = new Thickness(0, 0, 0, 10)
+                    Margin = new Thickness(0, 4, 0, 12)
                 });
 
                 stack.Children.Add(new TextBlock
                 {
-                    Text = "Проживающие:",
-                    FontWeight = FontWeights.Bold,
-                    FontSize = 18,
-                    Margin = new Thickness(0, 0, 0, 5)
+                    Text = "Проживающие",
+                    FontWeight = FontWeights.SemiBold,
+                    FontSize = 17,
+                    Foreground = textPrimary,
+                    Margin = new Thickness(0, 0, 0, 6)
                 });
 
 
@@ -124,7 +145,8 @@ namespace hotel
                                 Text = $"{guest.Lastname} {guest.Name} {guest.Patronymic} | " +
                                        $"{GetDocumentType(guest.DocumentType)}: {guest.DocumentNumber}",
                                 FontSize = 16,
-                                Margin = new Thickness(10, 2, 0, 2),
+                                Foreground = textSecondary,
+                                Margin = new Thickness(4, 2, 0, 2),
                                 TextWrapping = TextWrapping.Wrap
                             };
                             stack.Children.Add(guestText);
@@ -135,28 +157,30 @@ namespace hotel
                 {
                     stack.Children.Add(new TextBlock
                     {
-                        Text = "  Без дополнительных гостей (только основной клиент)",
-                        FontSize = 16,
-                        Foreground = Brushes.Gray,
-                        FontStyle = FontStyles.Italic
+                        Text = "Без дополнительных гостей (только основной клиент)",
+                        FontSize = 15,
+                        Foreground = textMuted,
+                        FontStyle = FontStyles.Italic,
+                        TextWrapping = TextWrapping.Wrap
                     });
                 }
 
                 stack.Children.Add(new Separator
                 {
-                    Background = Brushes.LightGray,
+                    Background = borderSubtle,
                     Height = 1,
-                    Margin = new Thickness(0, 0, 0, 10)
+                    Margin = new Thickness(0, 4, 0, 12)
                 });
 
                 if (booking.BookServices != null && booking.BookServices.Any())
                 {
                     stack.Children.Add(new TextBlock
                     {
-                        Text = "Дополнительные услуги:",
-                        FontWeight = FontWeights.Bold,
-                        FontSize = 18,
-                        Margin = new Thickness(0, 10, 0, 5)
+                        Text = "Дополнительные услуги",
+                        FontWeight = FontWeights.SemiBold,
+                        FontSize = 17,
+                        Foreground = textPrimary,
+                        Margin = new Thickness(0, 6, 0, 6)
                     });
 
                     var groupedServices = booking.BookServices
@@ -185,7 +209,9 @@ namespace hotel
                         {
                             Text = $"• {serviceName}{quantityText} — {total:N0} ₽",
                             FontSize = 16,
-                            Margin = new Thickness(20, 2, 0, 0)
+                            Foreground = textSecondary,
+                            Margin = new Thickness(8, 2, 0, 0),
+                            TextWrapping = TextWrapping.Wrap
                         });
                     }
                 }
@@ -210,7 +236,9 @@ namespace hotel
                 {
                     Text = $"Проживание ({nights} ночей × {roomCostPerNight:N0} ₽): {roomTotal:N0} ₽",
                     FontSize = 16,
-                    Margin = new Thickness(0, 0, 0, 5)
+                    Foreground = textSecondary,
+                    Margin = new Thickness(0, 0, 0, 4),
+                    TextWrapping = TextWrapping.Wrap
                 });
 
                 if (servicesTotal > 0)
@@ -219,17 +247,20 @@ namespace hotel
                     {
                         Text = $"Услуги: {servicesTotal:N0} ₽",
                         FontSize = 16,
-                        Margin = new Thickness(0, 0, 0, 5)
+                        Foreground = textSecondary,
+                        Margin = new Thickness(0, 0, 0, 4),
+                        TextWrapping = TextWrapping.Wrap
                     });
                 }
 
                 stack.Children.Add(new TextBlock
                 {
-                    Text = $"ИТОГО: {grandTotal:N0} ₽",
-                    FontSize = 20,
-                    FontWeight = FontWeights.Bold,
-                    Foreground = Brushes.Black,
-                    Margin = new Thickness(0, 10, 0, 0)
+                    Text = $"Итого: {grandTotal:N0} ₽",
+                    FontSize = 22,
+                    FontWeight = FontWeights.SemiBold,
+                    Foreground = textPrimary,
+                    Margin = new Thickness(0, 12, 0, 0),
+                    TextWrapping = TextWrapping.Wrap
                 });
 
                 card.Child = stack;
@@ -254,15 +285,15 @@ namespace hotel
             1 => "Активно",
             2 => "Отменено",
             3 => "Завершено",
+            4 => "Предстоящая",
             _ => "Неизвестно"
         };
 
         private void searchTB_TextChanged(object sender, TextChangedEventArgs e)
         {
-            if (string.IsNullOrEmpty(searchTB.Text))
-                search.Visibility = Visibility.Visible;
-            else
-                search.Visibility = Visibility.Hidden;
+            search.Visibility = string.IsNullOrWhiteSpace(searchTB.Text)
+                ? Visibility.Visible
+                : Visibility.Hidden;
 
             // Поиск по дате
             var searchText = searchTB.Text.Trim();
@@ -286,9 +317,10 @@ namespace hotel
                 bookingsList.Children.Add(new TextBlock
                 {
                     Text = "Введите дату в формате ДД.ММ.ГГГГ",
-                    Foreground = Brushes.Orange,
+                    Foreground = AppBrush("Brush.Danger", Brushes.DarkOrange),
                     FontSize = 16,
-                    Margin = new Thickness(10)
+                    Margin = new Thickness(12, 8, 12, 8),
+                    TextWrapping = TextWrapping.Wrap
                 });
             }
         }

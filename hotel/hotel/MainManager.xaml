@@ -6,31 +6,6 @@
         xmlns:local="clr-namespace:hotel"
         mc:Ignorable="d"
         Title="Главный менеджер" Height="950" MinHeight="730" MaxHeight="1000"  Width="1500" MinWidth="900" MaxWidth="1600" WindowState="Maximized" FontSize="40" WindowStartupLocation="CenterScreen" Icon="images\local-hotel_118960.png">
-    <Window.Resources>
-        <!-- Стиль для всех кнопок -->
-        <Style TargetType="Button">
-            <Setter Property="FontSize" Value="34"/>
-            <!-- Увеличен шрифт -->
-            <Setter Property="Foreground" Value="White"/>
-            <Setter Property="Background" Value="#8A6DF7"/>
-            <Setter Property="HorizontalAlignment" Value="Center"/>
-            <Setter Property="Width" Value="360"/>
-            <!-- Чуть шире -->
-            <Setter Property="Height" Value="60"/>
-            <!-- Выше -->
-            <Setter Property="Margin" Value="0,90,0,0"/>
-            <Setter Property="BorderBrush" Value="Transparent"/>
-            <Setter Property="Cursor" Value="Hand"/>
-        </Style>
-
-        <!-- Стиль для заголовка -->
-        <Style TargetType="TextBlock" x:Key="HotelTitle">
-            <Setter Property="FontSize" Value="36"/>
-            <Setter Property="FontWeight" Value="Bold"/>
-            <Setter Property="HorizontalAlignment" Value="Center"/>
-            <Setter Property="Margin" Value="0,40,0,30"/>
-        </Style>
-    </Window.Resources>
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="*"/>
@@ -38,10 +13,10 @@
             <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
 
-        <StackPanel Grid.Column="0" Margin="30,30,0,0" VerticalAlignment="Top">
-            <TextBlock Text="Сотрудник: " FontSize="30" Foreground="Black" Name="emplName" TextWrapping="Wrap"/>
-            <TextBlock Text="Роль: " FontSize="28" Foreground="Black" Name="emplRole" TextWrapping="Wrap"/>
-            <TextBlock Text="Отель: " FontSize="28" Foreground="Black" Name="emplHotel" TextWrapping="Wrap"/>
+        <StackPanel Grid.Column="0" Margin="30,30,0,0" VerticalAlignment="Top" HorizontalAlignment="Stretch" MinWidth="280" MaxWidth="720">
+            <TextBlock Text="Сотрудник: " FontSize="30" Foreground="{StaticResource Brush.TextPrimary}" Name="emplName" TextWrapping="Wrap"/>
+            <TextBlock Text="Роль: " FontSize="28" Foreground="{StaticResource Brush.TextSecondary}" Name="emplRole" TextWrapping="Wrap"/>
+            <TextBlock Text="Отель: " FontSize="28" Foreground="{StaticResource Brush.TextSecondary}" Name="emplHotel" TextWrapping="Wrap"/>
         </StackPanel>
 
         <Grid Grid.Column="1">
@@ -56,30 +31,17 @@
 
             <!-- Название отеля -->
             <TextBlock Grid.Row="0" HorizontalAlignment="Center" Margin="0,60,0,50">
-            <Run Text="Простой" FontSize="52" FontWeight="Bold" Foreground="#8A6DF7"/>
-            <Run Text=" Комфорт" FontSize="52" FontWeight="Bold" Foreground="Black"/>
+            <Run Text="Простой" FontSize="52" FontWeight="Bold" Foreground="{StaticResource Brush.Accent}"/>
+            <Run Text=" Комфорт" FontSize="52" FontWeight="Bold" Foreground="{StaticResource Brush.TextPrimary}"/>
             </TextBlock>
 
             <Image Grid.Row="0" Source="images\icon-icons (2).png" Width="120" VerticalAlignment="Center" HorizontalAlignment="Left"/>
 
-            <Button Grid.Row="1" Name="employees" Content="Сотрудники" Click="employees_Click" />
-            <Button Grid.Row="2" Name="rooms" Content="Номера" Click="rooms_Click"/>
-            <Button Grid.Row="3" Name="services" Content="Услуги" Click="services_Click"/>
+            <Button Grid.Row="1" Name="employees" Content="Сотрудники" Click="employees_Click" Style="{StaticResource NavMenuButton}" />
+            <Button Grid.Row="2" Name="rooms" Content="Номера" Click="rooms_Click" Style="{StaticResource NavMenuButton}"/>
+            <Button Grid.Row="3" Name="services" Content="Услуги" Click="services_Click" Style="{StaticResource NavMenuButton}"/>
         </Grid>
     
-        <Button Grid.Column="2" 
-            Content="X" 
-            FontSize="22" 
-            FontWeight="Bold"
-            Width="40" Height="40" 
-            Background="#8A6DF7" 
-            Foreground="White"
-            BorderBrush="Transparent"
-            Cursor="Hand"
-            VerticalAlignment="Top" 
-            HorizontalAlignment="Right" 
-            Margin="0,30,30,0"
-            Name="exit"
-                Click="exit_Click"/>
+        <Button Grid.Column="2" Content="✕" Style="{StaticResource CloseWindowButton}" Margin="0,30,30,0" Name="exit" Click="exit_Click"/>
     </Grid>
 </Window>

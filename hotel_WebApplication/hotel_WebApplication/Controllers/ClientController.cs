@@ -154,7 +154,7 @@ namespace hotel_WebApplication.Controllers
             if (!clientExists)
                 return NotFound("Клиент не найден");
 
-            var bookings = await _context.Books.Where(b => b.ClientId == id).Include(b => b.Room).ThenInclude(r => r.IdCategoryNavigation).Include(b => b.Room).ThenInclude(r => r.Hotel).Include(b => b.Room).ThenInclude(r => r.Floor).Include(b => b.BookServices).ThenInclude(bs => bs.Service).Include(b => b.GuestBooks).OrderByDescending(b => b.CheckInDate).ToListAsync(); 
+            var bookings = await _context.Books.Where(b => b.ClientId == id).Include(b => b.Room).ThenInclude(r => r.IdCategoryNavigation).Include(b => b.Room).ThenInclude(r => r.Hotel).Include(b => b.Room).ThenInclude(r => r.Floor).Include(b => b.BookServices).ThenInclude(bs => bs.Service).Include(b => b.GuestBooks).OrderByDescending(b => b.Idbook).ToListAsync(); 
 
             return Ok(bookings);
         }

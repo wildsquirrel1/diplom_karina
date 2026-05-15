@@ -5,8 +5,8 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:hotel"
              mc:Ignorable="d" 
-             d:DesignHeight="250" Width="350">
-    <Border BorderBrush="#ddd" BorderThickness="1" CornerRadius="10" Background="White" Padding="15" Margin="0 10 10 0">
+             d:DesignHeight="250" MinWidth="300" MaxWidth="440">
+    <Border BorderBrush="{StaticResource Brush.BorderSubtle}" BorderThickness="1" CornerRadius="12" Background="{StaticResource Brush.Surface}" Padding="15" Margin="0 10 10 0">
         <Grid>
             <Grid.RowDefinitions>
                 <RowDefinition Height="Auto"/>
@@ -18,8 +18,8 @@
             <Grid Grid.Row="0">
                 <!-- Номер брони -->
                 <TextBlock x:Name="tbId" Text="Бронь №..." 
-                           FontSize="18" FontWeight="Bold" Foreground="#333"
-                           VerticalAlignment="Center"/>
+                           FontSize="18" FontWeight="Bold" Foreground="{StaticResource Brush.TextPrimary}"
+                           VerticalAlignment="Center" TextWrapping="Wrap" MaxWidth="220"/>
 
                 <!-- Статус -->
                 <Border x:Name="statusBadge" HorizontalAlignment="Right" Padding="6,3" CornerRadius="4" VerticalAlignment="Center">
@@ -29,9 +29,9 @@
 
             <!-- Основная информация -->
             <StackPanel Grid.Row="1" Margin="0,10,0,10">
-                <TextBlock x:Name="tbRoom" Text="Номер: ..." FontSize="16" Margin="0,2"/>
-                <TextBlock x:Name="tbClient" Text="Клиент: ..." FontSize="14" Foreground="#555" Margin="0,2"/>
-                <TextBlock FontSize="14" Foreground="#555" Margin="0,2">
+                <TextBlock x:Name="tbRoom" Text="Номер: ..." FontSize="16" Margin="0,2" TextWrapping="Wrap" Foreground="{StaticResource Brush.TextPrimary}"/>
+                <TextBlock x:Name="tbClient" Text="Клиент: ..." FontSize="14" Foreground="{StaticResource Brush.TextSecondary}" Margin="0,2" TextWrapping="Wrap"/>
+                <TextBlock FontSize="14" Foreground="{StaticResource Brush.TextSecondary}" Margin="0,2">
                     <Run Text="Гостей: "/>
                     <Run x:Name="tbGuests" Text="0"/>
                 </TextBlock>
@@ -44,12 +44,12 @@
                         <ColumnDefinition/>
                     </Grid.ColumnDefinitions>
                     <StackPanel Grid.Column="0">
-                        <TextBlock Text="Заезд:" FontSize="12" Foreground="#888"/>
-                        <TextBlock x:Name="tbCheckIn" Text=".." FontSize="14" FontWeight="SemiBold"/>
+                        <TextBlock Text="Заезд:" FontSize="12" Foreground="{StaticResource Brush.TextMuted}"/>
+                        <TextBlock x:Name="tbCheckIn" Text=".." FontSize="14" FontWeight="SemiBold" Foreground="{StaticResource Brush.TextPrimary}"/>
                     </StackPanel>
                     <StackPanel Grid.Column="1">
-                        <TextBlock Text="Выезд:" FontSize="12" Foreground="#888" HorizontalAlignment="Right"/>
-                        <TextBlock x:Name="tbCheckOut" Text=".." FontSize="14" FontWeight="SemiBold" HorizontalAlignment="Right"/>
+                        <TextBlock Text="Выезд:" FontSize="12" Foreground="{StaticResource Brush.TextMuted}" HorizontalAlignment="Right"/>
+                        <TextBlock x:Name="tbCheckOut" Text=".." FontSize="14" FontWeight="SemiBold" Foreground="{StaticResource Brush.TextPrimary}" HorizontalAlignment="Right"/>
                     </StackPanel>
                 </Grid>
             </StackPanel>
@@ -61,10 +61,10 @@
                     <ColumnDefinition Width="*"/>
                 </Grid.ColumnDefinitions>
 
-                <TextBlock x:Name="tbTotal" Text="Итого: 0 ₽" FontSize="16" FontWeight="Bold" Foreground="#333" VerticalAlignment="Center"/>
+                <TextBlock x:Name="tbTotal" Text="Итого: 0 ₽" FontSize="16" FontWeight="Bold" Foreground="{StaticResource Brush.TextPrimary}" VerticalAlignment="Center" TextWrapping="Wrap"/>
 
                 <!-- КНОПКА ОТМЕНЫ -->
-                <Button x:Name="btnCancel" Grid.Column="1" Content="Отменить" Width="100" Height="30" VerticalAlignment="Center" HorizontalAlignment="Right" FontSize="14" Background="#d9534f" Foreground="White" BorderThickness="0" Cursor="Hand" Margin="10,0,0,0" Click="btnCancel_Click"/>
+                <Button x:Name="btnCancel" Grid.Column="1" Content="Отменить" Width="100" Height="32" VerticalAlignment="Center" HorizontalAlignment="Right" FontSize="14" Style="{StaticResource DangerButton}" Margin="10,0,0,0" Click="btnCancel_Click"/>
 
             </Grid>
         </Grid>

@@ -167,10 +167,10 @@ namespace hotel
             }
         }*/
 
-        private void cityT_PreviewTextInput(object sender, TextCompositionEventArgs e)
+        /*private void cityT_PreviewTextInput(object sender, TextCompositionEventArgs e)
         {
             Preview(e);
-        }
+        }*/
 
         public void Preview(TextCompositionEventArgs e)
         {
@@ -231,7 +231,7 @@ namespace hotel
             }
 
             return !App.context.Hotels.Any(u => u.PhoneNumber == number);
-        }*/
+        }
 
         public bool isValidAddress(string address)
         {
@@ -243,7 +243,7 @@ namespace hotel
             var regex = new Regex(@"^улица\. [^,\d]+, \d+(?:[/][\dа-яА-ЯёЁ]|[а-яА-ЯёЁ])?$");
 
             return regex.IsMatch(address);
-        }
+        }*/
 
         public bool IsValidEmail(string email)
         {
@@ -348,10 +348,10 @@ namespace hotel
             return await Api.updateHotel(selectedhotel.Idhotel, selectedhotel);
         }
 
-        private void cityT_TextChanged(object sender, TextChangedEventArgs e)
+        /*private void cityT_TextChanged(object sender, TextChangedEventArgs e)
         {
             UpdateHotelName();
-        }
+        }*/
 
         private void back_Click(object sender, RoutedEventArgs e)
         {

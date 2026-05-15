@@ -6,38 +6,6 @@
         xmlns:local="clr-namespace:hotel"
         mc:Ignorable="d"
         Title="Номера" Height="950" MinHeight="730" MaxHeight="1000"  Width="1500" MinWidth="900" MaxWidth="1600" WindowState="Maximized" FontSize="40" WindowStartupLocation="CenterScreen" Icon="images\local-hotel_118960.png">
-    <Window.Resources>
-        <Style TargetType="TextBox">
-            <Style.Setters>
-                <Setter Property="Background" Value="Transparent"/>
-                <Setter Property="VerticalAlignment" Value="Center"/>
-                <Setter Property="Foreground" Value="Black"/>
-            </Style.Setters>
-        </Style>
-        <Style TargetType="TextBlock" x:Key="searchTB">
-            <Style.Setters>
-                <Setter Property="FontWeight" Value="Light"/>
-                <Setter Property="VerticalAlignment" Value="Center"/>
-                <Setter Property="Foreground" Value="DarkGray"/>
-                <Setter Property="Panel.ZIndex" Value="-1"/>
-                <Setter Property="Padding" Value="10 0 0 0"/>
-            </Style.Setters>
-        </Style>
-
-        <Style TargetType="Button">
-            <Setter Property="FontSize" Value="34"/>
-            <!-- Увеличен шрифт -->
-            <Setter Property="Foreground" Value="White"/>
-            <Setter Property="Background" Value="#8A6DF7"/>
-            <Setter Property="HorizontalAlignment" Value="Center"/>
-            <Setter Property="Width" Value="360"/>
-            <!-- Чуть шире -->
-            <Setter Property="Height" Value="60"/>
-            <!-- Выше -->
-            <Setter Property="BorderBrush" Value="Transparent"/>
-            <Setter Property="Cursor" Value="Hand"/>
-        </Style>
-    </Window.Resources>
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
@@ -47,18 +15,18 @@
         </Grid.RowDefinitions>
 
         <Grid Grid.Row="0">
-            <StackPanel Grid.Column="0" Margin="30,0,0,0" VerticalAlignment="Center" HorizontalAlignment="Left" Width="320" >
-                <TextBlock Text="Сотрудник: " FontSize="25" Foreground="Black" Name="emplName" TextWrapping="Wrap"/>
-                <TextBlock Text="Роль: " FontSize="23" Foreground="Black" Name="emplRole" TextWrapping="Wrap"/> 
+            <StackPanel Grid.Column="0" Margin="30,0,0,0" VerticalAlignment="Center" HorizontalAlignment="Left" MinWidth="260" MaxWidth="640">
+                <TextBlock Text="Сотрудник: " FontSize="25" Foreground="{StaticResource Brush.TextPrimary}" Name="emplName" TextWrapping="Wrap"/>
+                <TextBlock Text="Роль: " FontSize="23" Foreground="{StaticResource Brush.TextSecondary}" Name="emplRole" TextWrapping="Wrap"/> 
             </StackPanel>
             <Image Source="images\icon-icons (2).png" Width="90" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0 0 400 0" />
             <TextBlock Text="Номера отеля" 
                        HorizontalAlignment="Center" 
                        VerticalAlignment="Center"
-                       FontSize="48" 
+                       FontSize="48" FontWeight="SemiBold" Foreground="{StaticResource Brush.TextPrimary}"
                        Margin="0,20"/>
             
-            <Button Name="back" Click="back_Click" Width="65" Height="65" Content="X" FontSize="40" VerticalAlignment="Center" HorizontalAlignment="Right" Margin="0 10 20 10" />
+            <Button Name="back" Click="back_Click" Content="✕" Style="{StaticResource CloseWindowButton}" VerticalAlignment="Center" HorizontalAlignment="Right" Margin="0,10,20,10"/>
 
         </Grid>
 
@@ -70,15 +38,18 @@
             </Grid.ColumnDefinitions>
 
             <!-- Поиск -->
-            <Grid Grid.Column="0" Background="White">
-                <TextBox x:Name="searchTB" MaxHeight="60" MinHeight="30" MaxWidth="900" TextChanged="searchTB_TextChanged"/>
-                <TextBlock x:Name="search" MaxWidth="900" Text="Поиск по названию: " Style="{StaticResource searchTB}"/>
-            </Grid>
+            <Border Grid.Column="0" Background="{StaticResource Brush.Surface}" CornerRadius="14" BorderBrush="{StaticResource Brush.BorderSubtle}" BorderThickness="1" Padding="4,2" VerticalAlignment="Center">
+                <Grid>
+                    <TextBox x:Name="searchTB" Style="{StaticResource SearchOverlayTextBox}" MaxHeight="60" MinHeight="30" MaxWidth="900" TextChanged="searchTB_TextChanged"/>
+                    <TextBlock x:Name="search" MaxWidth="900" Text="Поиск по названию: " Style="{StaticResource searchTB}"/>
+                </Grid>
+            </Border>
 
             <!-- Сортировка -->
             <ComboBox x:Name="sortBox" 
                       Grid.Column="1" 
-                      FontSize="32" 
+                      FontSize="26"
+                      MinHeight="48"
                       SelectedIndex="0"
                       Margin="20,0,0,0" SelectionChanged="sortBox_SelectionChanged">
                 <ComboBoxItem Content="Сначала новые"/>
@@ -89,7 +60,8 @@
             <!-- Фильтр по статусу -->
             <ComboBox x:Name="filterBox" 
                       Grid.Column="2" 
-                      FontSize="32" 
+                      FontSize="26"
+                      MinHeight="48"
                       SelectedIndex="0"
                       Margin="20,0,0,0" SelectionChanged="filterBox_SelectionChanged">
                 <ComboBoxItem Content="Все"/>

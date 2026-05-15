@@ -6,7 +6,7 @@
              xmlns:local="clr-namespace:hotel"
              mc:Ignorable="d" 
              d:DesignHeight="140" d:DesignWidth="900">
-    <Border BorderBrush="LightGray" BorderThickness="1" CornerRadius="6" Margin="5" Padding="12">
+    <Border BorderBrush="{StaticResource Brush.BorderSubtle}" BorderThickness="1" CornerRadius="10" Margin="5" Padding="12" Background="{StaticResource Brush.Surface}">
         <Grid>
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="1.8*" />
@@ -17,7 +17,7 @@
             <!-- Основная информация: ФИО, должность, отель -->
             <StackPanel Grid.Column="0" VerticalAlignment="Center">
                 <TextBlock x:Name="fullNameBlock" FontSize="18" FontWeight="Bold" TextTrimming="CharacterEllipsis"/>
-                <TextBlock x:Name="roleBlock" FontSize="16" Foreground="SteelBlue" TextTrimming="CharacterEllipsis"/>
+                <TextBlock x:Name="roleBlock" FontSize="16" Foreground="{StaticResource Brush.Accent}" TextTrimming="CharacterEllipsis"/>
                 <TextBlock x:Name="hotelBlock" FontSize="16" Foreground="Gray" TextTrimming="CharacterEllipsis"/>
                 <TextBlock x:Name="statusBlock" FontSize="14" FontStyle="Italic" Foreground="Red" Visibility="Collapsed"/>
             </StackPanel>

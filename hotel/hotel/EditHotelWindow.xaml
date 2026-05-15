@@ -7,20 +7,6 @@
         mc:Ignorable="d"
         xmlns:wv2="clr-namespace:Microsoft.Web.WebView2.Wpf;assembly=Microsoft.Web.WebView2.Wpf"
         Title="Редактирование" d:Height="1900" Height="950" MinHeight="730" MaxHeight="1000"  Width="1500" MinWidth="900" MaxWidth="1600" WindowState="Maximized" FontSize="40" WindowStartupLocation="CenterScreen" Icon="images\local-hotel_118960.png">
-    <Window.Resources>
-        <Style TargetType="Button">
-            <Setter Property="FontSize" Value="34"/>
-            <!-- Увеличен шрифт -->
-            <Setter Property="Foreground" Value="White"/>
-            <Setter Property="Background" Value="#8A6DF7"/>
-            <Setter Property="HorizontalAlignment" Value="Center"/>
-            <!-- Чуть шире -->
-            <Setter Property="Height" Value="60"/>
-            <!-- Выше -->
-            <Setter Property="BorderBrush" Value="Transparent"/>
-            <Setter Property="Cursor" Value="Hand"/>
-        </Style>
-    </Window.Resources>
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
@@ -116,8 +102,8 @@
 
         <Grid Grid.Row="0">
             <TextBlock Text="Редактирование" VerticalAlignment="Center" HorizontalAlignment="Center" />
-            <Button x:Name="back" Content="x" Height="65" Width="65" FontSize="40" VerticalAlignment="Center" HorizontalAlignment="Right" Click="back_Click" Margin="5" />
-            <StackPanel Grid.Column="0" Margin="30,10,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Width="480">
+            <Button x:Name="back" Content="✕" Style="{StaticResource CloseWindowButton}" VerticalAlignment="Center" HorizontalAlignment="Right" Click="back_Click" Margin="5" />
+            <StackPanel Grid.Column="0" Margin="30,10,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" MinWidth="260" MaxWidth="720">
                 <TextBlock Text="Сотрудник: " FontSize="30" Foreground="Black" Name="emplName" TextWrapping="Wrap"/>
                 <TextBlock Text="Роль: " FontSize="28" Foreground="Black" Name="emplRole" TextWrapping="Wrap"/>
             </StackPanel>

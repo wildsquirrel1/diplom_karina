@@ -6,37 +6,6 @@
         xmlns:local="clr-namespace:hotel"
         mc:Ignorable="d"
         Title="Отзывы" Height="950" MinHeight="730" MaxHeight="1000"  Width="1500" MinWidth="900" MaxWidth="1600" WindowState="Maximized" FontSize="40" WindowStartupLocation="CenterScreen" Icon="images\local-hotel_118960.png" Loaded="Window_Loaded">
-    <Window.Resources>
-        <Style TargetType="TextBox">
-            <Style.Setters>
-                <Setter Property="Background" Value="Transparent"/>
-                <Setter Property="VerticalAlignment" Value="Center"/>
-                <Setter Property="Foreground" Value="Black"/>
-            </Style.Setters>
-        </Style>
-        <Style TargetType="TextBlock" x:Key="searchTB">
-            <Style.Setters>
-                <Setter Property="FontWeight" Value="Light"/>
-                <Setter Property="VerticalAlignment" Value="Center"/>
-                <Setter Property="Foreground" Value="DarkGray"/>
-                <Setter Property="Panel.ZIndex" Value="-1"/>
-                <Setter Property="Padding" Value="10 0 0 0"/>
-            </Style.Setters>
-        </Style>
-        <Style TargetType="Button">
-            <Setter Property="FontSize" Value="34"/>
-            <!-- Увеличен шрифт -->
-            <Setter Property="Foreground" Value="White"/>
-            <Setter Property="Background" Value="#8A6DF7"/>
-            <Setter Property="HorizontalAlignment" Value="Center"/>
-            <Setter Property="Width" Value="360"/>
-            <!-- Чуть шире -->
-            <Setter Property="Height" Value="60"/>
-            <!-- Выше -->
-            <Setter Property="BorderBrush" Value="Transparent"/>
-            <Setter Property="Cursor" Value="Hand"/>
-        </Style>
-    </Window.Resources>
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="auto"/>
@@ -45,11 +14,11 @@
         </Grid.RowDefinitions>
 
         <Grid Grid.Row="0" >
-            <StackPanel Margin="10,30,0,0" VerticalAlignment="Center">
-                <TextBlock Text="Сотрудник: " FontSize="30" Foreground="Black" Name="emplName" TextWrapping="Wrap"/>
-                <TextBlock Text="Роль: " FontSize="28" Foreground="Black" Name="emplRole" TextWrapping="Wrap"/>
+            <StackPanel Margin="10,30,0,0" VerticalAlignment="Center" HorizontalAlignment="Left" MinWidth="260" MaxWidth="720">
+                <TextBlock Text="Сотрудник: " FontSize="30" Foreground="{StaticResource Brush.TextPrimary}" Name="emplName" TextWrapping="Wrap"/>
+                <TextBlock Text="Роль: " FontSize="28" Foreground="{StaticResource Brush.TextSecondary}" Name="emplRole" TextWrapping="Wrap"/>
             </StackPanel>
-            <TextBlock Text="Отзывы" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="50" Margin="0 -5 0 0"/>
+            <TextBlock Text="Отзывы" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="50" FontWeight="SemiBold" Foreground="{StaticResource Brush.TextPrimary}" Margin="0 -5 0 0"/>
             <Image Source="images\icon-icons (2).png" Width="100" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="580 0 0 0"/>
             <TextBlock x:Name="hotelCount" TextWrapping="Wrap" VerticalAlignment="Center" HorizontalAlignment="Right" Margin="0 0 20 0" MaxWidth="370"/>
         </Grid>
@@ -63,20 +32,23 @@
                 <ColumnDefinition Width="auto"/>
             </Grid.ColumnDefinitions>
 
-            <Button Grid.Column="0" Height="60" Width="60" Name="backB" Margin="5" Content="X" VerticalContentAlignment="Center" FontSize="40" HorizontalContentAlignment="Center" Click="backB_Click" />
+            <Button Grid.Column="0" Name="backB" Margin="8,4" Content="✕" Style="{StaticResource CloseWindowButton}" VerticalAlignment="Center" Click="backB_Click" />
 
-            <Grid Grid.Column="1" Background="White">
-                <TextBox x:Name="searchTB" MaxHeight="60" MinHeight="30" MaxWidth="900" TextChanged="searchTB_TextChanged"/>
-                <TextBlock x:Name="search" MaxWidth="900" Text="Поиск по названию: " Style="{StaticResource searchTB}"/>
-            </Grid>
+            <Border Grid.Column="1" Background="{StaticResource Brush.Surface}" CornerRadius="14" BorderBrush="{StaticResource Brush.BorderSubtle}" BorderThickness="1" Padding="4,2" VerticalAlignment="Center">
+                <Grid>
+                    <TextBox x:Name="searchTB" Style="{StaticResource SearchOverlayTextBox}" MaxHeight="60" MinHeight="30" MaxWidth="900" TextChanged="searchTB_TextChanged"/>
+                    <TextBlock x:Name="search" MaxWidth="900" Text="Поиск по названию: " Style="{StaticResource searchTB}"/>
+                </Grid>
+            </Border>
 
-            <ComboBox Grid.Column="2" x:Name="sordCB" Margin="10"  MinWidth="100" MaxWidth="300" MinHeight="30" MaxHeight="70" SelectedIndex="0" VerticalContentAlignment="Top" SelectionChanged="sordCB_SelectionChanged">
-                <TextBlock>-</TextBlock>
-                <TextBlock>От А до Я</TextBlock>
-                <TextBlock>От Я до А</TextBlock>
+            <ComboBox Grid.Column="2" x:Name="sordCB" Margin="10" MinWidth="220" MaxWidth="420" MinHeight="48" FontSize="22" SelectedIndex="0" VerticalContentAlignment="Center" SelectionChanged="sordCB_SelectionChanged">
+                <ComboBoxItem Content="По дате: старые сверху"/>
+                <ComboBoxItem Content="По дате: новые сверху"/>
+                <ComboBoxItem Content="По звёздам: выше сначала"/>
+                <ComboBoxItem Content="По звёздам: ниже сначала"/>
             </ComboBox>
 
-            <ComboBox Grid.Column="3" x:Name="filterCB" Margin="10" MinWidth="100" FontSize="36" MaxWidth="260" Width="250" MinHeight="30" MaxHeight="70" SelectedIndex="0" VerticalContentAlignment="Top" SelectionChanged="filterCB_SelectionChanged" >
+            <ComboBox Grid.Column="3" x:Name="filterCB" Margin="10" MinWidth="120" FontSize="26" MaxWidth="320" MinHeight="48" SelectedIndex="0" VerticalContentAlignment="Center" SelectionChanged="filterCB_SelectionChanged" >
                 <ComboBoxItem>Все</ComboBoxItem>
                 <ComboBoxItem>1</ComboBoxItem>
                 <ComboBoxItem>2</ComboBoxItem>

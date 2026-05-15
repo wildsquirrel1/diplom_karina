@@ -83,14 +83,9 @@ namespace hotel
 
         private void searchTB_TextChanged(object sender, TextChangedEventArgs e)
         {
-            if (string.IsNullOrEmpty(searchTB.Text))
-            {
-                search.Visibility = Visibility.Hidden;
-            }
-            else
-            {
-                search.Visibility = Visibility.Hidden;
-            }
+            search.Visibility = string.IsNullOrWhiteSpace(searchTB.Text)
+                ? Visibility.Visible
+                : Visibility.Hidden;
             if (hotelList != null)
             {
                 loadHotels();

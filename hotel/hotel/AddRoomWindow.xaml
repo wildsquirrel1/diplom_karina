@@ -6,21 +6,6 @@
         xmlns:local="clr-namespace:hotel"
         mc:Ignorable="d"
         Title="AddRoomWindow" Height="950" MinHeight="730" MaxHeight="1000"  Width="1500" MinWidth="900" MaxWidth="1600" WindowState="Maximized" FontSize="40" WindowStartupLocation="CenterScreen" Icon="images\local-hotel_118960.png">
-    <Window.Resources>
-        <Style TargetType="Button">
-            <Setter Property="FontSize" Value="34"/>
-            <!-- Увеличен шрифт -->
-            <Setter Property="Foreground" Value="White"/>
-            <Setter Property="Background" Value="#8A6DF7"/>
-            <Setter Property="HorizontalAlignment" Value="Center"/>
-            <Setter Property="Width" Value="360"/>
-            <!-- Чуть шире -->
-            <Setter Property="Height" Value="60"/>
-            <!-- Выше -->
-            <Setter Property="BorderBrush" Value="Transparent"/>
-            <Setter Property="Cursor" Value="Hand"/>
-        </Style>
-    </Window.Resources>
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
@@ -30,14 +15,13 @@
 
         <!-- Заголовок -->
         <Grid Grid.Row="0">
-            <StackPanel Grid.Column="0" Margin="30,0,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Width="320" >
+            <StackPanel Grid.Column="0" Margin="30,0,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" MinWidth="260" MaxWidth="640">
                 <TextBlock Text="Сотрудник: " FontSize="24" Foreground="Black" Name="emplName" TextWrapping="Wrap"/>
                 <TextBlock Text="Роль: " FontSize="20" Foreground="Black" Name="emplRole" TextWrapping="Wrap"/>
             </StackPanel>
             <Image Source="images\icon-icons (2).png" VerticalAlignment="Center" Width="80" HorizontalAlignment="Center" Margin="0 0 550 0" />
-            <Button x:Name="back" Content="X"
+            <Button x:Name="back" Content="✕" Style="{StaticResource CloseWindowButton}"
                     HorizontalAlignment="Right" VerticalAlignment="Top"
-                    Width="60" Height="60" FontSize="40"
                     Click="back_Click" Margin="0,10,20,10"/>
             <TextBlock Text="Добавление комнаты"
                        HorizontalAlignment="Center" VerticalAlignment="Center"

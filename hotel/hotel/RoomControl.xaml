@@ -6,7 +6,7 @@
              xmlns:local="clr-namespace:hotel"
              mc:Ignorable="d" 
              Width="600" Height="600"
-             Background="White" BorderBrush="#D0D0D0" BorderThickness="1" Margin="5" Loaded="UserControl_Loaded">
+             Background="{StaticResource Brush.Surface}" BorderBrush="{StaticResource Brush.BorderSubtle}" BorderThickness="1"  Margin="5" Loaded="UserControl_Loaded">
     <Grid>
         <Grid.RowDefinitions>
         <RowDefinition Height="Auto"/>
@@ -23,8 +23,8 @@
     <!-- Фото с перелистыванием -->
     <Grid Grid.Row="1" Margin="10">
         <Image x:Name="photoDisplay" Stretch="UniformToFill" Height="500" Width="500" />
-        <Button x:Name="prevBtn" Content="❮" VerticalAlignment="Center" Width="15" Click="prevBtn_Click" HorizontalAlignment="Left" Margin="5" Opacity="0.7" Background="Transparent" Foreground="White" Cursor="Hand" Visibility="Collapsed"/>
-        <Button x:Name="nextBtn" Content="❯" VerticalAlignment="Center" Click="nextBtn_Click" HorizontalAlignment="Right" Margin="5" Opacity="0.7" Background="Transparent" Foreground="White" Cursor="Hand" Visibility="Collapsed"/>
+        <Button x:Name="prevBtn" Content="❮" VerticalAlignment="Center" Width="15" Click="prevBtn_Click" HorizontalAlignment="Left" Margin="5" Opacity="0.7" Foreground="White" Style="{StaticResource ChromelessIconButton}" Visibility="Collapsed"/>
+        <Button x:Name="nextBtn" Content="❯" VerticalAlignment="Center" Click="nextBtn_Click" HorizontalAlignment="Right" Margin="5" Opacity="0.7" Foreground="White" Style="{StaticResource ChromelessIconButton}" Visibility="Collapsed"/>
     </Grid>
 
     <!-- Информация: номер, статус, цена -->

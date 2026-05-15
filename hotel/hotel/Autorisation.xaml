@@ -5,75 +5,57 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:hotel"
         mc:Ignorable="d"
-        Title="Авторизация" Height="950" MinHeight="730" MaxHeight="1000"  Width="1500" MinWidth="900" MaxWidth="1600" WindowState="Maximized" FontSize="40" WindowStartupLocation="CenterScreen" Icon="images\local-hotel_118960.png">
-    <Window.Resources>
-        <!-- Стиль для всех кнопок -->
-        <Style TargetType="Button">
-            <Setter Property="FontSize" Value="34"/>
-            <!-- Увеличен шрифт -->
-            <Setter Property="Foreground" Value="White"/>
-            <Setter Property="Background" Value="#8A6DF7"/>
-            <Setter Property="HorizontalAlignment" Value="Center"/>
-            <Setter Property="Width" Value="400"/>
-            <!-- Чуть шире -->
-            <Setter Property="Height" Value="60"/>
-            <Setter Property="BorderBrush" Value="Transparent"/>
-            <Setter Property="Cursor" Value="Hand"/>
-        </Style>
-
-        <!-- Стиль для заголовка -->
-        <Style TargetType="TextBlock" x:Key="HotelTitle">
-            <Setter Property="FontSize" Value="36"/>
-            <Setter Property="FontWeight" Value="Bold"/>
-            <Setter Property="HorizontalAlignment" Value="Center"/>
-            <Setter Property="Margin" Value="0,40,0,30"/>
-        </Style>
-    </Window.Resources>
+        Title="Авторизация" Height="950" MinHeight="730" MaxHeight="1000" Width="1500" MinWidth="900" MaxWidth="1600"
+        WindowState="Maximized" FontSize="22" WindowStartupLocation="CenterScreen" Icon="images\local-hotel_118960.png">
     <Grid>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition/>
-            <ColumnDefinition/>
+            <ColumnDefinition Width="1.15*"/>
+            <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
+
         <Grid Grid.Column="0">
-            <Image Source="images\Hotel.jpg" HorizontalAlignment="Left"/>
+            <Image Source="images\Hotel.jpg" Stretch="UniformToFill" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+            <Border VerticalAlignment="Bottom" Padding="28,20" Background="#AA1E1B36">
+                <TextBlock Text="Простой Комфорт" Foreground="White" FontSize="28" FontWeight="SemiBold" TextWrapping="Wrap"/>
+            </Border>
         </Grid>
 
-        <Grid Grid.Column="1">
-            <Grid.RowDefinitions>
-                <RowDefinition/>
-                <RowDefinition/>
-                <RowDefinition/>
-                <RowDefinition/>
-            </Grid.RowDefinitions>
+        <Grid Grid.Column="1" Background="{StaticResource Brush.WindowBg}">
+            <ScrollViewer VerticalScrollBarVisibility="Auto" Padding="40,24">
+                <StackPanel VerticalAlignment="Center" MaxWidth="520" HorizontalAlignment="Center">
+                    <TextBlock Text="Добро пожаловать!" FontSize="44" FontWeight="SemiBold"
+                               Foreground="{StaticResource Brush.TextPrimary}" TextWrapping="Wrap" TextAlignment="Center" Margin="0,0,0,8"/>
+                    <TextBlock Text="Войдите в систему управления отелем" FontSize="18"
+                               Foreground="{StaticResource Brush.TextSecondary}" TextWrapping="Wrap" TextAlignment="Center" Margin="0,0,0,28"/>
 
-            <Grid Grid.Row="0">
-                <TextBlock Text="Добро пожаловать!" FontSize="70" TextWrapping="Wrap" TextAlignment="Center" VerticalAlignment="Center" HorizontalAlignment="Center"/>
-            </Grid>
+                    <Border Background="{StaticResource Brush.Surface}" CornerRadius="20" Padding="32,28"
+                            BorderBrush="{StaticResource Brush.BorderSubtle}" BorderThickness="1">
+                        <Border.Effect>
+                            <DropShadowEffect BlurRadius="28" ShadowDepth="3" Opacity="0.12" Direction="270" Color="#1E1B36"/>
+                        </Border.Effect>
+                        <StackPanel>
+                            <TextBlock Text="Электронная почта" FontSize="16" Foreground="{StaticResource Brush.TextSecondary}" Margin="4,0,0,8"/>
+                            <Border CornerRadius="14" BorderBrush="{StaticResource Brush.BorderSubtle}" BorderThickness="1" Background="{StaticResource Brush.PrimarySoft}" SnapsToDevicePixels="True">
+                                <TextBox x:Name="emailTB" BorderThickness="0" Background="Transparent" Padding="14,12" FontSize="20"/>
+                            </Border>
 
-            <StackPanel Grid.Row="1" Orientation="Vertical">
-                <TextBlock Text="Электронная почта: " Margin="0 0 16 50"/>
-                <Border CornerRadius="24" BorderBrush="Black" BorderThickness="1" VerticalAlignment="Center" UseLayoutRounding="True">
-                    <TextBox x:Name="emailTB" BorderThickness="0" Background="Transparent" Padding="10 0 0 0"  />
-                </Border>
-            </StackPanel>
+                            <TextBlock Text="Пароль" FontSize="16" Foreground="{StaticResource Brush.TextSecondary}" Margin="4,20,0,8"/>
+                            <Grid MinHeight="52">
+                                <Border CornerRadius="14" BorderBrush="{StaticResource Brush.BorderSubtle}" BorderThickness="1" Background="{StaticResource Brush.PrimarySoft}" SnapsToDevicePixels="True">
+                                    <TextBox x:Name="passwordTB" BorderThickness="0" Background="Transparent" Padding="14,12" FontSize="20" Visibility="Hidden"/>
+                                </Border>
+                                <Border CornerRadius="14" BorderBrush="{StaticResource Brush.BorderSubtle}" BorderThickness="1" Background="{StaticResource Brush.PrimarySoft}" SnapsToDevicePixels="True">
+                                    <PasswordBox x:Name="passwordPB" BorderThickness="0" Background="Transparent" Padding="14,10" FontSize="20" Visibility="Visible"/>
+                                </Border>
+                            </Grid>
 
-            <Grid Grid.Row="2" >
-                <TextBlock Text="Пароль: " VerticalAlignment="Top" Margin="0 0 0 10" />
-                <Border CornerRadius="24"  BorderBrush="Black" BorderThickness="1"   Margin="0 30 0 0" VerticalAlignment="Center" UseLayoutRounding="True">
-                    <TextBox x:Name="passwordTB" BorderThickness="0" Background="Transparent" Padding="10 0 0 0" Visibility="Hidden"/>
-                </Border>
-
-                <Border CornerRadius="24"  BorderBrush="Black" BorderThickness="1" VerticalAlignment="Center" Margin="0 30 0 0" UseLayoutRounding="True">
-                    <PasswordBox x:Name="passwordPB" BorderThickness="0" Background="Transparent" Padding="10 0 0 0"  Visibility="Visible"/>
-                </Border>
-            </Grid>
-
-            <StackPanel Grid.Row="5" Orientation="Vertical" Margin="0 20" >
-                <Button Content="Войти" Name="entryB" Click="entryB_Click" Margin="0 0 0 30"  />
-                <Button Content="Показать/скрыть пароль" Name="show_hide_pass" Click="show_hide_pass_Click"/>
-            </StackPanel>
-
-
+                            <Button x:Name="entryB" Content="Войти" Click="entryB_Click" Style="{StaticResource AuthPrimaryButton}" Margin="0,28,0,12"/>
+                            <Button x:Name="show_hide_pass" Content="Показать / скрыть пароль" Click="show_hide_pass_Click"
+                                    FontSize="18" MinHeight="44" Padding="16,8"/>
+                        </StackPanel>
+                    </Border>
+                </StackPanel>
+            </ScrollViewer>
         </Grid>
     </Grid>
 </Window>

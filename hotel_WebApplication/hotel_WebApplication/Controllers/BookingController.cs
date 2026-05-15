@@ -47,30 +47,30 @@ namespace hotel_WebApplication.Controllers
 
             return Ok(books);
         }
-        
-        [HttpGet("free-room")]
-        public async Task<ActionResult<int>> GetFreeRoomId([FromQuery] int categoryId, [FromQuery] DateOnly checkin, [FromQuery] DateOnly checkout)
+
+        [HttpGet("room/{roomId}/availability")]
+        public async Task<ActionResult<object>> CheckRoomAvailability(int RoomId, [FromQuery] DateOnly checkin, [FromQuery] DateOnly checkout)
         {
-            var rooms = await context.Rooms
-                .Where(r => r.IdCategory == categoryId)
-                .ToListAsync();
+            var room = await context.Rooms.FindAsync(RoomId);
+            if (room == null)
+                return NotFound("Номер не найден");
 
-            foreach (var room in rooms)
+            var isBusy = await context.Books.AnyAsync(b =>
+                b.RoomId == RoomId &&
+                b.StatusBook != 2 &&
+                b.CheckInDate < checkout &&  
+                b.DepartureDate > checkin);
+
+            return Ok(new
             {
-                bool isBusy = context.Books.Any(b =>
-                    b.RoomId == room.Idroom &&
-                    b.StatusBook != 2 && 
-                    b.CheckInDate < checkout &&
-                    b.DepartureDate > checkin
-                );
-
-                if (!isBusy)
-                {
-                    return Ok(room.Idroom);
-                }
-            }
-
-            return BadRequest("Нет свободных номеров этой категории на выбранные даты");
+                roomId = RoomId,
+                isAvailable = !isBusy,
+                checkIn = checkin,
+                checkOut = checkout,
+                message = isBusy
+                    ? "Номер уже забронирован на этот период"
+                    : "Номер свободен"
+            });
         }
         //эти два метода очень схожи!!!
         // POST api/<BookingController>
@@ -85,6 +85,7 @@ namespace hotel_WebApplication.Controllers
                 return BadRequest("Клиент не найден");
 
             newBooking.Client = client;
+            newBooking.BookingDate = DateOnly.FromDateTime(DateTime.Now);
 
             var conflict = context.Books.Any(b =>
                 b.RoomId == newBooking.RoomId &&
@@ -111,6 +112,26 @@ namespace hotel_WebApplication.Controllers
             existing.StatusBook = status;
             await context.SaveChangesAsync();
             return NoContent();
+        }
+
+        [HttpGet("room/{roomId}/busy-dates")]
+        public async Task<ActionResult<List<object>>> GetBusyDates(int roomId, [FromQuery] int monthsAhead = 3)
+        {
+            var today = DateOnly.FromDateTime(DateTime.Today);
+            var maxDate = today.AddMonths(monthsAhead);
+
+            var busyPeriods = await context.Books
+                .Where(b => b.RoomId == roomId &&
+                            b.StatusBook != 2 &&
+                            b.CheckInDate <= maxDate)
+                .Select(b => new
+                {
+                    start = b.CheckInDate,
+                    end = b.DepartureDate
+                })
+                .ToListAsync();
+
+            return Ok(busyPeriods);
         }
 
     }

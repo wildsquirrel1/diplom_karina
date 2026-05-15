@@ -40,14 +40,13 @@ namespace hotel
             _hotels = await Api.GetHotels();
             hotelCB.ItemsSource = _hotels.Select(h => h.Name).ToList();
 
-            // Если главный менеджер (роль 2) — выбираем его отель и блокируем
             if (_currentUser.Idrole == 2 && _currentUser.IdhotelNavigation != null)
             {
                 int index = _hotels.FindIndex(h => h.Idhotel == _currentUser.IdhotelNavigation.Idhotel);
                 if (index >= 0)
                 {
                     hotelCB.SelectedIndex = index;
-                    hotelCB.IsEnabled = false; // Блокируем поле
+                    hotelCB.IsEnabled = false;
                 }
             }
             else if (_hotels.Count > 0)
@@ -136,7 +135,6 @@ namespace hotel
         private void back_Click(object sender, RoutedEventArgs e)
         {
             this.Hide();
-
         }
     }
 }
