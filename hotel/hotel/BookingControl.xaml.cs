@@ -66,11 +66,6 @@ namespace hotel
                     btnCancel.Visibility = Visibility.Collapsed;
                     break;
 
-                case 4:
-                    statusBadge.Background = new SolidColorBrush(Color.FromRgb(15, 82, 186));
-                    btnCancel.Visibility = Visibility.Collapsed;
-                    break;
-
                 default:
                     statusBadge.Background = new SolidColorBrush(Colors.Gray);
                     btnCancel.Visibility = Visibility.Collapsed;

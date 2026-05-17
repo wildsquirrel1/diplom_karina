@@ -5,82 +5,122 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:hotel"
         mc:Ignorable="d"
-        Style="{StaticResource DialogWindow}"
-        Title="Редактирование сотрудника" Height="950" MinHeight="640"
-        Width="1100" MinWidth="880" MaxWidth="1400"
-        WindowStartupLocation="CenterScreen" Icon="images\local-hotel_118960.png">
+        Title="Редактирование сотрудника" Height="950" MinHeight="730" MaxHeight="1000"  Width="1500" MinWidth="900" MaxWidth="1600" WindowState="Maximized" FontSize="40" WindowStartupLocation="CenterScreen" Icon="images\local-hotel_118960.png">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
-            <RowDefinition Height="*"/>
+            <RowDefinition Height="8*"/>
             <RowDefinition Height="Auto"/>
         </Grid.RowDefinitions>
 
-        <Border Grid.Row="0" Style="{StaticResource DialogHeaderBar}">
-            <Grid>
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="*" MinWidth="200" MaxWidth="360"/>
-                    <ColumnDefinition Width="2*"/>
-                    <ColumnDefinition Width="Auto"/>
-                </Grid.ColumnDefinitions>
-                <StackPanel Grid.Column="0" VerticalAlignment="Center">
-                    <TextBlock Text="Сотрудник: " Style="{StaticResource DialogEmployeeName}" Name="emplName" TextWrapping="Wrap"/>
-                    <TextBlock Text="Роль: " Style="{StaticResource DialogEmployeeRole}" Name="emplRole" TextWrapping="Wrap"/>
-                </StackPanel>
-                <TextBlock Grid.Column="1" Text="Редактирование сотрудника" Style="{StaticResource FormPageTitle}"/>
-                <Button Grid.Column="2" x:Name="back" Content="✕" Style="{StaticResource CloseWindowButton}"
-                        VerticalAlignment="Center" Click="back_Click"/>
-            </Grid>
-        </Border>
-
-        <ScrollViewer Grid.Row="1" Style="{StaticResource DialogFormBody}">
-            <Grid MaxWidth="960" HorizontalAlignment="Stretch">
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="*"/>
-                    <ColumnDefinition Width="20"/>
-                    <ColumnDefinition Width="*"/>
-                </Grid.ColumnDefinitions>
-
-                <Border Grid.Column="0" Style="{StaticResource FormCard}" Margin="0">
-                    <StackPanel>
-                        <TextBlock Text="Личные данные" Style="{StaticResource FormSectionTitle}"/>
-                        <TextBlock Text="Фамилия" Style="{StaticResource FormFieldLabel}"/>
-                        <TextBox x:Name="lastnameT" Style="{StaticResource FormTextBox}" Margin="0,0,0,14"
-                                 PreviewTextInput="lastnameT_PreviewTextInput"/>
-                        <TextBlock Text="Имя" Style="{StaticResource FormFieldLabel}"/>
-                        <TextBox x:Name="nameT" Style="{StaticResource FormTextBox}" Margin="0,0,0,14"
-                                 PreviewTextInput="nameT_PreviewTextInput"/>
-                        <TextBlock Text="Отчество" Style="{StaticResource FormFieldLabel}"/>
-                        <TextBox x:Name="patronymicT" Style="{StaticResource FormTextBox}" Margin="0,0,0,14"
-                                 PreviewTextInput="patronymicT_PreviewTextInput"/>
-                        <TextBlock Text="Номер телефона" Style="{StaticResource FormFieldLabel}"/>
-                        <TextBox x:Name="phoneT" Style="{StaticResource FormTextBox}" Margin="0,0,0,14"
-                                 MaxLength="11" KeyDown="phoneT_KeyDown"/>
-                        <TextBlock Text="Электронная почта" Style="{StaticResource FormFieldLabel}"/>
-                        <TextBox x:Name="emailT" Style="{StaticResource FormTextBox}"/>
-                    </StackPanel>
-                </Border>
-
-                <Border Grid.Column="2" Style="{StaticResource FormCard}" Margin="0">
-                    <StackPanel>
-                        <TextBlock Text="Учётная запись" Style="{StaticResource FormSectionTitle}"/>
-                        <TextBlock Text="Пароль" Style="{StaticResource FormFieldLabel}"/>
-                        <TextBox x:Name="passwordPB" Style="{StaticResource FormTextBox}" Margin="0,0,0,14"/>
-                        <TextBlock Text="Дата рождения" Style="{StaticResource FormFieldLabel}"/>
-                        <DatePicker x:Name="birth" Style="{StaticResource FormDatePicker}" Margin="0,0,0,14"
-                                    SelectedDateFormat="Short" PreviewTextInput="birthDP_PreviewTextInput"/>
-                        <TextBlock Text="Отель" Style="{StaticResource FormFieldLabel}"/>
-                        <ComboBox x:Name="hotelCB" Style="{StaticResource FormComboBox}"/>
-                    </StackPanel>
-                </Border>
-            </Grid>
-        </ScrollViewer>
-
-        <Border Grid.Row="2" Style="{StaticResource DialogActionBar}">
-            <StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
-                <Button Content="Отмена" Style="{StaticResource SecondaryButton}" Click="back_Click" Margin="0,0,12,0"/>
-                <Button Name="editB" Content="Сохранить" Style="{StaticResource DialogPrimaryButton}" Click="editB_Click"/>
+        <!-- Заголовок и информация -->
+        <Grid Grid.Row="0">
+            <StackPanel Grid.Column="0" Margin="30,0,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" MinWidth="260" MaxWidth="640">
+                <TextBlock Text="Сотрудник: " FontSize="20" Foreground="Black" Name="emplName" TextWrapping="Wrap"/>
+                <TextBlock Text="Роль: " FontSize="18" Foreground="Black" Name="emplRole" TextWrapping="Wrap"/>
             </StackPanel>
-        </Border>
+
+                <Image Source="images\icon-icons (2).png" Width="90" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0 0 710 0"/>
+            <Button x:Name="back" Content="✕" Style="{StaticResource CloseWindowButton}"
+                    HorizontalAlignment="Right" VerticalAlignment="Top"
+                    Click="back_Click" Margin="0,10,20,10"/>
+            <TextBlock Text="Редактирование сотрудника"
+                       HorizontalAlignment="Center" VerticalAlignment="Center"
+                       FontSize="48"/>
+        </Grid>
+
+        <!-- Основные поля -->
+        <Grid Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+
+            <!-- Левая колонка -->
+            <StackPanel Margin="50,15" VerticalAlignment="Top">
+                <Grid Margin="0,0,0, 20">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                    </Grid.RowDefinitions>
+                    <TextBlock Text="Фамилия:" FontSize="40"/>
+                    <TextBox x:Name="lastnameT" Grid.Row="1" Height="60" 
+                             PreviewTextInput="lastnameT_PreviewTextInput"/>
+                </Grid>
+
+                <Grid Margin="0,0,0,20">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                    </Grid.RowDefinitions>
+                    <TextBlock Text="Имя:" FontSize="40"/>
+                    <TextBox x:Name="nameT" Grid.Row="1" Height="60"
+                             PreviewTextInput="nameT_PreviewTextInput"/>
+                </Grid>
+
+                <Grid Margin="0,0,0,20">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                    </Grid.RowDefinitions>
+                    <TextBlock Text="Отчество:" FontSize="40"/>
+                    <TextBox x:Name="patronymicT" Grid.Row="1" Height="60"
+                             PreviewTextInput="patronymicT_PreviewTextInput"/>
+                </Grid>
+
+                <Grid Margin="0,0,0,20">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                    </Grid.RowDefinitions>
+                    <TextBlock Text="Номер телефона:" FontSize="40"/>
+                    <TextBox x:Name="phoneT" Grid.Row="1" Height="60" MaxLength="11"
+                             KeyDown="phoneT_KeyDown"/>
+                </Grid>
+
+                <Grid Margin="0,0,0,20">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                    </Grid.RowDefinitions>
+                    <TextBlock Text="Электронная почта:" FontSize="40"/>
+                    <TextBox x:Name="emailT" Grid.Row="1" Height="60"/>
+                </Grid>
+            </StackPanel>
+
+            <!-- Правая колонка -->
+            <StackPanel Margin="50,15" Grid.Column="1"  VerticalAlignment="Top">
+                <Grid Margin="0,0,0,20">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                    </Grid.RowDefinitions>
+                    <TextBlock Text="Пароль:" FontSize="40"/>
+                    <TextBox x:Name="passwordPB" Grid.Row="1" Height="60"/>
+                </Grid>
+
+                <Grid Margin="0,0,0,20">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                    </Grid.RowDefinitions>
+                    <TextBlock Text="Дата рождения:" FontSize="40"/>
+                    <DatePicker x:Name="birth" Grid.Row="1" Height="60" SelectedDateFormat="Short" PreviewTextInput="birthDP_PreviewTextInput"/>
+                </Grid>
+
+                <Grid Margin="0,0,0,20">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                    </Grid.RowDefinitions>
+                    <TextBlock Text="Отель:" FontSize="40"/>
+                    <ComboBox x:Name="hotelCB" Grid.Row="1" Height="60">
+                    </ComboBox>
+                </Grid>
+            </StackPanel>
+        </Grid>
+
+        <!-- Кнопка редактирования -->
+        <Button Grid.Row="2" Name="editB" Content="Редактировать" FontSize="40" Padding="20,0" HorizontalAlignment="Center" Margin="0,30" Click="editB_Click"/>
     </Grid>
 </Window>

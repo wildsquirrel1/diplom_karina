@@ -5,58 +5,66 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:hotel"
         mc:Ignorable="d"
-        Style="{StaticResource DialogWindow}"
-        Title="Редактирование услуги" Height="680" MinHeight="520"
-        Width="640" MinWidth="560" MaxWidth="800"
-        WindowStartupLocation="CenterScreen" Icon="images\local-hotel_118960.png">
+        Title="Редактирование услуги" Height="950" MinHeight="730" MaxHeight="1000"  Width="1500" MinWidth="900" MaxWidth="1600" WindowState="Maximized" FontSize="40" WindowStartupLocation="CenterScreen" Icon="images\local-hotel_118960.png">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
-            <RowDefinition Height="*"/>
+            <RowDefinition Height="8*"/>
             <RowDefinition Height="Auto"/>
         </Grid.RowDefinitions>
 
-        <Border Grid.Row="0" Style="{StaticResource DialogHeaderBar}">
-            <Grid>
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="*" MinWidth="200" MaxWidth="360"/>
-                    <ColumnDefinition Width="2*"/>
-                    <ColumnDefinition Width="Auto"/>
-                </Grid.ColumnDefinitions>
-                <StackPanel Grid.Column="0" VerticalAlignment="Center">
-                    <TextBlock Text="Сотрудник: " Style="{StaticResource DialogEmployeeName}" Name="emplName" TextWrapping="Wrap"/>
-                    <TextBlock Text="Роль: " Style="{StaticResource DialogEmployeeRole}" Name="emplRole" TextWrapping="Wrap"/>
-                </StackPanel>
-                <TextBlock Grid.Column="1" Text="Редактирование услуги" Style="{StaticResource FormPageTitle}"/>
-                <Button Grid.Column="2" x:Name="back" Content="✕" Style="{StaticResource CloseWindowButton}"
-                        VerticalAlignment="Center" Click="back_Click"/>
-            </Grid>
-        </Border>
-
-        <ScrollViewer Grid.Row="1" Style="{StaticResource DialogFormBody}">
-            <Border Style="{StaticResource FormCard}" Margin="0" MaxWidth="560" HorizontalAlignment="Stretch">
-                <StackPanel>
-                    <TextBlock Text="Параметры услуги" Style="{StaticResource FormSectionTitle}"/>
-                    <TextBlock Text="Название" Style="{StaticResource FormFieldLabel}"/>
-                    <TextBox x:Name="nameTB" Style="{StaticResource FormTextBox}" Margin="0,0,0,14"
-                             PreviewTextInput="nameTB_PreviewTextInput"/>
-                    <TextBlock Text="Описание" Style="{StaticResource FormFieldLabel}"/>
-                    <TextBox x:Name="descriptionTB" Style="{StaticResource FormTextBoxMultiline}" Margin="0,0,0,14"
-                             PreviewTextInput="descriptionTB_PreviewTextInput"/>
-                    <TextBlock Text="Цена (руб.)" Style="{StaticResource FormFieldLabel}"/>
-                    <TextBox x:Name="priceTB" Style="{StaticResource FormTextBox}" Margin="0,0,0,14"
-                             PreviewTextInput="priceTB_PreviewTextInput"/>
-                    <TextBlock Text="Статус" Style="{StaticResource FormFieldLabel}"/>
-                    <ComboBox x:Name="statusCB" Style="{StaticResource FormComboBox}"/>
-                </StackPanel>
-            </Border>
-        </ScrollViewer>
-
-        <Border Grid.Row="2" Style="{StaticResource DialogActionBar}">
-            <StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
-                <Button Content="Отмена" Style="{StaticResource SecondaryButton}" Click="back_Click" Margin="0,0,12,0"/>
-                <Button Name="editB" Content="Сохранить" Style="{StaticResource DialogPrimaryButton}" Click="editB_Click"/>
+        <Grid Grid.Row="0">
+            <StackPanel Grid.Row="0" Margin="30,0,0,0" VerticalAlignment="Center" HorizontalAlignment="Left" MinWidth="260" MaxWidth="640">
+                <TextBlock Text="Сотрудник: " FontSize="24" Foreground="Black" Name="emplName" TextWrapping="Wrap"/>
+                <TextBlock Text="Роль: " FontSize="24" Foreground="Black" Name="emplRole" TextWrapping="Wrap"/>
             </StackPanel>
-        </Border>
+            <Image Source="images\icon-icons (2).png" VerticalAlignment="Center" HorizontalAlignment="Center" Width="80" Margin="0 0 640 0"  />
+            <Button x:Name="back" Content="✕" Style="{StaticResource CloseWindowButton}" HorizontalAlignment="Right" VerticalAlignment="Top" Click="back_Click" Margin="0,10,20,10"/>
+            <TextBlock Text="Редактирование услуг" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="48"/>
+        </Grid>
+
+        <Grid Grid.Row="1">
+            
+
+            <!-- Левая колонка -->
+            <StackPanel Margin="50,30" VerticalAlignment="Top">
+                <Grid Margin="0,0,0,20">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                    </Grid.RowDefinitions>
+                    <TextBlock Text="Название:"/>
+                    <TextBox x:Name="nameTB" Grid.Row="1" Height="60" PreviewTextInput="nameTB_PreviewTextInput"/>
+                </Grid>
+
+                <Grid Margin="0,0,0,20">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                    </Grid.RowDefinitions>
+                    <TextBlock Text="Описание:"/>
+                    <TextBox x:Name="descriptionTB" Grid.Row="1" Height="60" PreviewTextInput="descriptionTB_PreviewTextInput"/>
+                </Grid>
+
+                <Grid Margin="0,0,0,20">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                    </Grid.RowDefinitions>
+                    <TextBlock Text="Цена (руб.):"/>
+                    <TextBox x:Name="priceTB" Grid.Row="1" Height="60" PreviewTextInput="priceTB_PreviewTextInput"/>
+                </Grid>
+
+                <Grid Margin="0,0,0,20">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                    </Grid.RowDefinitions>
+                    <TextBlock Text="Статус:"/>
+                    <ComboBox x:Name="statusCB" Grid.Row="1" Height="60"/>
+                </Grid>
+            </StackPanel>
+        </Grid>
+        <Button Grid.Row="2" Name="editB" Content="Редактировать" FontSize="40" Padding="20,0" HorizontalAlignment="Center" Margin="0,30" Click="editB_Click"/>
     </Grid>
 </Window>

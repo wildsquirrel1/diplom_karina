@@ -5,92 +5,71 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:hotel"
         mc:Ignorable="d"
-        Style="{StaticResource DialogWindow}"
-        Title="Добавление клиента" Height="820" MinHeight="640"
-        Width="1100" MinWidth="920" MaxWidth="1280"
-        WindowStartupLocation="CenterScreen" Icon="images\local-hotel_118960.png">
+        Title="Добавление клиента" Height="950" MinHeight="730" MaxHeight="1000"
+        Width="1500" MinWidth="900" MaxWidth="1600" WindowState="Maximized"
+        FontSize="40" WindowStartupLocation="CenterScreen"
+        Icon="images\local-hotel_118960.png">
 
     <Grid>
         <Grid.RowDefinitions>
-            <RowDefinition Height="Auto"/>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="Auto"/>
+            <RowDefinition/>
+            <RowDefinition Height="8*"/>
+            <RowDefinition/>
         </Grid.RowDefinitions>
 
-        <Border Grid.Row="0" Style="{StaticResource DialogHeaderBar}">
-            <Grid>
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="*" MinWidth="200" MaxWidth="360"/>
-                    <ColumnDefinition Width="2*"/>
-                    <ColumnDefinition Width="Auto"/>
-                </Grid.ColumnDefinitions>
-                <StackPanel Grid.Column="0" VerticalAlignment="Center">
-                    <TextBlock Text="Сотрудник: " Style="{StaticResource DialogEmployeeName}" Name="emplName" TextWrapping="Wrap"/>
-                    <TextBlock Text="Роль: " Style="{StaticResource DialogEmployeeRole}" Name="emplRole" TextWrapping="Wrap"/>
-                </StackPanel>
-                <TextBlock Grid.Column="1" Text="Клиент и гости" Style="{StaticResource FormPageTitle}"/>
-                <Button Grid.Column="2" x:Name="exit" Content="✕" Style="{StaticResource CloseWindowButton}"
-                        VerticalAlignment="Center" Click="exit_Click"/>
-            </Grid>
-        </Border>
-
-        <ScrollViewer Grid.Row="1" Style="{StaticResource DialogFormBody}">
-            <Grid MaxWidth="1040" HorizontalAlignment="Stretch">
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="*"/>
-                    <ColumnDefinition Width="Auto"/>
-                    <ColumnDefinition Width="*"/>
-                </Grid.ColumnDefinitions>
-
-                <Border Grid.Column="0" Style="{StaticResource FormCard}" Margin="0,0,12,0">
-                    <StackPanel>
-                        <TextBlock Text="Новый клиент" Style="{StaticResource FormSectionTitle}"/>
-                        <TextBlock Text="Фамилия, имя, отчество" Style="{StaticResource FormFieldLabel}"/>
-                        <TextBox Name="fioBox" Style="{StaticResource FormTextBox}" Margin="0,0,0,14"
-                                 MaxLength="153" PreviewTextInput="fioBox_PreviewTextInput"/>
-                        <TextBlock Text="Дата рождения" Style="{StaticResource FormFieldLabel}"/>
-                        <DatePicker Name="datebirth" Style="{StaticResource FormDatePicker}" Margin="0,0,0,14"
-                                    SelectedDate="{Binding Datebirth, Mode=TwoWay}" PreviewTextInput="datebirth_PreviewTextInput"/>
-                        <TextBlock Text="Серия и номер паспорта" Style="{StaticResource FormFieldLabel}"/>
-                        <TextBox Name="passportBox" Style="{StaticResource FormTextBox}" Margin="0,0,0,14"
-                                 MaxLength="10" KeyDown="passportBox_KeyDown"/>
-                        <TextBlock Text="Электронная почта" Style="{StaticResource FormFieldLabel}"/>
-                        <TextBox Name="emailBox" Style="{StaticResource FormTextBox}" Margin="0,0,0,14" MaxLength="100"/>
-                        <TextBlock Text="Пароль" Style="{StaticResource FormFieldLabel}"/>
-                        <PasswordBox Name="passwordBox" Style="{StaticResource FormPasswordBox}" MaxLength="10"/>
-                    </StackPanel>
-                </Border>
-
-                <Border Grid.Column="1" Style="{StaticResource FormColumnDivider}"/>
-
-                <Border Grid.Column="2" Style="{StaticResource FormCard}" Margin="12,0,0,0">
-                    <StackPanel>
-                        <TextBlock Text="Гость" Style="{StaticResource FormSectionTitle}"/>
-                        <TextBlock Text="Фамилия, имя, отчество" Style="{StaticResource FormFieldLabel}"/>
-                        <TextBox Name="fioBoxGuest" Style="{StaticResource FormTextBox}" Margin="0,0,0,14"
-                                 MaxLength="153" PreviewTextInput="fioBoxGuest_PreviewTextInput"/>
-                        <TextBlock Text="Тип документа" Style="{StaticResource FormFieldLabel}"/>
-                        <ComboBox Name="docTypeCombo" Style="{StaticResource FormComboBox}" Margin="0,0,0,14" SelectedIndex="0">
-                            <ComboBoxItem>Паспорт</ComboBoxItem>
-                            <ComboBoxItem>Св. о рождении</ComboBoxItem>
-                        </ComboBox>
-                        <TextBlock Text="Номер документа" Style="{StaticResource FormFieldLabel}"/>
-                        <TextBox Name="docNumber" Style="{StaticResource FormTextBox}" Margin="0,0,0,14"
-                                 MaxLength="10" KeyDown="docNumber_KeyDown"/>
-                        <Button Name="addGuestButton" Content="Добавить гостя" Style="{StaticResource FormInlineButton}"
-                                HorizontalAlignment="Left" Click="addGuestButton_Click"/>
-                        <TextBlock Name="countGuests" Text="Кол-во гостей: 0" Margin="0,14,0,0"
-                                   Foreground="{StaticResource Brush.TextSecondary}" FontSize="14"/>
-                    </StackPanel>
-                </Border>
-            </Grid>
-        </ScrollViewer>
-
-        <Border Grid.Row="2" Style="{StaticResource DialogActionBar}">
-            <StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
-                <Button Content="Отмена" Style="{StaticResource SecondaryButton}" Click="exit_Click" Margin="0,0,12,0"/>
-                <Button x:Name="doneButton" Content="Готово" Style="{StaticResource DialogPrimaryButton}" Click="doneButton_Click"/>
+        <Grid Grid.Row="0" Margin="0 10 0 0">
+            <StackPanel Grid.Column="0" Margin="30,0,0,0" VerticalAlignment="Center" HorizontalAlignment="Left" MinWidth="260" MaxWidth="640">
+                <TextBlock Text="Сотрудник: " FontSize="20" Foreground="Black" Name="emplName" TextWrapping="Wrap"/>
+                <TextBlock Text="Роль: " FontSize="20" Foreground="Black" Name="emplRole" TextWrapping="Wrap"/>
             </StackPanel>
-        </Border>
+            <Button x:Name="exit" Content="✕" Style="{StaticResource CloseWindowButton}" HorizontalAlignment="Right" VerticalAlignment="Top" Click="exit_Click" Margin="0,20,20,0"/>
+            <TextBlock Text="Добавление клиента/гостя" HorizontalAlignment="Center" VerticalAlignment="Center"
+       FontSize="48"/>
+            <Image Source="images\icon-icons (2).png" VerticalAlignment="Center" Margin="0 0 700 0" HorizontalAlignment="Center" Width="90"/>
+        </Grid>
+
+        <Grid Grid.Row="1">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <StackPanel Grid.Column="0" Margin="20">
+            <TextBlock Text="Добавление нового клиента" FontWeight="Bold" FontSize="16" Margin="0,0,0,10"/>
+            <Label Content="Фамилия, имя, отчество"/>
+            <TextBox Name="fioBox" MaxLength="153" PreviewTextInput="fioBox_PreviewTextInput"/>
+            <Label Content="Дата рождения"/>
+            <DatePicker Name="datebirth" SelectedDate="{Binding Datebirth, Mode=TwoWay}" PreviewTextInput="datebirth_PreviewTextInput"/>
+            <Label Content="Серия и номер паспорта"/>
+            <TextBox Name="passportBox" MaxLength="10" KeyDown="passportBox_KeyDown"/>
+            <Label Content="Электронная почта"/>
+            <TextBox Name="emailBox" MaxLength="100" />
+            <Label Content="Пароль"/>
+            <PasswordBox Name="passwordBox" MaxLength="10"/>
+        </StackPanel>
+
+        <Border Grid.Column="1" Background="LightGray" Width="1"/>
+
+            <StackPanel Grid.Column="2" Margin="20">
+                <TextBlock Text="Добавление гостя" FontWeight="Bold" FontSize="16" Margin="0,0,0,10"/>
+                <Label Content="Фамилия, имя, отчество"/>
+                <TextBox Name="fioBoxGuest" MaxLength="153" PreviewTextInput="fioBoxGuest_PreviewTextInput" />
+                <Label Content="Тип документа"/>
+                <ComboBox Name="docTypeCombo" SelectedIndex="0">
+                    <ComboBoxItem>Паспорт</ComboBoxItem>
+                    <ComboBoxItem>Св. о рождении</ComboBoxItem>
+                </ComboBox>
+                <Label Content="Номер документа"/>
+                <TextBox Name="docNumber" MaxLength="10" KeyDown="docNumber_KeyDown"/>
+                <Button Name="addGuestButton" Content="+" Click="addGuestButton_Click" HorizontalAlignment="Left" Margin="0,10,0,0"/>
+                <TextBlock Name="countGuests" Text="Кол-во гостей: 0" Margin="0,5,0,0"/>
+            </StackPanel>
+        </Grid>
+
+        <StackPanel Grid.Row="2"  VerticalAlignment="Center" HorizontalAlignment="Center">
+            <Button x:Name="doneButton" Content="Готово" Click="doneButton_Click" Width="150" Height="60"/>
+        </StackPanel>
     </Grid>
+
 </Window>

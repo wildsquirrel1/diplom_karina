@@ -58,14 +58,11 @@
 
         <Label Grid.Row="2" Content="Сотрудник не найден" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="40" Visibility="Visible" Name="notfound" Grid.RowSpan="2"/>
 
-        <ScrollViewer Grid.Row="2"
-                      x:Name="stack"
-                      Margin="30,10,30,8"
-                      Visibility="Collapsed"
-                      VerticalScrollBarVisibility="Auto"
-                      HorizontalScrollBarVisibility="Disabled">
-            <WrapPanel x:Name="employeesPanel"/>
-        </ScrollViewer>
+        <StackPanel VerticalAlignment="Top" Grid.Row="2" Visibility="Collapsed" Name="stack">
+            <ScrollViewer Grid.Row="2" Margin="30,10">
+                <WrapPanel x:Name="employeesPanel"/>
+            </ScrollViewer>
+        </StackPanel>
 
         <Button Grid.Row="3" Name="AddButton" Content="Добавить сотрудника" FontSize="36" Padding="25,0" HorizontalAlignment="Center" Margin="0,20" Click="AddButton_Click"/>
     </Grid>

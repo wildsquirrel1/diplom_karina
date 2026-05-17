@@ -60,14 +60,10 @@
 
         <Label Grid.Row="2" Content="Отзывы не найдены" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="40" Visibility="Visible" Name="notfound"/>
 
-        <ScrollViewer Grid.Row="2"
-                      x:Name="stack"
-                      Margin="0,0,0,8"
-                      Visibility="Collapsed"
-                      VerticalScrollBarVisibility="Auto"
-                      HorizontalScrollBarVisibility="Disabled"
-                      Padding="10">
-            <StackPanel Name="ReviewsPanel"/>
-        </ScrollViewer>
+        <StackPanel VerticalAlignment="Top" Grid.Row="2" Visibility="Collapsed" Name="stack" Margin="0,0,0,0">
+            <ScrollViewer VerticalScrollBarVisibility="Auto" Padding="10">
+                <StackPanel Name="ReviewsPanel"/>
+            </ScrollViewer>
+        </StackPanel>
     </Grid>
 </Window>
