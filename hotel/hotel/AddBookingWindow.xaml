@@ -1,218 +1,122 @@
 ﻿<Window x:Class="hotel.AddBookingWindow"
-
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-
         xmlns:local="clr-namespace:hotel"
-
         mc:Ignorable="d"
-
+        Style="{StaticResource DialogWindow}"
         Title="Добавление бронирования" Height="950" MinHeight="730" MaxHeight="1000"
-
         Width="1500" MinWidth="900" MaxWidth="1600" WindowState="Maximized"
-
-        FontSize="22" WindowStartupLocation="CenterScreen"
-
-        Icon="images\local-hotel_118960.png">
-
+        WindowStartupLocation="CenterScreen" Icon="images\local-hotel_118960.png">
     <Grid>
-
         <Grid.RowDefinitions>
-
             <RowDefinition Height="Auto"/>
-
             <RowDefinition Height="*"/>
-
             <RowDefinition Height="Auto"/>
-
             <RowDefinition Height="Auto"/>
-
         </Grid.RowDefinitions>
 
-
-
-        <Grid Grid.Row="0" Margin="0,12,0,8" MinHeight="72">
-
-            <Grid.ColumnDefinitions>
-
-                <ColumnDefinition Width="*" MinWidth="260" MaxWidth="440"/>
-
-                <ColumnDefinition Width="2*"/>
-
-                <ColumnDefinition Width="Auto"/>
-
-            </Grid.ColumnDefinitions>
-
-
-
-            <StackPanel Grid.Column="0" Margin="28,0,8,0" VerticalAlignment="Center">
-
-                <TextBlock Text="Сотрудник: " FontSize="20" Foreground="{StaticResource Brush.TextPrimary}" Name="emplName" TextWrapping="Wrap"/>
-
-                <TextBlock Text="Роль: " FontSize="18" Foreground="{StaticResource Brush.TextSecondary}" Name="emplRole" TextWrapping="Wrap"/>
-
-            </StackPanel>
-
-
-
-            <StackPanel Grid.Column="1" Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center">
-
-                <Image Source="images\icon-icons (2).png" Width="64" Height="64" Margin="0,0,12,0" VerticalAlignment="Center" Opacity="0.95"/>
-
-                <TextBlock Text="Оформление бронирования" VerticalAlignment="Center" FontSize="36" FontWeight="SemiBold"
-
-                           Foreground="{StaticResource Brush.TextPrimary}" TextWrapping="Wrap" TextAlignment="Center" MaxWidth="560"/>
-
-            </StackPanel>
-
-        </Grid>
-
-
-
-        <ScrollViewer Grid.Row="1" Margin="12,0,12,8" VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Disabled">
-
-            <Grid Margin="4,0">
-
+        <Border Grid.Row="0" Style="{StaticResource DialogHeaderBar}">
+            <Grid MinHeight="72">
                 <Grid.ColumnDefinitions>
-
-                    <ColumnDefinition Width="*"/>
-
-                    <ColumnDefinition Width="*"/>
-
+                    <ColumnDefinition Width="*" MinWidth="260" MaxWidth="440"/>
+                    <ColumnDefinition Width="2*"/>
+                    <ColumnDefinition Width="Auto"/>
                 </Grid.ColumnDefinitions>
-
-
-
-                <StackPanel Grid.Column="0" Margin="12,0">
-
-                    <Border Background="{StaticResource Brush.Surface}" CornerRadius="12" BorderBrush="{StaticResource Brush.BorderSubtle}" BorderThickness="1" Padding="16" Margin="0,0,0,12">
-
-                        <StackPanel>
-
-                            <TextBlock Text="Клиент" FontWeight="SemiBold" Foreground="{StaticResource Brush.TextSecondary}" FontSize="16" Margin="0,0,0,8"/>
-
-                            <ComboBox x:Name="clientCB" MinHeight="44" VerticalContentAlignment="Center" SelectionChanged="clientCB_SelectionChanged"/>
-
-                            <Button Content="Новый клиент" HorizontalAlignment="Left" Margin="0,12,0,0" Click="newClient_Click" FontSize="18" Padding="12,8"/>
-
-                        </StackPanel>
-
-                    </Border>
-
-
-
-                    <Border Background="{StaticResource Brush.Surface}" CornerRadius="12" BorderBrush="{StaticResource Brush.BorderSubtle}" BorderThickness="1" Padding="16">
-
-                        <StackPanel>
-
-                            <TextBlock Text="Гости" FontWeight="SemiBold" Foreground="{StaticResource Brush.TextSecondary}" FontSize="16" Margin="0,0,0,8"/>
-
-                            <ComboBox x:Name="guestsCB" MinHeight="44" VerticalContentAlignment="Center"/>
-
-                            <Button Content="Добавить гостя" HorizontalAlignment="Left" Margin="0,12,0,0" Click="addGuest_Click" FontSize="18" Padding="12,8"/>
-
-                            <DataGrid x:Name="guestsDG" AutoGenerateColumns="False" IsReadOnly="True" CanUserAddRows="False" MinHeight="160" MaxHeight="280" Margin="0,16,0,0"
-
-                                      HeadersVisibility="Column" GridLinesVisibility="Horizontal" HorizontalGridLinesBrush="{StaticResource Brush.BorderSubtle}" FontSize="16">
-
-                                <DataGrid.Columns>
-
-                                    <DataGridTextColumn Header="ФИО" Binding="{Binding FullName}" Width="*" MinWidth="160"/>
-
-                                    <DataGridTextColumn Header="Документ" Binding="{Binding Document}" Width="*" MinWidth="140"/>
-
-                                </DataGrid.Columns>
-
-                            </DataGrid>
-
-                        </StackPanel>
-
-                    </Border>
-
+                <StackPanel Grid.Column="0" VerticalAlignment="Center">
+                    <TextBlock Text="Сотрудник: " Style="{StaticResource DialogEmployeeName}" Name="emplName" TextWrapping="Wrap"/>
+                    <TextBlock Text="Роль: " Style="{StaticResource DialogEmployeeRole}" Name="emplRole" TextWrapping="Wrap"/>
                 </StackPanel>
-
-
-
-                <StackPanel Grid.Column="1" Margin="12,0">
-
-                    <Border Background="{StaticResource Brush.Surface}" CornerRadius="12" BorderBrush="{StaticResource Brush.BorderSubtle}" BorderThickness="1" Padding="16" Margin="0,0,0,12">
-
-                        <StackPanel>
-
-                            <TextBlock Text="Номер и даты" FontWeight="SemiBold" Foreground="{StaticResource Brush.TextSecondary}" FontSize="16" Margin="0,0,0,8"/>
-
-                            <TextBlock Text="Номер:" Margin="0,4,0,4"/>
-
-                            <ComboBox x:Name="roomCB" MinHeight="44" VerticalContentAlignment="Center" SelectionChanged="roomCB_SelectionChanged"/>
-
-                            <TextBlock Text="Заезд:" Margin="0,12,0,4"/>
-
-                            <DatePicker x:Name="checkInDP" MinHeight="40" SelectedDateChanged="DateChanged"/>
-
-                            <TextBlock Text="Выезд:" Margin="0,12,0,4"/>
-
-                            <DatePicker x:Name="checkOutDP" MinHeight="40" SelectedDateChanged="DateChanged"/>
-
-                        </StackPanel>
-
-                    </Border>
-
-
-
-                    <Border Background="{StaticResource Brush.Surface}" CornerRadius="12" BorderBrush="{StaticResource Brush.BorderSubtle}" BorderThickness="1" Padding="16">
-
-                        <StackPanel>
-
-                            <TextBlock Text="Услуги" FontWeight="SemiBold" Foreground="{StaticResource Brush.TextSecondary}" FontSize="16" Margin="0,0,0,8"/>
-
-                            <TextBlock Text="Доступные услуги" FontSize="15" Foreground="{StaticResource Brush.TextMuted}" Margin="0,0,0,4"/>
-
-                            <ListBox x:Name="servicesLB" MinHeight="120" MaxHeight="220" ScrollViewer.VerticalScrollBarVisibility="Auto"
-
-                                     ScrollViewer.HorizontalScrollBarVisibility="Disabled" FontSize="18" Padding="4"/>
-
-                            <Button Content="Добавить выбранную услугу →" HorizontalAlignment="Left" Margin="0,10,0,10" Click="addService_Click" FontSize="18" Padding="12,8"/>
-
-                            <TextBlock Text="Выбранные услуги" FontSize="15" Foreground="{StaticResource Brush.TextMuted}" Margin="0,0,0,4"/>
-
-                            <ListBox x:Name="selectedServicesLB" MinHeight="120" MaxHeight="220" ScrollViewer.VerticalScrollBarVisibility="Auto"
-
-                                     ScrollViewer.HorizontalScrollBarVisibility="Disabled" FontSize="18" Padding="4"/>
-
-                        </StackPanel>
-
-                    </Border>
-
+                <StackPanel Grid.Column="1" Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center">
+                    <Image Source="images\icon-icons (2).png" Width="64" Height="64" Margin="0,0,12,0" Opacity="0.95"/>
+                    <TextBlock Text="Оформление бронирования" Style="{StaticResource FormPageTitle}"/>
                 </StackPanel>
-
             </Grid>
-
-        </ScrollViewer>
-
-
-
-        <Border Grid.Row="2" Background="{StaticResource Brush.PrimarySoft}" CornerRadius="12" Padding="16,12" Margin="20,0,20,8" HorizontalAlignment="Stretch">
-
-            <TextBlock x:Name="costTB" Text="Стоимость: 0 руб." FontSize="28" FontWeight="SemiBold" Foreground="{StaticResource Brush.TextPrimary}"/>
-
         </Border>
 
+        <ScrollViewer Grid.Row="1" Margin="12,0,12,8" VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Disabled">
+            <Grid Margin="4,0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
 
+                <StackPanel Grid.Column="0" Margin="12,0">
+                    <Border Style="{StaticResource FormCard}" Margin="0,0,0,12">
+                        <StackPanel>
+                            <TextBlock Text="Клиент" Style="{StaticResource FormSectionTitle}"/>
+                            <ComboBox x:Name="clientCB" Style="{StaticResource FormComboBox}" SelectionChanged="clientCB_SelectionChanged"/>
+                            <Button Content="Новый клиент" Style="{StaticResource FormInlineButton}"
+                                    HorizontalAlignment="Left" Margin="0,12,0,0" Click="newClient_Click"/>
+                        </StackPanel>
+                    </Border>
 
-        <StackPanel Grid.Row="3" Orientation="Horizontal" HorizontalAlignment="Right" Margin="0,0,24,20">
+                    <Border Style="{StaticResource FormCard}">
+                        <StackPanel>
+                            <TextBlock Text="Гости" Style="{StaticResource FormSectionTitle}"/>
+                            <ComboBox x:Name="guestsCB" Style="{StaticResource FormComboBox}"/>
+                            <Button Content="Добавить гостя" Style="{StaticResource FormInlineButton}"
+                                    HorizontalAlignment="Left" Margin="0,12,0,0" Click="addGuest_Click"/>
+                            <DataGrid x:Name="guestsDG" AutoGenerateColumns="False" IsReadOnly="True" CanUserAddRows="False"
+                                      MinHeight="160" MaxHeight="280" Margin="0,16,0,0"
+                                      HeadersVisibility="Column" GridLinesVisibility="Horizontal"
+                                      HorizontalGridLinesBrush="{StaticResource Brush.BorderSubtle}" FontSize="16"
+                                      FocusVisualStyle="{x:Null}">
+                                <DataGrid.Columns>
+                                    <DataGridTextColumn Header="ФИО" Binding="{Binding FullName}" Width="*" MinWidth="160"/>
+                                    <DataGridTextColumn Header="Документ" Binding="{Binding Document}" Width="*" MinWidth="140"/>
+                                </DataGrid.Columns>
+                            </DataGrid>
+                        </StackPanel>
+                    </Border>
+                </StackPanel>
 
-            <Button Content="Отмена" Click="cancel_Click" Margin="0,0,20,0" FontSize="20" Padding="18,10"/>
+                <StackPanel Grid.Column="1" Margin="12,0">
+                    <Border Style="{StaticResource FormCard}" Margin="0,0,0,12">
+                        <StackPanel>
+                            <TextBlock Text="Номер и даты" Style="{StaticResource FormSectionTitle}"/>
+                            <TextBlock Text="Номер:" Style="{StaticResource FormFieldLabel}"/>
+                            <ComboBox x:Name="roomCB" Style="{StaticResource FormComboBox}" SelectionChanged="roomCB_SelectionChanged"/>
+                            <TextBlock Text="Заезд:" Style="{StaticResource FormFieldLabel}" Margin="0,8,0,0"/>
+                            <DatePicker x:Name="checkInDP" Style="{StaticResource FormDatePicker}" SelectedDateChanged="DateChanged"/>
+                            <TextBlock Text="Выезд:" Style="{StaticResource FormFieldLabel}" Margin="0,8,0,0"/>
+                            <DatePicker x:Name="checkOutDP" Style="{StaticResource FormDatePicker}" SelectedDateChanged="DateChanged"/>
+                        </StackPanel>
+                    </Border>
 
-            <Button Content="Создать бронь" Click="createBooking_Click" FontSize="20" Padding="22,10"/>
+                    <Border Style="{StaticResource FormCard}">
+                        <StackPanel>
+                            <TextBlock Text="Услуги" Style="{StaticResource FormSectionTitle}"/>
+                            <TextBlock Text="Доступные услуги" FontSize="15" Foreground="{StaticResource Brush.TextMuted}" Margin="0,0,0,4"/>
+                            <ListBox x:Name="servicesLB" MinHeight="120" MaxHeight="220"
+                                     ScrollViewer.VerticalScrollBarVisibility="Auto"
+                                     ScrollViewer.HorizontalScrollBarVisibility="Disabled" FontSize="16" Padding="4"
+                                     FocusVisualStyle="{x:Null}"/>
+                            <Button Content="Добавить выбранную услугу →" Style="{StaticResource FormInlineButton}"
+                                    HorizontalAlignment="Left" Margin="0,10,0,10" Click="addService_Click"/>
+                            <TextBlock Text="Выбранные услуги" FontSize="15" Foreground="{StaticResource Brush.TextMuted}" Margin="0,0,0,4"/>
+                            <ListBox x:Name="selectedServicesLB" MinHeight="120" MaxHeight="220"
+                                     ScrollViewer.VerticalScrollBarVisibility="Auto"
+                                     ScrollViewer.HorizontalScrollBarVisibility="Disabled" FontSize="16" Padding="4"
+                                     FocusVisualStyle="{x:Null}"/>
+                        </StackPanel>
+                    </Border>
+                </StackPanel>
+            </Grid>
+        </ScrollViewer>
 
-        </StackPanel>
+        <Border Grid.Row="2" Background="{StaticResource Brush.PrimarySoft}" CornerRadius="12"
+                Padding="16,12" Margin="20,0,20,8" HorizontalAlignment="Stretch">
+            <TextBlock x:Name="costTB" Text="Стоимость: 0 руб." FontSize="24" FontWeight="SemiBold"
+                       Foreground="{StaticResource Brush.TextPrimary}"/>
+        </Border>
 
+        <Border Grid.Row="3" Style="{StaticResource DialogActionBar}">
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
+                <Button Content="Отмена" Style="{StaticResource SecondaryButton}" Click="cancel_Click" Margin="0,0,12,0"/>
+                <Button Content="Создать бронь" Style="{StaticResource DialogPrimaryButton}" Click="createBooking_Click"/>
+            </StackPanel>
+        </Border>
     </Grid>
-
 </Window>
-

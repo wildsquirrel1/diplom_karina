@@ -73,11 +73,14 @@
 
         <Label Grid.Row="2" Content="Комната не найден" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="40" Visibility="Visible" Name="notfound"/>
 
-        <StackPanel VerticalAlignment="Center" Grid.Row="2" Visibility="Collapsed" Name="stack" >
-            <ScrollViewer Margin="5" Height="600">
-                <WrapPanel x:Name="roomList" Margin="5" HorizontalAlignment="Center"/>
-            </ScrollViewer>
-        </StackPanel>
+        <ScrollViewer Grid.Row="2"
+                      x:Name="stack"
+                      Margin="5,0,5,8"
+                      Visibility="Collapsed"
+                      VerticalScrollBarVisibility="Auto"
+                      HorizontalScrollBarVisibility="Disabled">
+            <WrapPanel x:Name="roomList" Margin="5" HorizontalAlignment="Center"/>
+        </ScrollViewer>
 
         <Button Grid.Row="3" Name="addRoom" Content="Добавить номер" FontSize="28" HorizontalAlignment="Center" Click="addRoom_Click"/>
     </Grid>

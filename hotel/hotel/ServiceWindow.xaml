@@ -58,11 +58,14 @@
 
         <Label Grid.Row="2" Content="Услуга не найден" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="40" Visibility="Visible" Name="notfound"/>
 
-        <StackPanel VerticalAlignment="Center" Grid.Row="2" Visibility="Collapsed" Name="stack" >
-            <ScrollViewer  Height="600">
-                <WrapPanel x:Name="serviceList"/>
-            </ScrollViewer>
-        </StackPanel>
+        <ScrollViewer Grid.Row="2"
+                      x:Name="stack"
+                      Margin="30,0,30,8"
+                      Visibility="Collapsed"
+                      VerticalScrollBarVisibility="Auto"
+                      HorizontalScrollBarVisibility="Disabled">
+            <WrapPanel x:Name="serviceList"/>
+        </ScrollViewer>
 
         <Button Grid.Row="3" Name="addService" Content="Добавить услугу" FontSize="28" HorizontalAlignment="Center" Click="addService_Click"/>
     </Grid>
