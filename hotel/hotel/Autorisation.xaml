@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:hotel"
         mc:Ignorable="d"
         Title="Авторизация" Height="950" MinHeight="730" MaxHeight="1000" Width="1500" MinWidth="900" MaxWidth="1600"
-        WindowState="Maximized" FontSize="22" WindowStartupLocation="CenterScreen" Icon="images\local-hotel_118960.png">
+        WindowState="Maximized" FontSize="22" WindowStartupLocation="CenterScreen">
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="1.15*"/>
@@ -14,7 +14,7 @@
         </Grid.ColumnDefinitions>
 
         <Grid Grid.Column="0">
-            <Image Source="images\Hotel.jpg" Stretch="UniformToFill" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+            <Image Source="pack://application:,,,/images/Hotel.jpg" Stretch="UniformToFill" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
             <Border VerticalAlignment="Bottom" Padding="28,20" Background="#AA1E1B36">
                 <TextBlock Text="Простой Комфорт" Foreground="White" FontSize="28" FontWeight="SemiBold" TextWrapping="Wrap"/>
             </Border>
@@ -40,17 +40,17 @@
                             </Border>
 
                             <TextBlock Text="Пароль" FontSize="16" Foreground="{StaticResource Brush.TextSecondary}" Margin="4,20,0,8"/>
-                            <Grid MinHeight="52">
-                                <Border CornerRadius="14" BorderBrush="{StaticResource Brush.BorderSubtle}" BorderThickness="1" Background="{StaticResource Brush.PrimarySoft}" SnapsToDevicePixels="True">
-                                    <TextBox x:Name="passwordTB" BorderThickness="0" Background="Transparent" Padding="14,12" FontSize="20" Visibility="Hidden"/>
-                                </Border>
-                                <Border CornerRadius="14" BorderBrush="{StaticResource Brush.BorderSubtle}" BorderThickness="1" Background="{StaticResource Brush.PrimarySoft}" SnapsToDevicePixels="True">
-                                    <PasswordBox x:Name="passwordPB" BorderThickness="0" Background="Transparent" Padding="14,10" FontSize="20" Visibility="Visible"/>
-                                </Border>
-                            </Grid>
+                            <Border MinHeight="52" CornerRadius="14" BorderBrush="{StaticResource Brush.BorderSubtle}" BorderThickness="1" Background="{StaticResource Brush.PrimarySoft}" SnapsToDevicePixels="True">
+                                <Grid>
+                                    <TextBox x:Name="passwordTB" BorderThickness="0" Background="Transparent" Padding="14,12" FontSize="20"
+                                             Visibility="Collapsed" TextChanged="passwordTB_TextChanged"/>
+                                    <PasswordBox x:Name="passwordPB" BorderThickness="0" Background="Transparent" Padding="14,12" FontSize="20"
+                                                 Visibility="Visible" PasswordChanged="passwordPB_PasswordChanged"/>
+                                </Grid>
+                            </Border>
 
                             <Button x:Name="entryB" Content="Войти" Click="entryB_Click" Style="{StaticResource AuthPrimaryButton}" Margin="0,28,0,12"/>
-                            <Button x:Name="show_hide_pass" Content="Показать / скрыть пароль" Click="show_hide_pass_Click"
+                            <Button x:Name="show_hide_pass" Content="Показать пароль" Click="show_hide_pass_Click"
                                     FontSize="18" MinHeight="44" Padding="16,8"/>
                         </StackPanel>
                     </Border>

@@ -1,37 +1,28 @@
 ﻿using hotel.Data;
 using hotel.Models;
+using hotel.Services;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
 using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
 
 namespace hotel
 {
-    /// <summary>
-    /// Логика взаимодействия для BookingControl.xaml
-    /// </summary>
     public partial class BookingControl : UserControl
     {
         private Book _currentBook;
+        private Employee _employee;
         public event Action OnStatusChanged;
+
         public BookingControl()
         {
             InitializeComponent();
         }
 
-        public void SetData(Book book)
+        public void SetData(Book book, Employee employee)
         {
             _currentBook = book;
+            _employee = employee;
 
             tbId.Text = $"Бронь №{book.Idbook}";
 
@@ -49,27 +40,93 @@ namespace hotel
 
             tbStatus.Text = book.StatusBookName;
 
+            var today = DateOnly.FromDateTime(DateTime.Today);
+            var canCheckIn = book.StatusBook == 4 && book.CheckInDate == today;
+            var canCheckOut = book.StatusBook == 1 && book.DepartureDate == today;
+
+            btnCheckIn.Visibility = canCheckIn ? Visibility.Visible : Visibility.Collapsed;
+            btnCheckOut.Visibility = canCheckOut ? Visibility.Visible : Visibility.Collapsed;
+            btnCancel.Visibility = book.StatusBook == 4 ? Visibility.Visible : Visibility.Collapsed;
+
             switch (book.StatusBook)
             {
                 case 1:
                     statusBadge.Background = new SolidColorBrush(Color.FromRgb(46, 139, 87));
-                    btnCancel.Visibility = Visibility.Visible;
                     break;
-
                 case 2:
                     statusBadge.Background = new SolidColorBrush(Color.FromRgb(217, 83, 79));
-                    btnCancel.Visibility = Visibility.Collapsed;
                     break;
-
                 case 3:
                     statusBadge.Background = new SolidColorBrush(Color.FromRgb(119, 119, 119));
-                    btnCancel.Visibility = Visibility.Collapsed;
                     break;
-
+                case 4:
+                    statusBadge.Background = new SolidColorBrush(Color.FromRgb(74, 63, 222));
+                    break;
                 default:
                     statusBadge.Background = new SolidColorBrush(Colors.Gray);
-                    btnCancel.Visibility = Visibility.Collapsed;
                     break;
+            }
+        }
+
+        private async void btnCheckIn_Click(object sender, RoutedEventArgs e)
+        {
+            if (_currentBook == null || _employee == null) return;
+
+            var confirm = MessageBox.Show(
+                $"Заселить гостя по брони №{_currentBook.Idbook} и сформировать договор?",
+                "Уведомление",
+                MessageBoxButton.YesNo);
+
+            if (confirm != MessageBoxResult.Yes) return;
+
+            try
+            {
+                var error = await Api.UpdateBooking(_currentBook.Idbook, 1);
+                if (!string.IsNullOrEmpty(error))
+                {
+                    MessageBox.Show($"Ошибка: {error}", "Уведомление");
+                    return;
+                }
+
+                _currentBook.StatusBook = 1;
+
+                var hotel = _employee.IdhotelNavigation ?? _currentBook.Room?.Hotel;
+                var path = BookingContractPdfGenerator.GenerateAndOpen(_currentBook, _employee, hotel);
+
+                MessageBox.Show($"Гость заселён. Договор сохранён:\n{path}", "Уведомление");
+                OnStatusChanged?.Invoke();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Ошибка заселения: {ex.Message}", "Уведомление");
+            }
+        }
+
+        private async void btnCheckOut_Click(object sender, RoutedEventArgs e)
+        {
+            if (_currentBook == null) return;
+
+            var confirm = MessageBox.Show(
+                $"Выселить гостя по брони №{_currentBook.Idbook}?",
+                "Уведомление",
+                MessageBoxButton.YesNo);
+
+            if (confirm != MessageBoxResult.Yes) return;
+
+            try
+            {
+                var error = await Api.UpdateBooking(_currentBook.Idbook, 3);
+                if (string.IsNullOrEmpty(error))
+                {
+                    MessageBox.Show("Бронь завершена", "Уведомление");
+                    OnStatusChanged?.Invoke();
+                }
+                else
+                    MessageBox.Show($"Ошибка: {error}", "Уведомление");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Ошибка соединения: {ex.Message}", "Уведомление");
             }
         }
 
@@ -80,8 +137,7 @@ namespace hotel
             var result = MessageBox.Show(
                 $"Отменить бронь №{_currentBook.Idbook}?",
                 "Уведомление",
-                MessageBoxButton.YesNo,
-                MessageBoxImage.Warning);
+                MessageBoxButton.YesNo);
 
             if (result == MessageBoxResult.Yes)
             {
@@ -92,13 +148,10 @@ namespace hotel
                     if (string.IsNullOrEmpty(error))
                     {
                         MessageBox.Show("Бронь отменена", "Уведомление");
-
                         OnStatusChanged?.Invoke();
                     }
                     else
-                    {
                         MessageBox.Show($"Ошибка: {error}", "Уведомление");
-                    }
                 }
                 catch (Exception ex)
                 {

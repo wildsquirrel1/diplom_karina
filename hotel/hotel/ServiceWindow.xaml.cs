@@ -32,10 +32,10 @@ namespace hotel
             LoadServicesAsync();
         }
 
-        private async void LoadServicesAsync()
-        {
-            serviceList.Children.Clear();
+        private async void LoadServicesAsync() => await ReloadServicesAsync();
 
+        private async Task ReloadServicesAsync()
+        {
             try
             {
                 _allServices = await Api.GetServices();
@@ -71,7 +71,7 @@ namespace hotel
                 {
                     var control = new ServiceControl(_employee);
                     control.SetService(service);
-                    control.OnServiceUpdated = LoadServicesAsync;
+                    control.OnServiceUpdated = () => _ = ReloadServicesAsync();
                     serviceList.Children.Add(control);
                 }
             }

@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:hotel"
         mc:Ignorable="d"
-        Title="Детали бронией" Height="950" MinHeight="730" MaxHeight="1000"  Width="1500" MinWidth="900" MaxWidth="1600" WindowState="Maximized" FontSize="40" WindowStartupLocation="CenterScreen" Icon="images\local-hotel_118960.png">
+        Title="Детали бронией" Height="950" MinHeight="730" MaxHeight="1000"  Width="1500" MinWidth="900" MaxWidth="1600" WindowState="Maximized" FontSize="40" WindowStartupLocation="CenterScreen">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
@@ -26,7 +26,7 @@
             </StackPanel>
 
             <StackPanel Grid.Column="1" Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center">
-                <Image Source="images\icon-icons (2).png" Height="72" Width="72" Margin="0,0,12,0" VerticalAlignment="Center" Opacity="0.95"/>
+                <Image Source="pack://application:,,,/images/icon-icons (2).png" Height="72" Width="72" Margin="0,0,12,0" VerticalAlignment="Center" Opacity="0.95"/>
                 <TextBlock x:Name="clientHeader" VerticalAlignment="Center" FontSize="32" FontWeight="SemiBold" Foreground="{StaticResource Brush.TextPrimary}" TextWrapping="Wrap" TextAlignment="Center" MaxWidth="720"/>
             </StackPanel>
 

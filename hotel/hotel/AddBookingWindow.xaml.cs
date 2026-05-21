@@ -32,6 +32,7 @@ namespace hotel
         private List<Guest> _allGuests = new();
         private List<Service> _allServices = new();
         private List<Guest> _selectedGuests = new();
+        private List<Guest> _clientGuests = new();
         private List<Service> _selectedServices = new();
         public AddBookingWindow(Employee employee)
         {
@@ -54,7 +55,8 @@ namespace hotel
                 _allServices = await Api.GetServices();
 
                 roomCB.ItemsSource = _rooms.Select(r => r.Name).ToList();
-                guestsCB.ItemsSource = _allGuests.Select(r => $"{r.Lastname} {r.Name} {r.Patronymic}").ToList();
+                guestsCB.ItemsSource = null;
+                guestsCB.IsEnabled = false;
                 clientCB.ItemsSource = _clients.Select(c => $"{c.Lastname} {c.Name} {c.Patronymic}").ToList();
 
                 servicesLB.ItemsSource = _allServices.Select(s => s.Name).ToList();
@@ -160,7 +162,13 @@ namespace hotel
                 return;
             }
 
-            var selectedGuest = _allGuests[guestsCB.SelectedIndex];
+            if (guestsCB.SelectedIndex < 0 || guestsCB.SelectedIndex >= _clientGuests.Count)
+            {
+                MessageBox.Show("Выберите гостя из списка.", "Уведомление");
+                return;
+            }
+
+            var selectedGuest = _clientGuests[guestsCB.SelectedIndex];
 
             if (_selectedGuests.Any(g => g.Idguest == selectedGuest.Idguest))
             {
@@ -225,7 +233,7 @@ namespace hotel
 
             var bookings = await Api.GetBookingsForCurrentHotel(Employee.Idemployee);
 
-            if (bookings.Any(b => b.RoomId == room.Idroom && b.StatusBook != 4 && checkIn < b.DepartureDate && checkOut > b.CheckInDate))
+            if (bookings.Any(b => b.RoomId == room.Idroom && b.StatusBook is 1 or 4 && checkIn < b.DepartureDate && checkOut > b.CheckInDate))
             {
                 MessageBox.Show(
                     "На выбранные даты номер уже забронирован!\n" +
@@ -262,7 +270,7 @@ namespace hotel
                 DepartureDate = DateOnly.FromDateTime(checkOutDP.SelectedDate.Value),
                 BookingDate = DateOnly.FromDateTime(DateTime.Now),
                 Payment = 1,
-                StatusBook = 1,
+                StatusBook = 4,
                 ClientId = client.Idclint,
             };
 
@@ -328,26 +336,45 @@ namespace hotel
             }
         }
 
-        private void clientCB_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        private async void clientCB_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             guestsCB.ItemsSource = null;
+            _clientGuests.Clear();
             _selectedGuests.Clear();
-            guestsDG.ItemsSource = _selectedGuests;
+            guestsDG.ItemsSource = null;
+            guestsCB.SelectedIndex = -1;
 
-            if (clientCB.SelectedIndex == -1) return;
+            if (clientCB.SelectedIndex == -1)
+            {
+                guestsCB.IsEnabled = false;
+                return;
+            }
 
             var selectedClient = _clients[clientCB.SelectedIndex];
-            var clientGuests = _allGuests.ToList();
-
-            if (clientGuests.Any())
+            try
             {
-                guestsCB.ItemsSource = clientGuests.Select(g => $"{g.Lastname} {g.Name} {g.Patronymic}".Trim()).ToList();
+                _clientGuests = await Api.GetGuestsByClient(selectedClient.Idclint);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Ошибка загрузки гостей клиента: {ex.Message}", "Уведомление");
+                guestsCB.IsEnabled = false;
+                return;
+            }
+
+            if (_clientGuests.Count > 0)
+            {
+                guestsCB.ItemsSource = _clientGuests
+                    .Select(g => $"{g.Lastname} {g.Name} {g.Patronymic}".Trim())
+                    .ToList();
                 guestsCB.IsEnabled = true;
             }
             else
             {
                 guestsCB.IsEnabled = false;
-                MessageBox.Show("У клиента нет зарегистрированных гостей.", "Уведомление");
+                MessageBox.Show(
+                    "У клиента нет зарегистрированных гостей.\nДобавьте гостей при регистрации клиента или в карточке клиента.",
+                    "Уведомление");
             }
         }
 
@@ -359,7 +386,7 @@ namespace hotel
             var allBookings = await Api.GetBookingsForCurrentHotel(Employee.Idemployee);
 
             var roomBookings = allBookings
-                .Where(b => b.RoomId == roomId && b.StatusBook != 4)
+                .Where(b => b.RoomId == roomId && b.StatusBook is 1 or 4)
                 .ToList();
 
             var today = DateOnly.FromDateTime(DateTime.Today);

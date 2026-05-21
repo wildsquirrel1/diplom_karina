@@ -19,6 +19,7 @@
     <SolidColorBrush x:Key="Brush.SuccessHover" Color="#34B388"/>
 
     <Style TargetType="Window">
+        <Setter Property="Icon" Value="pack://application:,,,/images/local-hotel_118960.png"/>
         <Setter Property="Background" Value="{StaticResource Brush.WindowBg}"/>
         <Setter Property="FontFamily" Value="Segoe UI"/>
         <Setter Property="TextOptions.TextFormattingMode" Value="Display"/>

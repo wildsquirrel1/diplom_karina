@@ -38,10 +38,7 @@ namespace hotel
             _room = room;
             DataContext = _room;
 
-            roomName.Text += room.Name;
-            floorName.Text = $"Этаж: {room.Floorid}";
-            categoryName.Text = $"Категория: {room.IdCategoryNavigation.Name}";
-            priceCategory.Text = $"{room.IdCategoryNavigation.Cost} ₽";
+            RefreshDisplay();
 
             photoDisplay.Source = GetDefaultImage();
 
@@ -99,7 +96,7 @@ namespace hotel
             try
             {
                 return new System.Windows.Media.Imaging.BitmapImage(
-                    new Uri("C:\\Users\\Пользователь\\source\\repos\\hotel\\hotel\\images\\a-none-logo.jpg"));
+                    new Uri("pack://application:,,,/images/a-none-logo.jpg"));
             }
             catch
             {
@@ -121,16 +118,27 @@ namespace hotel
             UpdatePhotoDisplay();
         }
 
+        public void RefreshDisplay()
+        {
+            if (_room == null) return;
+
+            roomName.Text = $"Комната номер: {_room.Name}";
+            floorName.Text = $"Этаж: {_room.Floorid}";
+            categoryName.Text = $"Категория: {_room.IdCategoryNavigation?.Name ?? "—"}";
+            priceCategory.Text = $"{_room.IdCategoryNavigation?.Cost ?? 0} ₽";
+            statusName.Text = _room.Status?.Name ?? "—";
+        }
+
         private async void editB_Click(object sender, RoutedEventArgs e)
         {
             var editWindow = new EditRoomWindow(_room, _currentUser);
             if (editWindow.ShowDialog() == true)
             {
+                RefreshDisplay();
+
                 var parentWindow = Window.GetWindow(this) as RoomsWindow;
                 if (parentWindow != null)
-                {
                     await parentWindow.LoadRoomsAsync();
-                }
             }
         }
 

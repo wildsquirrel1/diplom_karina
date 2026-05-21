@@ -22,26 +22,22 @@ namespace hotel
     /// </summary>
     public partial class HotelsWindow : Window
     {
-        public static HotelsWindow Instance { get; private set; }
         private List<Hotel> _allhotels = new();
-        private string _currentSearch = "";
-        private int _currentSortIndex = 0;
         HeadHotelManagerWindow HeadHotelManagerWindow = new HeadHotelManagerWindow();
         private Dictionary<int, double?> _hotelRatings = new();
         Employee Employee;
         public HotelsWindow(Employee employee)
         {
             InitializeComponent();
-            loadHotels();
-            Instance = this;
             Employee = employee;
             HeadHotelManagerWindow.GetEmpl(employee, emplName, emplRole);
+            _ = LoadHotelsAsync();
         }
 
-        public async void loadHotels()
+        public async Task LoadHotelsAsync()
         {
             hotelList.Children.Clear();
-            if (_allhotels.Count == 0 || string.IsNullOrEmpty(_currentSearch))
+            try
             {
                 _allhotels = await Api.GetHotels();
                 _hotelRatings.Clear();
@@ -51,29 +47,29 @@ namespace hotel
                     _hotelRatings[hotel.Idhotel] = ratingData?.rating;
                 }
             }
-
-            _allhotels = ApplySearch(_allhotels, searchTB.Text.ToLower());
-            _allhotels = ApplySort(_allhotels, sordCB.SelectedIndex);
-            _allhotels = ApplyFilter(_allhotels, filterCB.SelectedIndex);
-
-            hotelCount.Text = $"Найдено отелей: {_allhotels.Count}";
-            if (_allhotels == null || _allhotels.Count == 0)
+            catch (Exception ex)
             {
-                notfound.Visibility = Visibility.Visible;
-                stack.Visibility = Visibility.Collapsed;
+                MessageBox.Show($"Ошибка загрузки отелей: {ex.Message}", "Уведомление",
+                    MessageBoxButton.OK, MessageBoxImage.Error);
+                return;
             }
-            else
-            {
-                foreach (var hotel in _allhotels)
-                {
-                    var hotelCont = new HotelControl(Employee);
-                    hotelCont.DataHotel(hotel);
-                    hotelList.Children.Add(hotelCont);
-                }
 
-                NotFound();
+            var filtered = ApplySearch(_allhotels, searchTB.Text?.ToLower());
+            filtered = ApplySort(filtered, sordCB.SelectedIndex);
+            filtered = ApplyFilter(filtered, filterCB.SelectedIndex);
+
+            hotelCount.Text = $"Найдено отелей: {filtered.Count}";
+            foreach (var hotel in filtered)
+            {
+                var hotelCont = new HotelControl(Employee) { OnHotelUpdated = RefreshHotels };
+                await hotelCont.DataHotel(hotel);
+                hotelList.Children.Add(hotelCont);
             }
+
+            NotFound();
         }
+
+        private void RefreshHotels() => _ = LoadHotelsAsync();
         private void backB_Click(object sender, RoutedEventArgs e)
         {
             this.Close();
@@ -81,44 +77,39 @@ namespace hotel
             headHotelManagerWindow.Show();
         }
 
-        private void searchTB_TextChanged(object sender, TextChangedEventArgs e)
+        private async void searchTB_TextChanged(object sender, TextChangedEventArgs e)
         {
             search.Visibility = string.IsNullOrWhiteSpace(searchTB.Text)
                 ? Visibility.Visible
                 : Visibility.Hidden;
             if (hotelList != null)
             {
-                loadHotels();
-                NotFound();
+                await LoadHotelsAsync();
             }
         }
 
-        private void sordCB_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        private async void sordCB_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             if (hotelList != null)
             {
-                loadHotels();
-                NotFound();
+                await LoadHotelsAsync();
             }
         }
 
-        private void filterCB_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        private async void filterCB_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             if (hotelList != null)
             {
-                loadHotels();
-                NotFound();
+                await LoadHotelsAsync();
             }
         }
 
-        private void addHotel_Click(object sender, RoutedEventArgs e)
+        private async void addHotel_Click(object sender, RoutedEventArgs e)
         {
             AddHotelWindow addHotel = new AddHotelWindow(Employee);
             if (addHotel.ShowDialog() == true)
             {
-                _allhotels.Clear();
-                _hotelRatings.Clear();
-                loadHotels();
+                await LoadHotelsAsync();
             }
 
         }

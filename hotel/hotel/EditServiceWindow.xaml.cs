@@ -28,6 +28,9 @@ namespace hotel
             InitializeComponent();
             _service = service;
 
+            emplName.Text += $" {employee.Lastname} {employee.Name} {employee.Patronymic}".Trim();
+            emplRole.Text += " " + (employee.IdroleNavigation?.Name ?? "—");
+
             nameTB.Text = service.Name;
             descriptionTB.Text = service.Description;
             priceTB.Text = service.Cost.ToString();

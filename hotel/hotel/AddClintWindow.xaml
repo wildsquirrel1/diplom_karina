@@ -1,75 +1,282 @@
 ﻿<Window x:Class="hotel.AddClintWindow"
+
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+
         xmlns:local="clr-namespace:hotel"
+
         mc:Ignorable="d"
+
         Title="Добавление клиента" Height="950" MinHeight="730" MaxHeight="1000"
+
         Width="1500" MinWidth="900" MaxWidth="1600" WindowState="Maximized"
+
         FontSize="40" WindowStartupLocation="CenterScreen"
-        Icon="images\local-hotel_118960.png">
+
+        >
+
+    <Window.Resources>
+
+        <Style x:Key="FormFieldLabel" TargetType="TextBlock">
+
+            <Setter Property="Foreground" Value="{StaticResource Brush.TextSecondary}"/>
+
+            <Setter Property="FontWeight" Value="SemiBold"/>
+
+            <Setter Property="Margin" Value="0,0,0,10"/>
+
+        </Style>
+
+        <Style x:Key="FormPrimaryButton" TargetType="Button" BasedOn="{StaticResource PrimaryButtonBase}">
+
+            <Setter Property="FontSize" Value="28"/>
+
+            <Setter Property="MinWidth" Value="300"/>
+
+            <Setter Property="MinHeight" Value="76"/>
+
+            <Setter Property="Padding" Value="36,18"/>
+
+        </Style>
+
+        <Style x:Key="FormSecondaryButton" TargetType="Button">
+
+            <Setter Property="Background" Value="{StaticResource Brush.Surface}"/>
+
+            <Setter Property="Foreground" Value="{StaticResource Brush.TextPrimary}"/>
+
+            <Setter Property="BorderBrush" Value="{StaticResource Brush.BorderSubtle}"/>
+
+            <Setter Property="BorderThickness" Value="2"/>
+
+            <Setter Property="FontWeight" Value="SemiBold"/>
+
+            <Setter Property="FontSize" Value="28"/>
+
+            <Setter Property="MinWidth" Value="260"/>
+
+            <Setter Property="MinHeight" Value="76"/>
+
+            <Setter Property="Padding" Value="32,18"/>
+
+            <Setter Property="Margin" Value="0,0,28,0"/>
+
+            <Setter Property="Cursor" Value="Hand"/>
+
+            <Setter Property="FocusVisualStyle" Value="{x:Null}"/>
+
+            <Setter Property="Template">
+
+                <Setter.Value>
+
+                    <ControlTemplate TargetType="Button">
+
+                        <Border x:Name="Chrome" Background="{TemplateBinding Background}"
+
+                                BorderBrush="{TemplateBinding BorderBrush}"
+
+                                BorderThickness="{TemplateBinding BorderThickness}"
+
+                                CornerRadius="14" Padding="{TemplateBinding Padding}">
+
+                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+
+                        </Border>
+
+                        <ControlTemplate.Triggers>
+
+                            <Trigger Property="IsMouseOver" Value="True">
+
+                                <Setter TargetName="Chrome" Property="Background" Value="{StaticResource Brush.PrimarySoft}"/>
+
+                            </Trigger>
+
+                            <Trigger Property="IsPressed" Value="True">
+
+                                <Setter TargetName="Chrome" Property="Opacity" Value="0.85"/>
+
+                            </Trigger>
+
+                        </ControlTemplate.Triggers>
+
+                    </ControlTemplate>
+
+                </Setter.Value>
+
+            </Setter>
+
+        </Style>
+
+    </Window.Resources>
 
     <Grid>
+
         <Grid.RowDefinitions>
-            <RowDefinition/>
-            <RowDefinition Height="8*"/>
-            <RowDefinition/>
+
+            <RowDefinition Height="Auto"/>
+
+            <RowDefinition Height="*"/>
+
+            <RowDefinition Height="Auto"/>
+
         </Grid.RowDefinitions>
 
-        <Grid Grid.Row="0" Margin="0 10 0 0">
-            <StackPanel Grid.Column="0" Margin="30,0,0,0" VerticalAlignment="Center" HorizontalAlignment="Left" MinWidth="260" MaxWidth="640">
-                <TextBlock Text="Сотрудник: " FontSize="20" Foreground="Black" Name="emplName" TextWrapping="Wrap"/>
-                <TextBlock Text="Роль: " FontSize="20" Foreground="Black" Name="emplRole" TextWrapping="Wrap"/>
+
+
+        <Border Grid.Row="0" Background="{StaticResource Brush.Surface}"
+
+                BorderBrush="{StaticResource Brush.BorderSubtle}" BorderThickness="0,0,0,2" Padding="20,16">
+
+            <Grid MinHeight="110">
+
+                <Grid.ColumnDefinitions>
+
+                    <ColumnDefinition Width="*" MinWidth="260" MaxWidth="480"/>
+
+                    <ColumnDefinition Width="2*"/>
+
+                    <ColumnDefinition Width="Auto"/>
+
+                </Grid.ColumnDefinitions>
+
+                <StackPanel Grid.Column="0" Margin="16,0,8,0" VerticalAlignment="Center">
+
+                    <TextBlock Text="Сотрудник: " FontSize="24" Foreground="{StaticResource Brush.TextPrimary}" Name="emplName" TextWrapping="Wrap"/>
+
+                    <TextBlock Text="Роль: " FontSize="22" Foreground="{StaticResource Brush.TextSecondary}" Name="emplRole" TextWrapping="Wrap"/>
+
+                </StackPanel>
+
+                <StackPanel Grid.Column="1" Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center">
+
+                    <Image Source="pack://application:,,,/images/icon-icons (2).png" Width="80" Height="80" Margin="0,0,16,0" Opacity="0.95"/>
+
+                    <TextBlock Text="Добавление клиента/гостя" FontSize="48" FontWeight="SemiBold"
+
+                               Foreground="{StaticResource Brush.TextPrimary}" VerticalAlignment="Center" TextWrapping="Wrap" TextAlignment="Center" MaxWidth="720"/>
+
+                </StackPanel>
+
+                <Button x:Name="exit" Grid.Column="2" Content="✕" Style="{StaticResource CloseWindowButton}"
+
+                        VerticalAlignment="Center" Click="exit_Click" Margin="0,0,12,0"/>
+
+            </Grid>
+
+        </Border>
+
+
+
+        <ScrollViewer Grid.Row="1" Margin="20,16,20,12" VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Disabled">
+
+            <Grid>
+
+                <Grid.ColumnDefinitions>
+
+                    <ColumnDefinition/>
+
+                    <ColumnDefinition Width="16"/>
+
+                    <ColumnDefinition/>
+
+                </Grid.ColumnDefinitions>
+
+
+
+                <Border Grid.Column="0" Background="{StaticResource Brush.Surface}" CornerRadius="16"
+
+                        BorderBrush="{StaticResource Brush.BorderSubtle}" BorderThickness="1" Padding="28,24">
+
+                    <StackPanel>
+
+                        <TextBlock Text="Добавление нового клиента" FontWeight="SemiBold" Foreground="{StaticResource Brush.Primary}" Margin="0,0,0,24"/>
+
+                        <Label Content="Фамилия, имя, отчество" Foreground="{StaticResource Brush.TextSecondary}" FontWeight="SemiBold" Padding="0" Margin="0,0,0,10"/>
+
+                        <TextBox Name="fioBox" MaxLength="153" MinHeight="72" Padding="16,12" Margin="0,0,0,24" PreviewTextInput="fioBox_PreviewTextInput"/>
+
+                        <Label Content="Дата рождения" Foreground="{StaticResource Brush.TextSecondary}" FontWeight="SemiBold" Padding="0" Margin="0,0,0,10"/>
+
+                        <DatePicker Name="datebirth" MinHeight="72" Margin="0,0,0,24" SelectedDate="{Binding Datebirth, Mode=TwoWay}" PreviewTextInput="datebirth_PreviewTextInput"/>
+
+                        <Label Content="Серия и номер паспорта" Foreground="{StaticResource Brush.TextSecondary}" FontWeight="SemiBold" Padding="0" Margin="0,0,0,10"/>
+
+                        <TextBox Name="passportBox" MaxLength="10" MinHeight="72" Padding="16,12" Margin="0,0,0,24" KeyDown="passportBox_KeyDown"/>
+
+                        <Label Content="Электронная почта" Foreground="{StaticResource Brush.TextSecondary}" FontWeight="SemiBold" Padding="0" Margin="0,0,0,10"/>
+
+                        <TextBox Name="emailBox" MaxLength="100" MinHeight="72" Padding="16,12" Margin="0,0,0,24"/>
+
+                        <Label Content="Пароль" Foreground="{StaticResource Brush.TextSecondary}" FontWeight="SemiBold" Padding="0" Margin="0,0,0,10"/>
+
+                        <PasswordBox Name="passwordBox" MaxLength="10" MinHeight="72" Padding="16,12"/>
+
+                    </StackPanel>
+
+                </Border>
+
+
+
+                <Border Grid.Column="2" Background="{StaticResource Brush.Surface}" CornerRadius="16"
+
+                        BorderBrush="{StaticResource Brush.BorderSubtle}" BorderThickness="1" Padding="28,24">
+
+                    <StackPanel>
+
+                        <TextBlock Text="Добавление гостя" FontWeight="SemiBold" Foreground="{StaticResource Brush.Primary}" Margin="0,0,0,24"/>
+
+                        <Label Content="Фамилия, имя, отчество" Foreground="{StaticResource Brush.TextSecondary}" FontWeight="SemiBold" Padding="0" Margin="0,0,0,10"/>
+
+                        <TextBox Name="fioBoxGuest" MaxLength="153" MinHeight="72" Padding="16,12" Margin="0,0,0,24" PreviewTextInput="fioBoxGuest_PreviewTextInput"/>
+
+                        <Label Content="Тип документа" Foreground="{StaticResource Brush.TextSecondary}" FontWeight="SemiBold" Padding="0" Margin="0,0,0,10"/>
+
+                        <ComboBox Name="docTypeCombo" MinHeight="72" Margin="0,0,0,24" SelectedIndex="0">
+
+                            <ComboBoxItem>Паспорт</ComboBoxItem>
+
+                            <ComboBoxItem>Св. о рождении</ComboBoxItem>
+
+                        </ComboBox>
+
+                        <Label Content="Номер документа" Foreground="{StaticResource Brush.TextSecondary}" FontWeight="SemiBold" Padding="0" Margin="0,0,0,10"/>
+
+                        <TextBox Name="docNumber" MaxLength="10" MinHeight="72" Padding="16,12" Margin="0,0,0,24" KeyDown="docNumber_KeyDown"/>
+
+                        <Button Name="addGuestButton" Content="+" MinWidth="72" MinHeight="72" Click="addGuestButton_Click" HorizontalAlignment="Left" Margin="0,0,0,16"/>
+
+                        <TextBlock Name="countGuests" Text="Кол-во гостей: 0" Foreground="{StaticResource Brush.TextSecondary}" FontWeight="SemiBold"/>
+
+                    </StackPanel>
+
+                </Border>
+
+            </Grid>
+
+        </ScrollViewer>
+
+
+
+        <Border Grid.Row="2" Background="{StaticResource Brush.Surface}"
+
+                BorderBrush="{StaticResource Brush.BorderSubtle}" BorderThickness="0,2,0,0" Padding="24,20">
+
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+
+                <Button Content="Отмена" Style="{StaticResource FormSecondaryButton}" Click="exit_Click"/>
+
+                <Button x:Name="doneButton" Content="Готово" Style="{StaticResource FormPrimaryButton}" Click="doneButton_Click"/>
+
             </StackPanel>
-            <Button x:Name="exit" Content="✕" Style="{StaticResource CloseWindowButton}" HorizontalAlignment="Right" VerticalAlignment="Top" Click="exit_Click" Margin="0,20,20,0"/>
-            <TextBlock Text="Добавление клиента/гостя" HorizontalAlignment="Center" VerticalAlignment="Center"
-       FontSize="48"/>
-            <Image Source="images\icon-icons (2).png" VerticalAlignment="Center" Margin="0 0 700 0" HorizontalAlignment="Center" Width="90"/>
-        </Grid>
 
-        <Grid Grid.Row="1">
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="Auto"/>
-            <ColumnDefinition Width="*"/>
-        </Grid.ColumnDefinitions>
+        </Border>
 
-        <StackPanel Grid.Column="0" Margin="20">
-            <TextBlock Text="Добавление нового клиента" FontWeight="Bold" FontSize="16" Margin="0,0,0,10"/>
-            <Label Content="Фамилия, имя, отчество"/>
-            <TextBox Name="fioBox" MaxLength="153" PreviewTextInput="fioBox_PreviewTextInput"/>
-            <Label Content="Дата рождения"/>
-            <DatePicker Name="datebirth" SelectedDate="{Binding Datebirth, Mode=TwoWay}" PreviewTextInput="datebirth_PreviewTextInput"/>
-            <Label Content="Серия и номер паспорта"/>
-            <TextBox Name="passportBox" MaxLength="10" KeyDown="passportBox_KeyDown"/>
-            <Label Content="Электронная почта"/>
-            <TextBox Name="emailBox" MaxLength="100" />
-            <Label Content="Пароль"/>
-            <PasswordBox Name="passwordBox" MaxLength="10"/>
-        </StackPanel>
-
-        <Border Grid.Column="1" Background="LightGray" Width="1"/>
-
-            <StackPanel Grid.Column="2" Margin="20">
-                <TextBlock Text="Добавление гостя" FontWeight="Bold" FontSize="16" Margin="0,0,0,10"/>
-                <Label Content="Фамилия, имя, отчество"/>
-                <TextBox Name="fioBoxGuest" MaxLength="153" PreviewTextInput="fioBoxGuest_PreviewTextInput" />
-                <Label Content="Тип документа"/>
-                <ComboBox Name="docTypeCombo" SelectedIndex="0">
-                    <ComboBoxItem>Паспорт</ComboBoxItem>
-                    <ComboBoxItem>Св. о рождении</ComboBoxItem>
-                </ComboBox>
-                <Label Content="Номер документа"/>
-                <TextBox Name="docNumber" MaxLength="10" KeyDown="docNumber_KeyDown"/>
-                <Button Name="addGuestButton" Content="+" Click="addGuestButton_Click" HorizontalAlignment="Left" Margin="0,10,0,0"/>
-                <TextBlock Name="countGuests" Text="Кол-во гостей: 0" Margin="0,5,0,0"/>
-            </StackPanel>
-        </Grid>
-
-        <StackPanel Grid.Row="2"  VerticalAlignment="Center" HorizontalAlignment="Center">
-            <Button x:Name="doneButton" Content="Готово" Click="doneButton_Click" Width="150" Height="60"/>
-        </StackPanel>
     </Grid>
 
 </Window>
+

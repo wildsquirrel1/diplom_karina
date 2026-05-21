@@ -38,7 +38,10 @@ namespace hotel
         private async void LoadHotelsAsync()
         {
             _hotels = await Api.GetHotels();
-            hotelCB.ItemsSource = _hotels.Select(h => h.Name).ToList();
+            var hotelNames = _hotels.Select(h => h.Name).ToList();
+            if (_currentUser.Idrole == 1)
+                hotelNames.Insert(0, "Не назначен");
+            hotelCB.ItemsSource = hotelNames;
 
             if (_currentUser.Idrole == 2 && _currentUser.IdhotelNavigation != null)
             {
@@ -48,6 +51,10 @@ namespace hotel
                     hotelCB.SelectedIndex = index;
                     hotelCB.IsEnabled = false;
                 }
+            }
+            else if (_currentUser.Idrole == 1)
+            {
+                hotelCB.SelectedIndex = 0;
             }
             else if (_hotels.Count > 0)
             {
@@ -104,7 +111,7 @@ namespace hotel
                 await AddEmp(
                     lastnameT.Text, nameT.Text, patronymicT.Text,
                     phoneT.Text, emailT.Text, passwordPB.Password,
-                    hotelCB.SelectedIndex + 1);
+                    hotelCB.SelectedIndex);
 
                 MessageBox.Show("Сотрудник успешно добавлен!", "Уведомление");
                 DialogResult = true;
@@ -113,8 +120,19 @@ namespace hotel
         }
 
         public async Task AddEmp(string lastname, string name, string patronymic,
-                           string phoneNum, string email, string password, int hotelId)
+                           string phoneNum, string email, string password, int hotelComboIndex)
         {
+            int? hotelId = null;
+            if (_currentUser.Idrole == 1)
+            {
+                if (hotelComboIndex > 0)
+                    hotelId = _hotels[hotelComboIndex - 1].Idhotel;
+            }
+            else if (hotelComboIndex >= 0 && hotelComboIndex < _hotels.Count)
+            {
+                hotelId = _hotels[hotelComboIndex].Idhotel;
+            }
+
             var newEmployee = new Employee
             {
                 Lastname = _editWindowRef.CapitalizeFirstLetter(lastname),
@@ -126,7 +144,7 @@ namespace hotel
                 Birth = DateOnly.FromDateTime(birth.SelectedDate.Value),
                 Idhotel = hotelId,
                 Idrole = _currentUser.Idrole == 1 ? 2 : 3,
-                Status = 1
+                Status = 0
             };
 
             await Api.AddEmployee(newEmployee);

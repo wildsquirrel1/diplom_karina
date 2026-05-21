@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:hotel"
         mc:Ignorable="d"
-        Title="Услуги" Height="950" MinHeight="730" MaxHeight="1000"  Width="1500" MinWidth="900" MaxWidth="1600" WindowState="Maximized" FontSize="40" WindowStartupLocation="CenterScreen" Icon="images\local-hotel_118960.png">
+        Title="Услуги" Height="950" MinHeight="730" MaxHeight="1000"  Width="1500" MinWidth="900" MaxWidth="1600" WindowState="Maximized" FontSize="40" WindowStartupLocation="CenterScreen">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
@@ -19,7 +19,7 @@
                 <TextBlock Text="Сотрудник: " FontSize="25" Foreground="{StaticResource Brush.TextPrimary}" Name="emplName" TextWrapping="Wrap"/>
                 <TextBlock Text="Роль: " FontSize="23" Foreground="{StaticResource Brush.TextSecondary}" Name="emplRole" TextWrapping="Wrap"/>
             </StackPanel>
-            <Image Source="images\icon-icons (2).png" Width="90" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0 0 350 0" />
+            <Image Source="pack://application:,,,/images/icon-icons (2).png" Width="90" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0 0 350 0" />
             <TextBlock Text="Услуги" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="48" FontWeight="SemiBold" Foreground="{StaticResource Brush.TextPrimary}" Margin="0,20"/>
 
             <Button Name="back" Click="back_Click" Content="✕" Style="{StaticResource CloseWindowButton}" VerticalAlignment="Center" HorizontalAlignment="Right" Margin="0,10,20,10"/>

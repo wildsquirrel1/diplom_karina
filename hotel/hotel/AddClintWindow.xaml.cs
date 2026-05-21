@@ -155,6 +155,27 @@ namespace hotel
                                 MessageBox.Show($"Ошибка при добавлении гостя {guest.Name}. Проверьте данные или соединение.", "Уведомление");
                                 return;
                             }
+
+                            if (guestResult.Idguest <= 0)
+                            {
+                                MessageBox.Show(
+                                    $"Не удалось получить id гостя «{guest.Lastname} {guest.Name}». Связь с клиентом не создана.",
+                                    "Уведомление");
+                                return;
+                            }
+
+                            if (createdClient.Idclint <= 0)
+                            {
+                                MessageBox.Show("Не удалось получить id клиента. Связь с гостями не создана.", "Уведомление");
+                                return;
+                            }
+
+                            var linkError = await Api.LinkGuestToClient(createdClient.Idclint, guestResult.Idguest);
+                            if (linkError != null)
+                            {
+                                MessageBox.Show($"Гость создан, но не привязан к клиенту: {linkError}", "Уведомление");
+                                return;
+                            }
                         }
                     }
 

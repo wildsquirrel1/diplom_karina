@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:hotel"
         mc:Ignorable="d"
-        Title="Клиенты" Height="950" MinHeight="730" MaxHeight="1000"  Width="1500" MinWidth="900" MaxWidth="1600" WindowState="Maximized" FontSize="40" WindowStartupLocation="CenterScreen" Icon="images\local-hotel_118960.png">
+        Title="Клиенты" Height="950" MinHeight="730" MaxHeight="1000"  Width="1500" MinWidth="900" MaxWidth="1600" WindowState="Maximized" FontSize="40" WindowStartupLocation="CenterScreen">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
@@ -20,7 +20,7 @@
             <TextBlock Text="Роль: " FontSize="28" Foreground="{StaticResource Brush.TextSecondary}" Name="emplRole" TextWrapping="Wrap"/>
         </StackPanel>
 
-        <Image Source="images\icon-icons (2).png" Height="100" Grid.Row="0" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="0 0 280 0"/>
+        <Image Source="pack://application:,,,/images/icon-icons (2).png" Height="100" Grid.Row="0" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="0 0 280 0"/>
 
         <Button Grid.Row="0" Name="back" Click="back_Click" Content="✕" Style="{StaticResource CloseWindowButton}" VerticalAlignment="Center" HorizontalAlignment="Right" Margin="0,10,20,10"/>
 

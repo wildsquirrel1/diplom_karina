@@ -33,8 +33,9 @@ namespace hotel
         private string _city;
         private Hotel selectedhotel;
         private byte[]? _newPhotoBytes;
-        private List<Employee> _allEmployees = new();
-        private List<Employee> _availableManagers = new();
+        private List<Employee> _managerComboItems = new();
+        private bool _headManagerAssigned;
+        private int? _initialHeadManagerId;
         private Employee _currEmpl;
         public EditHotelWindow(Hotel hotel, Employee employee)
         {
@@ -64,34 +65,26 @@ namespace hotel
             emailT.Text = selectedhotel.Email;
             //starsCB.SelectedIndex = selectedhotel.Stars.GetValueOrDefault() - 1;
 
-            _allEmployees = await Api.GetEmployeesForCurrentUser(_currEmpl.Idemployee);
+            var currentManager = await Api.GetHotelHeadManager(selectedhotel.Idhotel);
+            _initialHeadManagerId = currentManager?.Idemployee;
+            _headManagerAssigned = currentManager != null;
 
-            _availableManagers = _allEmployees
-                .Where(e => e.Idhotel == null || e.Idhotel == selectedhotel.Idhotel)
-                .ToList();
-
-            mainManager.ItemsSource = _availableManagers.Select(e => $"{e.Lastname} {e.Name} {e.Patronymic}".Trim()).ToList();
-
-            var currentManager = _allEmployees.FirstOrDefault(e => e.Idhotel == selectedhotel.Idhotel);
-
-            if (currentManager != null)
+            if (_headManagerAssigned)
             {
-                int index = _availableManagers.FindIndex(m => m.Idemployee == currentManager.Idemployee);
-
-                if (index >= 0)
-                {
-                    mainManager.SelectedIndex = index;
-                }
-                else
-                {
-                    MessageBox.Show("Текущий менеджер не найден в списке доступных.", "Внимание");
-                }
+                _managerComboItems = new List<Employee> { currentManager! };
             }
             else
             {
-                mainManager.SelectedIndex = -1;
+                _managerComboItems = await Api.GetFreeHeadManagers();
             }
+
+            mainManager.ItemsSource = _managerComboItems.Select(FormatManagerName).ToList();
+            mainManager.IsEnabled = !_headManagerAssigned;
+            mainManager.SelectedIndex = _managerComboItems.Count > 0 ? 0 : -1;
         }
+
+        private static string FormatManagerName(Employee employee) =>
+            $"{employee.Lastname} {employee.Name} {employee.Patronymic}".Trim();
 
         private void UpdatePhotoDisplay()
         {
@@ -286,32 +279,32 @@ namespace hotel
         private async void edit_Click(object sender, RoutedEventArgs e)
         {
             if (string.IsNullOrEmpty(nameT.Text) || string.IsNullOrEmpty(address.Text) || string.IsNullOrEmpty(_city)
-                || string.IsNullOrEmpty(phoneT.Text) || string.IsNullOrEmpty(emailT.Text) || mainManager.SelectedIndex == -1)
+                || string.IsNullOrEmpty(phoneT.Text) || string.IsNullOrEmpty(emailT.Text))
             {
                 MessageBox.Show("Заполните пустые поля", "Уведомление");
                 return;
             }
+
+            if (!_headManagerAssigned && _managerComboItems.Count > 0 && mainManager.SelectedIndex == -1)
+            {
+                MessageBox.Show("Выберите главного менеджера", "Уведомление");
+                return;
+            }
+
             if (Restrictions(address.Text, phoneT.Text, emailT.Text))
             {
-                Employee selectedManager = null;
-                if (mainManager.SelectedIndex != -1)
-                {
-                    selectedManager = _availableManagers[mainManager.SelectedIndex];
-                }
+                Employee? selectedManager = mainManager.SelectedIndex >= 0
+                    ? _managerComboItems[mainManager.SelectedIndex]
+                    : null;
 
                 string error = await EditHotel(nameT.Text, address.Text, _city, phoneT.Text, emailT.Text);
                 if (error == null)
                 {
-                    if (selectedManager != null)
+                    var managerError = await AssignHeadManagerAsync(selectedManager);
+                    if (managerError != null)
                     {
-                        selectedManager.Idhotel = selectedhotel.Idhotel;
-
-                        var updateEmployeeError = await Api.UpdateEmployee(selectedManager.Idemployee, selectedManager);
-                        if (updateEmployeeError != null)
-                        {
-                            MessageBox.Show($"Ошибка при обновлении менеджера: {updateEmployeeError}", "Уведомление", MessageBoxButton.OK, MessageBoxImage.Error);
-                            return;
-                        }
+                        MessageBox.Show($"Ошибка при обновлении менеджера: {managerError}", "Уведомление", MessageBoxButton.OK, MessageBoxImage.Error);
+                        return;
                     }
 
                     MessageBox.Show("Отель успешно отредактирован!", "Уведомление", MessageBoxButton.OK, MessageBoxImage.Information);
@@ -323,6 +316,20 @@ namespace hotel
                     MessageBox.Show($"Ошибка: {error}", "Уведомление", MessageBoxButton.OK, MessageBoxImage.Error);
                 }
             }
+        }
+
+        private async Task<string?> AssignHeadManagerAsync(Employee? selectedManager)
+        {
+            if (_headManagerAssigned || selectedManager == null)
+                return null;
+
+            if (selectedManager.Idhotel != selectedhotel.Idhotel)
+            {
+                selectedManager.Idhotel = selectedhotel.Idhotel;
+                return await Api.UpdateEmployee(selectedManager.Idemployee, selectedManager);
+            }
+
+            return null;
         }
 
         private void ResetParams()
@@ -355,12 +362,17 @@ namespace hotel
 
         private void back_Click(object sender, RoutedEventArgs e)
         {
+            int? selectedManagerId = mainManager.SelectedIndex >= 0
+                ? _managerComboItems[mainManager.SelectedIndex].Idemployee
+                : null;
+
             bool hasUnsavedChanges =
             nameT.Text != selectedhotel.Name ||
             address.Text != selectedhotel.Address ||
             _city != selectedhotel.City ||
             phoneT.Text != selectedhotel.PhoneNumber ||
-            emailT.Text != selectedhotel.Email;
+            emailT.Text != selectedhotel.Email ||
+            selectedManagerId != _initialHeadManagerId;
             //starsCB.SelectedIndex != selectedhotel.Stars - 1;
 
             if (hasUnsavedChanges)

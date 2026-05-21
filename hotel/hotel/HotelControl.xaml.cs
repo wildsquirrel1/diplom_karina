@@ -25,6 +25,7 @@ namespace hotel
     {
         Hotel hotel1;
         private Employee _currEmpl;
+        public Action? OnHotelUpdated { get; set; }
         public HotelControl(Employee employee)
         {
             InitializeComponent();
@@ -95,9 +96,9 @@ namespace hotel
             var edit = new EditHotelWindow(hotel1, _currEmpl);
             bool? result = edit.ShowDialog();
 
-            if (result == true && HotelsWindow.Instance != null)
+            if (result == true)
             {
-                HotelsWindow.Instance.loadHotels();
+                OnHotelUpdated?.Invoke();
             }
         }
 
@@ -113,9 +114,9 @@ namespace hotel
             var review = new ReviewWindow(hotel1.Idhotel, _currEmpl);
             bool? result = review.ShowDialog();
 
-            if(result == true && HotelsWindow.Instance != null)
+            if (result == true)
             {
-                HotelsWindow.Instance.loadHotels();
+                OnHotelUpdated?.Invoke();
             }
         }
     }

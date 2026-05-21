@@ -7,7 +7,7 @@
         mc:Ignorable="d"
         Title="BookingServiceSpecialist" Height="950" MinHeight="730" MaxHeight="1000"  
         Width="1500" MinWidth="900" MaxWidth="1600" WindowState="Maximized" 
-        FontSize="20" WindowStartupLocation="CenterScreen" Icon="images\local-hotel_118960.png">
+        FontSize="20" WindowStartupLocation="CenterScreen">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
@@ -61,17 +61,19 @@
                 </Grid.RowDefinitions>
                 <TextBlock Text="По статутсу:"/>
 
-                <ComboBox Grid.Row="1" x:Name="filterCB" Margin="10" MinWidth="160" FontSize="22" MaxWidth="300" MinHeight="48" VerticalContentAlignment="Center" SelectedIndex="1" SelectionChanged="filterCB_SelectionChanged" >
+                <ComboBox Grid.Row="1" x:Name="filterCB" Margin="10" MinWidth="200" FontSize="22" MaxWidth="360" MinHeight="48" VerticalContentAlignment="Center" SelectedIndex="5" SelectionChanged="filterCB_SelectionChanged" >
                     <ComboBoxItem>Все</ComboBoxItem>
                     <ComboBoxItem>Активные</ComboBoxItem>
                     <ComboBoxItem>Отмененные</ComboBoxItem>
                     <ComboBoxItem>Завершенные</ComboBoxItem>
+                    <ComboBoxItem>Предстоящие</ComboBoxItem>
+                    <ComboBoxItem>На заезд сегодня</ComboBoxItem>
                 </ComboBox>
             </Grid>
 
         </Grid>
 
-        <Image Source="images\icon-icons (2).png" Width="80" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0 2 380 0"/>
+        <Image Source="pack://application:,,,/images/icon-icons (2).png" Width="80" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0 2 380 0"/>
 
         <!--<DataGrid Margin="0 10 0 0" Grid.Row="1" x:Name="bookingsGrid" AutoGenerateColumns="False"
                   IsReadOnly="True" CanUserAddRows="False">
@@ -89,7 +91,7 @@
 
         <Grid Grid.Row="2">
             <!-- Надпись "Не найдено" -->
-            <Label x:Name="notfoundLabel" Content="Бронирований не найдено" 
+            <Label x:Name="notfoundLabel" Content="Бронирования не найдены" 
                    VerticalAlignment="Center" HorizontalAlignment="Center" 
                    FontSize="40" Foreground="Gray" Visibility="Visible"/>
 

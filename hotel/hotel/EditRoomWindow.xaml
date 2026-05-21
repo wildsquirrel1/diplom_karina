@@ -1,89 +1,316 @@
 ﻿<Window x:Class="hotel.EditRoomWindow"
+
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+
         xmlns:local="clr-namespace:hotel"
+
         mc:Ignorable="d"
-        Title="Редактирование комнаты" Height="950" MinHeight="730" MaxHeight="1000"  Width="1500" MinWidth="900" MaxWidth="1600" WindowState="Maximized" FontSize="40" WindowStartupLocation="CenterScreen" Icon="images\local-hotel_118960.png">
+
+        Title="Редактирование комнаты" Height="950" MinHeight="730" MaxHeight="1000"  Width="1500" MinWidth="900" MaxWidth="1600" WindowState="Maximized" FontSize="40" WindowStartupLocation="CenterScreen">
+
+    <Window.Resources>
+
+        <Style x:Key="FormFieldLabel" TargetType="TextBlock">
+
+            <Setter Property="Foreground" Value="{StaticResource Brush.TextSecondary}"/>
+
+            <Setter Property="FontWeight" Value="SemiBold"/>
+
+            <Setter Property="Margin" Value="0,0,0,10"/>
+
+        </Style>
+
+        <Style x:Key="FormPrimaryButton" TargetType="Button" BasedOn="{StaticResource PrimaryButtonBase}">
+
+            <Setter Property="FontSize" Value="28"/>
+
+            <Setter Property="MinWidth" Value="320"/>
+
+            <Setter Property="MinHeight" Value="76"/>
+
+            <Setter Property="Padding" Value="36,18"/>
+
+        </Style>
+
+        <Style x:Key="FormSecondaryButton" TargetType="Button">
+
+            <Setter Property="Background" Value="{StaticResource Brush.Surface}"/>
+
+            <Setter Property="Foreground" Value="{StaticResource Brush.TextPrimary}"/>
+
+            <Setter Property="BorderBrush" Value="{StaticResource Brush.BorderSubtle}"/>
+
+            <Setter Property="BorderThickness" Value="2"/>
+
+            <Setter Property="FontWeight" Value="SemiBold"/>
+
+            <Setter Property="FontSize" Value="28"/>
+
+            <Setter Property="MinWidth" Value="260"/>
+
+            <Setter Property="MinHeight" Value="76"/>
+
+            <Setter Property="Padding" Value="32,18"/>
+
+            <Setter Property="Margin" Value="0,0,28,0"/>
+
+            <Setter Property="Cursor" Value="Hand"/>
+
+            <Setter Property="FocusVisualStyle" Value="{x:Null}"/>
+
+            <Setter Property="Template">
+
+                <Setter.Value>
+
+                    <ControlTemplate TargetType="Button">
+
+                        <Border x:Name="Chrome" Background="{TemplateBinding Background}"
+
+                                BorderBrush="{TemplateBinding BorderBrush}"
+
+                                BorderThickness="{TemplateBinding BorderThickness}"
+
+                                CornerRadius="14" Padding="{TemplateBinding Padding}">
+
+                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+
+                        </Border>
+
+                        <ControlTemplate.Triggers>
+
+                            <Trigger Property="IsMouseOver" Value="True">
+
+                                <Setter TargetName="Chrome" Property="Background" Value="{StaticResource Brush.PrimarySoft}"/>
+
+                            </Trigger>
+
+                            <Trigger Property="IsPressed" Value="True">
+
+                                <Setter TargetName="Chrome" Property="Opacity" Value="0.85"/>
+
+                            </Trigger>
+
+                        </ControlTemplate.Triggers>
+
+                    </ControlTemplate>
+
+                </Setter.Value>
+
+            </Setter>
+
+        </Style>
+
+    </Window.Resources>
+
     <Grid>
+
         <Grid.RowDefinitions>
+
             <RowDefinition Height="Auto"/>
-            <RowDefinition Height="8*"/>
+
+            <RowDefinition Height="*"/>
+
             <RowDefinition Height="Auto"/>
+
         </Grid.RowDefinitions>
 
-        <!-- Заголовок -->
-        <Grid Grid.Row="0">
-            <StackPanel Grid.Row="0" Margin="30,0,0,0" VerticalAlignment="Center" HorizontalAlignment="Left" MinWidth="260" MaxWidth="640">
-                <TextBlock Text="Сотрудник: " FontSize="24" Foreground="Black" Name="emplName" TextWrapping="Wrap"/>
-                <TextBlock Text="Роль: " FontSize="24" Foreground="Black" Name="emplRole" TextWrapping="Wrap"/>
+
+
+        <Border Grid.Row="0" Background="{StaticResource Brush.Surface}"
+
+                BorderBrush="{StaticResource Brush.BorderSubtle}" BorderThickness="0,0,0,2" Padding="20,16">
+
+            <Grid MinHeight="110">
+
+                <Grid.ColumnDefinitions>
+
+                    <ColumnDefinition Width="*" MinWidth="260" MaxWidth="480"/>
+
+                    <ColumnDefinition Width="2*"/>
+
+                    <ColumnDefinition Width="Auto"/>
+
+                </Grid.ColumnDefinitions>
+
+                <StackPanel Grid.Column="0" Margin="16,0,8,0" VerticalAlignment="Center">
+
+                    <TextBlock Text="Сотрудник: " FontSize="24" Foreground="{StaticResource Brush.TextPrimary}" Name="emplName" TextWrapping="Wrap"/>
+
+                    <TextBlock Text="Роль: " FontSize="22" Foreground="{StaticResource Brush.TextSecondary}" Name="emplRole" TextWrapping="Wrap"/>
+
+                </StackPanel>
+
+                <StackPanel Grid.Column="1" Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center">
+
+                    <Image Source="pack://application:,,,/images/icon-icons (2).png" Width="80" Height="80" Margin="0,0,16,0" Opacity="0.95"/>
+
+                    <TextBlock Text="Редактирование комнаты" FontSize="48" FontWeight="SemiBold"
+
+                               Foreground="{StaticResource Brush.TextPrimary}" VerticalAlignment="Center"/>
+
+                </StackPanel>
+
+                <Button x:Name="back" Grid.Column="2" Content="✕" Style="{StaticResource CloseWindowButton}"
+
+                        VerticalAlignment="Center" Click="back_Click" Margin="0,0,12,0"/>
+
+            </Grid>
+
+        </Border>
+
+
+
+        <ScrollViewer Grid.Row="1" Margin="20,16,20,12" VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Disabled">
+
+            <Grid>
+
+                <Grid.ColumnDefinitions>
+
+                    <ColumnDefinition/>
+
+                    <ColumnDefinition Width="16"/>
+
+                    <ColumnDefinition/>
+
+                </Grid.ColumnDefinitions>
+
+
+
+                <Border Grid.Column="0" Background="{StaticResource Brush.Surface}" CornerRadius="16"
+
+                        BorderBrush="{StaticResource Brush.BorderSubtle}" BorderThickness="1" Padding="28,24">
+
+                    <StackPanel>
+
+                        <TextBlock Text="Основные данные" FontWeight="SemiBold" Foreground="{StaticResource Brush.Primary}" Margin="0,0,0,24"/>
+
+                        <Grid Margin="0,0,0,24">
+
+                            <Grid.RowDefinitions>
+
+                                <RowDefinition Height="Auto"/>
+
+                                <RowDefinition Height="Auto"/>
+
+                            </Grid.RowDefinitions>
+
+                            <TextBlock Text="Название:" Style="{StaticResource FormFieldLabel}"/>
+
+                            <TextBox x:Name="nameTB" Grid.Row="1" MinHeight="72" Padding="16,12"
+
+                                     PreviewTextInput="nameTB_PreviewTextInput"/>
+
+                        </Grid>
+
+                        <Grid Margin="0,0,0,24">
+
+                            <Grid.RowDefinitions>
+
+                                <RowDefinition Height="Auto"/>
+
+                                <RowDefinition Height="Auto"/>
+
+                            </Grid.RowDefinitions>
+
+                            <TextBlock Text="Этаж:" Style="{StaticResource FormFieldLabel}"/>
+
+                            <ComboBox x:Name="floorCB" Grid.Row="1" MinHeight="72"/>
+
+                        </Grid>
+
+                        <Grid>
+
+                            <Grid.RowDefinitions>
+
+                                <RowDefinition Height="Auto"/>
+
+                                <RowDefinition Height="Auto"/>
+
+                            </Grid.RowDefinitions>
+
+                            <TextBlock Text="Категория:" Style="{StaticResource FormFieldLabel}"/>
+
+                            <ComboBox x:Name="categoryCB" Grid.Row="1" MinHeight="72" IsEnabled="False"/>
+
+                        </Grid>
+
+                    </StackPanel>
+
+                </Border>
+
+
+
+                <Border Grid.Column="2" Background="{StaticResource Brush.Surface}" CornerRadius="16"
+
+                        BorderBrush="{StaticResource Brush.BorderSubtle}" BorderThickness="1" Padding="28,24">
+
+                    <StackPanel>
+
+                        <TextBlock Text="Стоимость и статус" FontWeight="SemiBold" Foreground="{StaticResource Brush.Primary}" Margin="0,0,0,24"/>
+
+                        <Grid Margin="0,0,0,24">
+
+                            <Grid.RowDefinitions>
+
+                                <RowDefinition Height="Auto"/>
+
+                                <RowDefinition Height="Auto"/>
+
+                            </Grid.RowDefinitions>
+
+                            <TextBlock Text="Цена (не редактируется):" Style="{StaticResource FormFieldLabel}"/>
+
+                            <TextBox x:Name="priceTB" Grid.Row="1" MinHeight="72" Padding="16,12" IsReadOnly="True"/>
+
+                        </Grid>
+
+                        <Grid>
+
+                            <Grid.RowDefinitions>
+
+                                <RowDefinition Height="Auto"/>
+
+                                <RowDefinition Height="Auto"/>
+
+                            </Grid.RowDefinitions>
+
+                            <TextBlock Text="Статус:" Style="{StaticResource FormFieldLabel}"/>
+
+                            <ComboBox x:Name="statusCB" Grid.Row="1" MinHeight="72"/>
+
+                        </Grid>
+
+                    </StackPanel>
+
+                </Border>
+
+            </Grid>
+
+        </ScrollViewer>
+
+
+
+        <Border Grid.Row="2" Background="{StaticResource Brush.Surface}"
+
+                BorderBrush="{StaticResource Brush.BorderSubtle}" BorderThickness="0,2,0,0" Padding="24,20">
+
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+
+                <Button Content="Отмена" Style="{StaticResource FormSecondaryButton}" Click="back_Click"/>
+
+                <Button Name="editB" Content="Редактировать" Style="{StaticResource FormPrimaryButton}" Click="editB_Click"/>
+
             </StackPanel>
-            <Image Source="images\icon-icons (2).png" VerticalAlignment="Center" HorizontalAlignment="Center" Width="80" Margin="0 0 640 0"  />
-            <Button x:Name="back" Content="✕" Style="{StaticResource CloseWindowButton}" HorizontalAlignment="Right" VerticalAlignment="Top" Click="back_Click" Margin="0,10,20,10"/>
-            <TextBlock Text="Редактирование комнаты" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="48"/>
-        </Grid>
 
-        <!-- Поля -->
-        <Grid Grid.Row="1">
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition/>
-                <ColumnDefinition/>
-            </Grid.ColumnDefinitions>
+        </Border>
 
-            <!-- Левая колонка -->
-            <StackPanel Margin="50,30" VerticalAlignment="Top">
-                <Grid Margin="0,0,0,20">
-                    <Grid.RowDefinitions>
-                        <RowDefinition Height="Auto"/>
-                        <RowDefinition Height="Auto"/>
-                    </Grid.RowDefinitions>
-                    <TextBlock Text="Название:"/>
-                    <TextBox x:Name="nameTB" Grid.Row="1" Height="60"
-                             PreviewTextInput="nameTB_PreviewTextInput"/>
-                </Grid>
-
-                <Grid Margin="0,0,0,20">
-                    <Grid.RowDefinitions>
-                        <RowDefinition Height="Auto"/>
-                        <RowDefinition Height="Auto"/>
-                    </Grid.RowDefinitions>
-                    <TextBlock Text="Этаж:"/>
-                    <ComboBox x:Name="floorCB" Grid.Row="1" Height="60"/>
-                </Grid>
-
-                <Grid Margin="0,0,0,20">
-                    <Grid.RowDefinitions>
-                        <RowDefinition Height="Auto"/>
-                        <RowDefinition Height="Auto"/>
-                    </Grid.RowDefinitions>
-                    <TextBlock Text="Категория:"/>
-                    <ComboBox x:Name="categoryCB" Grid.Row="1" Height="60" IsEnabled="False"/>
-                </Grid>
-            </StackPanel>
-
-            <!-- Правая колонка -->
-            <StackPanel Margin="50,30" Grid.Column="1" VerticalAlignment="Top">
-                <Grid Margin="0,0,0,20">
-                    <Grid.RowDefinitions>
-                        <RowDefinition Height="Auto"/>
-                        <RowDefinition Height="Auto"/>
-                    </Grid.RowDefinitions>
-                    <TextBlock Text="Цена (не редактируется):"/>
-                    <TextBox x:Name="priceTB" Grid.Row="1" Height="60" IsReadOnly="True"/>
-                </Grid>
-
-                <Grid Margin="0,0,0,20">
-                    <Grid.RowDefinitions>
-                        <RowDefinition Height="Auto"/>
-                        <RowDefinition Height="Auto"/>
-                    </Grid.RowDefinitions>
-                    <TextBlock Text="Статус:"/>
-                    <ComboBox x:Name="statusCB" Grid.Row="1" Height="60"/>
-                </Grid>
-            </StackPanel>
-        </Grid>
-
-        <Button Grid.Row="2" Name="editB" Content="Редактировать" FontSize="40" Padding="20,0" HorizontalAlignment="Center" Margin="0,30" Click="editB_Click"/>
     </Grid>
+
 </Window>
+

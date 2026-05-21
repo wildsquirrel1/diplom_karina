@@ -146,6 +146,15 @@ namespace hotel
             _room.IdCategory = categoryId;
             _room.StatusId = statusId;
             _room.Hotelid = _currentUser.IdhotelNavigation.Idhotel;
+
+            var category = _categories.FirstOrDefault(c => c.Idcategory == categoryId);
+            if (category != null)
+                _room.IdCategoryNavigation = category;
+
+            var status = _statuses.FirstOrDefault(s => s.IdstatusRoom == statusId);
+            if (status != null)
+                _room.Status = status;
+
             await Api.UpdateRoom(_room.Idroom, _room);
         }
 

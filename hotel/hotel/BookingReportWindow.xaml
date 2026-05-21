@@ -12,7 +12,7 @@
 
         mc:Ignorable="d"
 
-        Title="Отчёт по проживанию" Height="950" MinHeight="730" MaxHeight="1000" Width="1500" MinWidth="900" MaxWidth="1600" WindowState="Maximized" FontSize="16" WindowStartupLocation="CenterScreen" Icon="images\local-hotel_118960.png">
+        Title="Отчёт по проживанию" Height="950" MinHeight="730" MaxHeight="1000" Width="1500" MinWidth="900" MaxWidth="1600" WindowState="Maximized" FontSize="16" WindowStartupLocation="CenterScreen">
 
     <Grid Margin="0,8,0,0">
 
@@ -45,7 +45,7 @@
             </StackPanel>
 
             <StackPanel Grid.Column="1" Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center">
-                <Image Source="images\icon-icons (2).png" Width="56" Height="56" Margin="0,0,12,0" Opacity="0.9" VerticalAlignment="Center"/>
+                <Image Source="pack://application:,,,/images/icon-icons (2).png" Width="56" Height="56" Margin="0,0,12,0" Opacity="0.9" VerticalAlignment="Center"/>
                 <TextBlock x:Name="HeaderTitle"
                            Text="Журнал по проживанию клиентов"
                            VerticalAlignment="Center"

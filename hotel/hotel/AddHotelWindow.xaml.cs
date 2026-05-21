@@ -42,6 +42,7 @@ namespace hotel
             nameOfDocument.Text = "Файл не выбран";
 
             LoadYandexMaps();
+            
         }
 
         private void nameT_PreviewTextInput(object sender, TextCompositionEventArgs e)
@@ -72,9 +73,8 @@ namespace hotel
         {
             EditHotelWindow.Preview(e);
         }
-        private void UpdateHotelName()
+        private void UpdateHotelName(String city)
         {
-            string city = _city.Trim();
             if (string.IsNullOrEmpty(city))
             {
                 nameT.Text = "Простой Комфорт";
@@ -118,8 +118,8 @@ namespace hotel
             if (error == null)
             {
                 MessageBox.Show("Отель успешно добавлен!", "Уведомление");
-                
-                this.Close();
+                DialogResult = true;
+                Close();
             }
             else
             {
@@ -223,7 +223,6 @@ namespace hotel
         }
 
 
-        // Загрузка Яндекс карты
         private async void LoadYandexMaps()
         {
             try
@@ -313,7 +312,6 @@ namespace hotel
 
             YandexMapWebView.NavigateToString(html);
 
-            // Обработка сообщений из JavaScript
             YandexMapWebView.WebMessageReceived += OnWebMessageReceived;
         }
 
@@ -323,7 +321,6 @@ namespace hotel
             {
                 string json = e.TryGetWebMessageAsString();
 
-                // Проверка на ошибку
                 if (json.Contains("\"error\""))
                 {
                     address.Text = "Место не найдено";
@@ -331,14 +328,14 @@ namespace hotel
                     return;
                 }
 
-                // Парсим JSON
                 var data = System.Text.Json.JsonSerializer.Deserialize<AddressData>(json);
 
                 if (data != null)
                 {
-                    // Форматируем вывод: Город | Полный адрес
                     address.Text = data.address;
                     _city = data.city;
+
+                    UpdateHotelName(_city);
                 }
             });
         }

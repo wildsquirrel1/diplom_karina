@@ -5,12 +5,12 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:hotel"
         mc:Ignorable="d"
-        Title="Отзывы" Height="950" MinHeight="730" MaxHeight="1000"  Width="1500" MinWidth="900" MaxWidth="1600" WindowState="Maximized" FontSize="40" WindowStartupLocation="CenterScreen" Icon="images\local-hotel_118960.png" Loaded="Window_Loaded">
+        Title="Отзывы" Height="950" MinHeight="730" MaxHeight="1000"  Width="1500" MinWidth="900" MaxWidth="1600" WindowState="Maximized" FontSize="40" WindowStartupLocation="CenterScreen" Loaded="Window_Loaded">
     <Grid>
         <Grid.RowDefinitions>
-            <RowDefinition Height="auto"/>
-            <RowDefinition Height="auto"/>
-            <RowDefinition Height="400*"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
 
         <Grid Grid.Row="0" >
@@ -60,10 +60,8 @@
 
         <Label Grid.Row="2" Content="Отзывы не найдены" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="40" Visibility="Visible" Name="notfound"/>
 
-        <StackPanel VerticalAlignment="Top" Grid.Row="2" Visibility="Collapsed" Name="stack" Margin="0,0,0,0">
-            <ScrollViewer VerticalScrollBarVisibility="Auto" Padding="10">
-                <StackPanel Name="ReviewsPanel"/>
-            </ScrollViewer>
-        </StackPanel>
+        <ScrollViewer Grid.Row="2" Margin="12,0,12,8" VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Disabled" Visibility="Collapsed" Name="stack">
+            <StackPanel Name="ReviewsPanel" Margin="5"/>
+        </ScrollViewer>
     </Grid>
 </Window>

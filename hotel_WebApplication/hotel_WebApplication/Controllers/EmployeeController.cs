@@ -74,6 +74,33 @@ namespace hotel_WebApplication.Controllers
             return Ok(result);
         }
 
+        [HttpGet("free-head-managers")]
+        public async Task<ActionResult<List<Employee>>> GetFreeHeadManagers()
+        {
+            var result = await _context.Employees
+                .Include(e => e.IdroleNavigation)
+                .Include(e => e.IdhotelNavigation)
+                .Where(e => e.Idrole == 2
+                    && e.Status == 0
+                    && (e.Idhotel == null || e.Idhotel == 0))
+                .OrderBy(e => e.Lastname)
+                .ThenBy(e => e.Name)
+                .ToListAsync();
+
+            return Ok(result);
+        }
+
+        [HttpGet("hotel-head-manager/{hotelId}")]
+        public async Task<ActionResult<Employee?>> GetHotelHeadManager(int hotelId)
+        {
+            var manager = await _context.Employees
+                .Include(e => e.IdroleNavigation)
+                .Include(e => e.IdhotelNavigation)
+                .FirstOrDefaultAsync(e => e.Idrole == 2 && e.Status == 0 && e.Idhotel == hotelId);
+
+            return Ok(manager);
+        }
+
         // POST api/<EmployeeController>
         [HttpPost]
         public async Task<ActionResult> Post([FromBody] Employee newEmployee)

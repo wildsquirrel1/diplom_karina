@@ -45,8 +45,6 @@ namespace hotel
                 if (_Employee?.IdhotelNavigation != null)
                 {
                     _allBookings = await Api.GetBookingsForCurrentHotel(_Employee.Idemployee);
-
-                    await AutoCompleteExpiredBookings(_allBookings);
                 }
                 else
                 {
@@ -54,7 +52,6 @@ namespace hotel
                 }
             }
 
-            AutoCompleteExpiredBookings(_allBookings);
             DisplayBookings(_allBookings);
         }
 
@@ -66,43 +63,18 @@ namespace hotel
             filteredList = ApplySort(filteredList, sordCB.SelectedIndex);
             filteredList = ApplyFilter(filteredList, filterCB.SelectedIndex);
 
-            if (filteredList == null || filteredList.Count == 0)
+            if (filteredList != null)
             {
-                notfoundLabel.Visibility = Visibility.Visible;
-                scrollViewer.Visibility = Visibility.Collapsed;
-            }
-            else
-            {
-                notfoundLabel.Visibility = Visibility.Collapsed;
-                scrollViewer.Visibility = Visibility.Visible;
-
                 foreach (var book in filteredList)
                 {
                     var card = new BookingControl();
-                    card.SetData(book);
+                    card.SetData(book, _Employee);
                     card.OnStatusChanged += () => LoadBookings();
                     bookingList.Children.Add(card);
                 }
             }
 
             NotFound();
-        }
-
-        private async Task AutoCompleteExpiredBookings(List<Book> bookings)
-        {
-            if (bookings == null) return;
-            var today = DateOnly.FromDateTime(DateTime.Today);
-            bool hasChanges = false;
-
-            foreach (var book in bookings)
-            {
-                if (book.StatusBook != 3 && book.DepartureDate <= today)
-                {
-                    book.StatusBook = 3;
-                    await Api.UpdateBooking(book.Idbook, 3);
-                    hasChanges = true;
-                }
-            }
         }
 
         private void exit_Click(object sender, RoutedEventArgs e)
@@ -124,7 +96,7 @@ namespace hotel
 
         private void NotFound()
         {
-            if (bookingList.Children.Count == 0 && bookingList == null)
+            if (bookingList == null || bookingList.Children.Count == 0)
             {
                 notfoundLabel.Visibility = Visibility.Visible;
                 scrollViewer.Visibility = Visibility.Collapsed;
@@ -158,21 +130,14 @@ namespace hotel
 
         private void sordCB_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-            if(bookingList != null)
-            {
-                LoadBookings();
-                NotFound();
-            }
-            
+            if (bookingList != null)
+                DisplayBookings(_allBookings);
         }
 
         private void filterCB_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             if (bookingList != null)
-            {
-                LoadBookings();
-                NotFound();
-            }
+                DisplayBookings(_allBookings);
         }
 
         public List<Book> ApplySearch(List<Book> booklList, string search)
@@ -197,14 +162,18 @@ namespace hotel
 
         private List<Book> ApplyFilter(List<Book> bookings, int filterIndex)
         {
-            if (filterIndex == 0)
+            var today = DateOnly.FromDateTime(DateTime.Today);
+
+            return filterIndex switch
             {
-                return bookings;
-            }
-
-            bookings = bookings.Where(b => b.StatusBook == filterIndex).ToList();
-
-            return bookings;
+                0 => bookings,
+                1 => bookings.Where(b => b.StatusBook == 1).ToList(),
+                2 => bookings.Where(b => b.StatusBook == 2).ToList(),
+                3 => bookings.Where(b => b.StatusBook == 3).ToList(),
+                4 => bookings.Where(b => b.StatusBook == 4).ToList(),
+                5 => bookings.Where(b => b.StatusBook == 4 && b.CheckInDate == today).ToList(),
+                _ => bookings
+            };
         }
 
         private void clientsBtn_Click(object sender, RoutedEventArgs e)

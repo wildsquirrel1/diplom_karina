@@ -99,6 +99,32 @@ namespace hotel.Data
             return new List<Employee>();
         }
 
+        public static async Task<List<Employee>> GetFreeHeadManagers()
+        {
+            using var client = new HttpClient();
+            var response = await client.GetAsync("https://localhost:7042/api/Employee/free-head-managers");
+            if (response.IsSuccessStatusCode)
+            {
+                var json = await response.Content.ReadAsStringAsync();
+                return JsonConvert.DeserializeObject<List<Employee>>(json) ?? new List<Employee>();
+            }
+            return new List<Employee>();
+        }
+
+        public static async Task<Employee?> GetHotelHeadManager(int hotelId)
+        {
+            using var client = new HttpClient();
+            var response = await client.GetAsync($"https://localhost:7042/api/Employee/hotel-head-manager/{hotelId}");
+            if (!response.IsSuccessStatusCode)
+                return null;
+
+            var json = await response.Content.ReadAsStringAsync();
+            if (string.IsNullOrWhiteSpace(json) || json == "null")
+                return null;
+
+            return JsonConvert.DeserializeObject<Employee>(json);
+        }
+
         public static async Task<string?> AddEmployee(Employee employee)
         {
             using var client = new HttpClient();
@@ -337,6 +363,39 @@ namespace hotel.Data
             return new List<Guest>();
         }
 
+        public static async Task<List<Guest>> GetGuestsByClient(int clientId)
+        {
+            using var client = new HttpClient();
+            var response = await client.GetAsync($"https://localhost:7042/api/ClintGuest/client/{clientId}");
+            if (response.IsSuccessStatusCode)
+            {
+                var json = await response.Content.ReadAsStringAsync();
+                return JsonConvert.DeserializeObject<List<Guest>>(json) ?? new List<Guest>();
+            }
+            return new List<Guest>();
+        }
+
+        public static async Task<string?> LinkGuestToClient(int clientId, int guestId)
+        {
+            if (clientId <= 0 || guestId <= 0)
+                return "Некорректный идентификатор клиента или гостя";
+
+            using var client = new HttpClient();
+            var payload = new { Clientid = clientId, GuestIt = guestId };
+            var json = JsonConvert.SerializeObject(payload);
+            var content = new StringContent(json, Encoding.UTF8, "application/json");
+            var response = await client.PostAsync("https://localhost:7042/api/ClintGuest", content);
+            if (response.IsSuccessStatusCode)
+                return null;
+
+            var error = await response.Content.ReadAsStringAsync();
+            if (response.StatusCode == System.Net.HttpStatusCode.BadRequest &&
+                error.Contains("уже привязан", StringComparison.OrdinalIgnoreCase))
+                return null;
+
+            return string.IsNullOrEmpty(error) ? response.StatusCode.ToString() : error;
+        }
+
         public static async Task<List<Service>> GetServices()
         {
             using var client = new HttpClient();
@@ -362,8 +421,9 @@ namespace hotel.Data
         public static async Task<string?> AddGuestToBooking(GuestBook guestBook)
         {
             using var client = new HttpClient();
-            var json = JsonConvert.SerializeObject(guestBook);
-            var content = new StringContent(json, Encoding.UTF8, "application/json"); // ← ПРАВИЛЬНО
+            var payload = new { bookid = guestBook.Bookid, guestId = guestBook.GuestId };
+            var json = JsonConvert.SerializeObject(payload);
+            var content = new StringContent(json, Encoding.UTF8, "application/json");
             var response = await client.PostAsync("https://localhost:7042/api/GuestBook", content);
             if (response.IsSuccessStatusCode)
                 return null;
@@ -375,16 +435,15 @@ namespace hotel.Data
         {
             using var client = new HttpClient();
 
-            var options = new System.Text.Json.JsonSerializerOptions
+            var settings = new JsonSerializerSettings
             {
-                ReferenceHandler = System.Text.Json.Serialization.ReferenceHandler.IgnoreCycles,
-                PropertyNamingPolicy = System.Text.Json.JsonNamingPolicy.CamelCase,
-                DefaultIgnoreCondition = System.Text.Json.Serialization.JsonIgnoreCondition.WhenWritingNull
+                ReferenceLoopHandling = ReferenceLoopHandling.Ignore,
+                NullValueHandling = NullValueHandling.Ignore
             };
 
             try
             {
-                var json = System.Text.Json.JsonSerializer.Serialize(guest, options);
+                var json = JsonConvert.SerializeObject(guest, settings);
                 var content = new StringContent(json, Encoding.UTF8, "application/json");
 
                 var response = await client.PostAsync("https://localhost:7042/api/Guest", content);
@@ -392,14 +451,21 @@ namespace hotel.Data
                 if (response.IsSuccessStatusCode)
                 {
                     var responseJson = await response.Content.ReadAsStringAsync();
-                    return System.Text.Json.JsonSerializer.Deserialize<Guest>(responseJson, options);
+                    var created = JsonConvert.DeserializeObject<Guest>(responseJson, settings);
+
+                    if (created != null && created.Idguest <= 0 && !string.IsNullOrWhiteSpace(guest.DocumentNumber))
+                    {
+                        var all = await GetGuests();
+                        created = all.FirstOrDefault(g =>
+                            g.DocumentNumber == guest.DocumentNumber.Trim()) ?? created;
+                    }
+
+                    return created;
                 }
-                else
-                {
-                    var error = await response.Content.ReadAsStringAsync();
-                    MessageBox.Show($"Ошибка при создании гостя: {error}", "Ошибка");
-                    return null;
-                }
+
+                var error = await response.Content.ReadAsStringAsync();
+                MessageBox.Show($"Ошибка при создании гостя: {error}", "Ошибка");
+                return null;
             }
             catch (Exception ex)
             {
@@ -412,12 +478,24 @@ namespace hotel.Data
         {
             using var clientHttp = new HttpClient();
 
-            var settings = new Newtonsoft.Json.JsonSerializerSettings
+            var dto = new
             {
-                ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore
+                client.Name,
+                client.Lastname,
+                Patronymic = client.Patronymic ?? "",
+                client.SeriaPass,
+                client.NumberPass,
+                Birth = client.Birth.ToString("yyyy-MM-dd"),
+                client.Email,
+                client.Password
             };
 
-            var json = JsonConvert.SerializeObject(client, settings);
+            var settings = new JsonSerializerSettings
+            {
+                ReferenceLoopHandling = ReferenceLoopHandling.Ignore
+            };
+
+            var json = JsonConvert.SerializeObject(dto, settings);
             var content = new StringContent(json, Encoding.UTF8, "application/json");
 
             var res = await clientHttp.PostAsync("https://localhost:7042/api/Client/Register", content);
@@ -425,12 +503,23 @@ namespace hotel.Data
             if (res.IsSuccessStatusCode)
             {
                 var responseContent = await res.Content.ReadAsStringAsync();
-                return JsonConvert.DeserializeObject<Clint>(responseContent);
+                var created = JsonConvert.DeserializeObject<Clint>(responseContent, settings);
+
+                if (created != null && created.Idclint <= 0 && !string.IsNullOrWhiteSpace(client.Email))
+                {
+                    var all = await GetClients();
+                    created = all.FirstOrDefault(c =>
+                        c.Email.Equals(client.Email, StringComparison.OrdinalIgnoreCase)) ?? created;
+                }
+
+                return created;
             }
-            else
-            {
-                return null;
-            }
+
+            var error = await res.Content.ReadAsStringAsync();
+            MessageBox.Show(
+                string.IsNullOrWhiteSpace(error) ? "Ошибка регистрации клиента" : error,
+                "Уведомление");
+            return null;
         }
 
         public static async Task<(double? rating, int count)?> GetHotelRatingAsync(int hotelId)

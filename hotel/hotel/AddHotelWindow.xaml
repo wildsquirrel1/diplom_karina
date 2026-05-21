@@ -6,131 +6,185 @@
             xmlns:local="clr-namespace:hotel"
             mc:Ignorable="d"
             xmlns:wv2="clr-namespace:Microsoft.Web.WebView2.Wpf;assembly=Microsoft.Web.WebView2.Wpf"
-            Title="Добавление" Height="950" MinHeight="730" Width="1500" MinWidth="900" WindowState="Maximized" FontSize="40" WindowStartupLocation="CenterScreen" Icon="images\local-hotel_118960.png">
+            Title="Добавление" Height="950" MinHeight="730" Width="1500" MinWidth="900" WindowState="Maximized" FontSize="40" WindowStartupLocation="CenterScreen">
+    <Window.Resources>
+        <Style x:Key="FormFieldLabel" TargetType="TextBlock">
+            <Setter Property="Foreground" Value="{StaticResource Brush.TextSecondary}"/>
+            <Setter Property="FontWeight" Value="SemiBold"/>
+            <Setter Property="Margin" Value="0,0,0,10"/>
+        </Style>
+        <Style x:Key="FormPrimaryButton" TargetType="Button" BasedOn="{StaticResource PrimaryButtonBase}">
+            <Setter Property="FontSize" Value="28"/>
+            <Setter Property="MinWidth" Value="300"/>
+            <Setter Property="MinHeight" Value="76"/>
+            <Setter Property="Padding" Value="36,18"/>
+        </Style>
+        <Style x:Key="FormSecondaryButton" TargetType="Button">
+            <Setter Property="Background" Value="{StaticResource Brush.Surface}"/>
+            <Setter Property="Foreground" Value="{StaticResource Brush.TextPrimary}"/>
+            <Setter Property="BorderBrush" Value="{StaticResource Brush.BorderSubtle}"/>
+            <Setter Property="BorderThickness" Value="2"/>
+            <Setter Property="FontWeight" Value="SemiBold"/>
+            <Setter Property="FontSize" Value="28"/>
+            <Setter Property="MinWidth" Value="260"/>
+            <Setter Property="MinHeight" Value="76"/>
+            <Setter Property="Padding" Value="32,18"/>
+            <Setter Property="Margin" Value="0,0,28,0"/>
+            <Setter Property="Cursor" Value="Hand"/>
+            <Setter Property="FocusVisualStyle" Value="{x:Null}"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Border x:Name="Chrome" Background="{TemplateBinding Background}"
+                                BorderBrush="{TemplateBinding BorderBrush}"
+                                BorderThickness="{TemplateBinding BorderThickness}"
+                                CornerRadius="14" Padding="{TemplateBinding Padding}">
+                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                        </Border>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter TargetName="Chrome" Property="Background" Value="{StaticResource Brush.PrimarySoft}"/>
+                            </Trigger>
+                            <Trigger Property="IsPressed" Value="True">
+                                <Setter TargetName="Chrome" Property="Opacity" Value="0.85"/>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+    </Window.Resources>
     <Grid>
-        <!-- Основной контент -->
-        <Grid>
-            <Grid.RowDefinitions>
-                <RowDefinition Height="Auto"/>
-                <!-- Шапка -->
-                <RowDefinition Height="*"/>
-                <!-- Контент с прокруткой -->
-            </Grid.RowDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
 
-            <!-- Шапка (твоя текущая Grid.Row=0) -->
-            <Grid Grid.Row="0">
-                <Button x:Name="back" Content="✕" Style="{StaticResource CloseWindowButton}"
-                    VerticalAlignment="Center" HorizontalAlignment="Right" Click="back_Click" Margin="0,0,12,0"/>
-                <TextBlock Text="Добавление" VerticalAlignment="Center" HorizontalAlignment="Center"/>
-                <StackPanel Margin="30,10,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" MinWidth="260" MaxWidth="720">
-                    <TextBlock Text="Сотрудник: " FontSize="30" Foreground="Black" Name="emplName" TextWrapping="Wrap"/>
-                    <TextBlock Text="Роль: " FontSize="28" Foreground="Black" Name="emplRole" TextWrapping="Wrap"/>
+        <Border Grid.Row="0" Background="{StaticResource Brush.Surface}"
+                BorderBrush="{StaticResource Brush.BorderSubtle}" BorderThickness="0,0,0,2" Padding="20,16">
+            <Grid MinHeight="110">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" MinWidth="260" MaxWidth="480"/>
+                    <ColumnDefinition Width="2*"/>
+                    <ColumnDefinition Width="Auto"/>
+                </Grid.ColumnDefinitions>
+                <StackPanel Grid.Column="0" Margin="16,0,8,0" VerticalAlignment="Center">
+                    <TextBlock Text="Сотрудник: " FontSize="30" Foreground="{StaticResource Brush.TextPrimary}" Name="emplName" TextWrapping="Wrap"/>
+                    <TextBlock Text="Роль: " FontSize="28" Foreground="{StaticResource Brush.TextSecondary}" Name="emplRole" TextWrapping="Wrap"/>
                 </StackPanel>
-                <Image Source="images\icon-icons (2).png" VerticalAlignment="Center" Width="90" 
-                   HorizontalAlignment="Center" Margin="0 0 350 0"/>
+                <StackPanel Grid.Column="1" Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center">
+                    <Image Source="images\icon-icons (2).png" Width="80" Height="80" Margin="0,0,16,0" Opacity="0.95"/>
+                    <TextBlock Text="Добавление отеля" FontSize="48" FontWeight="SemiBold"
+                               Foreground="{StaticResource Brush.TextPrimary}" VerticalAlignment="Center"/>
+                </StackPanel>
+                <Button x:Name="back" Grid.Column="2" Content="✕" Style="{StaticResource CloseWindowButton}"
+                        VerticalAlignment="Center" Click="back_Click" Margin="0,0,12,0"/>
             </Grid>
+        </Border>
 
-            <!-- Контент с прокруткой -->
-            <ScrollViewer Grid.Row="1" VerticalScrollBarVisibility="Auto">
-                <!-- Тут весь твой Grid с фото, полями и картой -->
-                <Grid>
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition/>
-                        <ColumnDefinition Width="2*"/>
-                    </Grid.ColumnDefinitions>
+        <ScrollViewer Grid.Row="1" Margin="20,16,20,12" VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Disabled">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" MaxWidth="520"/>
+                    <ColumnDefinition Width="16"/>
+                    <ColumnDefinition Width="2*"/>
+                </Grid.ColumnDefinitions>
 
-                    <!-- Левая колонка: фото -->
-                    <Grid>
-                        <Image Source="{Binding Photo}" x:Name="photoDisplay" Stretch="Uniform" Height="550"/>
-                        <Button Name="loadPhoto" Click="loadPhoto_Click" Content="Загрузить фотографию" 
-                            HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0 5 5 0" Padding="8 4"/>
-                    </Grid>
+                <Border Grid.Column="0" Background="{StaticResource Brush.Surface}" CornerRadius="16"
+                        BorderBrush="{StaticResource Brush.BorderSubtle}" BorderThickness="1" Padding="28,24">
+                    <StackPanel>
+                        <TextBlock Text="Фотография" FontWeight="SemiBold" Foreground="{StaticResource Brush.Primary}" Margin="0,0,0,20"/>
+                        <Border Background="{StaticResource Brush.PrimarySoft}" CornerRadius="12" Padding="8" Margin="0,0,0,20">
+                            <Image Source="{Binding Photo}" x:Name="photoDisplay" Stretch="Uniform" MaxHeight="480"/>
+                        </Border>
+                        <Button Name="loadPhoto" Click="loadPhoto_Click" Content="Загрузить фотографию"
+                                Style="{StaticResource FormSecondaryButton}" HorizontalAlignment="Stretch" Margin="0"/>
+                    </StackPanel>
+                </Border>
 
-                    <!-- Правая колонка: поля формы -->
-                    <Grid Grid.Column="1">
-                        <Grid.RowDefinitions>
-                            <RowDefinition Height="Auto"/>
-                            <RowDefinition Height="Auto"/>
-                            <RowDefinition Height="Auto"/>
-                            <RowDefinition Height="Auto"/>
-                            <RowDefinition Height="Auto"/>
-                            <RowDefinition Height="Auto"/>
-                            <RowDefinition Height="Auto"/>
-                            <!-- Карта -->
-                        </Grid.RowDefinitions>
+                <StackPanel Grid.Column="2">
+                    <Border Background="{StaticResource Brush.Surface}" CornerRadius="16"
+                            BorderBrush="{StaticResource Brush.BorderSubtle}" BorderThickness="1" Padding="28,24" Margin="0,0,0,16">
+                        <StackPanel>
+                            <TextBlock Text="Данные отеля" FontWeight="SemiBold" Foreground="{StaticResource Brush.Primary}" Margin="0,0,0,24"/>
+                            <Grid Margin="0,0,0,24">
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="Auto"/>
+                                    <RowDefinition Height="Auto"/>
+                                </Grid.RowDefinitions>
+                                <TextBlock Text="Название:" Style="{StaticResource FormFieldLabel}"/>
+                                <TextBox x:Name="nameT" Grid.Row="1" PreviewTextInput="nameT_PreviewTextInput"
+                                         MaxLength="100" IsEnabled="False" MinHeight="72" Padding="16,12"/>
+                            </Grid>
+                            <Grid Margin="0,0,0,24">
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="Auto"/>
+                                    <RowDefinition Height="Auto"/>
+                                </Grid.RowDefinitions>
+                                <TextBlock Text="Номер телефона:" Style="{StaticResource FormFieldLabel}"/>
+                                <TextBox x:Name="phontT" Grid.Row="1" KeyDown="phontT_KeyDown" MaxLength="11" MinHeight="72" Padding="16,12"/>
+                            </Grid>
+                            <Grid Margin="0,0,0,24">
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="Auto"/>
+                                    <RowDefinition Height="Auto"/>
+                                </Grid.RowDefinitions>
+                                <TextBlock Text="Электронная почта:" Style="{StaticResource FormFieldLabel}"/>
+                                <TextBox x:Name="emailT" Grid.Row="1" MaxHeight="120" MinHeight="72" Padding="16,12"/>
+                            </Grid>
+                            <Grid>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="Auto"/>
+                                    <RowDefinition Height="Auto"/>
+                                    <RowDefinition Height="Auto"/>
+                                </Grid.RowDefinitions>
+                                <TextBlock Text="Договор:" Style="{StaticResource FormFieldLabel}"/>
+                                <Button x:Name="pdfFormatDocument" Grid.Row="1" HorizontalAlignment="Left"
+                                        Content="Загрузить PDF файл" Click="pdfFormatDocument_Click"
+                                        Style="{StaticResource FormSecondaryButton}" Margin="0,0,0,12"/>
+                                <TextBlock x:Name="nameOfDocument" Grid.Row="2" Foreground="{StaticResource Brush.TextMuted}"
+                                           TextWrapping="Wrap" FontSize="26"/>
+                            </Grid>
+                        </StackPanel>
+                    </Border>
 
-                        <!-- Название -->
-                        <Grid Grid.Row="0" Margin="0,5">
-                            <Grid.RowDefinitions>
-                                <RowDefinition Height="Auto"/>
-                                <RowDefinition Height="Auto"/>
-                            </Grid.RowDefinitions>
-                            <TextBlock Text="Название:"/>
-                            <TextBox x:Name="nameT" Grid.Row="1" PreviewTextInput="nameT_PreviewTextInput" 
-                                 MaxLength="100" IsEnabled="False"/>
-                        </Grid>
+                    <Border Background="{StaticResource Brush.Surface}" CornerRadius="16"
+                            BorderBrush="{StaticResource Brush.BorderSubtle}" BorderThickness="1" Padding="28,24">
+                        <StackPanel>
+                            <TextBlock Text="Местоположение" FontWeight="SemiBold" Foreground="{StaticResource Brush.Primary}" Margin="0,0,0,24"/>
+                            <Grid Margin="0,0,0,24">
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="Auto"/>
+                                    <RowDefinition Height="Auto"/>
+                                </Grid.RowDefinitions>
+                                <TextBlock Text="Адрес:" Style="{StaticResource FormFieldLabel}"/>
+                                <TextBox x:Name="address" Grid.Row="1" IsEnabled="False" TextWrapping="Wrap" MaxHeight="100"
+                                         MaxLength="150" MinHeight="72" Padding="16,12"/>
+                            </Grid>
+                            <Grid>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="Auto"/>
+                                    <RowDefinition Height="450"/>
+                                </Grid.RowDefinitions>
+                                <TextBlock Text="Карта:" Style="{StaticResource FormFieldLabel}"/>
+                                <Border Grid.Row="1" CornerRadius="12" BorderBrush="{StaticResource Brush.BorderSubtle}"
+                                        BorderThickness="1" ClipToBounds="True">
+                                    <wv2:WebView2 x:Name="YandexMapWebView"/>
+                                </Border>
+                            </Grid>
+                        </StackPanel>
+                    </Border>
+                </StackPanel>
+            </Grid>
+        </ScrollViewer>
 
-                        <!-- Телефон -->
-                        <Grid Grid.Row="1" Margin="0,5">
-                            <Grid.RowDefinitions>
-                                <RowDefinition Height="Auto"/>
-                                <RowDefinition Height="Auto"/>
-                            </Grid.RowDefinitions>
-                            <TextBlock Text="Номер телефона:"/>
-                            <TextBox x:Name="phontT" Grid.Row="1" KeyDown="phontT_KeyDown" MaxLength="11"/>
-                        </Grid>
-
-                        <!-- Email -->
-                        <Grid Grid.Row="2" Margin="0,5">
-                            <Grid.RowDefinitions>
-                                <RowDefinition Height="Auto"/>
-                                <RowDefinition Height="Auto"/>
-                            </Grid.RowDefinitions>
-                            <TextBlock Text="Электронная почта:"/>
-                            <TextBox x:Name="emailT" Grid.Row="1" MaxHeight="120"/>
-                        </Grid>
-
-                        <!-- Договор -->
-                        <Grid Grid.Row="3" Margin="0,5">
-                            <Grid.RowDefinitions>
-                                <RowDefinition Height="Auto"/>
-                                <RowDefinition Height="Auto"/>
-                            </Grid.RowDefinitions>
-                            <TextBlock Text="Договор: "/>
-                            <Button x:Name="pdfFormatDocument" Grid.Row="1" HorizontalAlignment="Left" 
-                                Content="Загрузить PDF файл" Click="pdfFormatDocument_Click"/>
-                            <TextBlock x:Name="nameOfDocument" Grid.Row="1" HorizontalAlignment="Right"/>
-                        </Grid>
-
-                        <!-- Адрес -->
-                        <Grid Grid.Row="4" Margin="0,5">
-                            <Grid.RowDefinitions>
-                                <RowDefinition Height="Auto"/>
-                                <RowDefinition Height="Auto"/>
-                            </Grid.RowDefinitions>
-                            <TextBlock Text="Адрес:"/>
-                            <TextBox x:Name="address" Grid.Row="1" IsEnabled="False"
-                                 MaxLength="150"/>
-                        </Grid>
-
-                        <!-- Карта -->
-                        <Grid Grid.Row="6" Margin="0,5">
-                            <Grid.RowDefinitions>
-                                <RowDefinition Height="Auto"/>
-                                <RowDefinition Height="450"/>
-                                <!-- Фиксированная высота карты -->
-                            </Grid.RowDefinitions>
-                            <TextBlock Text="Карта:"/>
-                            <wv2:WebView2 Grid.Row="1" x:Name="YandexMapWebView"/>
-                        </Grid>
-
-                        <!-- Кнопка "Добавить" -->
-                        <Button Grid.Row="7" x:Name="addB" Click="addB_Click" Content="Добавить" 
-                            VerticalAlignment="Bottom" HorizontalAlignment="Stretch" 
-                            Height="50" Margin="10"/>
-                    </Grid>
-                </Grid>
-            </ScrollViewer>
-        </Grid>
+        <Border Grid.Row="2" Background="{StaticResource Brush.Surface}"
+                BorderBrush="{StaticResource Brush.BorderSubtle}" BorderThickness="0,2,0,0" Padding="24,20">
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                <Button Content="Отмена" Style="{StaticResource FormSecondaryButton}" Click="back_Click"/>
+                <Button x:Name="addB" Click="addB_Click" Content="Добавить" Style="{StaticResource FormPrimaryButton}"/>
+            </StackPanel>
+        </Border>
     </Grid>
 </Window>

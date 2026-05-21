@@ -63,10 +63,10 @@ namespace hotel
 
         private void editBtn_Click(object sender, RoutedEventArgs e)
         {
-            var editWindow = new EditServiceWindow(_employee,_service);
+            var editWindow = new EditServiceWindow(_employee, _service);
             if (editWindow.ShowDialog() == true)
             {
-                
+                SetService(_service);
                 OnServiceUpdated?.Invoke();
             }
         }

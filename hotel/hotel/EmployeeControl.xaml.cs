@@ -71,6 +71,7 @@ namespace hotel
             var editWindow = new EditEmployeeWindow(Employee, CurrentUser);
             if (editWindow.ShowDialog() == true)
             {
+                UpdateDisplay();
                 OnEmployeeUpdated?.Invoke();
             }
         }

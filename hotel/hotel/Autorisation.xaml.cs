@@ -50,32 +50,23 @@ namespace hotel
 
         private async void entryB_Click(object sender, RoutedEventArgs e)
         {
-            if(!string.IsNullOrEmpty(passwordPB.Password))
-            {
-                passwordTB.Text = passwordPB.Password;
-            }
-            else if (!string.IsNullOrEmpty(passwordTB.Text))
-            {
-                passwordPB.Password = passwordTB.Text;
-            }
-
-            if (emailTB.Text == null && passwordTB.Text == null)
+            if (string.IsNullOrWhiteSpace(emailTB.Text) && string.IsNullOrWhiteSpace(Password))
             {
                 MessageBox.Show("Поля не могут быть пустыми!", "Уведомление");
                 return;
             }
-            else if(emailTB.Text == null)
+            else if (string.IsNullOrWhiteSpace(emailTB.Text))
             {
                 MessageBox.Show("Поле с электронной почтой не может быть пустым!", "Уведомление");
                 return;
             }
-            else if (passwordTB.Text == null)
+            else if (string.IsNullOrWhiteSpace(Password))
             {
                 MessageBox.Show("Поле с паролем не может быть пустым!", "Уведомление");
                 return;
             }
 
-            var result = await Api.Auth(email: emailTB.Text, password: passwordTB.Text);
+            var result = await Api.Auth(email: emailTB.Text, password: Password);
             if (result == null)
             {
                 MessageBox.Show("Сотрудник не найден", "Уведомление");
@@ -120,24 +111,59 @@ namespace hotel
         private void ResetParams()
         {
             emailTB.Text = string.Empty;
+            isUpdateingPassTB = true;
             passwordTB.Text = string.Empty;
+            isUpdateingPassTB = false;
+            isUpdateingPassPB = true;
             passwordPB.Password = string.Empty;
-            
+            isUpdateingPassPB = false;
+            passwordTB.Visibility = Visibility.Collapsed;
+            passwordPB.Visibility = Visibility.Visible;
+            show_hide_pass.Content = "Показать пароль";
+        }
+
+        private void passwordPB_PasswordChanged(object sender, RoutedEventArgs e)
+        {
+            if (isUpdateingPassTB)
+                return;
+
+            isUpdateingPassPB = true;
+            passwordTB.Text = passwordPB.Password;
+            isUpdateingPassPB = false;
+        }
+
+        private void passwordTB_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            if (isUpdateingPassPB)
+                return;
+
+            isUpdateingPassTB = true;
+            passwordPB.Password = passwordTB.Text;
+            isUpdateingPassTB = false;
         }
 
         private void show_hide_pass_Click(object sender, RoutedEventArgs e)
         {
             if (passwordPB.Visibility == Visibility.Visible)
             {
+                isUpdateingPassTB = true;
                 passwordTB.Text = passwordPB.Password;
+                isUpdateingPassTB = false;
+                passwordPB.Visibility = Visibility.Collapsed;
                 passwordTB.Visibility = Visibility.Visible;
-                passwordPB.Visibility = Visibility.Hidden;
+                passwordTB.Focus();
+                passwordTB.CaretIndex = passwordTB.Text.Length;
+                show_hide_pass.Content = "Скрыть пароль";
             }
             else
             {
+                isUpdateingPassPB = true;
                 passwordPB.Password = passwordTB.Text;
+                isUpdateingPassPB = false;
+                passwordTB.Visibility = Visibility.Collapsed;
                 passwordPB.Visibility = Visibility.Visible;
-                passwordTB.Visibility = Visibility.Hidden;
+                passwordPB.Focus();
+                show_hide_pass.Content = "Показать пароль";
             }
         }
     }
